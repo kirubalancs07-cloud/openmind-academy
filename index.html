@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenMind Academy — Free Aptitude & Reasoning</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Mesh & Canvas Animations -->
+  <div class="bg-mesh"></div>
+  <canvas id="particleCanvas"></canvas>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="top-nav" id="topNav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <button class="nav-logo" onclick="navigate('home')" aria-label="Home">
+        <div class="nav-logo-icon">
+          <i class="fas fa-brain text-sm text-black"></i>
+        </div>
+        <span style="font-family:'Space Grotesk'; font-weight:700; font-size:1.1rem; color:var(--fg);">OpenMind</span>
+      </button>
+      <div class="flex items-center gap-4">
+        <div class="nav-links hidden md:flex mr-2">
+          <button class="nav-link" id="navLinkHome" onclick="navigate('home')">Home</button>
+          <button class="nav-link" id="navLinkAnalytics" onclick="navigate('analytics')">Analytics</button>
+        </div>
+        <div class="os-badge"><i class="fas fa-lock-open" style="font-size:0.6rem"></i> Open Source</div>
+        <div id="navProgress" class="flex items-center gap-2 text-xs" style="color:var(--fg-secondary)">
+          <i class="fas fa-chart-line"></i>
+          <span id="navProgressText">0% Complete</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main View Container -->
+  <main class="relative z-10 pt-20 pb-16">
+
+    <!-- HOME VIEW -->
+    <div id="viewHome" class="view-panel is-visible">
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-14 pb-6 text-center">
+        <div class="stagger">
+          <div class="os-badge mb-6"><i class="fas fa-infinity" style="font-size:0.55rem"></i> 100% Free. No Sign-up Required.</div>
+          <h1 style="font-size:clamp(2.2rem,5vw,3.6rem); font-weight:700; line-height:1.15; letter-spacing:-0.03em; max-width:800px; margin:0 auto 1.25rem">
+            Master <span style="color:var(--accent)">Aptitude</span>, <span style="color:var(--accent2)">Reasoning</span> &amp; <span style="color:#a855f7">English</span><br>Like Never Before
+          </h1>
+          <p style="color:var(--fg-secondary); font-size:1.1rem; max-width:600px; margin:0 auto 2rem; line-height:1.6">
+            An interactive learning dashboard with 56 topics, detailed shortcuts, formula guides, and exam-level MCQs.
+          </p>
+
+          <!-- Search Widget -->
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" id="searchInput" placeholder="Search topics (e.g., Remainders, Syllogisms...)" autocomplete="off">
+            <div class="search-results" id="searchResults"></div>
+          </div>
+
+          <!-- Counter Stats Grid -->
+          <div class="stat-grid">
+            <div class="stat-card">
+              <h3 class="counter text-amber-500" data-target="56">0</h3>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.25rem">Topics</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="counter text-emerald-400" data-target="17">0</h3>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.25rem">Tracks</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="counter text-gray-200" data-target="4725">0</h3>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.25rem">MCQ Bank</p>
+            </div>
+            <div class="stat-card" style="border-color: rgba(34,197,94,0.3)">
+              <h3 class="text-green-400"><i class="fas fa-check-double text-2xl"></i></h3>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.25rem">Free Access</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bookmarked Topics Section (Dynamic) -->
+      <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-6 hidden" id="bookmarksSection">
+        <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase mb-4"><i class="fas fa-star text-amber-400 mr-2"></i>Bookmarked Topics</h3>
+        <div class="bookmarks-grid" id="bookmarksGrid"></div>
+      </section>
+
+      <!-- Motivation & Free Education Pledge Section -->
+      <section class="max-w-5xl mx-auto px-4 sm:px-6 mb-12 stagger">
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Consistency Card -->
+          <div class="glass-card p-6 flex items-start gap-4" style="border-left: 3px solid var(--accent);">
+            <div class="text-amber-500 mt-1"><i class="fas fa-bolt text-xl"></i></div>
+            <div>
+              <h4 class="text-sm font-bold tracking-wide uppercase text-gray-400 mb-1" style="font-family:'Space Grotesk';">Consistency is Power</h4>
+              <p class="text-sm text-gray-200 italic leading-relaxed">
+                "If you show up every day, your goals and results will appear one day."
+              </p>
+              <p class="text-xs text-gray-500 mt-2">Establish study habits. Even 15 minutes of daily practice will yield breakthroughs.</p>
+            </div>
+          </div>
+          <!-- Free Pledge Card -->
+          <div class="glass-card p-6 flex items-start gap-4" style="border-left: 3px solid var(--accent2);">
+            <div class="text-emerald-400 mt-1"><i class="fas fa-wallet text-xl"></i></div>
+            <div>
+              <h4 class="text-sm font-bold tracking-wide uppercase text-gray-400 mb-1" style="font-family:'Space Grotesk';">100% Free — No Wallet Needed</h4>
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Education is a right, not a luxury. There are no fees, no credit cards, and no hidden logins. Keep your wallet put away.
+              </p>
+              <p class="text-xs text-gray-500 mt-2">All 56 topics, practice tests, and features are completely free for everyone, forever.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Main Selection -->
+      <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-20">
+        <div class="hero-courses flex flex-col md:flex-row gap-6">
+          
+          <!-- Quantitative Aptitude Course Card -->
+          <div class="course-card aptitude flex-1" onclick="navigate('course', 'aptitude')" role="button" tabindex="0" aria-label="Quantitative Aptitude">
+            <div class="relative z-10">
+              <div style="width:56px; height:56px; border-radius:16px; background:var(--accent-dim); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem">
+                <i class="fas fa-calculator text-xl" style="color:var(--accent)"></i>
+              </div>
+              <h2 style="font-size:1.75rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.02em">Quantitative Aptitude</h2>
+              <p style="color:var(--fg-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1.5rem">27 topics across 8 tracks. Master speed calculations, percentages, time-distance, equations, and geometry.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge" style="background:var(--accent-dim); color:var(--accent)">27 Topics</span>
+                <span class="badge" style="background:var(--accent-dim); color:var(--accent)">8 Tracks</span>
+                <span class="badge" style="background:var(--accent-dim); color:var(--accent)">Shortcuts</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" id="aptHomeProg" style="width:0%"></div></div>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.5rem" id="aptHomeTxt">0 of 27 completed</p>
+            </div>
+          </div>
+
+          <!-- Reasoning Course Card -->
+          <div class="course-card reasoning flex-1" onclick="navigate('course', 'reasoning')" role="button" tabindex="0" aria-label="Reasoning">
+            <div class="relative z-10">
+              <div style="width:56px; height:56px; border-radius:16px; background:var(--accent2-dim); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem">
+                <i class="fas fa-puzzle-piece text-xl" style="color:var(--accent2)"></i>
+              </div>
+              <h2 style="font-size:1.75rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.02em">Reasoning Logic</h2>
+              <p style="color:var(--fg-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1.5rem">22 chapters covering verbal, non-verbal &amp; logical reasoning. Analyze pattern arrangements, coding, and dice configs.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge" style="background:var(--accent2-dim); color:var(--accent2)">22 Chapters</span>
+                <span class="badge" style="background:var(--accent2-dim); color:var(--accent2)">6 Tracks</span>
+                <span class="badge" style="background:var(--accent2-dim); color:var(--accent2)">Analytical</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" id="reaHomeProg" style="width:0%"></div></div>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.5rem" id="reaHomeTxt">0 of 22 completed</p>
+            </div>
+          </div>
+
+          <!-- Communication English Course Card -->
+          <div class="course-card english flex-1" onclick="navigate('course', 'english')" role="button" tabindex="0" aria-label="Communication English">
+            <div class="relative z-10">
+              <div style="width:56px; height:56px; border-radius:16px; background:rgba(168, 85, 247, 0.08); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem">
+                <i class="fas fa-language text-xl" style="color:#a855f7"></i>
+              </div>
+              <h2 style="font-size:1.75rem; font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.02em">Communication English</h2>
+              <p style="color:var(--fg-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1.5rem">7 practical topics to master daily roadmaps, tenses, question framing, error corrections, and day-to-day vocabulary.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge" style="background:rgba(168, 85, 247, 0.08); color:#a855f7">7 Topics</span>
+                <span class="badge" style="background:rgba(168, 85, 247, 0.08); color:#a855f7">3 Tracks</span>
+                <span class="badge" style="background:rgba(168, 85, 247, 0.08); color:#a855f7">150+ Words</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" id="engHomeProg" style="width:0%; background:#a855f7"></div></div>
+              <p style="font-size:0.75rem; color:var(--fg-secondary); margin-top:0.5rem" id="engHomeTxt">0 of 7 completed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Help Features Grid -->
+        <div class="mt-16">
+          <h3 style="text-align:center; font-size:0.95rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:2rem">How It Works</h3>
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+              <div style="width:44px; height:44px; border-radius:12px; background:rgba(245,158,11,0.1); display:flex; align-items:center; justify-content:center; margin:0 auto 1rem"><i class="fas fa-route" style="color:var(--accent)"></i></div>
+              <h4 style="font-weight:600; margin-bottom:0.4rem">Track-Based Paths</h4>
+              <p style="font-size:0.82rem; color:var(--fg-secondary); line-height:1.5">Study topics grouped into logical paths. Follow from foundation to advanced, or skip ahead.</p>
+            </div>
+            <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+              <div style="width:44px; height:44px; border-radius:12px; background:rgba(16,185,129,0.1); display:flex; align-items:center; justify-content:center; margin:0 auto 1rem"><i class="fas fa-chalkboard-teacher" style="color:var(--accent2)"></i></div>
+              <h4 style="font-weight:600; margin-bottom:0.4rem">Concept-Led Study</h4>
+              <p style="font-size:0.82rem; color:var(--fg-secondary); line-height:1.5">Concepts clarified with core intuition, formula guides, and exam-level examples.</p>
+            </div>
+            <div class="glass-card" style="padding: 1.5rem; text-align: center;">
+              <div style="width:44px; height:44px; border-radius:12px; background:rgba(245,158,11,0.1); display:flex; align-items:center; justify-content:center; margin:0 auto 1rem"><i class="fas fa-chart-pie" style="color:var(--accent)"></i></div>
+              <h4 style="font-weight:600; margin-bottom:0.4rem">Save Progress Locally</h4>
+              <p style="font-size:0.82rem; color:var(--fg-secondary); line-height:1.5">Mark topics complete, test yourself, and view progress. Saved entirely in your browser cache.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- COURSE VIEW -->
+    <div id="viewCourse" class="view-panel">
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-4 pb-20">
+        <button class="back-btn" onclick="navigate('home')"><i class="fas fa-arrow-left"></i> Back to Courses</button>
+        <div class="mt-6 mb-8">
+          <div class="flex items-center gap-3 mb-2">
+            <div id="courseIcon" style="width:48px; height:48px; border-radius:14px; display:flex; align-items:center; justify-content:center"></div>
+            <div>
+              <h1 id="courseTitle" style="font-size:2rem; font-weight:700; letter-spacing:-0.02em"></h1>
+              <p id="courseSubtitle" style="color:var(--fg-secondary); font-size:0.9rem"></p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 mt-4 flex-wrap">
+            <div class="progress-bar flex-1" style="max-width:400px"><div class="progress-fill" id="courseProg" style="width:0%"></div></div>
+            <span id="courseProgTxt" style="font-size:0.8rem; color:var(--fg-secondary)"></span>
+          </div>
+        </div>
+        <div id="tracksGrid" class="grid sm:grid-cols-2 gap-4 stagger"></div>
+      </section>
+    </div>
+
+    <!-- TRACK VIEW -->
+    <div id="viewTrack" class="view-panel">
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-20">
+        <button class="back-btn" id="trackBackBtn"><i class="fas fa-arrow-left"></i> <span id="trackBackTxt"></span></button>
+        <div class="mt-6 mb-8">
+          <div class="flex items-center gap-3 mb-1">
+            <span id="trackBadge" class="badge"></span>
+            <span style="font-size:0.8rem; color:var(--fg-secondary)" id="trackCount"></span>
+          </div>
+          <h1 id="trackTitle" style="font-size:1.75rem; font-weight:700; letter-spacing:-0.02em; margin:0.5rem 0"></h1>
+          <p id="trackDesc" style="color:var(--fg-secondary); font-size:0.9rem; line-height:1.6"></p>
+          <div class="progress-bar mt-4" style="max-width:300px"><div class="progress-fill" id="trackProg" style="width:0%"></div></div>
+        </div>
+        <div id="topicsList" class="flex flex-col gap-3 stagger"></div>
+      </section>
+    </div>
+
+    <!-- TOPIC VIEW -->
+    <div id="viewTopic" class="view-panel">
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-20">
+        <div class="flex justify-between items-center">
+          <button class="back-btn" id="topicBackBtn"><i class="fas fa-arrow-left"></i> <span id="topicBackTxt"></span></button>
+          <button class="bookmark-btn" id="topicBookmarkBtn" onclick="toggleBookmarkCurrent()" title="Bookmark Topic">
+            <i class="far fa-star text-lg"></i>
+          </button>
+        </div>
+        <div class="mt-6 mb-6">
+          <div class="flex items-center gap-3 mb-1">
+            <span id="topicTrackBadge" class="badge" style="font-size:0.65rem"></span>
+          </div>
+          <h1 id="topicTitle" style="font-size:1.6rem; font-weight:700; letter-spacing:-0.02em; margin:0.5rem 0"></h1>
+          <p id="topicSub" style="color:var(--fg-secondary); font-size:0.85rem"></p>
+        </div>
+        
+        <!-- Dynamic Content injected here -->
+        <div id="topicContent"></div>
+        
+        <!-- Practice MCQ Quiz container -->
+        <div id="quizContainer" class="mt-8"></div>
+        
+        <div class="mt-8 flex items-center gap-4">
+          <button class="mark-complete-btn" id="markBtn" onclick="toggleCompleteCurrent()"></button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ANALYTICS VIEW -->
+    <div id="viewAnalytics" class="view-panel">
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-20">
+        <button class="back-btn" onclick="navigate('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+        <div class="mt-6 mb-8">
+          <h1 style="font-size:2rem; font-weight:700; letter-spacing:-0.02em">Study Analytics</h1>
+          <p style="color:var(--fg-secondary); font-size:0.9rem">Monitor your learning milestones, quiz performance, and manage study data backups.</p>
+        </div>
+
+        <div class="analytics-grid">
+          
+          <!-- Overall Stats Radial Circle Card -->
+          <div class="analytics-card flex items-center gap-6">
+            <div class="analytics-card-radial">
+              <svg class="radial-svg">
+                <circle class="radial-circle-bg" cx="45" cy="45" r="38" />
+                <circle class="radial-circle-val" id="radialProgress" cx="45" cy="45" r="38" stroke="url(#accentGrad)" stroke-dasharray="238.76" stroke-dashoffset="238.76" />
+                <defs>
+                  <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="var(--accent)" />
+                    <stop offset="100%" stop-color="var(--accent2)" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="absolute text-center">
+                <span id="radialPercentText" class="text-xl font-bold tracking-tighter" style="font-family:'Space Grotesk';">0%</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-bold">Overall Progress</h3>
+              <p id="overallStatsText" class="text-xs text-gray-400 mt-1">0 of 56 topics completed</p>
+            </div>
+          </div>
+
+          <!-- Course Progress Breakdowns -->
+          <div class="analytics-card">
+            <h3 class="text-base font-bold mb-3"><i class="fas fa-chart-bar text-amber-500 mr-2"></i>Syllabus Division</h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-gray-300">Quantitative Aptitude</span>
+                  <span id="analyticsAptRatio" class="font-semibold text-amber-500">0/27</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" id="analyticsAptBar" style="width:0%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-gray-300">Reasoning Logic</span>
+                  <span id="analyticsReaRatio" class="font-semibold text-emerald-400">0/22</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" id="analyticsReBar" style="width:0%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-gray-300">Communication English</span>
+                  <span id="analyticsEngRatio" class="font-semibold text-purple-400">0/7</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" id="analyticsEngBar" style="width:0%; background:#a855f7"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quiz Scores Card -->
+          <div class="analytics-card">
+            <h3 class="text-base font-bold mb-2"><i class="fas fa-check-circle text-emerald-400 mr-2"></i>Quiz Performance</h3>
+            <div class="mt-2 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-gray-400">Questions Answered</span>
+                <span id="analyticsQuestionsCount" class="font-bold text-gray-200">0</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-gray-400">Correct Answers</span>
+                <span id="analyticsCorrectCount" class="font-bold text-green-400">0</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-gray-400">Accuracy Rate</span>
+                <span id="analyticsAccuracyText" class="font-bold text-amber-400">0%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Progress Operations / Settings -->
+        <div class="glass-card p-6 mt-8">
+          <h3 class="text-md font-bold mb-4"><i class="fas fa-sliders-h mr-2 text-gray-300"></i>Data Operations</h3>
+          <p class="text-xs text-gray-400 mb-6">Manage your local storage cache. Export backups to safeguard progress or import an existing data file.</p>
+          
+          <div class="flex flex-wrap gap-3">
+            <button class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-semibold px-4 py-2.5 rounded-lg transition" onclick="exportProgress()">
+              <i class="fas fa-download mr-1.5"></i> Export Progress
+            </button>
+            <button class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs font-semibold px-4 py-2.5 rounded-lg transition" onclick="triggerImport()">
+              <i class="fas fa-upload mr-1.5"></i> Import Progress
+            </button>
+            <input type="file" id="importFile" class="hidden" accept=".json" onchange="importProgress(event)">
+            
+            <button class="bg-red-950/40 hover:bg-red-950/80 border border-red-900/60 text-red-400 text-xs font-semibold px-4 py-2.5 rounded-lg transition" onclick="resetProgress()">
+              <i class="fas fa-trash-alt mr-1.5"></i> Reset All Data
+            </button>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle" id="toastIcon"></i>
+    <span id="toastTxt"></span>
+  </div>
+
+  <!-- Syllabus Data script -->
+  <script src="data.js"></script>
+  <!-- Solved Examples script -->
+  <script src="examples.js"></script>
+  <!-- Application Shell script -->
+  <script src="app.js"></script>
+</body>
+</html>
