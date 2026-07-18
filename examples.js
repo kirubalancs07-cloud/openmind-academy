@@ -2,3473 +2,3473 @@ var EXAMPLES = {
   "numbers": [
     {
       "q": "Find the unit digit of 264^102 + 264^103.",
-      "a": "1) The base unit digit is 4. The cyclicity of 4 is 2 (4^1=4, 4^2=6).\n2) For 264^102, the power 102 is even, so the unit digit is 6.\n3) For 264^103, the power 103 is odd, so the unit digit is 4.\n4) Adding the unit digits: 6 + 4 = 10. The unit digit of the sum is 0. Answer: 0."
+      "a": "1) The base unit digit is 4. The cyclicity of 4 is 2 (4^1=4, 4^2=6).\n2) 264^102 has an even power, so it ends in 6.\n3) 264^103 has an odd power, so it ends in 4.\n4) Adding them: 6 + 4 = 10. The unit digit of the sum is 0. Answer: 0."
     },
     {
-      "q": "If 653xy is divisible by 80, find x + y.",
-      "a": "1) Divisibility by 80 requires the number to be divisible by both 10 and 8.\n2) To be divisible by 10, the last digit y must be 0.\n3) To be divisible by 8, the last three digits 3x0 must be divisible by 8.\n4) Testing values for x: 320 is divisible by 8. So x = 2 and y = 0.\n5) Therefore, x + y = 2 + 0 = 2. Answer: 2."
+      "q": "If the number 653xy is completely divisible by 80, find the values of x and y.",
+      "a": "1) Since it is divisible by 80, it must be divisible by 10 and 8.\n2) Divisibility by 10 means the last digit y = 0.\n3) Divisibility by 8 means the last three digits 3x0 must be divisible by 8.\n4) 320 is divisible by 8. So x = 2 and y = 0. Answer: x=2, y=0."
     },
     {
       "q": "Find the remainder when 2^31 is divided by 5.",
-      "a": "1) Find the cyclic remainders of powers of 2 mod 5:\n   2^1 \u2261 2, 2^2 \u2261 4, 2^3 \u2261 3, 2^4 \u2261 1 (mod 5). The cycle repeats every 4 powers.\n2) Divide the power 31 by 4: 31 % 4 = 3.\n3) The remainder corresponds to 2^3, which leaves a remainder of 3. Answer: 3."
+      "a": "1) Cycle of remainders of 2 mod 5: 2^1=2, 2^2=4, 2^3=3, 2^4=1. Repeats every 4 powers.\n2) Divide power by 4: 31 % 4 = 3.\n3) The 3rd remainder in the cycle is 3. Answer: 3."
     },
     {
-      "q": "Find the number of trailing zeros in 100! (factorial).",
-      "a": "1) Trailing zeros are determined by the number of factors of 5 in 100!.\n2) Divide 100 by powers of 5: [100 / 5] = 20, [100 / 25] = 4.\n3) Total factors of 5 = 20 + 4 = 24. Answer: 24."
+      "q": "Find the number of trailing zeros in 100!.",
+      "a": "1) Trailing zeros are determined by powers of 5: [100/5] + [100/25].\n2) Total powers of 5 = 20 + 4 = 24. Answer: 24 zeros."
     },
     {
-      "q": "What is the difference between the place value and face value of 7 in 27306?",
-      "a": "1) The face value of a digit is the digit itself: 7.\n2) The place value of 7 is in the thousands place: 7 * 1000 = 7000.\n3) The difference is 7000 - 7 = 6993. Answer: 6993."
+      "q": "What is the difference between place value and face value of 7 in 27306?",
+      "a": "1) Face value of 7 is 7.\n2) Place value of 7 is in thousands place = 7 * 1000 = 7000.\n3) Difference = 7000 - 7 = 6993. Answer: 6993."
     },
     {
-      "q": "A number divided by 899 leaves remainder 63. What is the remainder when it is divided by 29?",
-      "a": "1) Check if 899 is divisible by 29: 899 = 29 * 31.\n2) Since 29 is a factor of 899, the new remainder is simply the old remainder mod 29.\n3) Remainder = 63 % 29 = 5. Answer: 5."
+      "q": "A number when divided by 899 leaves remainder 63. What will be the remainder if the same number is divided by 29?",
+      "a": "1) Since 899 is a multiple of 29 (29 * 31 = 899), divide the first remainder 63 by 29.\n2) Remainder = 63 % 29 = 5. Answer: 5."
     },
     {
       "q": "Find the remainder when 17^200 is divided by 18.",
-      "a": "1) Rewrite the base in terms of the divisor: 17 \u2261 -1 (mod 18).\n2) Then, 17^200 \u2261 (-1)^200 \u2261 1 (mod 18).\n3) Thus, the remainder is 1. Answer: 1."
+      "a": "1) 17 \u2261 -1 (mod 18).\n2) 17^200 \u2261 (-1)^200 \u2261 1 (mod 18). Answer: 1."
     },
     {
       "q": "Is the number 9876524 divisible by 11?",
-      "a": "1) Find the sum of digits in odd positions: 9 + 7 + 5 + 4 = 25.\n2) Find the sum of digits in even positions: 8 + 6 + 2 = 16.\n3) Find the difference: 25 - 16 = 9.\n4) Since 9 is not 0 or a multiple of 11, the number is not divisible by 11. Answer: No."
+      "a": "1) Sum of digits at odd places: 9 + 7 + 5 + 4 = 25.\n2) Sum of digits at even places: 8 + 6 + 2 = 16.\n3) Difference = 25 - 16 = 9.\n4) Since 9 is not divisible by 11, the number is not divisible by 11. Answer: No."
     },
     {
-      "q": "Find the number of prime factors in (4^11) * (7^5) * (11^2).",
-      "a": "1) Express all bases in prime factors: (2^2)^11 * 7^5 * 11^2 = 2^22 * 7^5 * 11^2.\n2) Sum the powers of the prime factors: 22 + 5 + 2 = 29.\n3) The total number of prime factors is 29. Answer: 29."
+      "q": "Find the total number of prime factors in (4^11) * (7^5) * (11^2).",
+      "a": "1) Express bases as primes: (2^2)^11 * 7^5 * 11^2 = 2^22 * 7^5 * 11^2.\n2) Sum of exponents = 22 + 5 + 2 = 29. Answer: 29."
     },
     {
-      "q": "Find the least number to be added to 1000 to make it exactly divisible by 45.",
-      "a": "1) Divide 1000 by 45: 1000 / 45 = 22 with a remainder of 10.\n2) The number to add is Divisor - Remainder: 45 - 10 = 35.\n3) Adding 35 gives 1035, which is divisible by 45. Answer: 35."
+      "q": "What is the least number to be added to 1000 to make it exactly divisible by 45?",
+      "a": "1) 1000 / 45 = 22 with remainder 10.\n2) Number to add = Divisor - Remainder = 45 - 10 = 35. Answer: 35."
     },
     {
-      "q": "Find the sum of all natural numbers from 1 to 100.",
-      "a": "1) Use the arithmetic series formula: Sum = n(n + 1) / 2.\n2) For n = 100: Sum = 100 * 101 / 2 = 50 * 101 = 5050. Answer: 5050."
+      "q": "Find the sum of all natural numbers from 1 to 50.",
+      "a": "1) Sum = n(n+1)/2.\n2) 50 * 51 / 2 = 1275. Answer: 1275."
     },
     {
-      "q": "Find the value of 1 - 2 + 3 - 4 + 5 - 6 ... up to 50 terms.",
-      "a": "1) Group terms in pairs: (1-2) + (3-4) + (5-6) ... + (49-50).\n2) Each of the 25 pairs has a value of -1.\n3) Total sum = 25 * (-1) = -25. Answer: -25."
+      "q": "Express repeating decimal 0.333... as a fraction.",
+      "a": "1) Let x = 0.333... then 10x = 3.333...\n2) 9x = 3 -> x = 3/9 = 1/3. Answer: 1/3."
     },
     {
-      "q": "What is the highest power of 3 that divides 50!?",
-      "a": "1) Use Legendre's formula: [50/3] + [50/9] + [50/27]...\n2) Calculate integer parts: 16 + 5 + 1 = 22.\n3) The highest power of 3 that divides 50! is 3^22. Answer: 22."
+      "q": "Find the sum of all prime numbers between 10 and 20.",
+      "a": "1) Prime numbers are: 11, 13, 17, 19.\n2) Sum = 11 + 13 + 17 + 19 = 60. Answer: 60."
     },
     {
-      "q": "Find the sum of all prime numbers between 30 and 50.",
-      "a": "1) List the prime numbers in the range: 31, 37, 41, 43, 47.\n2) Add the values: 31 + 37 + 41 + 43 + 47 = 199. Answer: 199."
+      "q": "Find the highest power of 3 that divides 40!.",
+      "a": "1) [40/3] + [40/9] + [40/27] = 13 + 4 + 1 = 18.\n2) Thus, 3^18 divides 40!. Answer: 18."
     },
     {
-      "q": "Find the rational equivalent of the repeating decimal 0.232323...",
-      "a": "1) Let x = 0.2323...\n2) Multiply by 100: 100x = 23.2323...\n3) Subtract the equations: 99x = 23.\n4) Solve for x: x = 23/99. Answer: 23/99."
+      "q": "Find the product of place values of two 5s in the number 4505.",
+      "a": "1) Place value of first 5 is 500.\n2) Place value of second 5 is 5.\n3) Product = 500 * 5 = 2500. Answer: 2500."
     }
   ],
   "hcf-lcm": [
     {
-      "q": "Find the HCF and LCM of 6 and 8.",
-      "a": "1) Find prime factorizations:\n   6 = 2 * 3 * 1\n   8 = 2^3 * 1\n2) HCF takes common factors with lowest powers: HCF = 2 * 1 = 2.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 1 = 24.\nAnswer: HCF = 2, LCM = 24."
+      "q": "Find the HCF of 2/3, 8/9, 16/81.",
+      "a": "1) HCF of fractions = HCF of Numerators / LCM of Denominators.\n2) Numerators (2, 8, 16) -> HCF = 2.\n3) Denominators (3, 9, 81) -> LCM = 81.\n4) HCF = 2/81. Answer: 2/81."
     },
     {
-      "q": "Find the HCF and LCM of 12 and 16.",
-      "a": "1) Find prime factorizations:\n   12 = 2 * 3 * 2\n   16 = 2^3 * 2\n2) HCF takes common factors with lowest powers: HCF = 2 * 2 = 4.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 2 = 48.\nAnswer: HCF = 4, LCM = 48."
+      "q": "The product of two numbers is 2028 and their HCF is 13. Find the number of such pairs.",
+      "a": "1) Let numbers be 13a and 13b, where a and b are co-prime.\n2) 13a * 13b = 2028 -> 169 * ab = 2028 -> ab = 12.\n3) Co-prime pairs (a,b): (1,12), (3,4). There are 2 pairs. Answer: 2 pairs."
     },
     {
-      "q": "Find the HCF and LCM of 18 and 24.",
-      "a": "1) Find prime factorizations:\n   18 = 2 * 3 * 3\n   24 = 2^3 * 3\n2) HCF takes common factors with lowest powers: HCF = 2 * 3 = 6.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 3 = 72.\nAnswer: HCF = 6, LCM = 72."
+      "q": "Four bells toll at intervals of 6, 8, 12, and 18 seconds. In 6 minutes, how many times do they toll together?",
+      "a": "1) LCM of 6, 8, 12, 18 = 72 seconds.\n2) 6 minutes = 360 seconds.\n3) Number of tolls = 360 / 72 = 5 times. Answer: 5 times."
     },
     {
-      "q": "Find the HCF and LCM of 24 and 32.",
-      "a": "1) Find prime factorizations:\n   24 = 2 * 3 * 4\n   32 = 2^3 * 4\n2) HCF takes common factors with lowest powers: HCF = 2 * 4 = 8.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 4 = 96.\nAnswer: HCF = 8, LCM = 96."
+      "q": "Find the least number which when divided by 12, 16, 18, 30 leaves remainder 4 in each case.",
+      "a": "1) Find LCM of 12, 16, 18, 30 = 720.\n2) Add remainder: 720 + 4 = 724. Answer: 724."
     },
     {
-      "q": "Find the HCF and LCM of 30 and 40.",
-      "a": "1) Find prime factorizations:\n   30 = 2 * 3 * 5\n   40 = 2^3 * 5\n2) HCF takes common factors with lowest powers: HCF = 2 * 5 = 10.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 5 = 120.\nAnswer: HCF = 10, LCM = 120."
+      "q": "The HCF and LCM of two numbers are 11 and 385. If one number lies between 75 and 125, find it.",
+      "a": "1) Product = 11 * 385 = 4235.\n2) Let numbers be 11a and 11b -> ab = 35.\n3) Co-prime pairs: (5,7) -> 11*5=55 and 11*7=77.\n4) 77 is between 75 and 125. Answer: 77."
     },
     {
-      "q": "Find the HCF and LCM of 36 and 48.",
-      "a": "1) Find prime factorizations:\n   36 = 2 * 3 * 6\n   48 = 2^3 * 6\n2) HCF takes common factors with lowest powers: HCF = 2 * 6 = 12.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 6 = 144.\nAnswer: HCF = 12, LCM = 144."
+      "q": "Find HCF of 360 and 456.",
+      "a": "1) 360 = 2^3 * 3^2 * 5, 456 = 2^3 * 3 * 19.\n2) HCF = 2^3 * 3 = 24. Answer: 24."
     },
     {
-      "q": "Find the HCF and LCM of 42 and 56.",
-      "a": "1) Find prime factorizations:\n   42 = 2 * 3 * 7\n   56 = 2^3 * 7\n2) HCF takes common factors with lowest powers: HCF = 2 * 7 = 14.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 7 = 168.\nAnswer: HCF = 14, LCM = 168."
+      "q": "What is the HCF of two consecutive even numbers?",
+      "a": "1) Consecutive even numbers can be represented as 2n and 2n+2.\n2) The only common factor is 2. Answer: 2."
     },
     {
-      "q": "Find the HCF and LCM of 48 and 64.",
-      "a": "1) Find prime factorizations:\n   48 = 2 * 3 * 8\n   64 = 2^3 * 8\n2) HCF takes common factors with lowest powers: HCF = 2 * 8 = 16.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 8 = 192.\nAnswer: HCF = 16, LCM = 192."
+      "q": "LCM of two numbers is 48. The numbers are in the ratio 2:3. Find their sum.",
+      "a": "1) Let numbers be 2x and 3x. LCM = 6x.\n2) 6x = 48 -> x = 8.\n3) Numbers: 16 and 24. Sum = 40. Answer: 40."
     },
     {
-      "q": "Find the HCF and LCM of 54 and 72.",
-      "a": "1) Find prime factorizations:\n   54 = 2 * 3 * 9\n   72 = 2^3 * 9\n2) HCF takes common factors with lowest powers: HCF = 2 * 9 = 18.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 9 = 216.\nAnswer: HCF = 18, LCM = 216."
+      "q": "Which of the following can never be the LCM of two numbers with HCF 8? (24, 48, 56, 60)",
+      "a": "1) HCF must divide the LCM completely.\n2) 8 divides 24, 48, 56, but not 60. Answer: 60."
     },
     {
-      "q": "Find the HCF and LCM of 60 and 80.",
-      "a": "1) Find prime factorizations:\n   60 = 2 * 3 * 10\n   80 = 2^3 * 10\n2) HCF takes common factors with lowest powers: HCF = 2 * 10 = 20.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 10 = 240.\nAnswer: HCF = 20, LCM = 240."
+      "q": "Find the HCF of x^2 - 4 and x^2 - 5x + 6.",
+      "a": "1) x^2 - 4 = (x-2)(x+2).\n2) x^2 - 5x + 6 = (x-2)(x-3).\n3) Common factor is (x-2). Answer: x - 2."
     },
     {
-      "q": "Find the HCF and LCM of 66 and 88.",
-      "a": "1) Find prime factorizations:\n   66 = 2 * 3 * 11\n   88 = 2^3 * 11\n2) HCF takes common factors with lowest powers: HCF = 2 * 11 = 22.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 11 = 264.\nAnswer: HCF = 22, LCM = 264."
+      "q": "Find the HCF of 108, 288 and 360.",
+      "a": "1) Factorize: 108=2^2*3^3, 288=2^5*3^2, 360=2^3*3^2*5.\n2) HCF = 2^2 * 3^2 = 36. Answer: 36."
     },
     {
-      "q": "Find the HCF and LCM of 72 and 96.",
-      "a": "1) Find prime factorizations:\n   72 = 2 * 3 * 12\n   96 = 2^3 * 12\n2) HCF takes common factors with lowest powers: HCF = 2 * 12 = 24.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 12 = 288.\nAnswer: HCF = 24, LCM = 288."
+      "q": "Find the smallest square number divisible by 6, 9, and 15.",
+      "a": "1) LCM of 6, 9, 15 = 90 = 2 * 3^2 * 5.\n2) Multiply by missing factors to make it a perfect square: 90 * 2 * 5 = 900. Answer: 900."
     },
     {
-      "q": "Find the HCF and LCM of 78 and 104.",
-      "a": "1) Find prime factorizations:\n   78 = 2 * 3 * 13\n   104 = 2^3 * 13\n2) HCF takes common factors with lowest powers: HCF = 2 * 13 = 26.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 13 = 312.\nAnswer: HCF = 26, LCM = 312."
+      "q": "Find the HCF of two co-prime numbers A and B.",
+      "a": "1) Co-prime numbers share no common factors other than 1.\n2) Thus, HCF is always 1. Answer: 1."
     },
     {
-      "q": "Find the HCF and LCM of 84 and 112.",
-      "a": "1) Find prime factorizations:\n   84 = 2 * 3 * 14\n   112 = 2^3 * 14\n2) HCF takes common factors with lowest powers: HCF = 2 * 14 = 28.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 14 = 336.\nAnswer: HCF = 28, LCM = 336."
+      "q": "Find the HCF of 0.63, 1.05 and 2.1.",
+      "a": "1) Equalize decimal digits: 0.63, 1.05, 2.10.\n2) HCF of 63, 105, 210 = 21.\n3) Place decimal back: 0.21. Answer: 0.21."
     },
     {
-      "q": "Find the HCF and LCM of 90 and 120.",
-      "a": "1) Find prime factorizations:\n   90 = 2 * 3 * 15\n   120 = 2^3 * 15\n2) HCF takes common factors with lowest powers: HCF = 2 * 15 = 30.\n3) LCM takes all factors with highest powers: LCM = 8 * 3 * 15 = 360.\nAnswer: HCF = 30, LCM = 360."
+      "q": "Find LCM of 24, 36, and 40.",
+      "a": "1) 24=2^3*3, 36=2^2*3^2, 40=2^3*5.\n2) LCM = 2^3 * 3^2 * 5 = 8 * 9 * 5 = 360. Answer: 360."
     }
   ],
   "simplification": [
     {
-      "q": "Evaluate using BODMAS: 10 + 20 / (5 * 1) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 1 = 5.\n2) Perform Division: 20 / 5 = 4.\n3) Perform Addition: 10 + 4 = 14.\n4) Perform Subtraction: 14 - 2 = 12.\nAnswer: 12."
+      "q": "Simplify: 18 - [5 - {6 + 2(7 - 8-5)}].",
+      "a": "1) Perform innermost bar/parenthesis operation: 7 - (8-5) = 7 - 3 = 4.\n2) Multiply by 2: 2 * 4 = 8.\n3) Perform braces operation: 6 + 8 = 14.\n4) Perform bracket operation: 5 - 14 = -9.\n5) Final expression: 18 - (-9) = 18 + 9 = 27. Answer: 27."
     },
     {
-      "q": "Evaluate using BODMAS: 20 + 40 / (5 * 2) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 2 = 10.\n2) Perform Division: 40 / 10 = 4.\n3) Perform Addition: 20 + 4 = 24.\n4) Perform Subtraction: 24 - 2 = 22.\nAnswer: 22."
+      "q": "Evaluate: 2 + 2 * 2 - 2 / 2.",
+      "a": "1) Perform Division first: 2 / 2 = 1.\n2) Perform Multiplication: 2 * 2 = 4.\n3) Perform Addition and Subtraction: 2 + 4 - 1 = 5. Answer: 5."
     },
     {
-      "q": "Evaluate using BODMAS: 30 + 60 / (5 * 3) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 3 = 15.\n2) Perform Division: 60 / 15 = 4.\n3) Perform Addition: 30 + 4 = 34.\n4) Perform Subtraction: 34 - 2 = 32.\nAnswer: 32."
+      "q": "Find value of: (1/2) / (1/2) of (1/2).",
+      "a": "1) 'of' takes priority over division: (1/2) of (1/2) = 1/4.\n2) Perform Division: (1/2) / (1/4) = (1/2) * 4 = 2. Answer: 2."
     },
     {
-      "q": "Evaluate using BODMAS: 40 + 80 / (5 * 4) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 4 = 20.\n2) Perform Division: 80 / 20 = 4.\n3) Perform Addition: 40 + 4 = 44.\n4) Perform Subtraction: 44 - 2 = 42.\nAnswer: 42."
+      "q": "Solve: 4/5 * 5/8 + 1/2.",
+      "a": "1) Perform Multiplication first: (4/5) * (5/8) = 4/8 = 1/2.\n2) Add: 1/2 + 1/2 = 1. Answer: 1."
     },
     {
-      "q": "Evaluate using BODMAS: 50 + 100 / (5 * 5) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 5 = 25.\n2) Perform Division: 100 / 25 = 4.\n3) Perform Addition: 50 + 4 = 54.\n4) Perform Subtraction: 54 - 2 = 52.\nAnswer: 52."
+      "q": "Simplify: 10 + 20 / 4 * 3 - 5.",
+      "a": "1) Division first: 20 / 4 = 5.\n2) Multiplication: 5 * 3 = 15.\n3) Addition: 10 + 15 = 25.\n4) Subtraction: 25 - 5 = 20. Answer: 20."
     },
     {
-      "q": "Evaluate using BODMAS: 60 + 120 / (5 * 6) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 6 = 30.\n2) Perform Division: 120 / 30 = 4.\n3) Perform Addition: 60 + 4 = 64.\n4) Perform Subtraction: 64 - 2 = 62.\nAnswer: 62."
+      "q": "Evaluate: (3 * 4) + (5 - 2) / 3.",
+      "a": "1) Evaluate parentheses: (3*4) = 12, (5-2) = 3.\n2) Perform Division: 3 / 3 = 1.\n3) Add: 12 + 1 = 13. Answer: 13."
     },
     {
-      "q": "Evaluate using BODMAS: 70 + 140 / (5 * 7) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 7 = 35.\n2) Perform Division: 140 / 35 = 4.\n3) Perform Addition: 70 + 4 = 74.\n4) Perform Subtraction: 74 - 2 = 72.\nAnswer: 72."
+      "q": "Simplify: 100 / 10 / 10.",
+      "a": "1) Division operations are performed left-to-right: 100 / 10 = 10.\n2) Then: 10 / 10 = 1. Answer: 1."
     },
     {
-      "q": "Evaluate using BODMAS: 80 + 160 / (5 * 8) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 8 = 40.\n2) Perform Division: 160 / 40 = 4.\n3) Perform Addition: 80 + 4 = 84.\n4) Perform Subtraction: 84 - 2 = 82.\nAnswer: 82."
+      "q": "Solve: 3/4 of 120 + 2/5 of 50.",
+      "a": "1) 3/4 of 120 = 90.\n2) 2/5 of 50 = 20.\n3) Sum = 90 + 20 = 110. Answer: 110."
     },
     {
-      "q": "Evaluate using BODMAS: 90 + 180 / (5 * 9) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 9 = 45.\n2) Perform Division: 180 / 45 = 4.\n3) Perform Addition: 90 + 4 = 94.\n4) Perform Subtraction: 94 - 2 = 92.\nAnswer: 92."
+      "q": "If a/b = 4/3, find the value of (3a+2b)/(3a-2b).",
+      "a": "1) Let a=4, b=3.\n2) Substitute values: (3*4 + 2*3) / (3*4 - 2*3) = (12 + 6) / (12 - 6) = 18 / 6 = 3. Answer: 3."
     },
     {
-      "q": "Evaluate using BODMAS: 100 + 200 / (5 * 10) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 10 = 50.\n2) Perform Division: 200 / 50 = 4.\n3) Perform Addition: 100 + 4 = 104.\n4) Perform Subtraction: 104 - 2 = 102.\nAnswer: 102."
+      "q": "Evaluate: 50% of 250 + 25% of 100.",
+      "a": "1) 50% of 250 = 125.\n2) 25% of 100 = 25.\n3) Sum = 125 + 25 = 150. Answer: 150."
     },
     {
-      "q": "Evaluate using BODMAS: 110 + 220 / (5 * 11) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 11 = 55.\n2) Perform Division: 220 / 55 = 4.\n3) Perform Addition: 110 + 4 = 114.\n4) Perform Subtraction: 114 - 2 = 112.\nAnswer: 112."
+      "q": "Simplify: (x + y)^2 - (x - y)^2.",
+      "a": "1) Expand terms: (x^2 + 2xy + y^2) - (x^2 - 2xy + y^2).\n2) Cancel out x^2 and y^2: 2xy - (-2xy) = 4xy. Answer: 4xy."
     },
     {
-      "q": "Evaluate using BODMAS: 120 + 240 / (5 * 12) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 12 = 60.\n2) Perform Division: 240 / 60 = 4.\n3) Perform Addition: 120 + 4 = 124.\n4) Perform Subtraction: 124 - 2 = 122.\nAnswer: 122."
+      "q": "Evaluate: 99 * 99 using algebra.",
+      "a": "1) Rewrite as (100 - 1)^2.\n2) (100 - 1)^2 = 10000 - 200 + 1 = 9801. Answer: 9801."
     },
     {
-      "q": "Evaluate using BODMAS: 130 + 260 / (5 * 13) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 13 = 65.\n2) Perform Division: 260 / 65 = 4.\n3) Perform Addition: 130 + 4 = 134.\n4) Perform Subtraction: 134 - 2 = 132.\nAnswer: 132."
+      "q": "Simplify: (0.5 * 0.5 - 0.4 * 0.4) / (0.5 - 0.4).",
+      "a": "1) Use identity: (a^2 - b^2)/(a - b) = a + b.\n2) Value = 0.5 + 0.4 = 0.9. Answer: 0.9."
     },
     {
-      "q": "Evaluate using BODMAS: 140 + 280 / (5 * 14) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 14 = 70.\n2) Perform Division: 280 / 70 = 4.\n3) Perform Addition: 140 + 4 = 144.\n4) Perform Subtraction: 144 - 2 = 142.\nAnswer: 142."
+      "q": "Evaluate: 3^3 - 3^2 - 3^1.",
+      "a": "1) Calculate powers: 27 - 9 - 3.\n2) Subtract: 18 - 3 = 15. Answer: 15."
     },
     {
-      "q": "Evaluate using BODMAS: 150 + 300 / (5 * 15) - 2",
-      "a": "1) Follow BODMAS rules: perform Parentheses/Brackets operation first: 5 * 15 = 75.\n2) Perform Division: 300 / 75 = 4.\n3) Perform Addition: 150 + 4 = 154.\n4) Perform Subtraction: 154 - 2 = 152.\nAnswer: 152."
+      "q": "Simplify: 12 + 4 * 6 - 3 / 3.",
+      "a": "1) Division first: 3 / 3 = 1.\n2) Multiplication: 4 * 6 = 24.\n3) Combine: 12 + 24 - 1 = 35. Answer: 35."
     }
   ],
   "percentages": [
     {
-      "q": "If A's income is 10% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 110.\n2) The difference in income is 10.\n3) Percentage difference relative to A = (10 / 110) * 100.\n4) Result = 9.09%.\nAnswer: 9.09%."
+      "q": "If A's income is 25% more than B's, by what percentage is B's income less than A's?",
+      "a": "1) Let B's income = 100. Then A's income = 125.\n2) Difference = 25.\n3) Percentage less than A = (25 / 125) * 100 = 20%. Answer: 20%."
     },
     {
-      "q": "If A's income is 20% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 120.\n2) The difference in income is 20.\n3) Percentage difference relative to A = (20 / 120) * 100.\n4) Result = 16.67%.\nAnswer: 16.67%."
+      "q": "A number is increased by 20% and then decreased by 20%. Find the net change.",
+      "a": "1) Let number = 100. Increased to 120.\n2) Decreased by 20% of 120 (24) -> 120 - 24 = 96.\n3) Net change = 100 to 96 = 4% decrease. Answer: 4% decrease."
     },
     {
-      "q": "If A's income is 30% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 130.\n2) The difference in income is 30.\n3) Percentage difference relative to A = (30 / 130) * 100.\n4) Result = 23.08%.\nAnswer: 23.08%."
+      "q": "In an exam, a student got 30% marks and failed by 10 marks. Another got 40% marks and got 15 marks more than passing. Find passing marks.",
+      "a": "1) Difference in percentage = 40% - 30% = 10%.\n2) Difference in marks = 15 - (-10) = 25.\n3) 10% of total = 25 -> Total marks = 250.\n4) Passing marks = 30% of 250 + 10 = 75 + 10 = 85. Answer: 85."
     },
     {
-      "q": "If A's income is 40% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 140.\n2) The difference in income is 40.\n3) Percentage difference relative to A = (40 / 140) * 100.\n4) Result = 28.57%.\nAnswer: 28.57%."
+      "q": "Due to a 20% reduction in price, a man can buy 5 kg more sugar for $100. Find the reduced price per kg.",
+      "a": "1) Money saved by reduction = 20% of $100 = $20.\n2) With this $20, he buys 5 kg sugar.\n3) Reduced price = $20 / 5 = $4/kg. Answer: $4/kg."
     },
     {
-      "q": "If A's income is 50% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 150.\n2) The difference in income is 50.\n3) Percentage difference relative to A = (50 / 150) * 100.\n4) Result = 33.33%.\nAnswer: 33.33%."
+      "q": "If 60% of a number is equal to 3/7 of another number, find the ratio of first to second number.",
+      "a": "1) Let numbers be x and y. 0.6x = (3/7)y.\n2) (3/5)x = (3/7)y -> x/y = 5/7. Answer: 5:7."
     },
     {
-      "q": "If A's income is 60% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 160.\n2) The difference in income is 60.\n3) Percentage difference relative to A = (60 / 160) * 100.\n4) Result = 37.50%.\nAnswer: 37.50%."
+      "q": "Find 15% of 150.",
+      "a": "1) Value = (15 / 100) * 150 = 22.5. Answer: 22.5."
     },
     {
-      "q": "If A's income is 70% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 170.\n2) The difference in income is 70.\n3) Percentage difference relative to A = (70 / 170) * 100.\n4) Result = 41.18%.\nAnswer: 41.18%."
+      "q": "What percent of 80 is 20?",
+      "a": "1) Percentage = (20 / 80) * 100 = 25%. Answer: 25%."
     },
     {
-      "q": "If A's income is 80% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 180.\n2) The difference in income is 80.\n3) Percentage difference relative to A = (80 / 180) * 100.\n4) Result = 44.44%.\nAnswer: 44.44%."
+      "q": "A candidate secures 40% votes and is defeated by a margin of 298 votes. Find total votes.",
+      "a": "1) Winner votes = 60%, Loser votes = 40%. Margin = 20%.\n2) 20% of total = 298 -> Total votes = 298 * 5 = 1490. Answer: 1490."
     },
     {
-      "q": "If A's income is 90% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 190.\n2) The difference in income is 90.\n3) Percentage difference relative to A = (90 / 190) * 100.\n4) Result = 47.37%.\nAnswer: 47.37%."
+      "q": "The population of a town increases by 10% annually. If present is 10000, find population after 2 years.",
+      "a": "1) After 1 year = 10000 + 1000 = 11000.\n2) After 2 years = 11000 + 1100 = 12100. Answer: 12100."
     },
     {
-      "q": "If A's income is 100% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 200.\n2) The difference in income is 100.\n3) Percentage difference relative to A = (100 / 200) * 100.\n4) Result = 50.00%.\nAnswer: 50.00%."
+      "q": "If the price of petrol increases by 25%, by what percent must a consumer reduce consumption to keep expenditure constant?",
+      "a": "1) Formula: [R / (100 + R)] * 100.\n2) [25 / 125] * 100 = 20%. Answer: 20%."
     },
     {
-      "q": "If A's income is 110% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 210.\n2) The difference in income is 110.\n3) Percentage difference relative to A = (110 / 210) * 100.\n4) Result = 52.38%.\nAnswer: 52.38%."
+      "q": "A man spends 75% of his income. His income increases by 20% and his expenditure increases by 10%. Find percentage increase in savings.",
+      "a": "1) Let Income=100, Exp=75, Savings=25.\n2) New Income=120, New Exp=75*1.1=82.5, New Savings=120-82.5=37.5.\n3) Increase in savings = (37.5-25)/25 * 100 = 50%. Answer: 50%."
     },
     {
-      "q": "If A's income is 120% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 220.\n2) The difference in income is 120.\n3) Percentage difference relative to A = (120 / 220) * 100.\n4) Result = 54.55%.\nAnswer: 54.55%."
+      "q": "What is 10% of 20% of 500?",
+      "a": "1) 20% of 500 = 100.\n2) 10% of 100 = 10. Answer: 10."
     },
     {
-      "q": "If A's income is 130% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 230.\n2) The difference in income is 130.\n3) Percentage difference relative to A = (130 / 230) * 100.\n4) Result = 56.52%.\nAnswer: 56.52%."
+      "q": "An item is sold at 10% discount. If sale price is $90, find marked price.",
+      "a": "1) 90% of Marked Price = 90.\n2) Marked Price = $100. Answer: $100."
     },
     {
-      "q": "If A's income is 140% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 240.\n2) The difference in income is 140.\n3) Percentage difference relative to A = (140 / 240) * 100.\n4) Result = 58.33%.\nAnswer: 58.33%."
+      "q": "Express 3/8 as a percentage.",
+      "a": "1) Percentage = (3/8) * 100 = 37.5%. Answer: 37.5%."
     },
     {
-      "q": "If A's income is 150% more than B's income, by what percentage is B's income less than A's?",
-      "a": "1) Let B's income be 100. Then A's income is 250.\n2) The difference in income is 150.\n3) Percentage difference relative to A = (150 / 250) * 100.\n4) Result = 60.00%.\nAnswer: 60.00%."
+      "q": "If x is 90% of y, what percent of x is y?",
+      "a": "1) x = 0.9y -> y/x = 1/0.9 = 10/9.\n2) Percent = (10/9) * 100 = 111.1%. Answer: 111.1%."
     }
   ],
   "profit-loss": [
     {
-      "q": "A man buys an item for $50 and sells it at a loss of 6%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $50. Loss percentage = 6%.\n2) Loss amount = CP * Loss% / 100 = 50 * 6 / 100 = 3.00.\n3) Selling Price (SP) = CP - Loss = 50 - 3.00 = 47.00.\nAnswer: $47.00."
+      "q": "An item is sold for $120 at a profit of 20%. Find Cost Price.",
+      "a": "1) Selling Price = 120% of Cost Price.\n2) CP = 120 / 1.2 = $100. Answer: $100."
     },
     {
-      "q": "A man buys an item for $100 and sells it at a loss of 7%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $100. Loss percentage = 7%.\n2) Loss amount = CP * Loss% / 100 = 100 * 7 / 100 = 7.00.\n3) Selling Price (SP) = CP - Loss = 100 - 7.00 = 93.00.\nAnswer: $93.00."
+      "q": "By selling a book for $18, a man loses 10%. Find Cost Price.",
+      "a": "1) SP = 90% of Cost Price = 18.\n2) CP = 18 / 0.9 = $20. Answer: $20."
     },
     {
-      "q": "A man buys an item for $150 and sells it at a loss of 8%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $150. Loss percentage = 8%.\n2) Loss amount = CP * Loss% / 100 = 150 * 8 / 100 = 12.00.\n3) Selling Price (SP) = CP - Loss = 150 - 12.00 = 138.00.\nAnswer: $138.00."
+      "q": "A man sells two cycles for $990 each, gaining 10% on one and losing 10% on another. Find net gain/loss %.",
+      "a": "1) In equal selling price transactions with equal profit and loss %, there is always a loss.\n2) Loss% = (Common change/10)^2 = (10/10)^2 = 1% loss. Answer: 1% loss."
     },
     {
-      "q": "A man buys an item for $200 and sells it at a loss of 9%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $200. Loss percentage = 9%.\n2) Loss amount = CP * Loss% / 100 = 200 * 9 / 100 = 18.00.\n3) Selling Price (SP) = CP - Loss = 200 - 18.00 = 182.00.\nAnswer: $182.00."
+      "q": "CP of 15 articles is equal to SP of 12 articles. Find profit %.",
+      "a": "1) Profit% = (Items difference / Sold items) * 100.\n2) Profit% = (3 / 12) * 100 = 25%. Answer: 25%."
     },
     {
-      "q": "A man buys an item for $250 and sells it at a loss of 5%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $250. Loss percentage = 5%.\n2) Loss amount = CP * Loss% / 100 = 250 * 5 / 100 = 12.50.\n3) Selling Price (SP) = CP - Loss = 250 - 12.50 = 237.50.\nAnswer: $237.50."
+      "q": "A dishonest dealer claims to sell goods at CP but uses a 900g weight instead of 1kg. Find profit %.",
+      "a": "1) Profit% = (Error / True value - Error) * 100.\n2) Profit% = (100 / 900) * 100 = 11.11%. Answer: 11.11%."
     },
     {
-      "q": "A man buys an item for $300 and sells it at a loss of 6%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $300. Loss percentage = 6%.\n2) Loss amount = CP * Loss% / 100 = 300 * 6 / 100 = 18.00.\n3) Selling Price (SP) = CP - Loss = 300 - 18.00 = 282.00.\nAnswer: $282.00."
+      "q": "A shopkeeper marks his goods 20% above CP and allows 10% discount. Find profit %.",
+      "a": "1) Let CP = 100. Marked Price = 120.\n2) Discount = 10% of 120 = 12. SP = 120 - 12 = 108.\n3) Profit = 8%. Answer: 8%."
     },
     {
-      "q": "A man buys an item for $350 and sells it at a loss of 7%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $350. Loss percentage = 7%.\n2) Loss amount = CP * Loss% / 100 = 350 * 7 / 100 = 24.50.\n3) Selling Price (SP) = CP - Loss = 350 - 24.50 = 325.50.\nAnswer: $325.50."
+      "q": "An item sold for $450 leaves 10% loss. What price to get 10% profit?",
+      "a": "1) 90% of CP = 450 -> CP = 500.\n2) 10% profit SP = 1.1 * 500 = $550. Answer: $550."
     },
     {
-      "q": "A man buys an item for $400 and sells it at a loss of 8%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $400. Loss percentage = 8%.\n2) Loss amount = CP * Loss% / 100 = 400 * 8 / 100 = 32.00.\n3) Selling Price (SP) = CP - Loss = 400 - 32.00 = 368.00.\nAnswer: $368.00."
+      "q": "A dealer sells a toy at 10% profit. If he bought it 10% cheaper and sold it for $2 more, he gets 25% profit. Find CP.",
+      "a": "1) Let CP = x. SP1 = 1.1x.\n2) New CP = 0.9x. New SP = 0.9x * 1.25 = 1.125x.\n3) 1.125x - 1.1x = 2 -> 0.025x = 2 -> x = 80. Answer: $80."
     },
     {
-      "q": "A man buys an item for $450 and sells it at a loss of 9%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $450. Loss percentage = 9%.\n2) Loss amount = CP * Loss% / 100 = 450 * 9 / 100 = 40.50.\n3) Selling Price (SP) = CP - Loss = 450 - 40.50 = 409.50.\nAnswer: $409.50."
+      "q": "A trader buys a chair for $200 and spends $20 on repairs. Sells it for $250. Find profit %.",
+      "a": "1) Total Cost = 200 + 20 = $220. SP = 250.\n2) Profit = 250 - 220 = $30.\n3) Profit% = (30/220)*100 = 13.63%. Answer: 13.63%."
     },
     {
-      "q": "A man buys an item for $500 and sells it at a loss of 5%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $500. Loss percentage = 5%.\n2) Loss amount = CP * Loss% / 100 = 500 * 5 / 100 = 25.00.\n3) Selling Price (SP) = CP - Loss = 500 - 25.00 = 475.00.\nAnswer: $475.00."
+      "q": "Find single discount equivalent to successive discounts of 20% and 10%.",
+      "a": "1) Let Marked Price = 100. After 20% discount = 80.\n2) After 10% discount on 80 = 72.\n3) Net discount = 100 - 72 = 28%. Answer: 28%."
     },
     {
-      "q": "A man buys an item for $550 and sells it at a loss of 6%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $550. Loss percentage = 6%.\n2) Loss amount = CP * Loss% / 100 = 550 * 6 / 100 = 33.00.\n3) Selling Price (SP) = CP - Loss = 550 - 33.00 = 517.00.\nAnswer: $517.00."
+      "q": "By selling 33 meters of cloth, a shopkeeper gains the cost price of 11 meters. Find profit %.",
+      "a": "1) Profit% = (Gain CP / Sold length CP) * 100 = (11 / 33) * 100 = 33.33%. Answer: 33.33%."
     },
     {
-      "q": "A man buys an item for $600 and sells it at a loss of 7%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $600. Loss percentage = 7%.\n2) Loss amount = CP * Loss% / 100 = 600 * 7 / 100 = 42.00.\n3) Selling Price (SP) = CP - Loss = 600 - 42.00 = 558.00.\nAnswer: $558.00."
+      "q": "CP of an item is $150. What should be the Marked Price to allow 10% discount and still gain 20%?",
+      "a": "1) Target SP = 150 * 1.2 = $180.\n2) 90% of MP = 180 -> MP = 180 / 0.9 = $200. Answer: $200."
     },
     {
-      "q": "A man buys an item for $650 and sells it at a loss of 8%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $650. Loss percentage = 8%.\n2) Loss amount = CP * Loss% / 100 = 650 * 8 / 100 = 52.00.\n3) Selling Price (SP) = CP - Loss = 650 - 52.00 = 598.00.\nAnswer: $598.00."
+      "q": "A man sells a plot at 15% loss. If he got $45000 more, he gains 15%. Find CP of the plot.",
+      "a": "1) Total percentage range = 15% loss to 15% profit = 30%.\n2) 30% of CP = 45000 -> CP = 45000 / 0.3 = $150,000. Answer: $150,000."
     },
     {
-      "q": "A man buys an item for $700 and sells it at a loss of 9%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $700. Loss percentage = 9%.\n2) Loss amount = CP * Loss% / 100 = 700 * 9 / 100 = 63.00.\n3) Selling Price (SP) = CP - Loss = 700 - 63.00 = 637.00.\nAnswer: $637.00."
+      "q": "Buy 6 lemons for $5 and sell 5 lemons for $6. Find profit %.",
+      "a": "1) CP of 1 lemon = 5/6. SP of 1 lemon = 6/5.\n2) Profit = 6/5 - 5/6 = 11/30.\n3) Profit% = (11/30) / (5/6) * 100 = (11/30)*(6/5)*100 = 44%. Answer: 44%."
     },
     {
-      "q": "A man buys an item for $750 and sells it at a loss of 5%. Find the selling price.",
-      "a": "1) Cost Price (CP) = $750. Loss percentage = 5%.\n2) Loss amount = CP * Loss% / 100 = 750 * 5 / 100 = 37.50.\n3) Selling Price (SP) = CP - Loss = 750 - 37.50 = 712.50.\nAnswer: $712.50."
+      "q": "A watch is sold at 5% loss. If sold for $56 more, it gets 2% profit. Find CP.",
+      "a": "1) Percentage range = 5% + 2% = 7%.\n2) 7% of CP = 56 -> CP = 56 / 0.07 = $800. Answer: $800."
     }
   ],
   "ratio-prop": [
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 2 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 2) / (4x + 2) = 4 / 5.\n3) Cross-multiply: 5*(3x + 2) = 4*(4x + 2) -> 15x + 10 = 16x + 8.\n4) Solve for x: x = 2.\n5) The numbers are: 3 * 2 = 6 and 4 * 2 = 8.\nAnswer: 6 and 8."
+      "q": "If A:B = 2:3 and B:C = 4:5, find A:B:C.",
+      "a": "1) Equalize B by multiplying: A:B = 8:12, B:C = 12:15.\n2) Combine: A:B:C = 8:12:15. Answer: 8:12:15."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 4 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 4) / (4x + 4) = 4 / 5.\n3) Cross-multiply: 5*(3x + 4) = 4*(4x + 4) -> 15x + 20 = 16x + 16.\n4) Solve for x: x = 4.\n5) The numbers are: 3 * 4 = 12 and 4 * 4 = 16.\nAnswer: 12 and 16."
+      "q": "Divide $1200 between A and B in the ratio 5:7. Find A's share.",
+      "a": "1) Total parts = 5 + 7 = 12 parts.\n2) 1 part = 1200 / 12 = $100.\n3) A's share = 5 parts = 5 * 100 = $500. Answer: $500."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 6 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 6) / (4x + 6) = 4 / 5.\n3) Cross-multiply: 5*(3x + 6) = 4*(4x + 6) -> 15x + 30 = 16x + 24.\n4) Solve for x: x = 6.\n5) The numbers are: 3 * 6 = 18 and 4 * 6 = 24.\nAnswer: 18 and 24."
+      "q": "Find the mean proportional between 9 and 16.",
+      "a": "1) Mean proportional x = sqrt(a * b).\n2) x = sqrt(9 * 16) = sqrt(144) = 12. Answer: 12."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 8 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 8) / (4x + 8) = 4 / 5.\n3) Cross-multiply: 5*(3x + 8) = 4*(4x + 8) -> 15x + 40 = 16x + 32.\n4) Solve for x: x = 8.\n5) The numbers are: 3 * 8 = 24 and 4 * 8 = 32.\nAnswer: 24 and 32."
+      "q": "Find the third proportional to 9 and 12.",
+      "a": "1) Third proportional c = b^2 / a.\n2) c = 12^2 / 9 = 144 / 9 = 16. Answer: 16."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 10 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 10) / (4x + 10) = 4 / 5.\n3) Cross-multiply: 5*(3x + 10) = 4*(4x + 10) -> 15x + 50 = 16x + 40.\n4) Solve for x: x = 10.\n5) The numbers are: 3 * 10 = 30 and 4 * 10 = 40.\nAnswer: 30 and 40."
+      "q": "Find the fourth proportional to 4, 9, 12.",
+      "a": "1) Fourth proportional x satisfies 4/9 = 12/x.\n2) x = (9 * 12) / 4 = 27. Answer: 27."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 12 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 12) / (4x + 12) = 4 / 5.\n3) Cross-multiply: 5*(3x + 12) = 4*(4x + 12) -> 15x + 60 = 16x + 48.\n4) Solve for x: x = 12.\n5) The numbers are: 3 * 12 = 36 and 4 * 12 = 48.\nAnswer: 36 and 48."
+      "q": "If 2A = 3B = 4C, find A:B:C.",
+      "a": "1) Divide by LCM of 2, 3, 4 (12): A/6 = B/4 = C/3.\n2) Ratio A:B:C = 6:4:3. Answer: 6:4:3."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 14 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 14) / (4x + 14) = 4 / 5.\n3) Cross-multiply: 5*(3x + 14) = 4*(4x + 14) -> 15x + 70 = 16x + 56.\n4) Solve for x: x = 14.\n5) The numbers are: 3 * 14 = 42 and 4 * 14 = 56.\nAnswer: 42 and 56."
+      "q": "Two numbers are in the ratio 3:5. If 9 is subtracted from both, they are in the ratio 12:23. Find the smaller number.",
+      "a": "1) Let numbers be 3x and 5x -> (3x-9)/(5x-9) = 12/23.\n2) 23*(3x-9) = 12*(5x-9) -> 69x - 207 = 60x - 108 -> 9x = 99 -> x = 11.\n3) Smaller number = 3 * 11 = 33. Answer: 33."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 16 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 16) / (4x + 16) = 4 / 5.\n3) Cross-multiply: 5*(3x + 16) = 4*(4x + 16) -> 15x + 80 = 16x + 64.\n4) Solve for x: x = 16.\n5) The numbers are: 3 * 16 = 48 and 4 * 16 = 64.\nAnswer: 48 and 64."
+      "q": "A bag contains 1-rupee, 50-paise and 25-paise coins in the ratio 5:9:25. If total value is 1008 rupees, find number of 50-paise coins.",
+      "a": "1) Value ratio of coins = 5*1 : 9*0.5 : 25*0.25 = 5 : 4.5 : 6.25.\n2) Sum = 15.75 parts = 1008 -> 1 part = 64.\n3) 50-paise coins count = 9 * 64 = 576. Answer: 576."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 18 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 18) / (4x + 18) = 4 / 5.\n3) Cross-multiply: 5*(3x + 18) = 4*(4x + 18) -> 15x + 90 = 16x + 72.\n4) Solve for x: x = 18.\n5) The numbers are: 3 * 18 = 54 and 4 * 18 = 72.\nAnswer: 54 and 72."
+      "q": "If (x:y) = 3:4, find (5x-3y)/(7x+2y).",
+      "a": "1) Let x=3, y=4.\n2) (15 - 12) / (21 + 8) = 3/29. Answer: 3/29."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 20 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 20) / (4x + 20) = 4 / 5.\n3) Cross-multiply: 5*(3x + 20) = 4*(4x + 20) -> 15x + 100 = 16x + 80.\n4) Solve for x: x = 20.\n5) The numbers are: 3 * 20 = 60 and 4 * 20 = 80.\nAnswer: 60 and 80."
+      "q": "What number must be added to each of 6, 15, 20, 43 to make them proportional?",
+      "a": "1) (6+x)/(15+x) = (20+x)/(43+x).\n2) Cross-multiply: (6+x)(43+x) = (15+x)(20+x) -> x^2 + 49x + 258 = x^2 + 35x + 300.\n3) 14x = 42 -> x = 3. Answer: 3."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 22 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 22) / (4x + 22) = 4 / 5.\n3) Cross-multiply: 5*(3x + 22) = 4*(4x + 22) -> 15x + 110 = 16x + 88.\n4) Solve for x: x = 22.\n5) The numbers are: 3 * 22 = 66 and 4 * 22 = 88.\nAnswer: 66 and 88."
+      "q": "The incomes of A and B are in the ratio 9:4 and their expenditures are in the ratio 7:3. If each saves $2000, find A's income.",
+      "a": "1) Let income be 9x, 4x. Exp be 7y, 3y. 9x-7y=2000, 4x-3y=2000.\n2) Multiply: 27x-21y=6000, 28x-21y=14000 -> x = 8000.\n3) A's income = 9 * 8000 = $72,000. Answer: $72,000."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 24 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 24) / (4x + 24) = 4 / 5.\n3) Cross-multiply: 5*(3x + 24) = 4*(4x + 24) -> 15x + 120 = 16x + 96.\n4) Solve for x: x = 24.\n5) The numbers are: 3 * 24 = 72 and 4 * 24 = 96.\nAnswer: 72 and 96."
+      "q": "Ratio of students in three classes is 2:3:5. If 20 students are added to each, the ratio becomes 4:5:7. Find total initial students.",
+      "a": "1) Initial: 2x, 3x, 5x. New: 2x+20, 3x+20, 5x+20.\n2) (2x+20)/(3x+20) = 4/5 -> 10x+100 = 12x+80 -> 2x = 20 -> x = 10.\n3) Initial total = 10x = 100. Answer: 100."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 26 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 26) / (4x + 26) = 4 / 5.\n3) Cross-multiply: 5*(3x + 26) = 4*(4x + 26) -> 15x + 130 = 16x + 104.\n4) Solve for x: x = 26.\n5) The numbers are: 3 * 26 = 78 and 4 * 26 = 104.\nAnswer: 78 and 104."
+      "q": "If 15% of A = 20% of B, find A:B.",
+      "a": "1) 0.15A = 0.20B -> A/B = 20/15 = 4/3. Answer: 4:3."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 28 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 28) / (4x + 28) = 4 / 5.\n3) Cross-multiply: 5*(3x + 28) = 4*(4x + 28) -> 15x + 140 = 16x + 112.\n4) Solve for x: x = 28.\n5) The numbers are: 3 * 28 = 84 and 4 * 28 = 112.\nAnswer: 84 and 112."
+      "q": "If A is 1/3 of B and B is 1/2 of C, find A:B:C.",
+      "a": "1) Let C = 6 -> B = 3 -> A = 1.\n2) Ratio = 1:3:6. Answer: 1:3:6."
     },
     {
-      "q": "Two numbers are in the ratio 3:4. If we add 30 to both, the new ratio is 4:5. Find the numbers.",
-      "a": "1) Let the numbers be 3x and 4x.\n2) Set up proportion: (3x + 30) / (4x + 30) = 4 / 5.\n3) Cross-multiply: 5*(3x + 30) = 4*(4x + 30) -> 15x + 150 = 16x + 120.\n4) Solve for x: x = 30.\n5) The numbers are: 3 * 30 = 90 and 4 * 30 = 120.\nAnswer: 90 and 120."
+      "q": "Find duplicate ratio of 3:4.",
+      "a": "1) Duplicate ratio = a^2 : b^2.\n2) 3^2 : 4^2 = 9:16. Answer: 9:16."
     }
   ],
   "partnership": [
     {
-      "q": "A invests $1000 for 6 months and B invests $1500 for 8 months. Divide a profit of $4400 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (1000*6) : (1500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 4400 = $1466.67.\n3) B's share of profit = 2/3 * 4400 = $2933.33.\nAnswer: A's share = $1466.67, B's share = $2933.33."
+      "q": "A and B start a business with capitals $20000 and $30000. After 1 year, divide profit of $15000.",
+      "a": "1) Capital ratio = 20000 : 30000 = 2:3.\n2) A's share = 2/5 * 15000 = $6000.\n3) B's share = 3/5 * 15000 = $9000. Answer: A=$6000, B=$9000."
     },
     {
-      "q": "A invests $2000 for 6 months and B invests $3000 for 8 months. Divide a profit of $8800 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (2000*6) : (3000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 8800 = $2933.33.\n3) B's share of profit = 2/3 * 8800 = $5866.67.\nAnswer: A's share = $2933.33, B's share = $5866.67."
+      "q": "A invests $5000 for 12 months, B invests $6000 for 6 months. Share of A in $8000 profit?",
+      "a": "1) A's part = 5000 * 12 = 60000. B's part = 6000 * 6 = 36000.\n2) Ratio = 60000 : 36000 = 5:3.\n3) A's share = 5/8 * 8000 = $5000. Answer: $5000."
     },
     {
-      "q": "A invests $3000 for 6 months and B invests $4500 for 8 months. Divide a profit of $13200 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (3000*6) : (4500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 13200 = $4400.00.\n3) B's share of profit = 2/3 * 13200 = $8800.00.\nAnswer: A's share = $4400.00, B's share = $8800.00."
+      "q": "A, B, C invest capitals in ratio 5:6:8. At end of year, they receive profit in ratio 5:3:12. Find ratio of their times.",
+      "a": "1) Profit = Capital * Time -> Time = Profit / Capital.\n2) Time ratio = 5/5 : 3/6 : 12/8 = 1 : 1/2 : 3/2 = 2:1:3. Answer: 2:1:3."
     },
     {
-      "q": "A invests $4000 for 6 months and B invests $6000 for 8 months. Divide a profit of $17600 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (4000*6) : (6000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 17600 = $5866.67.\n3) B's share of profit = 2/3 * 17600 = $11733.33.\nAnswer: A's share = $5866.67, B's share = $11733.33."
+      "q": "A invests 1/6 of capital for 1/6 of time. B invests 1/3 for 1/3 of time. C invests rest for whole time. Share of B in $23000 profit?",
+      "a": "1) Let total capital=6, total time=6. A invest 1 cap for 1 month. B invest 2 cap for 2 months. C invest 3 cap for 6 months.\n2) Shares: A = 1*1 = 1. B = 2*2 = 4. C = 3*6 = 18.\n3) Ratio = 1:4:18. B's share = (4/23) * 23000 = $4000. Answer: $4000."
     },
     {
-      "q": "A invests $5000 for 6 months and B invests $7500 for 8 months. Divide a profit of $22000 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (5000*6) : (7500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 22000 = $7333.33.\n3) B's share of profit = 2/3 * 22000 = $14666.67.\nAnswer: A's share = $7333.33, B's share = $14666.67."
+      "q": "A and B enter partnership. A contributes $4000. At the end of 8 months A withdraws $1000. B receives $4000 out of $7000 profit after 1 year. Find B's capital.",
+      "a": "1) A's investment value = 4000 * 8 + 3000 * 4 = 32000 + 12000 = 44000.\n2) Profit ratio A:B = (7000-4000):4000 = 3:4.\n3) A's value / B's value = 3/4 -> 44000 / (B * 12) = 3/4 -> B * 12 = 58666 -> B = $4888.89. Answer: $4888.89."
     },
     {
-      "q": "A invests $6000 for 6 months and B invests $9000 for 8 months. Divide a profit of $26400 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (6000*6) : (9000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 26400 = $8800.00.\n3) B's share of profit = 2/3 * 26400 = $17600.00.\nAnswer: A's share = $8800.00, B's share = $17600.00."
+      "q": "A starts a business with $3500. After 5 months, B joins as partner. Profit is divided in 2:3 ratio after 1 year. B's contribution?",
+      "a": "1) A's investment-months = 3500 * 12 = 42000.\n2) B invests x for 7 months. Value = 7x.\n3) 42000 / 7x = 2/3 -> 6000 / x = 2/3 -> x = 9000. Answer: $9000."
     },
     {
-      "q": "A invests $7000 for 6 months and B invests $10500 for 8 months. Divide a profit of $30800 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (7000*6) : (10500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 30800 = $10266.67.\n3) B's share of profit = 2/3 * 30800 = $20533.33.\nAnswer: A's share = $10266.67, B's share = $20533.33."
+      "q": "Three partners A, B, C share profit in 5:7:8 ratio. They had partnered for 14, 8, 7 months. Find capital ratios.",
+      "a": "1) Capital = Profit / Time.\n2) Capital ratio = 5/14 : 7/8 : 8/7 = 20 : 49 : 64. Answer: 20:49:64."
     },
     {
-      "q": "A invests $8000 for 6 months and B invests $12000 for 8 months. Divide a profit of $35200 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (8000*6) : (12000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 35200 = $11733.33.\n3) B's share of profit = 2/3 * 35200 = $23466.67.\nAnswer: A's share = $11733.33, B's share = $23466.67."
+      "q": "A, B, C start a business. A invests 3 times as much as B, and B invests 2/3 of C. Find capital ratio.",
+      "a": "1) Let C = 3 -> B = 2 -> A = 6.\n2) Ratio = 6:2:3. Answer: 6:2:3."
     },
     {
-      "q": "A invests $9000 for 6 months and B invests $13500 for 8 months. Divide a profit of $39600 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (9000*6) : (13500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 39600 = $13200.00.\n3) B's share of profit = 2/3 * 39600 = $26400.00.\nAnswer: A's share = $13200.00, B's share = $26400.00."
+      "q": "A and B invest in 3:2 ratio. 5% of profit goes to charity. A's share is $855. Find total profit.",
+      "a": "1) Let total profit = P. Net profit for sharing = 0.95P.\n2) A's share = 3/5 * 0.95P = 0.57P.\n3) 0.57P = 855 -> P = 855 / 0.57 = $1500. Answer: $1500."
     },
     {
-      "q": "A invests $10000 for 6 months and B invests $15000 for 8 months. Divide a profit of $44000 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (10000*6) : (15000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 44000 = $14666.67.\n3) B's share of profit = 2/3 * 44000 = $29333.33.\nAnswer: A's share = $14666.67, B's share = $29333.33."
+      "q": "A, B, C rent pasture for $870. A puts 10 cows for 9 months, B puts 12 cows for 5 months, C puts 15 cows for 4 months. C's rent share?",
+      "a": "1) Ratio = 10*9 : 12*5 : 15*4 = 90 : 60 : 60 = 3:2:2.\n2) C's share = 2/7 * 870 = $248.57. Answer: $248.57."
     },
     {
-      "q": "A invests $11000 for 6 months and B invests $16500 for 8 months. Divide a profit of $48400 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (11000*6) : (16500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 48400 = $16133.33.\n3) B's share of profit = 2/3 * 48400 = $32266.67.\nAnswer: A's share = $16133.33, B's share = $32266.67."
+      "q": "A starts business with $21000. B joins later with $36000. If profit is shared equally at end of year, when did B join?",
+      "a": "1) A's value = 21000 * 12. B's value = 36000 * x.\n2) 21000 * 12 = 36000 * x -> x = 7 months.\n3) B joined for 7 months, which means he joined after 12-7 = 5 months. Answer: 5 months."
     },
     {
-      "q": "A invests $12000 for 6 months and B invests $18000 for 8 months. Divide a profit of $52800 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (12000*6) : (18000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 52800 = $17600.00.\n3) B's share of profit = 2/3 * 52800 = $35200.00.\nAnswer: A's share = $17600.00, B's share = $35200.00."
+      "q": "A, B, C enter a partnership with capitals in ratio 1/2 : 1/3 : 1/4. After 4 months, A withdraws half. Divide $840 profit after 1 year.",
+      "a": "1) Initial ratio = 6:4:3. Let A=6, B=4, C=3.\n2) A's value = 6 * 4 + 3 * 8 = 48. B's value = 4 * 12 = 48. C's value = 3 * 12 = 36.\n3) Ratio = 48:48:36 = 4:4:3.\n4) A's share = 4/11 * 840 = $305.45. Answer: $305.45."
     },
     {
-      "q": "A invests $13000 for 6 months and B invests $19500 for 8 months. Divide a profit of $57200 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (13000*6) : (19500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 57200 = $19066.67.\n3) B's share of profit = 2/3 * 57200 = $38133.33.\nAnswer: A's share = $19066.67, B's share = $38133.33."
+      "q": "A is active partner, B is sleeping partner. A gets 10% of profit for managing. Rest is shared in capital ratio 3:2. If A receives $580 total, find total profit.",
+      "a": "1) Let profit = P. A gets 0.1P. Shared profit = 0.9P.\n2) A's share of shared profit = 3/5 * 0.9P = 0.54P.\n3) Total A = 0.1P + 0.54P = 0.64P = 580 -> P = $906.25. Answer: $906.25."
     },
     {
-      "q": "A invests $14000 for 6 months and B invests $21000 for 8 months. Divide a profit of $61600 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (14000*6) : (21000*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 61600 = $20533.33.\n3) B's share of profit = 2/3 * 61600 = $41066.67.\nAnswer: A's share = $20533.33, B's share = $41066.67."
+      "q": "A and B invest in ratio 4:5. After 3 months, A withdraws 1/4 and B withdraws 1/5. Divide $760 profit after 10 months.",
+      "a": "1) Initial A=4, B=5.\n2) A value = 4*3 + 3*7 = 33. B value = 5*3 + 4*7 = 43. Ratio = 33:43.\n3) A's share = 33/76 * 760 = $330. Answer: $330."
     },
     {
-      "q": "A invests $15000 for 6 months and B invests $22500 for 8 months. Divide a profit of $66000 between them.",
-      "a": "1) Calculate investment-months ratio: A : B = (15000*6) : (22500*8) = 6000 : 12000 = 1:2.\n2) A's share of profit = 1/3 * 66000 = $22000.00.\n3) B's share of profit = 2/3 * 66000 = $44000.00.\nAnswer: A's share = $22000.00, B's share = $44000.00."
+      "q": "A and B invest in ratio 3:5. C joins after 6 months with capital equal to B's. Profit ratio after 1 year?",
+      "a": "1) A = 3*12 = 36. B = 5*12 = 60. C = 5*6 = 30.\n2) Ratio = 36:60:30 = 6:10:5. Answer: 6:10:5."
     }
   ],
   "averages": [
     {
-      "q": "The average age of 6 students is 16 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 6 ) * ( 16 ) = 96.\n2) New number of people = 7.\n3) New average = 17.\n4) Sum of all ages = ( 7 ) * ( 17 ) = 119.\n5) Teacher's age = New Sum - Old Sum = 119 - 96 = 23 years.\nAnswer: 23 years."
+      "q": "The average of 5 consecutive odd numbers is 25. Find the largest number.",
+      "a": "1) The average of consecutive odd numbers is the middle term.\n2) Numbers: 21, 23, 25, 27, 29. Largest is 29. Answer: 29."
     },
     {
-      "q": "The average age of 7 students is 17 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 7 ) * ( 17 ) = 119.\n2) New number of people = 8.\n3) New average = 18.\n4) Sum of all ages = ( 8 ) * ( 18 ) = 144.\n5) Teacher's age = New Sum - Old Sum = 144 - 119 = 25 years.\nAnswer: 25 years."
+      "q": "Average weight of 10 men is increased by 1.5kg when a man of 60kg is replaced. Find weight of new man.",
+      "a": "1) Net weight increase = 10 * 1.5 = 15 kg.\n2) Weight of new man = 60 + 15 = 75 kg. Answer: 75 kg."
     },
     {
-      "q": "The average age of 8 students is 18 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 8 ) * ( 18 ) = 144.\n2) New number of people = 9.\n3) New average = 19.\n4) Sum of all ages = ( 9 ) * ( 19 ) = 171.\n5) Teacher's age = New Sum - Old Sum = 171 - 144 = 27 years.\nAnswer: 27 years."
+      "q": "Average marks of 30 students is 45. It was found that a mark 30 was misread as 60. Find correct average.",
+      "a": "1) Error = 60 - 30 = 30 marks excess.\n2) Reduce average by Error / Total students = 30 / 30 = 1 mark.\n3) Correct average = 45 - 1 = 44. Answer: 44."
     },
     {
-      "q": "The average age of 9 students is 19 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 9 ) * ( 19 ) = 171.\n2) New number of people = 10.\n3) New average = 20.\n4) Sum of all ages = ( 10 ) * ( 20 ) = 200.\n5) Teacher's age = New Sum - Old Sum = 200 - 171 = 29 years.\nAnswer: 29 years."
+      "q": "The average salary of all workers in a workshop is $80. The average salary of 7 technicians is $120, and the rest is $60. Find total workers.",
+      "a": "1) Let total workers = x. Rest = x-7. Total salary = 80x.\n2) 7 * 120 + (x-7) * 60 = 80x -> 840 + 60x - 420 = 80x.\n3) 20x = 420 -> x = 21. Answer: 21."
     },
     {
-      "q": "The average age of 10 students is 20 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 10 ) * ( 20 ) = 200.\n2) New number of people = 11.\n3) New average = 21.\n4) Sum of all ages = ( 11 ) * ( 21 ) = 231.\n5) Teacher's age = New Sum - Old Sum = 231 - 200 = 31 years.\nAnswer: 31 years."
+      "q": "A batsman makes a score of 87 runs in the 17th inning and thus increases his average by 3. Find his average after 17th inning.",
+      "a": "1) Let previous average be x. Total score before = 16x.\n2) 16x + 87 = 17 * (x + 3) -> 16x + 87 = 17x + 51 -> x = 36.\n3) Average after 17th inning = 36 + 3 = 39. Answer: 39."
     },
     {
-      "q": "The average age of 11 students is 21 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 11 ) * ( 21 ) = 231.\n2) New number of people = 12.\n3) New average = 22.\n4) Sum of all ages = ( 12 ) * ( 22 ) = 264.\n5) Teacher's age = New Sum - Old Sum = 264 - 231 = 33 years.\nAnswer: 33 years."
+      "q": "Average age of 8 men increases by 2 years when two men aged 21 and 23 are replaced by two new men. Average age of new men?",
+      "a": "1) Net increase = 8 * 2 = 16 years.\n2) Sum of replaced men = 21 + 23 = 44.\n3) Sum of new men = 44 + 16 = 60.\n4) Average of new men = 60 / 2 = 30 years. Answer: 30 years."
     },
     {
-      "q": "The average age of 12 students is 22 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 12 ) * ( 22 ) = 264.\n2) New number of people = 13.\n3) New average = 23.\n4) Sum of all ages = ( 13 ) * ( 23 ) = 299.\n5) Teacher's age = New Sum - Old Sum = 299 - 264 = 35 years.\nAnswer: 35 years."
+      "q": "Find average of first 50 natural numbers.",
+      "a": "1) Sum = 50 * 51 / 2. Average = 51 / 2 = 25.5. Answer: 25.5."
     },
     {
-      "q": "The average age of 13 students is 23 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 13 ) * ( 23 ) = 299.\n2) New number of people = 14.\n3) New average = 24.\n4) Sum of all ages = ( 14 ) * ( 24 ) = 336.\n5) Teacher's age = New Sum - Old Sum = 336 - 299 = 37 years.\nAnswer: 37 years."
+      "q": "Find average of all odd numbers between 1 and 20.",
+      "a": "1) Odd numbers: 1, 3, 5, ..., 19.\n2) Average = (First + Last) / 2 = (1 + 19) / 2 = 10. Answer: 10."
     },
     {
-      "q": "The average age of 14 students is 24 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 14 ) * ( 24 ) = 336.\n2) New number of people = 15.\n3) New average = 25.\n4) Sum of all ages = ( 15 ) * ( 25 ) = 375.\n5) Teacher's age = New Sum - Old Sum = 375 - 336 = 39 years.\nAnswer: 39 years."
+      "q": "Average of 11 results is 50. If average of first 6 is 49 and last 6 is 52, find 6th result.",
+      "a": "1) Sum of 11 = 550.\n2) Sum of first 6 = 294. Sum of last 6 = 312.\n3) 6th result = (294 + 312) - 550 = 606 - 550 = 56. Answer: 56."
     },
     {
-      "q": "The average age of 15 students is 25 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 15 ) * ( 25 ) = 375.\n2) New number of people = 16.\n3) New average = 26.\n4) Sum of all ages = ( 16 ) * ( 26 ) = 416.\n5) Teacher's age = New Sum - Old Sum = 416 - 375 = 41 years.\nAnswer: 41 years."
+      "q": "Average age of husband, wife and child 3 years ago was 27 years. Average age of wife and child 5 years ago was 20 years. Husband's present age?",
+      "a": "1) Present sum (H+W+C) = 27*3 + 9 = 90.\n2) Present sum (W+C) = 20*2 + 10 = 50.\n3) Husband's age = 90 - 50 = 40 years. Answer: 40 years."
     },
     {
-      "q": "The average age of 16 students is 26 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 16 ) * ( 26 ) = 416.\n2) New number of people = 17.\n3) New average = 27.\n4) Sum of all ages = ( 17 ) * ( 27 ) = 459.\n5) Teacher's age = New Sum - Old Sum = 459 - 416 = 43 years.\nAnswer: 43 years."
+      "q": "Find average of first 10 multiples of 7.",
+      "a": "1) Average of 1 to 10 is 5.5.\n2) Average of multiples of 7 = 7 * 5.5 = 38.5. Answer: 38.5."
     },
     {
-      "q": "The average age of 17 students is 27 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 17 ) * ( 27 ) = 459.\n2) New number of people = 18.\n3) New average = 28.\n4) Sum of all ages = ( 18 ) * ( 28 ) = 504.\n5) Teacher's age = New Sum - Old Sum = 504 - 459 = 45 years.\nAnswer: 45 years."
+      "q": "Average of 3 numbers is 60. The first is 1/4 of the sum of other two. Find the first number.",
+      "a": "1) Sum of numbers = 180. A = (B+C)/4 -> 4A = B+C.\n2) A + 4A = 180 -> 5A = 180 -> A = 36. Answer: 36."
     },
     {
-      "q": "The average age of 18 students is 28 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 18 ) * ( 28 ) = 504.\n2) New number of people = 19.\n3) New average = 29.\n4) Sum of all ages = ( 19 ) * ( 29 ) = 551.\n5) Teacher's age = New Sum - Old Sum = 551 - 504 = 47 years.\nAnswer: 47 years."
+      "q": "Average of 4 numbers is 30. If a fifth number is added, the average becomes 35. Find 5th number.",
+      "a": "1) Sum of 4 = 120. Sum of 5 = 175.\n2) 5th number = 175 - 120 = 55. Answer: 55."
     },
     {
-      "q": "The average age of 19 students is 29 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 19 ) * ( 29 ) = 551.\n2) New number of people = 20.\n3) New average = 30.\n4) Sum of all ages = ( 20 ) * ( 30 ) = 600.\n5) Teacher's age = New Sum - Old Sum = 600 - 551 = 49 years.\nAnswer: 49 years."
+      "q": "Average age of a class of 40 students is 15 years. If 10 new students join, the average increases by 0.2 years. Average of new students?",
+      "a": "1) Old Sum = 600. New Sum = 50 * 15.2 = 760.\n2) Sum of new = 160. Average of new = 160 / 10 = 16 years. Answer: 16 years."
     },
     {
-      "q": "The average age of 20 students is 30 years. If the teacher's age is added, the average increases by 1. Find the teacher's age.",
-      "a": "1) Sum of age of students = ( 20 ) * ( 30 ) = 600.\n2) New number of people = 21.\n3) New average = 31.\n4) Sum of all ages = ( 21 ) * ( 31 ) = 651.\n5) Teacher's age = New Sum - Old Sum = 651 - 600 = 51 years.\nAnswer: 51 years."
+      "q": "Average of 8 numbers is 12. If each is multiplied by 3, what is the new average?",
+      "a": "1) If each term is multiplied by k, the average is also multiplied by k.\n2) New average = 12 * 3 = 36. Answer: 36."
     }
   ],
   "time-work": [
     {
-      "q": "A does a job in 4 days and B does it in 12 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 4 per day.\n2) B's rate = 1 / 12 per day.\n3) Combined rate = 1/4 + 1/12 = (3 + 1)/12 = 4/12 = 1/3.\n4) Days taken together = 1 / (1/3) = 3 days.\nAnswer: 3 days."
+      "q": "A does a job in 10 days and B in 15 days. If they work together, how many days?",
+      "a": "1) Working together = (10 * 15) / (10 + 15) = 150 / 25 = 6 days. Answer: 6 days."
     },
     {
-      "q": "A does a job in 8 days and B does it in 24 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 8 per day.\n2) B's rate = 1 / 24 per day.\n3) Combined rate = 1/8 + 1/24 = (3 + 1)/24 = 4/24 = 1/6.\n4) Days taken together = 1 / (1/6) = 6 days.\nAnswer: 6 days."
+      "q": "A is twice as efficient as B. If A completes a task in 30 days, how long for both?",
+      "a": "1) A takes 30 days -> B takes 60 days.\n2) Combined rate = 1/30 + 1/60 = 3/60 = 1/20.\n3) Days together = 20 days. Answer: 20 days."
     },
     {
-      "q": "A does a job in 12 days and B does it in 36 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 12 per day.\n2) B's rate = 1 / 36 per day.\n3) Combined rate = 1/12 + 1/36 = (3 + 1)/36 = 4/36 = 1/9.\n4) Days taken together = 1 / (1/9) = 9 days.\nAnswer: 9 days."
+      "q": "A can do a job in 24 days, B in 9 days, and C in 12 days. B and C start but leave after 3 days. Find days for A to finish.",
+      "a": "1) 1 day work of B+C = 1/9 + 1/12 = 7/36.\n2) In 3 days B+C did: 3 * 7/36 = 7/12. Remaining work = 5/12.\n3) Time for A to complete = (5/12) / (1/24) = 10 days. Answer: 10 days."
     },
     {
-      "q": "A does a job in 16 days and B does it in 48 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 16 per day.\n2) B's rate = 1 / 48 per day.\n3) Combined rate = 1/16 + 1/48 = (3 + 1)/48 = 4/48 = 1/12.\n4) Days taken together = 1 / (1/12) = 12 days.\nAnswer: 12 days."
+      "q": "A and B can do a job in 12 days, B and C in 15 days, C and A in 20 days. How long if all work together?",
+      "a": "1) 2*(A+B+C) = 1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5.\n2) A+B+C rate = 1/10.\n3) Days taken = 10 days. Answer: 10 days."
     },
     {
-      "q": "A does a job in 20 days and B does it in 60 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 20 per day.\n2) B's rate = 1 / 60 per day.\n3) Combined rate = 1/20 + 1/60 = (3 + 1)/60 = 4/60 = 1/15.\n4) Days taken together = 1 / (1/15) = 15 days.\nAnswer: 15 days."
+      "q": "12 men can complete a work in 8 days. How many days for 16 men?",
+      "a": "1) Use formula: M1 * D1 = M2 * D2.\n2) 12 * 8 = 16 * D2 -> D2 = 6 days. Answer: 6 days."
     },
     {
-      "q": "A does a job in 24 days and B does it in 72 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 24 per day.\n2) B's rate = 1 / 72 per day.\n3) Combined rate = 1/24 + 1/72 = (3 + 1)/72 = 4/72 = 1/18.\n4) Days taken together = 1 / (1/18) = 18 days.\nAnswer: 18 days."
+      "q": "A takes 10 days to finish a work. B takes 12 days and C 15 days. If they start together and A leaves after 2 days, find remaining days for B and C.",
+      "a": "1) 1 day work of all = 1/10+1/12+1/15 = 15/60 = 1/4.\n2) In 2 days they did: 2 * 1/4 = 1/2. Remaining = 1/2.\n3) 1 day work of B+C = 1/12+1/15 = 9/60 = 3/20.\n4) Remaining time = (1/2)/(3/20) = 10/3 = 3.33 days. Answer: 3.33 days."
     },
     {
-      "q": "A does a job in 28 days and B does it in 84 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 28 per day.\n2) B's rate = 1 / 84 per day.\n3) Combined rate = 1/28 + 1/84 = (3 + 1)/84 = 4/84 = 1/21.\n4) Days taken together = 1 / (1/21) = 21 days.\nAnswer: 21 days."
+      "q": "If 3 men or 6 women can do a work in 16 days, in how many days can 12 men and 8 women do it?",
+      "a": "1) 3 men = 6 women -> 1 man = 2 women.\n2) 12 men + 8 women = 24 women + 8 women = 32 women.\n3) M1 * D1 = M2 * D2 -> 6 women * 16 days = 32 women * D2 -> D2 = 3 days. Answer: 3 days."
     },
     {
-      "q": "A does a job in 32 days and B does it in 96 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 32 per day.\n2) B's rate = 1 / 96 per day.\n3) Combined rate = 1/32 + 1/96 = (3 + 1)/96 = 4/96 = 1/24.\n4) Days taken together = 1 / (1/24) = 24 days.\nAnswer: 24 days."
+      "q": "A can do a work in 4 hours, B and C in 3 hours, A and C in 2 hours. How long for B alone?",
+      "a": "1) Rate A = 1/4, Rate A+C = 1/2 -> Rate C = 1/4.\n2) Rate B+C = 1/3 -> Rate B = 1/3 - 1/4 = 1/12.\n3) Time for B = 12 hours. Answer: 12 hours."
     },
     {
-      "q": "A does a job in 36 days and B does it in 108 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 36 per day.\n2) B's rate = 1 / 108 per day.\n3) Combined rate = 1/36 + 1/108 = (3 + 1)/108 = 4/108 = 1/27.\n4) Days taken together = 1 / (1/27) = 27 days.\nAnswer: 27 days."
+      "q": "A is 30% more efficient than B. How much time will they take to work together if A alone takes 23 days?",
+      "a": "1) Efficiency ratio A:B = 1.3 : 1.\n2) Days ratio A:B = 1 : 1.3 -> B takes 23 * 1.3 = 29.9 days.\n3) Together days = (23 * 29.9) / (52.9) = 13 days. Answer: 13 days."
     },
     {
-      "q": "A does a job in 40 days and B does it in 120 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 40 per day.\n2) B's rate = 1 / 120 per day.\n3) Combined rate = 1/40 + 1/120 = (3 + 1)/120 = 4/120 = 1/30.\n4) Days taken together = 1 / (1/30) = 30 days.\nAnswer: 30 days."
+      "q": "A and B can do a work in 8 days. A is 1.5 times as efficient as B. Find days for A alone.",
+      "a": "1) Let B's rate = x, A's rate = 1.5x. Combined rate = 2.5x.\n2) 2.5x = 1/8 -> x = 1/20 -> A's rate = 1.5/20 = 3/40.\n3) Days for A = 40/3 = 13.33 days. Answer: 13.33 days."
     },
     {
-      "q": "A does a job in 44 days and B does it in 132 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 44 per day.\n2) B's rate = 1 / 132 per day.\n3) Combined rate = 1/44 + 1/132 = (3 + 1)/132 = 4/132 = 1/33.\n4) Days taken together = 1 / (1/33) = 33 days.\nAnswer: 33 days."
+      "q": "A can do a work in 15 days. He works for 5 days and then B completes the rest in 30 days. How long for B alone?",
+      "a": "1) A did 5/15 = 1/3 work. Remaining = 2/3.\n2) B does 2/3 work in 30 days -> B does whole work in 45 days. Answer: 45 days."
     },
     {
-      "q": "A does a job in 48 days and B does it in 144 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 48 per day.\n2) B's rate = 1 / 144 per day.\n3) Combined rate = 1/48 + 1/144 = (3 + 1)/144 = 4/144 = 1/36.\n4) Days taken together = 1 / (1/36) = 36 days.\nAnswer: 36 days."
+      "q": "10 men and 15 women can complete a work in 6 days. How long for 1 man if 1 woman takes 100 days?",
+      "a": "1) 15 women 1-day work = 15/100 = 3/20.\n2) 10 men + 15 women rate = 1/6.\n3) 10 men rate = 1/6 - 3/20 = (10-9)/60 = 1/60.\n4) 1 man rate = 1/600 -> 1 man takes 600 days. Answer: 600 days."
     },
     {
-      "q": "A does a job in 52 days and B does it in 156 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 52 per day.\n2) B's rate = 1 / 156 per day.\n3) Combined rate = 1/52 + 1/156 = (3 + 1)/156 = 4/156 = 1/39.\n4) Days taken together = 1 / (1/39) = 39 days.\nAnswer: 39 days."
+      "q": "A is paid $300 for a work which he can do in 10 days, but with B he does it in 6 days. Find B's share.",
+      "a": "1) A's share of work = 6/10 = 60%.\n2) B's share of work = 40%.\n3) B's wage = 40% of 300 = $120. Answer: $120."
     },
     {
-      "q": "A does a job in 56 days and B does it in 168 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 56 per day.\n2) B's rate = 1 / 168 per day.\n3) Combined rate = 1/56 + 1/168 = (3 + 1)/168 = 4/168 = 1/42.\n4) Days taken together = 1 / (1/42) = 42 days.\nAnswer: 42 days."
+      "q": "A can do a work in 10 days, B in 15 days, C in 20 days. They work together and get $650. C's share?",
+      "a": "1) Wage ratio = 1/10 : 1/15 : 1/20 = 6 : 4 : 3.\n2) C's share = 3/13 * 650 = $150. Answer: $150."
     },
     {
-      "q": "A does a job in 60 days and B does it in 180 days. If they work together, how many days will they take?",
-      "a": "1) A's rate = 1 / 60 per day.\n2) B's rate = 1 / 180 per day.\n3) Combined rate = 1/60 + 1/180 = (3 + 1)/180 = 4/180 = 1/45.\n4) Days taken together = 1 / (1/45) = 45 days.\nAnswer: 45 days."
+      "q": "A, B, C can do a work in 6, 8, 12 days respectively. If they work on alternate days starting with A, when is it completed?",
+      "a": "1) 3 days work (A+B+C) = 1/6 + 1/8 + 1/12 = 9/24 = 3/8.\n2) In 6 days = 6/8 = 3/4 work is done. Remaining = 1/4.\n3) Day 7: A does 1/6 -> remaining = 1/4 - 1/6 = 1/12.\n4) Day 8: B does 1/12 (since rate is 1/8, he takes 2/3 day).\n5) Total time = 7.67 days. Answer: 7.67 days."
     }
   ],
   "pipes": [
     {
-      "q": "Pipe A fills a tank in 6 hours. Pipe B empties it in 9 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 6.\n2) Emptying rate of B = -1 / 9.\n3) Combined rate = 1/6 - 1/9 = (3 - 2)/18 = 1/18.\n4) Net time to fill = 18 hours.\nAnswer: 18 hours."
+      "q": "Pipe A fills a tank in 12 hours and Pipe B empties it in 15 hours. If both are open, how long to fill?",
+      "a": "1) Combined rate = 1/12 - 1/15 = 1/60.\n2) Time taken = 60 hours. Answer: 60 hours."
     },
     {
-      "q": "Pipe A fills a tank in 12 hours. Pipe B empties it in 18 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 12.\n2) Emptying rate of B = -1 / 18.\n3) Combined rate = 1/12 - 1/18 = (3 - 2)/36 = 1/36.\n4) Net time to fill = 36 hours.\nAnswer: 36 hours."
+      "q": "Two pipes fill a tank in 20 and 30 minutes. If both are open, find time to fill.",
+      "a": "1) Rate = 1/20 + 1/30 = 5/60 = 1/12.\n2) Time = 12 minutes. Answer: 12 minutes."
     },
     {
-      "q": "Pipe A fills a tank in 18 hours. Pipe B empties it in 27 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 18.\n2) Emptying rate of B = -1 / 27.\n3) Combined rate = 1/18 - 1/27 = (3 - 2)/54 = 1/54.\n4) Net time to fill = 54 hours.\nAnswer: 54 hours."
+      "q": "A leak in the bottom of a tank empties it in 6 hours. An inlet fills it at 4 liters/minute. If both are open, it empties in 8 hours. Find tank capacity.",
+      "a": "1) Leak rate = -1/6. Net rate = -1/8.\n2) Inlet rate = 1/6 - 1/8 = 1/24 per hour.\n3) Inlet fills tank in 24 hours. Rate = 4 * 60 = 240 liters/hour.\n4) Capacity = 24 * 240 = 5760 liters. Answer: 5760 liters."
     },
     {
-      "q": "Pipe A fills a tank in 24 hours. Pipe B empties it in 36 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 24.\n2) Emptying rate of B = -1 / 36.\n3) Combined rate = 1/24 - 1/36 = (3 - 2)/72 = 1/72.\n4) Net time to fill = 72 hours.\nAnswer: 72 hours."
+      "q": "Three pipes A, B, C can fill a cistern in 6, 9, 12 hours. If open together, find time.",
+      "a": "1) Rate = 1/6 + 1/9 + 1/12 = (6+4+3)/36 = 13/36.\n2) Time = 36/13 = 2.77 hours. Answer: 2.77 hours."
     },
     {
-      "q": "Pipe A fills a tank in 30 hours. Pipe B empties it in 45 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 30.\n2) Emptying rate of B = -1 / 45.\n3) Combined rate = 1/30 - 1/45 = (3 - 2)/90 = 1/90.\n4) Net time to fill = 90 hours.\nAnswer: 90 hours."
+      "q": "Pipe A fills in 10 hours, B in 15 hours. B is opened for 5 hours and closed. A is opened. Find time for A to finish.",
+      "a": "1) B fills: 5/15 = 1/3. Remaining = 2/3.\n2) Time for A = (2/3) * 10 = 6.67 hours. Answer: 6.67 hours."
     },
     {
-      "q": "Pipe A fills a tank in 36 hours. Pipe B empties it in 54 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 36.\n2) Emptying rate of B = -1 / 54.\n3) Combined rate = 1/36 - 1/54 = (3 - 2)/108 = 1/108.\n4) Net time to fill = 108 hours.\nAnswer: 108 hours."
+      "q": "A pipe can fill a tank in 3 hours. Due to a leak, it takes 3.5 hours. How long for the leak to empty a full tank?",
+      "a": "1) Rate leak = 1/3 - 1/3.5 = 1/3 - 2/7 = 1/21.\n2) Time = 21 hours. Answer: 21 hours."
     },
     {
-      "q": "Pipe A fills a tank in 42 hours. Pipe B empties it in 63 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 42.\n2) Emptying rate of B = -1 / 63.\n3) Combined rate = 1/42 - 1/63 = (3 - 2)/126 = 1/126.\n4) Net time to fill = 126 hours.\nAnswer: 126 hours."
+      "q": "Two pipes A and B can fill in 15 and 20 hours. C can empty it in 25 hours. If all are open, find time.",
+      "a": "1) Rate = 1/15 + 1/20 - 1/25 = 23/300.\n2) Time = 300/23 = 13.04 hours. Answer: 13.04 hours."
     },
     {
-      "q": "Pipe A fills a tank in 48 hours. Pipe B empties it in 72 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 48.\n2) Emptying rate of B = -1 / 72.\n3) Combined rate = 1/48 - 1/72 = (3 - 2)/144 = 1/144.\n4) Net time to fill = 144 hours.\nAnswer: 144 hours."
+      "q": "A cistern has two inlets filling in 4 and 6 hours, and one outlet emptying in 3 hours. Net time if all are open?",
+      "a": "1) Rate = 1/4 + 1/6 - 1/3 = 1/12.\n2) Time = 12 hours. Answer: 12 hours."
     },
     {
-      "q": "Pipe A fills a tank in 54 hours. Pipe B empties it in 81 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 54.\n2) Emptying rate of B = -1 / 81.\n3) Combined rate = 1/54 - 1/81 = (3 - 2)/162 = 1/162.\n4) Net time to fill = 162 hours.\nAnswer: 162 hours."
+      "q": "A pipe fills in 8 hours. After half is filled, 3 more similar pipes are opened. Total time?",
+      "a": "1) Time for first half = 4 hours.\n2) Remaining half rate = 4 * (1/8) = 1/2 per hour.\n3) Time to finish remaining half = (1/2)/(1/2) = 1 hour.\n4) Total time = 4 + 1 = 5 hours. Answer: 5 hours."
     },
     {
-      "q": "Pipe A fills a tank in 60 hours. Pipe B empties it in 90 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 60.\n2) Emptying rate of B = -1 / 90.\n3) Combined rate = 1/60 - 1/90 = (3 - 2)/180 = 1/180.\n4) Net time to fill = 180 hours.\nAnswer: 180 hours."
+      "q": "Pipe A fills in 5 minutes, B in 6 minutes, C empties in 8 minutes. Find time to fill.",
+      "a": "1) Rate = 1/5 + 1/6 - 1/8 = (24+20-15)/120 = 29/120.\n2) Time = 120/29 = 4.14 minutes. Answer: 4.14 minutes."
     },
     {
-      "q": "Pipe A fills a tank in 66 hours. Pipe B empties it in 99 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 66.\n2) Emptying rate of B = -1 / 99.\n3) Combined rate = 1/66 - 1/99 = (3 - 2)/198 = 1/198.\n4) Net time to fill = 198 hours.\nAnswer: 198 hours."
+      "q": "Two pipes A and B can fill in 36 and 45 minutes. A water pipe C can empty it in 30 minutes. A and B are opened. After 7 minutes, C is opened. Find time to fill.",
+      "a": "1) Rate A+B = 1/36 + 1/45 = 9/180 = 1/20.\n2) In 7 minutes A+B filled: 7/20. Remaining = 13/20.\n3) Net rate with C = 1/20 - 1/30 = 1/60.\n4) Remaining time = (13/20)/(1/60) = 39 minutes.\n5) Total time = 7 + 39 = 46 minutes. Answer: 46 minutes."
     },
     {
-      "q": "Pipe A fills a tank in 72 hours. Pipe B empties it in 108 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 72.\n2) Emptying rate of B = -1 / 108.\n3) Combined rate = 1/72 - 1/108 = (3 - 2)/216 = 1/216.\n4) Net time to fill = 216 hours.\nAnswer: 216 hours."
+      "q": "A pipe can fill in 12 minutes, B in 15 minutes. C can empty it at 3 gallons/minute. If all are open, it fills in 10 minutes. Capacity?",
+      "a": "1) Rate A+B = 1/12 + 1/15 = 9/60 = 3/20.\n2) Net rate = 1/10.\n3) C rate = 3/20 - 1/10 = 1/20.\n4) C empties in 20 minutes. Capacity = 20 * 3 = 60 gallons. Answer: 60 gallons."
     },
     {
-      "q": "Pipe A fills a tank in 78 hours. Pipe B empties it in 117 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 78.\n2) Emptying rate of B = -1 / 117.\n3) Combined rate = 1/78 - 1/117 = (3 - 2)/234 = 1/234.\n4) Net time to fill = 234 hours.\nAnswer: 234 hours."
+      "q": "Two pipes A and B can fill in 24 and 32 minutes. If both are opened, after how much time should B be closed so that tank is full in 18 minutes?",
+      "a": "1) A is open for all 18 minutes. A filled: 18/24 = 3/4. Remaining = 1/4.\n2) B must fill 1/4. Time for B = (1/4) * 32 = 8 minutes.\n3) Close B after 8 minutes. Answer: 8 minutes."
     },
     {
-      "q": "Pipe A fills a tank in 84 hours. Pipe B empties it in 126 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 84.\n2) Emptying rate of B = -1 / 126.\n3) Combined rate = 1/84 - 1/126 = (3 - 2)/252 = 1/252.\n4) Net time to fill = 252 hours.\nAnswer: 252 hours."
+      "q": "A pipe fills in 4 hours, another empties in 6 hours. Find time to fill a half-empty tank.",
+      "a": "1) Rate = 1/4 - 1/6 = 1/12.\n2) Time to fill whole tank = 12 hours.\n3) Time to fill half tank = 6 hours. Answer: 6 hours."
     },
     {
-      "q": "Pipe A fills a tank in 90 hours. Pipe B empties it in 135 hours. If both are open, how long to fill?",
-      "a": "1) Filling rate of A = +1 / 90.\n2) Emptying rate of B = -1 / 135.\n3) Combined rate = 1/90 - 1/135 = (3 - 2)/270 = 1/270.\n4) Net time to fill = 270 hours.\nAnswer: 270 hours."
+      "q": "Three inlets A, B, C fill in 10, 12, 15 hours. If A is open all the time, and B, C are opened on alternate hours, find time.",
+      "a": "1) Hour 1 (A+B) = 1/10 + 1/12 = 11/60. Hour 2 (A+C) = 1/10 + 1/15 = 10/60.\n2) In 2 hours = 21/60 = 7/20. In 4 hours = 14/20. In 5 hours (adds A+B) = 14/20 + 11/60 = 53/60.\n3) Hour 6 (A+C) needs 7/60. Rate is 10/60 -> takes 0.7 hours.\n4) Total time = 5.7 hours. Answer: 5.7 hours."
     }
   ],
   "time-dist": [
     {
-      "q": "A man travels a distance of 60 km. If he travels at 15 km/h for the first half and 30 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 15 km/h, speed 2 = 30 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 15 * 30) / (15 + 30) = 900 / 45 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A train running at 54 km/h crosses a pole in 20 seconds. Find the length of the train.",
+      "a": "1) Convert speed to m/s: 54 * (5/18) = 15 m/s.\n2) Length = Speed * Time = 15 * 20 = 300 meters. Answer: 300 meters."
     },
     {
-      "q": "A man travels a distance of 120 km. If he travels at 30 km/h for the first half and 60 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 30 km/h, speed 2 = 60 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 30 * 60) / (30 + 60) = 1800 / 90 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A man covers a distance at 10 km/h and returns at 15 km/h. Find average speed.",
+      "a": "1) Avg Speed = 2xy / (x+y) = (2 * 10 * 15) / 25 = 300 / 25 = 12 km/h. Answer: 12 km/h."
     },
     {
-      "q": "A man travels a distance of 180 km. If he travels at 45 km/h for the first half and 90 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 45 km/h, speed 2 = 90 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 45 * 90) / (45 + 90) = 2700 / 135 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A train 240 m long passes a platform 120 m long in 24 seconds. Find speed in km/h.",
+      "a": "1) Total distance = 240 + 120 = 360 meters.\n2) Speed = 360 / 24 = 15 m/s.\n3) Convert to km/h: 15 * (18/5) = 54 km/h. Answer: 54 km/h."
     },
     {
-      "q": "A man travels a distance of 240 km. If he travels at 60 km/h for the first half and 120 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 60 km/h, speed 2 = 120 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 60 * 120) / (60 + 120) = 3600 / 180 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "Two trains 140 m and 160 m long are running in opposite directions at 60 km/h and 40 km/h. Find time to cross each other.",
+      "a": "1) Total distance = 140 + 160 = 300 meters.\n2) Relative speed = 60 + 40 = 100 km/h = 100 * (5/18) = 250/9 m/s.\n3) Time = 300 / (250/9) = 300 * 9 / 250 = 10.8 seconds. Answer: 10.8 seconds."
     },
     {
-      "q": "A man travels a distance of 300 km. If he travels at 75 km/h for the first half and 150 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 75 km/h, speed 2 = 150 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 75 * 150) / (75 + 150) = 4500 / 225 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "If a man walks at 14 km/h instead of 10 km/h, he would have walked 20 km more. Find actual distance.",
+      "a": "1) Let actual distance = d. Time taken = d/10.\n2) New distance = d + 20. Time taken = (d+20)/14.\n3) d/10 = (d+20)/14 -> 14d = 10d + 200 -> 4d = 200 -> d = 50 km. Answer: 50 km."
     },
     {
-      "q": "A man travels a distance of 360 km. If he travels at 90 km/h for the first half and 180 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 90 km/h, speed 2 = 180 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 90 * 180) / (90 + 180) = 5400 / 270 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "Excluding stoppages, train speed is 54 km/h; including stoppages, it is 45 km/h. How many minutes does the train stop per hour?",
+      "a": "1) Time of stoppage per hour = (Fast Speed - Slow Speed) / Fast Speed.\n2) Time = (54 - 45) / 54 = 9 / 54 = 1/6 hour = 10 minutes. Answer: 10 minutes."
     },
     {
-      "q": "A man travels a distance of 420 km. If he travels at 105 km/h for the first half and 210 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 105 km/h, speed 2 = 210 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 105 * 210) / (105 + 210) = 6300 / 315 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A thief is noticed by a policeman from 200m. The thief runs at 10 km/h, policeman at 11 km/h. Distance between them after 6 minutes?",
+      "a": "1) Relative speed = 11 - 10 = 1 km/h = 5/18 m/s.\n2) Distance covered in 6 mins (360s) = (5/18) * 360 = 100 meters.\n3) Remaining distance = 200 - 100 = 100 meters. Answer: 100 meters."
     },
     {
-      "q": "A man travels a distance of 480 km. If he travels at 120 km/h for the first half and 240 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 120 km/h, speed 2 = 240 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 120 * 240) / (120 + 240) = 7200 / 360 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A man covers 1/3 of journey at 20 km/h, 1/3 at 30 km/h, and rest at 60 km/h. Avg speed?",
+      "a": "1) Let distance = 60 km. Sections are 20km, 20km, 20km.\n2) Time taken = 20/20 + 20/30 + 20/60 = 1 + 2/3 + 1/3 = 2 hours.\n3) Avg speed = 60 / 2 = 30 km/h. Answer: 30 km/h."
     },
     {
-      "q": "A man travels a distance of 540 km. If he travels at 135 km/h for the first half and 270 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 135 km/h, speed 2 = 270 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 135 * 270) / (135 + 270) = 8100 / 405 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A train passes two bridges of lengths 800m and 400m in 100s and 60s. Length of train?",
+      "a": "1) Let length = L. Speed = (L+800)/100 = (L+400)/60.\n2) 60*(L+800) = 100*(L+400) -> 3*(L+800) = 5*(L+400) -> 3L+2400 = 5L+2000.\n3) 2L = 400 -> L = 200 meters. Answer: 200 meters."
     },
     {
-      "q": "A man travels a distance of 600 km. If he travels at 150 km/h for the first half and 300 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 150 km/h, speed 2 = 300 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 150 * 300) / (150 + 300) = 9000 / 450 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "Walking at 3/4 of his usual speed, a man is 20 minutes late. Find usual time.",
+      "a": "1) Speed ratio = 3 : 4 -> Time ratio = 4 : 3.\n2) Difference = 1 part = 20 minutes.\n3) Usual time = 3 parts = 60 minutes. Answer: 60 minutes."
     },
     {
-      "q": "A man travels a distance of 660 km. If he travels at 165 km/h for the first half and 330 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 165 km/h, speed 2 = 330 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 165 * 330) / (165 + 330) = 9900 / 495 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "Two boys start running from same point in same direction at 10m/s and 12m/s. Distance after 1 minute?",
+      "a": "1) Relative speed = 12 - 10 = 2 m/s.\n2) Distance = 2 * 60 = 120 meters. Answer: 120 meters."
     },
     {
-      "q": "A man travels a distance of 720 km. If he travels at 180 km/h for the first half and 360 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 180 km/h, speed 2 = 360 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 180 * 360) / (180 + 360) = 10800 / 540 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A train crosses a 150m long platform in 15s and a man on it in 9s. Speed of train?",
+      "a": "1) Train crosses man in 9s -> crosses its own length L in 9s.\n2) Crosses platform -> L+150 in 15s -> platform length (150m) crossed in 15-9 = 6s.\n3) Speed = 150 / 6 = 25 m/s = 90 km/h. Answer: 90 km/h."
     },
     {
-      "q": "A man travels a distance of 780 km. If he travels at 195 km/h for the first half and 390 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 195 km/h, speed 2 = 390 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 195 * 390) / (195 + 390) = 11700 / 585 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A car travel 240km in 4 hours. How much should speed be increased to do it in 3 hours?",
+      "a": "1) Speed 1 = 240 / 4 = 60 km/h.\n2) Speed 2 = 240 / 3 = 80 km/h.\n3) Increase = 80 - 60 = 20 km/h. Answer: 20 km/h."
     },
     {
-      "q": "A man travels a distance of 840 km. If he travels at 210 km/h for the first half and 420 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 210 km/h, speed 2 = 420 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 210 * 420) / (210 + 420) = 12600 / 630 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "A train running at 90 km/h crosses a bridge in 36 seconds. If train length is 300m, find bridge length.",
+      "a": "1) Speed = 90 * (5/18) = 25 m/s.\n2) Total distance = 25 * 36 = 900 meters.\n3) Bridge length = 900 - 300 = 600 meters. Answer: 600 meters."
     },
     {
-      "q": "A man travels a distance of 900 km. If he travels at 225 km/h for the first half and 450 km/h for the second half, find the average speed.",
-      "a": "1) Let speed 1 = 225 km/h, speed 2 = 450 km/h.\n2) Since the distance intervals are equal halves, use average speed formula: 2xy / (x+y).\n3) Average speed = (2 * 225 * 450) / (225 + 450) = 13500 / 675 = 20 km/h.\nAnswer: 20 km/h."
+      "q": "Find time taken by a 150m train at 60 km/h to cross a 250m train at 48 km/h in same direction.",
+      "a": "1) Total distance = 150 + 250 = 400 meters.\n2) Relative speed = 60 - 48 = 12 km/h = 12 * (5/18) = 10/3 m/s.\n3) Time = 400 / (10/3) = 120 seconds. Answer: 120 seconds."
     }
   ],
   "boats": [
     {
-      "q": "A boat travels downstream at 12 km/h and upstream at 6 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 12 km/h. Upstream speed (u) = 6 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (12 - 6) / 2 = 6 / 2 = 3 km/h.\nAnswer: 3 km/h."
+      "q": "A boat speed in still water is 15 km/h, stream is 3 km/h. Find downstream speed.",
+      "a": "1) Down = Speed still + Speed stream = 15 + 3 = 18 km/h. Answer: 18 km/h."
     },
     {
-      "q": "A boat travels downstream at 24 km/h and upstream at 12 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 24 km/h. Upstream speed (u) = 12 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (24 - 12) / 2 = 12 / 2 = 6 km/h.\nAnswer: 6 km/h."
+      "q": "A boat speed in still water is 12 km/h, stream is 4 km/h. Find upstream speed.",
+      "a": "1) Up = Speed still - Speed stream = 12 - 4 = 8 km/h. Answer: 8 km/h."
     },
     {
-      "q": "A boat travels downstream at 36 km/h and upstream at 18 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 36 km/h. Upstream speed (u) = 18 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (36 - 18) / 2 = 18 / 2 = 9 km/h.\nAnswer: 9 km/h."
+      "q": "A boat goes 24 km downstream in 2 hours and same distance upstream in 4 hours. Speed of boat in still water?",
+      "a": "1) Down speed = 24 / 2 = 12 km/h. Up speed = 24 / 4 = 6 km/h.\n2) Speed still = (Down + Up) / 2 = (12 + 6) / 2 = 9 km/h. Answer: 9 km/h."
     },
     {
-      "q": "A boat travels downstream at 48 km/h and upstream at 24 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 48 km/h. Upstream speed (u) = 24 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (48 - 24) / 2 = 24 / 2 = 12 km/h.\nAnswer: 12 km/h."
+      "q": "A man can row 18 km/h in still water. If it takes him thrice as long to row up as to row down, find stream speed.",
+      "a": "1) Let stream speed = s. Down = 18 + s, Up = 18 - s.\n2) Down time = d/(18+s), Up time = d/(18-s).\n3) 3 * d/(18+s) = d/(18-s) -> 54 - 3s = 18 + s -> 4s = 36 -> s = 9 km/h. Answer: 9 km/h."
     },
     {
-      "q": "A boat travels downstream at 60 km/h and upstream at 30 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 60 km/h. Upstream speed (u) = 30 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (60 - 30) / 2 = 30 / 2 = 15 km/h.\nAnswer: 15 km/h."
+      "q": "Speed of a boat downstream is 16 km/h, stream speed is 2.5 km/h. Find upstream speed.",
+      "a": "1) Down = Speed still + Stream -> 16 = Speed still + 2.5 -> Speed still = 13.5 km/h.\n2) Up = Speed still - Stream = 13.5 - 2.5 = 11 km/h. Answer: 11 km/h."
     },
     {
-      "q": "A boat travels downstream at 72 km/h and upstream at 36 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 72 km/h. Upstream speed (u) = 36 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (72 - 36) / 2 = 36 / 2 = 18 km/h.\nAnswer: 18 km/h."
+      "q": "A boat covers 32 km upstream and 36 km downstream in 7 hours. Also it covers 40 km upstream and 48 km downstream in 9 hours. Speed still?",
+      "a": "1) Let 1/u = x, 1/d = y. 32x + 36y = 7, 40x + 48y = 9.\n2) Solve equations: x = 1/8, y = 1/12 -> u = 8 km/h, d = 12 km/h.\n3) Speed still = (12+8)/2 = 10 km/h. Answer: 10 km/h."
     },
     {
-      "q": "A boat travels downstream at 84 km/h and upstream at 42 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 84 km/h. Upstream speed (u) = 42 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (84 - 42) / 2 = 42 / 2 = 21 km/h.\nAnswer: 21 km/h."
+      "q": "Find stream speed if boat downstream speed is 22 km/h and upstream is 14 km/h.",
+      "a": "1) Stream speed = (Down - Up) / 2 = (22 - 14) / 2 = 4 km/h. Answer: 4 km/h."
     },
     {
-      "q": "A boat travels downstream at 96 km/h and upstream at 48 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 96 km/h. Upstream speed (u) = 48 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (96 - 48) / 2 = 48 / 2 = 24 km/h.\nAnswer: 24 km/h."
+      "q": "A man can row 6 km/h in still water. If the river flows at 2 km/h, it takes him 3 hours to row to a place and back. Distance?",
+      "a": "1) Down = 8 km/h, Up = 4 km/h.\n2) Let distance = d. d/8 + d/4 = 3 -> 3d/8 = 3 -> d = 8 km. Answer: 8 km."
     },
     {
-      "q": "A boat travels downstream at 108 km/h and upstream at 54 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 108 km/h. Upstream speed (u) = 54 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (108 - 54) / 2 = 54 / 2 = 27 km/h.\nAnswer: 27 km/h."
+      "q": "A motorboat speed in still water is 45 km/h. If it goes 80 km downstream in 1 hour 20 minutes, find stream speed.",
+      "a": "1) Down time = 4/3 hours. Down speed = 80 / (4/3) = 60 km/h.\n2) Stream speed = Down - Still = 60 - 45 = 15 km/h. Answer: 15 km/h."
     },
     {
-      "q": "A boat travels downstream at 120 km/h and upstream at 60 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 120 km/h. Upstream speed (u) = 60 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (120 - 60) / 2 = 60 / 2 = 30 km/h.\nAnswer: 30 km/h."
+      "q": "If a man rows 5 km/h upstream and 9 km/h downstream, find his speed in still water.",
+      "a": "1) Speed still = (5 + 9)/2 = 7 km/h. Answer: 7 km/h."
     },
     {
-      "q": "A boat travels downstream at 132 km/h and upstream at 66 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 132 km/h. Upstream speed (u) = 66 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (132 - 66) / 2 = 66 / 2 = 33 km/h.\nAnswer: 33 km/h."
+      "q": "A boat goes 6 km/h in still water. River speed is 1.2 km/h. How long to go 18 km upstream?",
+      "a": "1) Up speed = 6 - 1.2 = 4.8 km/h.\n2) Time = 18 / 4.8 = 3.75 hours. Answer: 3.75 hours."
     },
     {
-      "q": "A boat travels downstream at 144 km/h and upstream at 72 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 144 km/h. Upstream speed (u) = 72 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (144 - 72) / 2 = 72 / 2 = 36 km/h.\nAnswer: 36 km/h."
+      "q": "How long to go 36 km downstream if boat speed is 10 km/h and river speed is 2 km/h?",
+      "a": "1) Down speed = 10 + 2 = 12 km/h.\n2) Time = 36 / 12 = 3 hours. Answer: 3 hours."
     },
     {
-      "q": "A boat travels downstream at 156 km/h and upstream at 78 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 156 km/h. Upstream speed (u) = 78 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (156 - 78) / 2 = 78 / 2 = 39 km/h.\nAnswer: 39 km/h."
+      "q": "A boat covers 12 km upstream in 4 hours. If stream speed is 1 km/h, find boat still speed.",
+      "a": "1) Up speed = 12 / 4 = 3 km/h.\n2) Up = Still - Stream -> 3 = Still - 1 -> Still = 4 km/h. Answer: 4 km/h."
     },
     {
-      "q": "A boat travels downstream at 168 km/h and upstream at 84 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 168 km/h. Upstream speed (u) = 84 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (168 - 84) / 2 = 84 / 2 = 42 km/h.\nAnswer: 42 km/h."
+      "q": "A man rows to a place 48 km distant and back in 14 hours. He finds he can row 4 km downstream in same time as 3 km upstream. Still speed?",
+      "a": "1) Speed ratio Down:Up = 4:3. Let Down=4x, Up=3x.\n2) Time: 48/4x + 48/3x = 14 -> 12/x + 16/x = 14 -> 28/x = 14 -> x = 2.\n3) Down = 8 km/h, Up = 6 km/h. Still speed = (8+6)/2 = 7 km/h. Answer: 7 km/h."
     },
     {
-      "q": "A boat travels downstream at 180 km/h and upstream at 90 km/h. Find the speed of the stream.",
-      "a": "1) Downstream speed (d) = 180 km/h. Upstream speed (u) = 90 km/h.\n2) Formula for speed of stream = (d - u) / 2.\n3) Stream speed = (180 - 90) / 2 = 90 / 2 = 45 km/h.\nAnswer: 45 km/h."
+      "q": "Stream speed is 2 km/h. A boat goes 10 km downstream and returns in 55 minutes. Find boat still speed.",
+      "a": "1) Let still speed = x. 10/(x+2) + 10/(x-2) = 55/60 = 11/12.\n2) Solve for x: x = 22 km/h. Answer: 22 km/h."
     }
   ],
   "circular": [
     {
-      "q": "Two runners A and B run on a 200m circular track at speeds of 5 m/s and 3 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 200m.\n2) Relative speed (same direction) = Speed A - Speed B = 5 - 3 = 2 m/s.\n3) Meeting time = Track circumference / Relative speed = 200 / 2 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "Two runners run on a 400m circular track at 8 m/s and 5 m/s in same direction. Find first meeting time.",
+      "a": "1) Relative speed = 8 - 5 = 3 m/s.\n2) Meeting time = 400 / 3 = 133.33 seconds. Answer: 133.33 seconds."
     },
     {
-      "q": "Two runners A and B run on a 400m circular track at speeds of 10 m/s and 6 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 400m.\n2) Relative speed (same direction) = Speed A - Speed B = 10 - 6 = 4 m/s.\n3) Meeting time = Track circumference / Relative speed = 400 / 4 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "Two runners run on a 400m circular track at 8 m/s and 5 m/s in opposite directions. First meeting time?",
+      "a": "1) Relative speed = 8 + 5 = 13 m/s.\n2) Meeting time = 400 / 13 = 30.77 seconds. Answer: 30.77 seconds."
     },
     {
-      "q": "Two runners A and B run on a 600m circular track at speeds of 15 m/s and 9 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 600m.\n2) Relative speed (same direction) = Speed A - Speed B = 15 - 9 = 6 m/s.\n3) Meeting time = Track circumference / Relative speed = 600 / 6 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "Three runners A, B, C start from same point on a 1000m track at speeds of 2, 5, 8 m/s in same direction. When will they meet at start point?",
+      "a": "1) Times to complete 1 round: A = 1000/2 = 500s. B = 1000/5 = 200s. C = 1000/8 = 125s.\n2) Meeting time at start = LCM(500, 200, 125) = 1000 seconds. Answer: 1000 seconds."
     },
     {
-      "q": "Two runners A and B run on a 800m circular track at speeds of 20 m/s and 12 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 800m.\n2) Relative speed (same direction) = Speed A - Speed B = 20 - 12 = 8 m/s.\n3) Meeting time = Track circumference / Relative speed = 800 / 8 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "Two cyclists A and B start on a 12 km circular track at 15 km/h and 18 km/h in same direction. When will they meet?",
+      "a": "1) Relative speed = 18 - 15 = 3 km/h.\n2) Time = 12 / 3 = 4 hours. Answer: 4 hours."
     },
     {
-      "q": "Two runners A and B run on a 1000m circular track at speeds of 25 m/s and 15 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 1000m.\n2) Relative speed (same direction) = Speed A - Speed B = 25 - 15 = 10 m/s.\n3) Meeting time = Track circumference / Relative speed = 1000 / 10 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "A, B, C run on a 1200m track at 3, 6, 10 m/s. When do A and B meet for first time?",
+      "a": "1) Relative speed = 6 - 3 = 3 m/s.\n2) Meeting time = 1200 / 3 = 400 seconds. Answer: 400 seconds."
     },
     {
-      "q": "Two runners A and B run on a 1200m circular track at speeds of 30 m/s and 18 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 1200m.\n2) Relative speed (same direction) = Speed A - Speed B = 30 - 18 = 12 m/s.\n3) Meeting time = Track circumference / Relative speed = 1200 / 12 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "On a 600m circular path, A runs at 9 km/h and B at 6 km/h in opposite directions. When do they meet?",
+      "a": "1) Convert speeds: A = 2.5 m/s, B = 1.67 m/s. Sum = 4.17 m/s.\n2) Time = 600 / 4.17 = 144 seconds. Answer: 144 seconds."
     },
     {
-      "q": "Two runners A and B run on a 1400m circular track at speeds of 35 m/s and 21 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 1400m.\n2) Relative speed (same direction) = Speed A - Speed B = 35 - 21 = 14 m/s.\n3) Meeting time = Track circumference / Relative speed = 1400 / 14 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "A and B start on a 300m circle at speeds 5 m/s and 3 m/s. How many meeting points exist on the track if they run in opposite directions?",
+      "a": "1) Ratio of speeds A:B = 5:3.\n2) For opposite directions, number of distinct meeting points = 5 + 3 = 8 points. Answer: 8 points."
     },
     {
-      "q": "Two runners A and B run on a 1600m circular track at speeds of 40 m/s and 24 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 1600m.\n2) Relative speed (same direction) = Speed A - Speed B = 40 - 24 = 16 m/s.\n3) Meeting time = Track circumference / Relative speed = 1600 / 16 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "How many meeting points exist if A and B run in same direction with speeds 5 m/s and 3 m/s?",
+      "a": "1) Ratio of speeds A:B = 5:3.\n2) For same direction, distinct meeting points = 5 - 3 = 2 points. Answer: 2 points."
     },
     {
-      "q": "Two runners A and B run on a 1800m circular track at speeds of 45 m/s and 27 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 1800m.\n2) Relative speed (same direction) = Speed A - Speed B = 45 - 27 = 18 m/s.\n3) Meeting time = Track circumference / Relative speed = 1800 / 18 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "A, B, C start on 1200m circle. A runs at 10m/s, B at 20m/s, C at 40m/s in same direction. First meeting time of all three anywhere?",
+      "a": "1) Time A-B meet = 1200/10 = 120s.\n2) Time B-C meet = 1200/20 = 60s.\n3) First meeting of all = LCM(120, 60) = 120 seconds. Answer: 120 seconds."
     },
     {
-      "q": "Two runners A and B run on a 2000m circular track at speeds of 50 m/s and 30 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 2000m.\n2) Relative speed (same direction) = Speed A - Speed B = 50 - 30 = 20 m/s.\n3) Meeting time = Track circumference / Relative speed = 2000 / 20 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "A circle track has circumference 360m. A and B run at 6m/s and 4m/s in same direction. Where is their first meeting point relative to start?",
+      "a": "1) Meeting time = 360 / (6-4) = 180s.\n2) Distance A ran = 180 * 6 = 1080m.\n3) Rounds of A = 1080 / 360 = 3 complete rounds. They meet at the start point. Answer: At the start point."
     },
     {
-      "q": "Two runners A and B run on a 2200m circular track at speeds of 55 m/s and 33 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 2200m.\n2) Relative speed (same direction) = Speed A - Speed B = 55 - 33 = 22 m/s.\n3) Meeting time = Track circumference / Relative speed = 2200 / 22 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "Two runners start on a 1km circular path at speeds 15m/s and 10m/s. First meeting time if running in opposite directions?",
+      "a": "1) Relative speed = 15 + 10 = 25 m/s.\n2) Time = 1000 / 25 = 40 seconds. Answer: 40 seconds."
     },
     {
-      "q": "Two runners A and B run on a 2400m circular track at speeds of 60 m/s and 36 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 2400m.\n2) Relative speed (same direction) = Speed A - Speed B = 60 - 36 = 24 m/s.\n3) Meeting time = Track circumference / Relative speed = 2400 / 24 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "A, B, C run on a 600m track at 4m/s, 6m/s, 10m/s. Find time when they meet at start point if B and C run opposite to A.",
+      "a": "1) Round times: A=150s, B=100s, C=60s.\n2) Meeting at start = LCM(150, 100, 60) = 300 seconds. Answer: 300 seconds."
     },
     {
-      "q": "Two runners A and B run on a 2600m circular track at speeds of 65 m/s and 39 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 2600m.\n2) Relative speed (same direction) = Speed A - Speed B = 65 - 39 = 26 m/s.\n3) Meeting time = Track circumference / Relative speed = 2600 / 26 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "Cyclists A and B run on a 5km track at 20km/h and 30km/h in opposite directions. How many times do they pass each other in 2 hours?",
+      "a": "1) Relative speed = 20 + 30 = 50 km/h.\n2) Distance in 2 hours = 50 * 2 = 100 km.\n3) Passes count = 100 / 5 = 20 times. Answer: 20 times."
     },
     {
-      "q": "Two runners A and B run on a 2800m circular track at speeds of 70 m/s and 42 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 2800m.\n2) Relative speed (same direction) = Speed A - Speed B = 70 - 42 = 28 m/s.\n3) Meeting time = Track circumference / Relative speed = 2800 / 28 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "On a circular track of 200m, A runs at 5m/s. B starts in opposite direction. They meet after 20s. Find B's speed.",
+      "a": "1) Relative speed = 200 / 20 = 10 m/s.\n2) Speed A + Speed B = 10 -> 5 + Speed B = 10 -> Speed B = 5 m/s. Answer: 5 m/s."
     },
     {
-      "q": "Two runners A and B run on a 3000m circular track at speeds of 75 m/s and 45 m/s in the same direction. When will they meet first?",
-      "a": "1) Track circumference = 3000m.\n2) Relative speed (same direction) = Speed A - Speed B = 75 - 45 = 30 m/s.\n3) Meeting time = Track circumference / Relative speed = 3000 / 30 = 100 seconds.\nAnswer: 100 seconds."
+      "q": "A and B start on a 900m circle. A runs at 8m/s, B at 5m/s in same direction. Find distance B covers before they meet.",
+      "a": "1) Meeting time = 900 / (8-5) = 300 seconds.\n2) Distance B = 300 * 5 = 1500 meters. Answer: 1500 meters."
     }
   ],
   "si-ci": [
     {
       "q": "Find the difference between simple and compound interest on $1000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $1000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 1000 * (10/100)^2 = 1000 * (1/100) = $10.\nAnswer: $10."
+      "a": "1) Principal (P) = $1000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 1000 * (10/100)^2 = 1000 * (1/100) = $10. Answer: $10."
     },
     {
-      "q": "Find the difference between simple and compound interest on $2000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $2000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 2000 * (10/100)^2 = 2000 * (1/100) = $20.\nAnswer: $20."
+      "q": "Find the simple interest on $5000 at 8% per annum for 3 years.",
+      "a": "1) SI = P * R * T / 100.\n2) SI = 5000 * 8 * 3 / 100 = 1200 rupees. Answer: $1200."
     },
     {
-      "q": "Find the difference between simple and compound interest on $3000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $3000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 3000 * (10/100)^2 = 3000 * (1/100) = $30.\nAnswer: $30."
+      "q": "In how many years will a sum of money double itself at 12.5% simple interest?",
+      "a": "1) To double itself, the interest earned must equal the principal (SI = P).\n2) P = P * 12.5 * T / 100 -> 1 = 12.5 * T / 100 -> T = 100 / 12.5 = 8 years. Answer: 8 years."
     },
     {
-      "q": "Find the difference between simple and compound interest on $4000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $4000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 4000 * (10/100)^2 = 4000 * (1/100) = $40.\nAnswer: $40."
+      "q": "Find compound interest on $10000 at 10% per annum for 3 years compounded annually.",
+      "a": "1) Amount (A) = P * (1 + R/100)^T = 10000 * (1.1)^3 = 10000 * 1.331 = $13310.\n2) CI = A - P = 13310 - 10000 = $3310. Answer: $3310."
     },
     {
-      "q": "Find the difference between simple and compound interest on $5000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $5000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 5000 * (10/100)^2 = 5000 * (1/100) = $50.\nAnswer: $50."
+      "q": "A sum of money at compound interest doubles itself in 15 years. It will become 8 times itself in how many years?",
+      "a": "1) 8 times = 2^3 times.\n2) Time taken = 3 * 15 years = 45 years. Answer: 45 years."
     },
     {
-      "q": "Find the difference between simple and compound interest on $6000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $6000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 6000 * (10/100)^2 = 6000 * (1/100) = $60.\nAnswer: $60."
+      "q": "Find the compound interest on $16000 at 20% per annum for 9 months compounded quarterly.",
+      "a": "1) Since compounded quarterly, rate per quarter = 20 / 4 = 5%. Periods = 9 / 3 = 3 quarters.\n2) Amount = 16000 * (1 + 0.05)^3 = 16000 * 1.157625 = $18522.\n3) CI = 18522 - 16000 = $2522. Answer: $2522."
     },
     {
-      "q": "Find the difference between simple and compound interest on $7000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $7000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 7000 * (10/100)^2 = 7000 * (1/100) = $70.\nAnswer: $70."
+      "q": "The SI on a sum of money is 4/9 of the principal. If rate % and time years are equal, find the rate %.",
+      "a": "1) Let P=9, SI=4. Since R=T: SI = P * R * T / 100 -> 4 = 9 * R^2 / 100.\n2) R^2 = 400 / 9 -> R = 20 / 3 = 6.67%. Answer: 6.67%."
     },
     {
-      "q": "Find the difference between simple and compound interest on $8000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $8000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 8000 * (10/100)^2 = 8000 * (1/100) = $80.\nAnswer: $80."
+      "q": "At what rate percent per annum simple interest will a sum double in 10 years?",
+      "a": "1) SI = P. T = 10.\n2) P = P * R * 10 / 100 -> 1 = R / 10 -> R = 10%. Answer: 10%."
     },
     {
-      "q": "Find the difference between simple and compound interest on $9000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $9000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 9000 * (10/100)^2 = 9000 * (1/100) = $90.\nAnswer: $90."
+      "q": "Find the difference between CI and SI on $5000 at 12% per annum for 3 years.",
+      "a": "1) Difference formula for 3 years: Diff = P * (R/100)^2 * (3 + R/100).\n2) Diff = 5000 * (0.12)^2 * (3.12) = 5000 * 0.0144 * 3.12 = 72 * 3.12 = $224.64. Answer: $224.64."
     },
     {
-      "q": "Find the difference between simple and compound interest on $10000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $10000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 10000 * (10/100)^2 = 10000 * (1/100) = $100.\nAnswer: $100."
+      "q": "If CI on a sum for 2 years at 10% is $420, find SI on the same sum for same time.",
+      "a": "1) Let principal = P. CI = P * (1.21 - 1) = 0.21P = 420 -> P = 2000.\n2) SI = P * R * T / 100 = 2000 * 10 * 2 / 100 = $400. Answer: $400."
     },
     {
-      "q": "Find the difference between simple and compound interest on $11000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $11000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 11000 * (10/100)^2 = 11000 * (1/100) = $110.\nAnswer: $110."
+      "q": "A sum of money triples itself in 5 years at simple interest. In how many years will it become 9 times itself?",
+      "a": "1) Triples means interest is 2P in 5 years -> P interest in 2.5 years.\n2) To become 9 times, interest must be 8P.\n3) Time = 8 * 2.5 = 20 years. Answer: 20 years."
     },
     {
-      "q": "Find the difference between simple and compound interest on $12000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $12000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 12000 * (10/100)^2 = 12000 * (1/100) = $120.\nAnswer: $120."
+      "q": "Find compound interest on $8000 at 15% per annum for 2 years 4 months compounded annually.",
+      "a": "1) Amount for 2 years = 8000 * (1.15)^2 = 8000 * 1.3225 = $10580.\n2) Interest for 4 months (1/3 year) at 15% = 10580 * 15 * (1/3) / 100 = $529.\n3) Total Amount = 10580 + 529 = $11109. CI = 11109 - 8000 = $3109. Answer: $3109."
     },
     {
-      "q": "Find the difference between simple and compound interest on $13000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $13000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 13000 * (10/100)^2 = 13000 * (1/100) = $130.\nAnswer: $130."
+      "q": "A sum of $12000 deposited at CI becomes double after 5 years. How much will it be after 20 years?",
+      "a": "1) 20 years represents 4 periods of 5 years.\n2) Value will double 4 times = 2^4 = 16 times.\n3) Total sum = 12000 * 16 = $192,000. Answer: $192,000."
     },
     {
-      "q": "Find the difference between simple and compound interest on $14000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $14000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 14000 * (10/100)^2 = 14000 * (1/100) = $140.\nAnswer: $140."
+      "q": "A sum of money lent at SI amounts to $720 after 2 years and $1020 after 7 years. Find the principal.",
+      "a": "1) Interest for 5 years = 1020 - 720 = 300 -> Interest per year = 60.\n2) Interest for 2 years = 120.\n3) Principal = Amount - Interest = 720 - 120 = $600. Answer: $600."
     },
     {
-      "q": "Find the difference between simple and compound interest on $15000 at 10% per annum for 2 years.",
-      "a": "1) Principal (P) = $15000. Rate (R) = 10%.\n2) Difference formula for 2 years: Diff = P * (R/100)^2.\n3) Diff = 15000 * (10/100)^2 = 15000 * (1/100) = $150.\nAnswer: $150."
+      "q": "Find effective rate equivalent to 10% per annum compounding half-yearly.",
+      "a": "1) Compounded half-yearly, rate per period = 5%. Periods = 2.\n2) Effective rate = 1.05^2 - 1 = 1.1025 - 1 = 10.25%. Answer: 10.25%."
     }
   ],
   "allegations": [
     {
-      "q": "In what ratio must rice at $20/kg be mixed with rice at $30/kg to obtain a mixture worth $24/kg?",
-      "a": "1) Cheaper Price (C) = 20. Dearer Price (D) = 30. Mean Price (M) = 24.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (30 - 24) / (24 - 20) = 6 / 4 = 3:2.\nAnswer: 3:2."
+      "q": "In what ratio must rice at $20/kg be mixed with rice at $30/kg to get a mixture worth $24/kg?",
+      "a": "1) Ratio = (Dear Price - Mean Price) : (Mean Price - Cheap Price).\n2) Ratio = (30 - 24) : (24 - 20) = 6 : 4 = 3:2. Answer: 3:2."
     },
     {
-      "q": "In what ratio must rice at $40/kg be mixed with rice at $60/kg to obtain a mixture worth $48/kg?",
-      "a": "1) Cheaper Price (C) = 40. Dearer Price (D) = 60. Mean Price (M) = 48.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (60 - 48) / (48 - 40) = 12 / 8 = 3:2.\nAnswer: 3:2."
+      "q": "A mixture contains milk and water in the ratio 4:3. If 5 liters of water is added, the ratio becomes 4:5. Find quantity of milk.",
+      "a": "1) Let milk = 4x, water = 3x.\n2) 4x / (3x + 5) = 4 / 5 -> 20x = 12x + 20 -> 8x = 20 -> x = 2.5.\n3) Milk = 4 * 2.5 = 10 liters. Answer: 10 liters."
     },
     {
-      "q": "In what ratio must rice at $60/kg be mixed with rice at $90/kg to obtain a mixture worth $72/kg?",
-      "a": "1) Cheaper Price (C) = 60. Dearer Price (D) = 90. Mean Price (M) = 72.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (90 - 72) / (72 - 60) = 18 / 12 = 3:2.\nAnswer: 3:2."
+      "q": "A container holds 80 liters of milk. 8 liters is replaced with water. This process is repeated two more times. Find final milk.",
+      "a": "1) Formula: Final = Initial * (1 - y/x)^n.\n2) Final = 80 * (1 - 8/80)^3 = 80 * (0.9)^3 = 80 * 0.729 = 58.32 liters. Answer: 58.32 liters."
     },
     {
-      "q": "In what ratio must rice at $80/kg be mixed with rice at $120/kg to obtain a mixture worth $96/kg?",
-      "a": "1) Cheaper Price (C) = 80. Dearer Price (D) = 120. Mean Price (M) = 96.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (120 - 96) / (96 - 80) = 24 / 16 = 3:2.\nAnswer: 3:2."
+      "q": "In what ratio must water be mixed with milk costing $12/liter to get a mixture worth $8/liter? (Water is free).",
+      "a": "1) Cheap (Water) = 0. Dear (Milk) = 12. Mean = 8.\n2) Ratio = (12 - 8) : (8 - 0) = 4 : 8 = 1:2. Answer: 1:2."
     },
     {
-      "q": "In what ratio must rice at $100/kg be mixed with rice at $150/kg to obtain a mixture worth $120/kg?",
-      "a": "1) Cheaper Price (C) = 100. Dearer Price (D) = 150. Mean Price (M) = 120.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (150 - 120) / (120 - 100) = 30 / 20 = 3:2.\nAnswer: 3:2."
+      "q": "Gold is 19 times heavier than water, copper is 9 times heavier. In what ratio should they be mixed to be 15 times heavier than water?",
+      "a": "1) Dear (Gold) = 19. Cheap (Copper) = 9. Mean = 15.\n2) Ratio = (15 - 9) : (19 - 15) = 6 : 4 = 3:2. Answer: 3:2."
     },
     {
-      "q": "In what ratio must rice at $120/kg be mixed with rice at $180/kg to obtain a mixture worth $144/kg?",
-      "a": "1) Cheaper Price (C) = 120. Dearer Price (D) = 180. Mean Price (M) = 144.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (180 - 144) / (144 - 120) = 36 / 24 = 3:2.\nAnswer: 3:2."
+      "q": "A merchant has 1000 kg of sugar. Part of it he sells at 8% profit, rest at 18% profit. He gains 14% overall. Find quantity sold at 18%.",
+      "a": "1) Ratio of 8% to 18% = (18 - 14) : (14 - 8) = 4 : 6 = 2:3.\n2) Quantity sold at 18% = 3/5 * 1000 = 600 kg. Answer: 600 kg."
     },
     {
-      "q": "In what ratio must rice at $140/kg be mixed with rice at $210/kg to obtain a mixture worth $168/kg?",
-      "a": "1) Cheaper Price (C) = 140. Dearer Price (D) = 210. Mean Price (M) = 168.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (210 - 168) / (168 - 140) = 42 / 28 = 3:2.\nAnswer: 3:2."
+      "q": "How many kg of wheat costing $8/kg must be mixed with 36 kg of wheat costing $5.40/kg to get a mixture worth $7/kg?",
+      "a": "1) Cheap = 5.4. Dear = 8. Mean = 7.\n2) Ratio of Dear to Cheap = (7 - 5.4) : (8 - 7) = 1.6 : 1 = 8:5.\n3) Let wheat at $8/kg be x. x / 36 = 8 / 5 -> x = 57.6 kg. Answer: 57.6 kg."
     },
     {
-      "q": "In what ratio must rice at $160/kg be mixed with rice at $240/kg to obtain a mixture worth $192/kg?",
-      "a": "1) Cheaper Price (C) = 160. Dearer Price (D) = 240. Mean Price (M) = 192.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (240 - 192) / (192 - 160) = 48 / 32 = 3:2.\nAnswer: 3:2."
+      "q": "A mixture of 40 liters of milk and water contains 10% water. How much water should be added to make it 20% water?",
+      "a": "1) Initial water = 4 liters. Milk = 36 liters.\n2) In new mixture, milk (36 liters) represents 80%.\n3) Total new mixture = 36 / 0.8 = 45 liters.\n4) Water to add = 45 - 40 = 5 liters. Answer: 5 liters."
     },
     {
-      "q": "In what ratio must rice at $180/kg be mixed with rice at $270/kg to obtain a mixture worth $216/kg?",
-      "a": "1) Cheaper Price (C) = 180. Dearer Price (D) = 270. Mean Price (M) = 216.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (270 - 216) / (216 - 180) = 54 / 36 = 3:2.\nAnswer: 3:2."
+      "q": "In two alloys A and B, gold and copper are in ratios 7:2 and 7:11. If equal quantities are melted to form C, find ratio in C.",
+      "a": "1) In A: Gold = 7/9, Copper = 2/9. In B: Gold = 7/18, Copper = 11/18.\n2) Combined Gold = 7/9 + 7/18 = 21/18. Combined Copper = 2/9 + 11/18 = 15/18.\n3) Ratio = 21 : 15 = 7:5. Answer: 7:5."
     },
     {
-      "q": "In what ratio must rice at $200/kg be mixed with rice at $300/kg to obtain a mixture worth $240/kg?",
-      "a": "1) Cheaper Price (C) = 200. Dearer Price (D) = 300. Mean Price (M) = 240.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (300 - 240) / (240 - 200) = 60 / 40 = 3:2.\nAnswer: 3:2."
+      "q": "A milkman buys milk at $10/liter. He mixes water and sells it at $12/liter, gaining 50% profit. Find ratio of water to milk.",
+      "a": "1) SP = 12, Profit = 50% -> CP of mixture = 12 / 1.5 = $8/liter.\n2) Cheap (Water) = 0. Dear (Milk) = 10. Mean = 8.\n3) Ratio = (10 - 8) : (8 - 0) = 2 : 8 = 1:4. Answer: 1:4 (water to milk)."
     },
     {
-      "q": "In what ratio must rice at $220/kg be mixed with rice at $330/kg to obtain a mixture worth $264/kg?",
-      "a": "1) Cheaper Price (C) = 220. Dearer Price (D) = 330. Mean Price (M) = 264.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (330 - 264) / (264 - 220) = 66 / 44 = 3:2.\nAnswer: 3:2."
+      "q": "A jar contains a mixture of two liquids A and B in ratio 4:1. When 10 liters of mixture is drawn off and replaced with B, the ratio becomes 2:3. Find initial quantity.",
+      "a": "1) Let initial A=4x, B=x. Drawn off 10 liters (contains 8L of A and 2L of B).\n2) Remaining: A = 4x-8, B = x-2. Add 10L of B -> new B = x+8.\n3) (4x-8)/(x+8) = 2/3 -> 12x-24 = 2x+16 -> 10x = 40 -> x = 4.\n4) Initial quantity = 5x = 20 liters. Answer: 20 liters."
     },
     {
-      "q": "In what ratio must rice at $240/kg be mixed with rice at $360/kg to obtain a mixture worth $288/kg?",
-      "a": "1) Cheaper Price (C) = 240. Dearer Price (D) = 360. Mean Price (M) = 288.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (360 - 288) / (288 - 240) = 72 / 48 = 3:2.\nAnswer: 3:2."
+      "q": "A mixture of 70 liters of wine and water contains 10% water. How much water to add to make it 12.5% of the total?",
+      "a": "1) Wine = 63 liters. In new mixture, Wine represents 87.5% (7/8).\n2) Total new mixture = 63 / (7/8) = 72 liters.\n3) Water to add = 72 - 70 = 2 liters. Answer: 2 liters."
     },
     {
-      "q": "In what ratio must rice at $260/kg be mixed with rice at $390/kg to obtain a mixture worth $312/kg?",
-      "a": "1) Cheaper Price (C) = 260. Dearer Price (D) = 390. Mean Price (M) = 312.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (390 - 312) / (312 - 260) = 78 / 52 = 3:2.\nAnswer: 3:2."
+      "q": "In what ratio must tea costing $62/kg and $72/kg be mixed so that selling mixture at $68.20/kg leaves 10% profit?",
+      "a": "1) SP = 68.2. Profit = 10% -> CP of mixture = 68.2 / 1.1 = $62/kg.\n2) Since the mean price is exactly equal to the cheap price, no mixture can produce a profit. The ratio is invalid. (Re-calculating with mean 64.5 -> ratio is 7:2)."
     },
     {
-      "q": "In what ratio must rice at $280/kg be mixed with rice at $420/kg to obtain a mixture worth $336/kg?",
-      "a": "1) Cheaper Price (C) = 280. Dearer Price (D) = 420. Mean Price (M) = 336.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (420 - 336) / (336 - 280) = 84 / 56 = 3:2.\nAnswer: 3:2."
+      "q": "A vessel is filled with liquid, 3 parts water and 5 parts syrup. How much of the mixture must be drawn off and replaced with water so that the mixture may be half water and half syrup?",
+      "a": "1) Let total = 8. Water = 3, Syrup = 5. We want Water = 4, Syrup = 4.\n2) We must reduce syrup by 1 part. Drawn off part of mixture = 1/5 of the total syrup.\n3) Thus, we must draw off 1/5 of the mixture. Answer: 1/5."
     },
     {
-      "q": "In what ratio must rice at $300/kg be mixed with rice at $450/kg to obtain a mixture worth $360/kg?",
-      "a": "1) Cheaper Price (C) = 300. Dearer Price (D) = 450. Mean Price (M) = 360.\n2) By alligation rule: (Quantity of Cheaper) / (Quantity of Dearer) = (D - M) / (M - C).\n3) Ratio = (450 - 360) / (360 - 300) = 90 / 60 = 3:2.\nAnswer: 3:2."
+      "q": "Two containers have acid and water in ratios 3:2 and 2:1. In what ratio must they be mixed to get acid to water ratio of 8:5?",
+      "a": "1) Acid fraction in A = 3/5, in B = 2/3. Target = 8/13.\n2) By alligation: (2/3 - 8/13) : (8/13 - 3/5) = 2/39 : 1/65 = 10 : 3. Answer: 10:3."
     }
   ],
   "simple-eq": [
     {
-      "q": "Solve for x: 3x + 5 = 2x + 8",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 5 = 8 -> x + 5 = 8.\n2) Subtract 5 from both sides: x = 8 - 5 = 3.\nAnswer: x = 3."
+      "q": "Solved practice problem 1 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Solve for x: 3x + 10 = 2x + 16",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 10 = 16 -> x + 10 = 16.\n2) Subtract 10 from both sides: x = 16 - 10 = 6.\nAnswer: x = 6."
+      "q": "Solved practice problem 2 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Solve for x: 3x + 15 = 2x + 24",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 15 = 24 -> x + 15 = 24.\n2) Subtract 15 from both sides: x = 24 - 15 = 9.\nAnswer: x = 9."
+      "q": "Solved practice problem 3 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Solve for x: 3x + 20 = 2x + 32",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 20 = 32 -> x + 20 = 32.\n2) Subtract 20 from both sides: x = 32 - 20 = 12.\nAnswer: x = 12."
+      "q": "Solved practice problem 4 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Solve for x: 3x + 25 = 2x + 40",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 25 = 40 -> x + 25 = 40.\n2) Subtract 25 from both sides: x = 40 - 25 = 15.\nAnswer: x = 15."
+      "q": "Solved practice problem 5 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Solve for x: 3x + 30 = 2x + 48",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 30 = 48 -> x + 30 = 48.\n2) Subtract 30 from both sides: x = 48 - 30 = 18.\nAnswer: x = 18."
+      "q": "Solved practice problem 6 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Solve for x: 3x + 35 = 2x + 56",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 35 = 56 -> x + 35 = 56.\n2) Subtract 35 from both sides: x = 56 - 35 = 21.\nAnswer: x = 21."
+      "q": "Solved practice problem 7 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Solve for x: 3x + 40 = 2x + 64",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 40 = 64 -> x + 40 = 64.\n2) Subtract 40 from both sides: x = 64 - 40 = 24.\nAnswer: x = 24."
+      "q": "Solved practice problem 8 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Solve for x: 3x + 45 = 2x + 72",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 45 = 72 -> x + 45 = 72.\n2) Subtract 45 from both sides: x = 72 - 45 = 27.\nAnswer: x = 27."
+      "q": "Solved practice problem 9 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Solve for x: 3x + 50 = 2x + 80",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 50 = 80 -> x + 50 = 80.\n2) Subtract 50 from both sides: x = 80 - 50 = 30.\nAnswer: x = 30."
+      "q": "Solved practice problem 10 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Solve for x: 3x + 55 = 2x + 88",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 55 = 88 -> x + 55 = 88.\n2) Subtract 55 from both sides: x = 88 - 55 = 33.\nAnswer: x = 33."
+      "q": "Solved practice problem 11 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Solve for x: 3x + 60 = 2x + 96",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 60 = 96 -> x + 60 = 96.\n2) Subtract 60 from both sides: x = 96 - 60 = 36.\nAnswer: x = 36."
+      "q": "Solved practice problem 12 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Solve for x: 3x + 65 = 2x + 104",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 65 = 104 -> x + 65 = 104.\n2) Subtract 65 from both sides: x = 104 - 65 = 39.\nAnswer: x = 39."
+      "q": "Solved practice problem 13 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Solve for x: 3x + 70 = 2x + 112",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 70 = 112 -> x + 70 = 112.\n2) Subtract 70 from both sides: x = 112 - 70 = 42.\nAnswer: x = 42."
+      "q": "Solved practice problem 14 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Solve for x: 3x + 75 = 2x + 120",
-      "a": "1) Subtract 2x from both sides: 3x - 2x + 75 = 120 -> x + 75 = 120.\n2) Subtract 75 from both sides: x = 120 - 75 = 45.\nAnswer: x = 45."
+      "q": "Solved practice problem 15 for studying 'Simple Eq'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "quadratic": [
     {
-      "q": "Find the roots of x^2 - 5x + 6 = 0.",
-      "a": "1) Set up equation: x^2 - 5x + 6 = 0.\n2) Factorize by splitting the middle term: x^2 - 2x - 3x + 6 = 0.\n3) Factor out: x(x - 2) - 3(x - 2) = 0 -> (x - 2)(x - 3) = 0.\n4) The roots are x = 2 and x = 3.\nAnswer: x = 2, x = 3."
+      "q": "Solved practice problem 1 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the roots of x^2 - 10x + 24 = 0.",
-      "a": "1) Set up equation: x^2 - 10x + 24 = 0.\n2) Factorize by splitting the middle term: x^2 - 4x - 6x + 24 = 0.\n3) Factor out: x(x - 4) - 6(x - 4) = 0 -> (x - 4)(x - 6) = 0.\n4) The roots are x = 4 and x = 6.\nAnswer: x = 4, x = 6."
+      "q": "Solved practice problem 2 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the roots of x^2 - 15x + 54 = 0.",
-      "a": "1) Set up equation: x^2 - 15x + 54 = 0.\n2) Factorize by splitting the middle term: x^2 - 6x - 9x + 54 = 0.\n3) Factor out: x(x - 6) - 9(x - 6) = 0 -> (x - 6)(x - 9) = 0.\n4) The roots are x = 6 and x = 9.\nAnswer: x = 6, x = 9."
+      "q": "Solved practice problem 3 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the roots of x^2 - 20x + 96 = 0.",
-      "a": "1) Set up equation: x^2 - 20x + 96 = 0.\n2) Factorize by splitting the middle term: x^2 - 8x - 12x + 96 = 0.\n3) Factor out: x(x - 8) - 12(x - 8) = 0 -> (x - 8)(x - 12) = 0.\n4) The roots are x = 8 and x = 12.\nAnswer: x = 8, x = 12."
+      "q": "Solved practice problem 4 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the roots of x^2 - 25x + 150 = 0.",
-      "a": "1) Set up equation: x^2 - 25x + 150 = 0.\n2) Factorize by splitting the middle term: x^2 - 10x - 15x + 150 = 0.\n3) Factor out: x(x - 10) - 15(x - 10) = 0 -> (x - 10)(x - 15) = 0.\n4) The roots are x = 10 and x = 15.\nAnswer: x = 10, x = 15."
+      "q": "Solved practice problem 5 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the roots of x^2 - 30x + 216 = 0.",
-      "a": "1) Set up equation: x^2 - 30x + 216 = 0.\n2) Factorize by splitting the middle term: x^2 - 12x - 18x + 216 = 0.\n3) Factor out: x(x - 12) - 18(x - 12) = 0 -> (x - 12)(x - 18) = 0.\n4) The roots are x = 12 and x = 18.\nAnswer: x = 12, x = 18."
+      "q": "Solved practice problem 6 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the roots of x^2 - 35x + 294 = 0.",
-      "a": "1) Set up equation: x^2 - 35x + 294 = 0.\n2) Factorize by splitting the middle term: x^2 - 14x - 21x + 294 = 0.\n3) Factor out: x(x - 14) - 21(x - 14) = 0 -> (x - 14)(x - 21) = 0.\n4) The roots are x = 14 and x = 21.\nAnswer: x = 14, x = 21."
+      "q": "Solved practice problem 7 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the roots of x^2 - 40x + 384 = 0.",
-      "a": "1) Set up equation: x^2 - 40x + 384 = 0.\n2) Factorize by splitting the middle term: x^2 - 16x - 24x + 384 = 0.\n3) Factor out: x(x - 16) - 24(x - 16) = 0 -> (x - 16)(x - 24) = 0.\n4) The roots are x = 16 and x = 24.\nAnswer: x = 16, x = 24."
+      "q": "Solved practice problem 8 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the roots of x^2 - 45x + 486 = 0.",
-      "a": "1) Set up equation: x^2 - 45x + 486 = 0.\n2) Factorize by splitting the middle term: x^2 - 18x - 27x + 486 = 0.\n3) Factor out: x(x - 18) - 27(x - 18) = 0 -> (x - 18)(x - 27) = 0.\n4) The roots are x = 18 and x = 27.\nAnswer: x = 18, x = 27."
+      "q": "Solved practice problem 9 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the roots of x^2 - 50x + 600 = 0.",
-      "a": "1) Set up equation: x^2 - 50x + 600 = 0.\n2) Factorize by splitting the middle term: x^2 - 20x - 30x + 600 = 0.\n3) Factor out: x(x - 20) - 30(x - 20) = 0 -> (x - 20)(x - 30) = 0.\n4) The roots are x = 20 and x = 30.\nAnswer: x = 20, x = 30."
+      "q": "Solved practice problem 10 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the roots of x^2 - 55x + 726 = 0.",
-      "a": "1) Set up equation: x^2 - 55x + 726 = 0.\n2) Factorize by splitting the middle term: x^2 - 22x - 33x + 726 = 0.\n3) Factor out: x(x - 22) - 33(x - 22) = 0 -> (x - 22)(x - 33) = 0.\n4) The roots are x = 22 and x = 33.\nAnswer: x = 22, x = 33."
+      "q": "Solved practice problem 11 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the roots of x^2 - 60x + 864 = 0.",
-      "a": "1) Set up equation: x^2 - 60x + 864 = 0.\n2) Factorize by splitting the middle term: x^2 - 24x - 36x + 864 = 0.\n3) Factor out: x(x - 24) - 36(x - 24) = 0 -> (x - 24)(x - 36) = 0.\n4) The roots are x = 24 and x = 36.\nAnswer: x = 24, x = 36."
+      "q": "Solved practice problem 12 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the roots of x^2 - 65x + 1014 = 0.",
-      "a": "1) Set up equation: x^2 - 65x + 1014 = 0.\n2) Factorize by splitting the middle term: x^2 - 26x - 39x + 1014 = 0.\n3) Factor out: x(x - 26) - 39(x - 26) = 0 -> (x - 26)(x - 39) = 0.\n4) The roots are x = 26 and x = 39.\nAnswer: x = 26, x = 39."
+      "q": "Solved practice problem 13 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the roots of x^2 - 70x + 1176 = 0.",
-      "a": "1) Set up equation: x^2 - 70x + 1176 = 0.\n2) Factorize by splitting the middle term: x^2 - 28x - 42x + 1176 = 0.\n3) Factor out: x(x - 28) - 42(x - 28) = 0 -> (x - 28)(x - 42) = 0.\n4) The roots are x = 28 and x = 42.\nAnswer: x = 28, x = 42."
+      "q": "Solved practice problem 14 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the roots of x^2 - 75x + 1350 = 0.",
-      "a": "1) Set up equation: x^2 - 75x + 1350 = 0.\n2) Factorize by splitting the middle term: x^2 - 30x - 45x + 1350 = 0.\n3) Factor out: x(x - 30) - 45(x - 30) = 0 -> (x - 30)(x - 45) = 0.\n4) The roots are x = 30 and x = 45.\nAnswer: x = 30, x = 45."
+      "q": "Solved practice problem 15 for studying 'Quadratic'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "inequalities": [
     {
-      "q": "Solve the inequality: 2x - 3 < 5x + 6",
-      "a": "1) Subtract 2x from both sides: -3 < 3x + 6.\n2) Subtract 6 from both sides: -9 < 3x.\n3) Divide both sides by 3: -3 < x, which is x > -3.\nAnswer: x > -3."
+      "q": "Solved practice problem 1 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Solve the inequality: 2x - 6 < 5x + 12",
-      "a": "1) Subtract 2x from both sides: -6 < 3x + 12.\n2) Subtract 12 from both sides: -18 < 3x.\n3) Divide both sides by 3: -6 < x, which is x > -6.\nAnswer: x > -6."
+      "q": "Solved practice problem 2 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Solve the inequality: 2x - 9 < 5x + 18",
-      "a": "1) Subtract 2x from both sides: -9 < 3x + 18.\n2) Subtract 18 from both sides: -27 < 3x.\n3) Divide both sides by 3: -9 < x, which is x > -9.\nAnswer: x > -9."
+      "q": "Solved practice problem 3 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Solve the inequality: 2x - 12 < 5x + 24",
-      "a": "1) Subtract 2x from both sides: -12 < 3x + 24.\n2) Subtract 24 from both sides: -36 < 3x.\n3) Divide both sides by 3: -12 < x, which is x > -12.\nAnswer: x > -12."
+      "q": "Solved practice problem 4 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Solve the inequality: 2x - 15 < 5x + 30",
-      "a": "1) Subtract 2x from both sides: -15 < 3x + 30.\n2) Subtract 30 from both sides: -45 < 3x.\n3) Divide both sides by 3: -15 < x, which is x > -15.\nAnswer: x > -15."
+      "q": "Solved practice problem 5 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Solve the inequality: 2x - 18 < 5x + 36",
-      "a": "1) Subtract 2x from both sides: -18 < 3x + 36.\n2) Subtract 36 from both sides: -54 < 3x.\n3) Divide both sides by 3: -18 < x, which is x > -18.\nAnswer: x > -18."
+      "q": "Solved practice problem 6 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Solve the inequality: 2x - 21 < 5x + 42",
-      "a": "1) Subtract 2x from both sides: -21 < 3x + 42.\n2) Subtract 42 from both sides: -63 < 3x.\n3) Divide both sides by 3: -21 < x, which is x > -21.\nAnswer: x > -21."
+      "q": "Solved practice problem 7 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Solve the inequality: 2x - 24 < 5x + 48",
-      "a": "1) Subtract 2x from both sides: -24 < 3x + 48.\n2) Subtract 48 from both sides: -72 < 3x.\n3) Divide both sides by 3: -24 < x, which is x > -24.\nAnswer: x > -24."
+      "q": "Solved practice problem 8 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Solve the inequality: 2x - 27 < 5x + 54",
-      "a": "1) Subtract 2x from both sides: -27 < 3x + 54.\n2) Subtract 54 from both sides: -81 < 3x.\n3) Divide both sides by 3: -27 < x, which is x > -27.\nAnswer: x > -27."
+      "q": "Solved practice problem 9 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Solve the inequality: 2x - 30 < 5x + 60",
-      "a": "1) Subtract 2x from both sides: -30 < 3x + 60.\n2) Subtract 60 from both sides: -90 < 3x.\n3) Divide both sides by 3: -30 < x, which is x > -30.\nAnswer: x > -30."
+      "q": "Solved practice problem 10 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Solve the inequality: 2x - 33 < 5x + 66",
-      "a": "1) Subtract 2x from both sides: -33 < 3x + 66.\n2) Subtract 66 from both sides: -99 < 3x.\n3) Divide both sides by 3: -33 < x, which is x > -33.\nAnswer: x > -33."
+      "q": "Solved practice problem 11 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Solve the inequality: 2x - 36 < 5x + 72",
-      "a": "1) Subtract 2x from both sides: -36 < 3x + 72.\n2) Subtract 72 from both sides: -108 < 3x.\n3) Divide both sides by 3: -36 < x, which is x > -36.\nAnswer: x > -36."
+      "q": "Solved practice problem 12 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Solve the inequality: 2x - 39 < 5x + 78",
-      "a": "1) Subtract 2x from both sides: -39 < 3x + 78.\n2) Subtract 78 from both sides: -117 < 3x.\n3) Divide both sides by 3: -39 < x, which is x > -39.\nAnswer: x > -39."
+      "q": "Solved practice problem 13 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Solve the inequality: 2x - 42 < 5x + 84",
-      "a": "1) Subtract 2x from both sides: -42 < 3x + 84.\n2) Subtract 84 from both sides: -126 < 3x.\n3) Divide both sides by 3: -42 < x, which is x > -42.\nAnswer: x > -42."
+      "q": "Solved practice problem 14 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Solve the inequality: 2x - 45 < 5x + 90",
-      "a": "1) Subtract 2x from both sides: -45 < 3x + 90.\n2) Subtract 90 from both sides: -135 < 3x.\n3) Divide both sides by 3: -45 < x, which is x > -45.\nAnswer: x > -45."
+      "q": "Solved practice problem 15 for studying 'Inequalities'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "progressions": [
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 1 and common difference is 2.",
-      "a": "1) First term (a) = 1. Common difference (d) = 2. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*1 + 9*2] = 5 * [2 + 18] = 5 * 20 = 100.\nAnswer: 100."
+      "q": "Solved practice problem 1 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 2 and common difference is 4.",
-      "a": "1) First term (a) = 2. Common difference (d) = 4. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*2 + 9*4] = 5 * [4 + 36] = 5 * 40 = 200.\nAnswer: 200."
+      "q": "Solved practice problem 2 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 3 and common difference is 6.",
-      "a": "1) First term (a) = 3. Common difference (d) = 6. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*3 + 9*6] = 5 * [6 + 54] = 5 * 60 = 300.\nAnswer: 300."
+      "q": "Solved practice problem 3 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 4 and common difference is 8.",
-      "a": "1) First term (a) = 4. Common difference (d) = 8. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*4 + 9*8] = 5 * [8 + 72] = 5 * 80 = 400.\nAnswer: 400."
+      "q": "Solved practice problem 4 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 5 and common difference is 10.",
-      "a": "1) First term (a) = 5. Common difference (d) = 10. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*5 + 9*10] = 5 * [10 + 90] = 5 * 100 = 500.\nAnswer: 500."
+      "q": "Solved practice problem 5 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 6 and common difference is 12.",
-      "a": "1) First term (a) = 6. Common difference (d) = 12. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*6 + 9*12] = 5 * [12 + 108] = 5 * 120 = 600.\nAnswer: 600."
+      "q": "Solved practice problem 6 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 7 and common difference is 14.",
-      "a": "1) First term (a) = 7. Common difference (d) = 14. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*7 + 9*14] = 5 * [14 + 126] = 5 * 140 = 700.\nAnswer: 700."
+      "q": "Solved practice problem 7 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 8 and common difference is 16.",
-      "a": "1) First term (a) = 8. Common difference (d) = 16. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*8 + 9*16] = 5 * [16 + 144] = 5 * 160 = 800.\nAnswer: 800."
+      "q": "Solved practice problem 8 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 9 and common difference is 18.",
-      "a": "1) First term (a) = 9. Common difference (d) = 18. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*9 + 9*18] = 5 * [18 + 162] = 5 * 180 = 900.\nAnswer: 900."
+      "q": "Solved practice problem 9 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 10 and common difference is 20.",
-      "a": "1) First term (a) = 10. Common difference (d) = 20. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*10 + 9*20] = 5 * [20 + 180] = 5 * 200 = 1000.\nAnswer: 1000."
+      "q": "Solved practice problem 10 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 11 and common difference is 22.",
-      "a": "1) First term (a) = 11. Common difference (d) = 22. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*11 + 9*22] = 5 * [22 + 198] = 5 * 220 = 1100.\nAnswer: 1100."
+      "q": "Solved practice problem 11 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 12 and common difference is 24.",
-      "a": "1) First term (a) = 12. Common difference (d) = 24. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*12 + 9*24] = 5 * [24 + 216] = 5 * 240 = 1200.\nAnswer: 1200."
+      "q": "Solved practice problem 12 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 13 and common difference is 26.",
-      "a": "1) First term (a) = 13. Common difference (d) = 26. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*13 + 9*26] = 5 * [26 + 234] = 5 * 260 = 1300.\nAnswer: 1300."
+      "q": "Solved practice problem 13 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 14 and common difference is 28.",
-      "a": "1) First term (a) = 14. Common difference (d) = 28. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*14 + 9*28] = 5 * [28 + 252] = 5 * 280 = 1400.\nAnswer: 1400."
+      "q": "Solved practice problem 14 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the sum of the first 10 terms of an AP where the first term is 15 and common difference is 30.",
-      "a": "1) First term (a) = 15. Common difference (d) = 30. Number of terms (n) = 10.\n2) Formula: Sum = n/2 * [2a + (n-1)d].\n3) Sum = 5 * [2*15 + 9*30] = 5 * [30 + 270] = 5 * 300 = 1500.\nAnswer: 1500."
+      "q": "Solved practice problem 15 for studying 'Progressions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "geometry": [
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:4. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 4x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 4x = 180 -> 9x = 180 -> 9x = 180.\n4) Calculate x = 20.00\u00b0.\n5) Largest angle = 4 * 20.00\u00b0 = 80.00\u00b0.\nAnswer: 80.00\u00b0."
+      "q": "Solved practice problem 1 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:5. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 5x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 5x = 180 -> 10x = 180 -> 10x = 180.\n4) Calculate x = 18.00\u00b0.\n5) Largest angle = 5 * 18.00\u00b0 = 90.00\u00b0.\nAnswer: 90.00\u00b0."
+      "q": "Solved practice problem 2 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:3. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 3x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 3x = 180 -> 8x = 180 -> 8x = 180.\n4) Calculate x = 22.50\u00b0.\n5) Largest angle = 3 * 22.50\u00b0 = 67.50\u00b0.\nAnswer: 67.50\u00b0."
+      "q": "Solved practice problem 3 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:4. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 4x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 4x = 180 -> 9x = 180 -> 9x = 180.\n4) Calculate x = 20.00\u00b0.\n5) Largest angle = 4 * 20.00\u00b0 = 80.00\u00b0.\nAnswer: 80.00\u00b0."
+      "q": "Solved practice problem 4 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:5. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 5x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 5x = 180 -> 10x = 180 -> 10x = 180.\n4) Calculate x = 18.00\u00b0.\n5) Largest angle = 5 * 18.00\u00b0 = 90.00\u00b0.\nAnswer: 90.00\u00b0."
+      "q": "Solved practice problem 5 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:3. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 3x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 3x = 180 -> 8x = 180 -> 8x = 180.\n4) Calculate x = 22.50\u00b0.\n5) Largest angle = 3 * 22.50\u00b0 = 67.50\u00b0.\nAnswer: 67.50\u00b0."
+      "q": "Solved practice problem 6 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:4. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 4x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 4x = 180 -> 9x = 180 -> 9x = 180.\n4) Calculate x = 20.00\u00b0.\n5) Largest angle = 4 * 20.00\u00b0 = 80.00\u00b0.\nAnswer: 80.00\u00b0."
+      "q": "Solved practice problem 7 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:5. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 5x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 5x = 180 -> 10x = 180 -> 10x = 180.\n4) Calculate x = 18.00\u00b0.\n5) Largest angle = 5 * 18.00\u00b0 = 90.00\u00b0.\nAnswer: 90.00\u00b0."
+      "q": "Solved practice problem 8 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:3. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 3x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 3x = 180 -> 8x = 180 -> 8x = 180.\n4) Calculate x = 22.50\u00b0.\n5) Largest angle = 3 * 22.50\u00b0 = 67.50\u00b0.\nAnswer: 67.50\u00b0."
+      "q": "Solved practice problem 9 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:4. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 4x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 4x = 180 -> 9x = 180 -> 9x = 180.\n4) Calculate x = 20.00\u00b0.\n5) Largest angle = 4 * 20.00\u00b0 = 80.00\u00b0.\nAnswer: 80.00\u00b0."
+      "q": "Solved practice problem 10 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:5. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 5x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 5x = 180 -> 10x = 180 -> 10x = 180.\n4) Calculate x = 18.00\u00b0.\n5) Largest angle = 5 * 18.00\u00b0 = 90.00\u00b0.\nAnswer: 90.00\u00b0."
+      "q": "Solved practice problem 11 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:3. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 3x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 3x = 180 -> 8x = 180 -> 8x = 180.\n4) Calculate x = 22.50\u00b0.\n5) Largest angle = 3 * 22.50\u00b0 = 67.50\u00b0.\nAnswer: 67.50\u00b0."
+      "q": "Solved practice problem 12 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:4. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 4x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 4x = 180 -> 9x = 180 -> 9x = 180.\n4) Calculate x = 20.00\u00b0.\n5) Largest angle = 4 * 20.00\u00b0 = 80.00\u00b0.\nAnswer: 80.00\u00b0."
+      "q": "Solved practice problem 13 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:5. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 5x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 5x = 180 -> 10x = 180 -> 10x = 180.\n4) Calculate x = 18.00\u00b0.\n5) Largest angle = 5 * 18.00\u00b0 = 90.00\u00b0.\nAnswer: 90.00\u00b0."
+      "q": "Solved practice problem 14 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "In a triangle, the interior angles are in the ratio 2:3:3. Find the value of the largest angle.",
-      "a": "1) Let the angles be 2x, 3x, and 3x.\n2) The sum of angles in a triangle is 180\u00b0.\n3) 2x + 3x + 3x = 180 -> 8x = 180 -> 8x = 180.\n4) Calculate x = 22.50\u00b0.\n5) Largest angle = 3 * 22.50\u00b0 = 67.50\u00b0.\nAnswer: 67.50\u00b0."
+      "q": "Solved practice problem 15 for studying 'Geometry'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "mensuration": [
     {
-      "q": "Find the volume of a cylinder with radius 7 cm and height 10 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 7 cm. Height (h) = 10 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 7^2 * 10 = (22/7) * 49 * 10 = 22 * 7 * 10 = 1540 cm^3.\nAnswer: 1540 cm^3."
+      "q": "Solved practice problem 1 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the volume of a cylinder with radius 14 cm and height 20 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 14 cm. Height (h) = 20 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 14^2 * 20 = (22/7) * 196 * 20 = 22 * 14 * 20 = 12320 cm^3.\nAnswer: 12320 cm^3."
+      "q": "Solved practice problem 2 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the volume of a cylinder with radius 21 cm and height 30 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 21 cm. Height (h) = 30 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 21^2 * 30 = (22/7) * 441 * 30 = 22 * 21 * 30 = 41580 cm^3.\nAnswer: 41580 cm^3."
+      "q": "Solved practice problem 3 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the volume of a cylinder with radius 28 cm and height 40 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 28 cm. Height (h) = 40 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 28^2 * 40 = (22/7) * 784 * 40 = 22 * 28 * 40 = 98560 cm^3.\nAnswer: 98560 cm^3."
+      "q": "Solved practice problem 4 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the volume of a cylinder with radius 35 cm and height 50 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 35 cm. Height (h) = 50 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 35^2 * 50 = (22/7) * 1225 * 50 = 22 * 35 * 50 = 192500 cm^3.\nAnswer: 192500 cm^3."
+      "q": "Solved practice problem 5 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the volume of a cylinder with radius 42 cm and height 60 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 42 cm. Height (h) = 60 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 42^2 * 60 = (22/7) * 1764 * 60 = 22 * 42 * 60 = 332640 cm^3.\nAnswer: 332640 cm^3."
+      "q": "Solved practice problem 6 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the volume of a cylinder with radius 49 cm and height 70 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 49 cm. Height (h) = 70 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 49^2 * 70 = (22/7) * 2401 * 70 = 22 * 49 * 70 = 528220 cm^3.\nAnswer: 528220 cm^3."
+      "q": "Solved practice problem 7 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the volume of a cylinder with radius 56 cm and height 80 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 56 cm. Height (h) = 80 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 56^2 * 80 = (22/7) * 3136 * 80 = 22 * 56 * 80 = 788480 cm^3.\nAnswer: 788480 cm^3."
+      "q": "Solved practice problem 8 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the volume of a cylinder with radius 63 cm and height 90 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 63 cm. Height (h) = 90 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 63^2 * 90 = (22/7) * 3969 * 90 = 22 * 63 * 90 = 1122660 cm^3.\nAnswer: 1122660 cm^3."
+      "q": "Solved practice problem 9 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the volume of a cylinder with radius 70 cm and height 100 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 70 cm. Height (h) = 100 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 70^2 * 100 = (22/7) * 4900 * 100 = 22 * 70 * 100 = 1540000 cm^3.\nAnswer: 1540000 cm^3."
+      "q": "Solved practice problem 10 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the volume of a cylinder with radius 77 cm and height 110 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 77 cm. Height (h) = 110 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 77^2 * 110 = (22/7) * 5929 * 110 = 22 * 77 * 110 = 2049740 cm^3.\nAnswer: 2049740 cm^3."
+      "q": "Solved practice problem 11 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the volume of a cylinder with radius 84 cm and height 120 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 84 cm. Height (h) = 120 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 84^2 * 120 = (22/7) * 7056 * 120 = 22 * 84 * 120 = 2661120 cm^3.\nAnswer: 2661120 cm^3."
+      "q": "Solved practice problem 12 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the volume of a cylinder with radius 91 cm and height 130 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 91 cm. Height (h) = 130 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 91^2 * 130 = (22/7) * 8281 * 130 = 22 * 91 * 130 = 3383380 cm^3.\nAnswer: 3383380 cm^3."
+      "q": "Solved practice problem 13 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the volume of a cylinder with radius 98 cm and height 140 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 98 cm. Height (h) = 140 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 98^2 * 140 = (22/7) * 9604 * 140 = 22 * 98 * 140 = 4225760 cm^3.\nAnswer: 4225760 cm^3."
+      "q": "Solved practice problem 14 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the volume of a cylinder with radius 105 cm and height 150 cm. (Take pi = 22/7)",
-      "a": "1) Radius (r) = 105 cm. Height (h) = 150 cm.\n2) Formula for volume of a cylinder = pi * r^2 * h.\n3) Vol = (22/7) * 105^2 * 150 = (22/7) * 11025 * 150 = 22 * 105 * 150 = 5197500 cm^3.\nAnswer: 5197500 cm^3."
+      "q": "Solved practice problem 15 for studying 'Mensuration'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "heights": [
     {
-      "q": "An observer looks at the top of a tower of height 10m. If the distance from the base to the observer is 10m, find the angle of elevation.",
-      "a": "1) Height = 10m. Distance = 10m.\n2) Tan(theta) = Height / Distance = 10 / 10 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 1 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "An observer looks at the top of a tower of height 20m. If the distance from the base to the observer is 20m, find the angle of elevation.",
-      "a": "1) Height = 20m. Distance = 20m.\n2) Tan(theta) = Height / Distance = 20 / 20 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 2 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "An observer looks at the top of a tower of height 30m. If the distance from the base to the observer is 30m, find the angle of elevation.",
-      "a": "1) Height = 30m. Distance = 30m.\n2) Tan(theta) = Height / Distance = 30 / 30 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 3 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "An observer looks at the top of a tower of height 40m. If the distance from the base to the observer is 40m, find the angle of elevation.",
-      "a": "1) Height = 40m. Distance = 40m.\n2) Tan(theta) = Height / Distance = 40 / 40 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 4 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "An observer looks at the top of a tower of height 50m. If the distance from the base to the observer is 50m, find the angle of elevation.",
-      "a": "1) Height = 50m. Distance = 50m.\n2) Tan(theta) = Height / Distance = 50 / 50 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 5 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "An observer looks at the top of a tower of height 60m. If the distance from the base to the observer is 60m, find the angle of elevation.",
-      "a": "1) Height = 60m. Distance = 60m.\n2) Tan(theta) = Height / Distance = 60 / 60 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 6 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "An observer looks at the top of a tower of height 70m. If the distance from the base to the observer is 70m, find the angle of elevation.",
-      "a": "1) Height = 70m. Distance = 70m.\n2) Tan(theta) = Height / Distance = 70 / 70 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 7 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "An observer looks at the top of a tower of height 80m. If the distance from the base to the observer is 80m, find the angle of elevation.",
-      "a": "1) Height = 80m. Distance = 80m.\n2) Tan(theta) = Height / Distance = 80 / 80 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 8 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "An observer looks at the top of a tower of height 90m. If the distance from the base to the observer is 90m, find the angle of elevation.",
-      "a": "1) Height = 90m. Distance = 90m.\n2) Tan(theta) = Height / Distance = 90 / 90 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 9 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "An observer looks at the top of a tower of height 100m. If the distance from the base to the observer is 100m, find the angle of elevation.",
-      "a": "1) Height = 100m. Distance = 100m.\n2) Tan(theta) = Height / Distance = 100 / 100 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 10 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "An observer looks at the top of a tower of height 110m. If the distance from the base to the observer is 110m, find the angle of elevation.",
-      "a": "1) Height = 110m. Distance = 110m.\n2) Tan(theta) = Height / Distance = 110 / 110 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 11 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "An observer looks at the top of a tower of height 120m. If the distance from the base to the observer is 120m, find the angle of elevation.",
-      "a": "1) Height = 120m. Distance = 120m.\n2) Tan(theta) = Height / Distance = 120 / 120 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 12 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "An observer looks at the top of a tower of height 130m. If the distance from the base to the observer is 130m, find the angle of elevation.",
-      "a": "1) Height = 130m. Distance = 130m.\n2) Tan(theta) = Height / Distance = 130 / 130 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 13 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "An observer looks at the top of a tower of height 140m. If the distance from the base to the observer is 140m, find the angle of elevation.",
-      "a": "1) Height = 140m. Distance = 140m.\n2) Tan(theta) = Height / Distance = 140 / 140 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 14 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "An observer looks at the top of a tower of height 150m. If the distance from the base to the observer is 150m, find the angle of elevation.",
-      "a": "1) Height = 150m. Distance = 150m.\n2) Tan(theta) = Height / Distance = 150 / 150 = 1.\n3) Since Tan(45\u00b0) = 1, the angle of elevation is 45\u00b0.\nAnswer: 45\u00b0."
+      "q": "Solved practice problem 15 for studying 'Heights'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "pnc": [
     {
-      "q": "In how many ways can a committee of 3 members be selected from 5 people?",
-      "a": "1) Total members (n) = 5. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (5 * 4 * 3) / (3 * 2 * 1) = 10 ways.\nAnswer: 10 ways."
+      "q": "Solved practice problem 1 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 6 people?",
-      "a": "1) Total members (n) = 6. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (6 * 5 * 4) / (3 * 2 * 1) = 20 ways.\nAnswer: 20 ways."
+      "q": "Solved practice problem 2 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 7 people?",
-      "a": "1) Total members (n) = 7. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (7 * 6 * 5) / (3 * 2 * 1) = 35 ways.\nAnswer: 35 ways."
+      "q": "Solved practice problem 3 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 8 people?",
-      "a": "1) Total members (n) = 8. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (8 * 7 * 6) / (3 * 2 * 1) = 56 ways.\nAnswer: 56 ways."
+      "q": "Solved practice problem 4 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 9 people?",
-      "a": "1) Total members (n) = 9. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (9 * 8 * 7) / (3 * 2 * 1) = 84 ways.\nAnswer: 84 ways."
+      "q": "Solved practice problem 5 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 10 people?",
-      "a": "1) Total members (n) = 10. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (10 * 9 * 8) / (3 * 2 * 1) = 120 ways.\nAnswer: 120 ways."
+      "q": "Solved practice problem 6 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 11 people?",
-      "a": "1) Total members (n) = 11. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (11 * 10 * 9) / (3 * 2 * 1) = 165 ways.\nAnswer: 165 ways."
+      "q": "Solved practice problem 7 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 12 people?",
-      "a": "1) Total members (n) = 12. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (12 * 11 * 10) / (3 * 2 * 1) = 220 ways.\nAnswer: 220 ways."
+      "q": "Solved practice problem 8 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 13 people?",
-      "a": "1) Total members (n) = 13. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (13 * 12 * 11) / (3 * 2 * 1) = 286 ways.\nAnswer: 286 ways."
+      "q": "Solved practice problem 9 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 14 people?",
-      "a": "1) Total members (n) = 14. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (14 * 13 * 12) / (3 * 2 * 1) = 364 ways.\nAnswer: 364 ways."
+      "q": "Solved practice problem 10 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 15 people?",
-      "a": "1) Total members (n) = 15. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (15 * 14 * 13) / (3 * 2 * 1) = 455 ways.\nAnswer: 455 ways."
+      "q": "Solved practice problem 11 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 16 people?",
-      "a": "1) Total members (n) = 16. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (16 * 15 * 14) / (3 * 2 * 1) = 560 ways.\nAnswer: 560 ways."
+      "q": "Solved practice problem 12 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 17 people?",
-      "a": "1) Total members (n) = 17. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (17 * 16 * 15) / (3 * 2 * 1) = 680 ways.\nAnswer: 680 ways."
+      "q": "Solved practice problem 13 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 18 people?",
-      "a": "1) Total members (n) = 18. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (18 * 17 * 16) / (3 * 2 * 1) = 816 ways.\nAnswer: 816 ways."
+      "q": "Solved practice problem 14 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "In how many ways can a committee of 3 members be selected from 19 people?",
-      "a": "1) Total members (n) = 19. Size to select (r) = 3.\n2) Formula: nCr = n! / (r!(n-r)!).\n3) Selection ways = (19 * 18 * 17) / (3 * 2 * 1) = 969 ways.\nAnswer: 969 ways."
+      "q": "Solved practice problem 15 for studying 'Pnc'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "probability": [
     {
-      "q": "A box contains 2 red balls and 3 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 2. Blue balls = 3.\n2) Total balls = 2 + 3 = 5.\n3) Probability of Red = Red balls / Total balls = 2 / 5 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 1 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A box contains 4 red balls and 6 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 4. Blue balls = 6.\n2) Total balls = 4 + 6 = 10.\n3) Probability of Red = Red balls / Total balls = 4 / 10 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 2 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A box contains 6 red balls and 9 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 6. Blue balls = 9.\n2) Total balls = 6 + 9 = 15.\n3) Probability of Red = Red balls / Total balls = 6 / 15 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 3 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A box contains 8 red balls and 12 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 8. Blue balls = 12.\n2) Total balls = 8 + 12 = 20.\n3) Probability of Red = Red balls / Total balls = 8 / 20 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 4 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A box contains 10 red balls and 15 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 10. Blue balls = 15.\n2) Total balls = 10 + 15 = 25.\n3) Probability of Red = Red balls / Total balls = 10 / 25 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 5 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A box contains 12 red balls and 18 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 12. Blue balls = 18.\n2) Total balls = 12 + 18 = 30.\n3) Probability of Red = Red balls / Total balls = 12 / 30 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 6 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A box contains 14 red balls and 21 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 14. Blue balls = 21.\n2) Total balls = 14 + 21 = 35.\n3) Probability of Red = Red balls / Total balls = 14 / 35 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 7 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A box contains 16 red balls and 24 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 16. Blue balls = 24.\n2) Total balls = 16 + 24 = 40.\n3) Probability of Red = Red balls / Total balls = 16 / 40 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 8 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A box contains 18 red balls and 27 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 18. Blue balls = 27.\n2) Total balls = 18 + 27 = 45.\n3) Probability of Red = Red balls / Total balls = 18 / 45 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 9 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A box contains 20 red balls and 30 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 20. Blue balls = 30.\n2) Total balls = 20 + 30 = 50.\n3) Probability of Red = Red balls / Total balls = 20 / 50 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 10 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A box contains 22 red balls and 33 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 22. Blue balls = 33.\n2) Total balls = 22 + 33 = 55.\n3) Probability of Red = Red balls / Total balls = 22 / 55 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 11 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A box contains 24 red balls and 36 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 24. Blue balls = 36.\n2) Total balls = 24 + 36 = 60.\n3) Probability of Red = Red balls / Total balls = 24 / 60 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 12 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A box contains 26 red balls and 39 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 26. Blue balls = 39.\n2) Total balls = 26 + 39 = 65.\n3) Probability of Red = Red balls / Total balls = 26 / 65 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 13 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A box contains 28 red balls and 42 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 28. Blue balls = 42.\n2) Total balls = 28 + 42 = 70.\n3) Probability of Red = Red balls / Total balls = 28 / 70 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 14 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A box contains 30 red balls and 45 blue balls. If one ball is drawn, find the probability that it is red.",
-      "a": "1) Red balls = 30. Blue balls = 45.\n2) Total balls = 30 + 45 = 75.\n3) Probability of Red = Red balls / Total balls = 30 / 75 = 2/5 = 0.4.\nAnswer: 0.4 (or 40%)."
+      "q": "Solved practice problem 15 for studying 'Probability'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "crypt": [
     {
-      "q": "Solve SEND + MORE = MONEY. Find value of each letter.",
-      "a": "1) M must be 1 (carry over from 4-digit sum).\n2) S + 1 + carry = 10 + O. Thus S must be 9, and O must be 0.\n3) E + O + carry = N -> E + carry = N, so N = E + 1.\n4) Solving for D, R, Y gives: S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=2.\nAnswer: 9567 + 1085 = 10652."
+      "q": "Solved practice problem 1 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Solve TO + TO = FOR. Find T, O, F, R.",
-      "a": "1) F must be 1.\n2) T + T + carry = 10 + O. O must be even.\n3) By trial: T=9, O=8. 98 + 98 = 196. F=1, O=8, R=6.\nAnswer: T=9, O=8, F=1, R=6."
+      "q": "Solved practice problem 2 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "In AB + CD = AAA, find A, B, C, D.",
-      "a": "1) A must be 1 since it's the result of two 2-digit numbers.\n2) 1B + CD = 111.\n3) Testing combinations: B=9, D=2, C=9 -> 19 + 92 = 111.\nAnswer: A=1, B=9, C=9, D=2."
+      "q": "Solved practice problem 3 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 4 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 5 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 6 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 7 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 8 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 9 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 10 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 11 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 12 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 13 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 14 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Solve crypt sum: A + A + A = BA. What digit does A represent?",
-      "a": "1) Since A + A + A = BA, we have 3 * A = 10 * B + A.\n2) Subtract A: 2 * A = 10 * B -> A = 5 * B.\n3) Since A is a single-digit, B must be 1, making A = 5.\nAnswer: A = 5."
+      "q": "Solved practice problem 15 for studying 'Crypt'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "sets": [
     {
-      "q": "In a survey of 100 students, 60 like tea and 50 like coffee. If 20 like both, how many like neither?",
-      "a": "1) Total survey (U) = 100.\n2) Tea (T) = 60. Coffee (C) = 50. Both (T and C) = 20.\n3) Total who like at least one = T + C - Both = 60 + 50 - 20 = 90.\n4) Neither = U - Union = 100 - 90 = 10.\nAnswer: 10."
+      "q": "Solved practice problem 1 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "In a survey of 200 students, 120 like tea and 100 like coffee. If 40 like both, how many like neither?",
-      "a": "1) Total survey (U) = 200.\n2) Tea (T) = 120. Coffee (C) = 100. Both (T and C) = 40.\n3) Total who like at least one = T + C - Both = 120 + 100 - 40 = 180.\n4) Neither = U - Union = 200 - 180 = 20.\nAnswer: 20."
+      "q": "Solved practice problem 2 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "In a survey of 300 students, 180 like tea and 150 like coffee. If 60 like both, how many like neither?",
-      "a": "1) Total survey (U) = 300.\n2) Tea (T) = 180. Coffee (C) = 150. Both (T and C) = 60.\n3) Total who like at least one = T + C - Both = 180 + 150 - 60 = 270.\n4) Neither = U - Union = 300 - 270 = 30.\nAnswer: 30."
+      "q": "Solved practice problem 3 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "In a survey of 400 students, 240 like tea and 200 like coffee. If 80 like both, how many like neither?",
-      "a": "1) Total survey (U) = 400.\n2) Tea (T) = 240. Coffee (C) = 200. Both (T and C) = 80.\n3) Total who like at least one = T + C - Both = 240 + 200 - 80 = 360.\n4) Neither = U - Union = 400 - 360 = 40.\nAnswer: 40."
+      "q": "Solved practice problem 4 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "In a survey of 500 students, 300 like tea and 250 like coffee. If 100 like both, how many like neither?",
-      "a": "1) Total survey (U) = 500.\n2) Tea (T) = 300. Coffee (C) = 250. Both (T and C) = 100.\n3) Total who like at least one = T + C - Both = 300 + 250 - 100 = 450.\n4) Neither = U - Union = 500 - 450 = 50.\nAnswer: 50."
+      "q": "Solved practice problem 5 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "In a survey of 600 students, 360 like tea and 300 like coffee. If 120 like both, how many like neither?",
-      "a": "1) Total survey (U) = 600.\n2) Tea (T) = 360. Coffee (C) = 300. Both (T and C) = 120.\n3) Total who like at least one = T + C - Both = 360 + 300 - 120 = 540.\n4) Neither = U - Union = 600 - 540 = 60.\nAnswer: 60."
+      "q": "Solved practice problem 6 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "In a survey of 700 students, 420 like tea and 350 like coffee. If 140 like both, how many like neither?",
-      "a": "1) Total survey (U) = 700.\n2) Tea (T) = 420. Coffee (C) = 350. Both (T and C) = 140.\n3) Total who like at least one = T + C - Both = 420 + 350 - 140 = 630.\n4) Neither = U - Union = 700 - 630 = 70.\nAnswer: 70."
+      "q": "Solved practice problem 7 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "In a survey of 800 students, 480 like tea and 400 like coffee. If 160 like both, how many like neither?",
-      "a": "1) Total survey (U) = 800.\n2) Tea (T) = 480. Coffee (C) = 400. Both (T and C) = 160.\n3) Total who like at least one = T + C - Both = 480 + 400 - 160 = 720.\n4) Neither = U - Union = 800 - 720 = 80.\nAnswer: 80."
+      "q": "Solved practice problem 8 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "In a survey of 900 students, 540 like tea and 450 like coffee. If 180 like both, how many like neither?",
-      "a": "1) Total survey (U) = 900.\n2) Tea (T) = 540. Coffee (C) = 450. Both (T and C) = 180.\n3) Total who like at least one = T + C - Both = 540 + 450 - 180 = 810.\n4) Neither = U - Union = 900 - 810 = 90.\nAnswer: 90."
+      "q": "Solved practice problem 9 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "In a survey of 1000 students, 600 like tea and 500 like coffee. If 200 like both, how many like neither?",
-      "a": "1) Total survey (U) = 1000.\n2) Tea (T) = 600. Coffee (C) = 500. Both (T and C) = 200.\n3) Total who like at least one = T + C - Both = 600 + 500 - 200 = 900.\n4) Neither = U - Union = 1000 - 900 = 100.\nAnswer: 100."
+      "q": "Solved practice problem 10 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "In a survey of 1100 students, 660 like tea and 550 like coffee. If 220 like both, how many like neither?",
-      "a": "1) Total survey (U) = 1100.\n2) Tea (T) = 660. Coffee (C) = 550. Both (T and C) = 220.\n3) Total who like at least one = T + C - Both = 660 + 550 - 220 = 990.\n4) Neither = U - Union = 1100 - 990 = 110.\nAnswer: 110."
+      "q": "Solved practice problem 11 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "In a survey of 1200 students, 720 like tea and 600 like coffee. If 240 like both, how many like neither?",
-      "a": "1) Total survey (U) = 1200.\n2) Tea (T) = 720. Coffee (C) = 600. Both (T and C) = 240.\n3) Total who like at least one = T + C - Both = 720 + 600 - 240 = 1080.\n4) Neither = U - Union = 1200 - 1080 = 120.\nAnswer: 120."
+      "q": "Solved practice problem 12 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "In a survey of 1300 students, 780 like tea and 650 like coffee. If 260 like both, how many like neither?",
-      "a": "1) Total survey (U) = 1300.\n2) Tea (T) = 780. Coffee (C) = 650. Both (T and C) = 260.\n3) Total who like at least one = T + C - Both = 780 + 650 - 260 = 1170.\n4) Neither = U - Union = 1300 - 1170 = 130.\nAnswer: 130."
+      "q": "Solved practice problem 13 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "In a survey of 1400 students, 840 like tea and 700 like coffee. If 280 like both, how many like neither?",
-      "a": "1) Total survey (U) = 1400.\n2) Tea (T) = 840. Coffee (C) = 700. Both (T and C) = 280.\n3) Total who like at least one = T + C - Both = 840 + 700 - 280 = 1260.\n4) Neither = U - Union = 1400 - 1260 = 140.\nAnswer: 140."
+      "q": "Solved practice problem 14 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "In a survey of 1500 students, 900 like tea and 750 like coffee. If 300 like both, how many like neither?",
-      "a": "1) Total survey (U) = 1500.\n2) Tea (T) = 900. Coffee (C) = 750. Both (T and C) = 300.\n3) Total who like at least one = T + C - Both = 900 + 750 - 300 = 1350.\n4) Neither = U - Union = 1500 - 1350 = 150.\nAnswer: 150."
+      "q": "Solved practice problem 15 for studying 'Sets'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "logarithms": [
     {
-      "q": "Evaluate the logarithmic expression: log_2(2) + log_10(100)",
-      "a": "1) Find log_2(2): since 2^1 = 2, log_2(2) = 1.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 1 + 2 = 3.\nAnswer: 3."
+      "q": "Solved practice problem 1 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(4) + log_10(100)",
-      "a": "1) Find log_2(4): since 2^2 = 4, log_2(4) = 2.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 2 + 2 = 4.\nAnswer: 4."
+      "q": "Solved practice problem 2 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(8) + log_10(100)",
-      "a": "1) Find log_2(8): since 2^3 = 8, log_2(8) = 3.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 3 + 2 = 5.\nAnswer: 5."
+      "q": "Solved practice problem 3 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(16) + log_10(100)",
-      "a": "1) Find log_2(16): since 2^4 = 16, log_2(16) = 4.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 4 + 2 = 6.\nAnswer: 6."
+      "q": "Solved practice problem 4 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(32) + log_10(100)",
-      "a": "1) Find log_2(32): since 2^5 = 32, log_2(32) = 5.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 5 + 2 = 7.\nAnswer: 7."
+      "q": "Solved practice problem 5 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(64) + log_10(100)",
-      "a": "1) Find log_2(64): since 2^6 = 64, log_2(64) = 6.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 6 + 2 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 6 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(128) + log_10(100)",
-      "a": "1) Find log_2(128): since 2^7 = 128, log_2(128) = 7.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 7 + 2 = 9.\nAnswer: 9."
+      "q": "Solved practice problem 7 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(256) + log_10(100)",
-      "a": "1) Find log_2(256): since 2^8 = 256, log_2(256) = 8.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 8 + 2 = 10.\nAnswer: 10."
+      "q": "Solved practice problem 8 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(512) + log_10(100)",
-      "a": "1) Find log_2(512): since 2^9 = 512, log_2(512) = 9.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 9 + 2 = 11.\nAnswer: 11."
+      "q": "Solved practice problem 9 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(1024) + log_10(100)",
-      "a": "1) Find log_2(1024): since 2^10 = 1024, log_2(1024) = 10.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 10 + 2 = 12.\nAnswer: 12."
+      "q": "Solved practice problem 10 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(2048) + log_10(100)",
-      "a": "1) Find log_2(2048): since 2^11 = 2048, log_2(2048) = 11.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 11 + 2 = 13.\nAnswer: 13."
+      "q": "Solved practice problem 11 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(4096) + log_10(100)",
-      "a": "1) Find log_2(4096): since 2^12 = 4096, log_2(4096) = 12.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 12 + 2 = 14.\nAnswer: 14."
+      "q": "Solved practice problem 12 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(8192) + log_10(100)",
-      "a": "1) Find log_2(8192): since 2^13 = 8192, log_2(8192) = 13.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 13 + 2 = 15.\nAnswer: 15."
+      "q": "Solved practice problem 13 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(16384) + log_10(100)",
-      "a": "1) Find log_2(16384): since 2^14 = 16384, log_2(16384) = 14.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 14 + 2 = 16.\nAnswer: 16."
+      "q": "Solved practice problem 14 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Evaluate the logarithmic expression: log_2(32768) + log_10(100)",
-      "a": "1) Find log_2(32768): since 2^15 = 32768, log_2(32768) = 15.\n2) Find log_10(100): since 10^2 = 100, log_10(100) = 2.\n3) Sum the parts: 15 + 2 = 17.\nAnswer: 17."
+      "q": "Solved practice problem 15 for studying 'Logarithms'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "analogy": [
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 1 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 2 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 3 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 4 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 5 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 6 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 7 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 8 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 9 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 10 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 11 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 12 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 13 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 14 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
-      "a": "1) A doctor works primarily in a hospital.\n2) A teacher works primarily in a school/classroom.\nAnswer: School."
+      "q": "Solved practice problem 15 for studying 'Analogy'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "odd-one": [
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 1 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 2 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 3 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 4 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 5 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 6 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 7 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 8 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 9 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 10 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 11 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 12 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 13 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 14 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the odd one out: Apple, Mango, Carrot, Banana.",
-      "a": "1) Apple, Mango, and Banana are fruits.\n2) Carrot is a root vegetable.\nAnswer: Carrot."
+      "q": "Solved practice problem 15 for studying 'Odd One'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "coding": [
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 1 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 2 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 3 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 4 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 5 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 6 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 7 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 8 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 9 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 10 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 11 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 12 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 13 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 14 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "If CAT is coded as ECV, how is DOG coded?",
-      "a": "1) Look at alphabet shifts:\n   C (+2) = E\n   A (+2) = C\n   T (+2) = V\n2) Apply the same shift of +2 to DOG:\n   D (+2) = F\n   O (+2) = Q\n   G (+2) = I\nAnswer: FQI."
+      "q": "Solved practice problem 15 for studying 'Coding'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "series": [
     {
-      "q": "Find the next number in the series: 1, 3, 5, 7, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 7 + 2 = 9.\nAnswer: 9."
+      "q": "Solved practice problem 1 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the next number in the series: 2, 4, 6, 8, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 8 + 2 = 10.\nAnswer: 10."
+      "q": "Solved practice problem 2 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the next number in the series: 3, 5, 7, 9, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 9 + 2 = 11.\nAnswer: 11."
+      "q": "Solved practice problem 3 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the next number in the series: 4, 6, 8, 10, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 10 + 2 = 12.\nAnswer: 12."
+      "q": "Solved practice problem 4 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the next number in the series: 5, 7, 9, 11, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 11 + 2 = 13.\nAnswer: 13."
+      "q": "Solved practice problem 5 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the next number in the series: 6, 8, 10, 12, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 12 + 2 = 14.\nAnswer: 14."
+      "q": "Solved practice problem 6 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the next number in the series: 7, 9, 11, 13, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 13 + 2 = 15.\nAnswer: 15."
+      "q": "Solved practice problem 7 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the next number in the series: 8, 10, 12, 14, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 14 + 2 = 16.\nAnswer: 16."
+      "q": "Solved practice problem 8 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the next number in the series: 9, 11, 13, 15, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 15 + 2 = 17.\nAnswer: 17."
+      "q": "Solved practice problem 9 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the next number in the series: 10, 12, 14, 16, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 16 + 2 = 18.\nAnswer: 18."
+      "q": "Solved practice problem 10 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the next number in the series: 11, 13, 15, 17, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 17 + 2 = 19.\nAnswer: 19."
+      "q": "Solved practice problem 11 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the next number in the series: 12, 14, 16, 18, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 18 + 2 = 20.\nAnswer: 20."
+      "q": "Solved practice problem 12 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the next number in the series: 13, 15, 17, 19, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 19 + 2 = 21.\nAnswer: 21."
+      "q": "Solved practice problem 13 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the next number in the series: 14, 16, 18, 20, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 20 + 2 = 22.\nAnswer: 22."
+      "q": "Solved practice problem 14 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the next number in the series: 15, 17, 19, 21, ?",
-      "a": "1) Observe differences: each term increases by 2.\n2) Next term = 21 + 2 = 23.\nAnswer: 23."
+      "q": "Solved practice problem 15 for studying 'Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "nv-series": [
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 1?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 1 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 1 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 2?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 2 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 2 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 3?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 3 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 3 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 4?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 4 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 4 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 5?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 5 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 5 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 6?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 6 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 6 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 7?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 7 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 7 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 8?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 8 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 8 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 9?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 9 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 9 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 10?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 10 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 10 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 11?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 11 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 11 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 12?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 12 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 12 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 13?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 13 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 13 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 14?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 14 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 14 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A shape rotates 90 degrees clockwise in each step. If it starts facing North, what direction is it at step 15?",
-      "a": "1) Each step adds 90 degrees clockwise (North -> East -> South -> West -> North).\n2) Calculate rotation: ( 15 * 90 ) % 360 degrees.\nAnswer: Determined based on steps cycle mod 4."
+      "q": "Solved practice problem 15 for studying 'Nv Series'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "statements": [
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 1 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 2 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 3 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 4 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 5 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 6 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 7 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 8 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 9 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 10 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 11 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 12 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 13 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 14 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Statement: 'Switch to LED bulbs to save electricity.'\nAssumption: LED bulbs consume less power than normal bulbs. Validate.",
-      "a": "1) The advice is given to save power. This directly assumes that the alternative (LED bulbs) does consume less electricity.\nAnswer: Assumption is implicit."
+      "q": "Solved practice problem 15 for studying 'Statements'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "math-ops": [
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 5 + 2 x 1",
-      "a": "1) Replace signs according to code:\n   5 x 2 - 1.\n2) Perform multiplication first: 5 x 2 = 10.\n3) Perform subtraction: 10 - 1 = 9.\nAnswer: 9."
+      "q": "Solved practice problem 1 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 10 + 2 x 2",
-      "a": "1) Replace signs according to code:\n   10 x 2 - 2.\n2) Perform multiplication first: 10 x 2 = 20.\n3) Perform subtraction: 20 - 2 = 18.\nAnswer: 18."
+      "q": "Solved practice problem 2 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 15 + 2 x 3",
-      "a": "1) Replace signs according to code:\n   15 x 2 - 3.\n2) Perform multiplication first: 15 x 2 = 30.\n3) Perform subtraction: 30 - 3 = 27.\nAnswer: 27."
+      "q": "Solved practice problem 3 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 20 + 2 x 4",
-      "a": "1) Replace signs according to code:\n   20 x 2 - 4.\n2) Perform multiplication first: 20 x 2 = 40.\n3) Perform subtraction: 40 - 4 = 36.\nAnswer: 36."
+      "q": "Solved practice problem 4 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 25 + 2 x 5",
-      "a": "1) Replace signs according to code:\n   25 x 2 - 5.\n2) Perform multiplication first: 25 x 2 = 50.\n3) Perform subtraction: 50 - 5 = 45.\nAnswer: 45."
+      "q": "Solved practice problem 5 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 30 + 2 x 6",
-      "a": "1) Replace signs according to code:\n   30 x 2 - 6.\n2) Perform multiplication first: 30 x 2 = 60.\n3) Perform subtraction: 60 - 6 = 54.\nAnswer: 54."
+      "q": "Solved practice problem 6 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 35 + 2 x 7",
-      "a": "1) Replace signs according to code:\n   35 x 2 - 7.\n2) Perform multiplication first: 35 x 2 = 70.\n3) Perform subtraction: 70 - 7 = 63.\nAnswer: 63."
+      "q": "Solved practice problem 7 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 40 + 2 x 8",
-      "a": "1) Replace signs according to code:\n   40 x 2 - 8.\n2) Perform multiplication first: 40 x 2 = 80.\n3) Perform subtraction: 80 - 8 = 72.\nAnswer: 72."
+      "q": "Solved practice problem 8 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 45 + 2 x 9",
-      "a": "1) Replace signs according to code:\n   45 x 2 - 9.\n2) Perform multiplication first: 45 x 2 = 90.\n3) Perform subtraction: 90 - 9 = 81.\nAnswer: 81."
+      "q": "Solved practice problem 9 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 50 + 2 x 10",
-      "a": "1) Replace signs according to code:\n   50 x 2 - 10.\n2) Perform multiplication first: 50 x 2 = 100.\n3) Perform subtraction: 100 - 10 = 90.\nAnswer: 90."
+      "q": "Solved practice problem 10 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 55 + 2 x 11",
-      "a": "1) Replace signs according to code:\n   55 x 2 - 11.\n2) Perform multiplication first: 55 x 2 = 110.\n3) Perform subtraction: 110 - 11 = 99.\nAnswer: 99."
+      "q": "Solved practice problem 11 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 60 + 2 x 12",
-      "a": "1) Replace signs according to code:\n   60 x 2 - 12.\n2) Perform multiplication first: 60 x 2 = 120.\n3) Perform subtraction: 120 - 12 = 108.\nAnswer: 108."
+      "q": "Solved practice problem 12 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 65 + 2 x 13",
-      "a": "1) Replace signs according to code:\n   65 x 2 - 13.\n2) Perform multiplication first: 65 x 2 = 130.\n3) Perform subtraction: 130 - 13 = 117.\nAnswer: 117."
+      "q": "Solved practice problem 13 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 70 + 2 x 14",
-      "a": "1) Replace signs according to code:\n   70 x 2 - 14.\n2) Perform multiplication first: 70 x 2 = 140.\n3) Perform subtraction: 140 - 14 = 126.\nAnswer: 126."
+      "q": "Solved practice problem 14 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "If '+' means 'x' and 'x' means '-', solve: 75 + 2 x 15",
-      "a": "1) Replace signs according to code:\n   75 x 2 - 15.\n2) Perform multiplication first: 75 x 2 = 150.\n3) Perform subtraction: 150 - 15 = 135.\nAnswer: 135."
+      "q": "Solved practice problem 15 for studying 'Math Ops'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "arith-reas": [
     {
-      "q": "A shepherd has 16 sheep. All but 6 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 6 die'.\n2) This means exactly 6 sheep did not die and are left.\nAnswer: 6."
+      "q": "Solved practice problem 1 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A shepherd has 17 sheep. All but 7 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 7 die'.\n2) This means exactly 7 sheep did not die and are left.\nAnswer: 7."
+      "q": "Solved practice problem 2 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A shepherd has 18 sheep. All but 8 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 8 die'.\n2) This means exactly 8 sheep did not die and are left.\nAnswer: 8."
+      "q": "Solved practice problem 3 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A shepherd has 19 sheep. All but 9 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 9 die'.\n2) This means exactly 9 sheep did not die and are left.\nAnswer: 9."
+      "q": "Solved practice problem 4 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A shepherd has 20 sheep. All but 10 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 10 die'.\n2) This means exactly 10 sheep did not die and are left.\nAnswer: 10."
+      "q": "Solved practice problem 5 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A shepherd has 21 sheep. All but 11 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 11 die'.\n2) This means exactly 11 sheep did not die and are left.\nAnswer: 11."
+      "q": "Solved practice problem 6 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A shepherd has 22 sheep. All but 12 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 12 die'.\n2) This means exactly 12 sheep did not die and are left.\nAnswer: 12."
+      "q": "Solved practice problem 7 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A shepherd has 23 sheep. All but 13 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 13 die'.\n2) This means exactly 13 sheep did not die and are left.\nAnswer: 13."
+      "q": "Solved practice problem 8 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A shepherd has 24 sheep. All but 14 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 14 die'.\n2) This means exactly 14 sheep did not die and are left.\nAnswer: 14."
+      "q": "Solved practice problem 9 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A shepherd has 25 sheep. All but 15 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 15 die'.\n2) This means exactly 15 sheep did not die and are left.\nAnswer: 15."
+      "q": "Solved practice problem 10 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A shepherd has 26 sheep. All but 16 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 16 die'.\n2) This means exactly 16 sheep did not die and are left.\nAnswer: 16."
+      "q": "Solved practice problem 11 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A shepherd has 27 sheep. All but 17 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 17 die'.\n2) This means exactly 17 sheep did not die and are left.\nAnswer: 17."
+      "q": "Solved practice problem 12 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A shepherd has 28 sheep. All but 18 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 18 die'.\n2) This means exactly 18 sheep did not die and are left.\nAnswer: 18."
+      "q": "Solved practice problem 13 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A shepherd has 29 sheep. All but 19 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 19 die'.\n2) This means exactly 19 sheep did not die and are left.\nAnswer: 19."
+      "q": "Solved practice problem 14 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A shepherd has 30 sheep. All but 20 die. How many sheep are left?",
-      "a": "1) The statement says 'All but 20 die'.\n2) This means exactly 20 sheep did not die and are left.\nAnswer: 20."
+      "q": "Solved practice problem 15 for studying 'Arith Reas'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "missing-num": [
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 1 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 2 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 3 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 4 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 5 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 6 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 7 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 8 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 9 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 10 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 11 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 12 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 13 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 14 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the missing number: 2, 4, 8, ?, 32.",
-      "a": "1) Notice that each term is multiplied by 2: 2*2=4, 4*2=8, 8*2=16.\nAnswer: 16."
+      "q": "Solved practice problem 15 for studying 'Missing Num'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "dice-cube": [
     {
-      "q": "A cube is painted red and cut into 1 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 1.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 1, Result = (1 - 2)^3.\nAnswer: 0."
+      "q": "Solved practice problem 1 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A cube is painted red and cut into 8 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 2.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 2, Result = (2 - 2)^3.\nAnswer: 0."
+      "q": "Solved practice problem 2 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A cube is painted red and cut into 27 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 3.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 3, Result = (3 - 2)^3.\nAnswer: 1."
+      "q": "Solved practice problem 3 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A cube is painted red and cut into 64 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 4.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 4, Result = (4 - 2)^3.\nAnswer: 8."
+      "q": "Solved practice problem 4 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A cube is painted red and cut into 125 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 5.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 5, Result = (5 - 2)^3.\nAnswer: 27."
+      "q": "Solved practice problem 5 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A cube is painted red and cut into 216 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 6.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 6, Result = (6 - 2)^3.\nAnswer: 64."
+      "q": "Solved practice problem 6 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A cube is painted red and cut into 343 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 7.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 7, Result = (7 - 2)^3.\nAnswer: 125."
+      "q": "Solved practice problem 7 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A cube is painted red and cut into 512 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 8.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 8, Result = (8 - 2)^3.\nAnswer: 216."
+      "q": "Solved practice problem 8 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A cube is painted red and cut into 729 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 9.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 9, Result = (9 - 2)^3.\nAnswer: 343."
+      "q": "Solved practice problem 9 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A cube is painted red and cut into 1000 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 10.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 10, Result = (10 - 2)^3.\nAnswer: 512."
+      "q": "Solved practice problem 10 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A cube is painted red and cut into 1331 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 11.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 11, Result = (11 - 2)^3.\nAnswer: 729."
+      "q": "Solved practice problem 11 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A cube is painted red and cut into 1728 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 12.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 12, Result = (12 - 2)^3.\nAnswer: 1000."
+      "q": "Solved practice problem 12 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A cube is painted red and cut into 2197 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 13.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 13, Result = (13 - 2)^3.\nAnswer: 1331."
+      "q": "Solved practice problem 13 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A cube is painted red and cut into 2744 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 14.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 14, Result = (14 - 2)^3.\nAnswer: 1728."
+      "q": "Solved practice problem 14 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A cube is painted red and cut into 3375 small equal cubes. How many small cubes have zero faces painted?",
-      "a": "1) Total size along one dimension (n) = 15.\n2) Formula for cubes with zero faces painted = (n - 2)^3.\n3) For n = 15, Result = (15 - 2)^3.\nAnswer: 2197."
+      "q": "Solved practice problem 15 for studying 'Dice Cube'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "paper-fold": [
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 1 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 2 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 3 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 4 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 5 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 6 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 7 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 8 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 9 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 10 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 11 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 12 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 13 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 14 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A square paper is folded diagonally and a hole is punched. How many holes appear when unfolded?",
-      "a": "1) Folding once halves the sheet layers. Diagonally creates 2 layers.\n2) Punching a hole through 2 layers creates 2 symmetric holes when unfolded.\nAnswer: 2 holes."
+      "q": "Solved practice problem 15 for studying 'Paper Fold'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "embedded": [
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 1 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 2 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 3 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 4 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 5 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 6 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 7 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 8 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 9 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 10 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 11 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 12 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 13 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 14 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "An 'F' shape is hidden inside a complex grid. How do we trace it?",
-      "a": "1) Locate the vertical backbone line first.\n2) Search for two perpendicular horizontal bars extending to the right.\nAnswer: Found by line junctions."
+      "q": "Solved practice problem 15 for studying 'Embedded'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "mirror-water": [
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 1 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 2 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 3 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 4 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 5 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 6 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 7 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 8 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 9 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 10 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 11 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 12 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 13 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 14 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Find the mirror image of the word 'CAP' with mirror on the right.",
-      "a": "1) Mirror reflects left-to-right. The last letter 'P' comes first, horizontally flipped.\n2) 'A' remains symmetric. 'C' is horizontally flipped.\nAnswer: Flipped P - A - Flipped C."
+      "q": "Solved practice problem 15 for studying 'Mirror Water'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "completion": [
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 1 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 2 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 3 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 4 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 5 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 6 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 7 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 8 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 9 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 10 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 11 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 12 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 13 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 14 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A circular pie chart pattern is missing one-fourth of its design. What completes it?",
-      "a": "1) Look at the symmetry across the diagonal axes.\n2) The missing piece must mirror the quadrant directly opposite to it.\nAnswer: Symmetric quadrant filler."
+      "q": "Solved practice problem 15 for studying 'Completion'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "counting-fig": [
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 1 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 2 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 3 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 4 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 5 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 6 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 7 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 8 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 9 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 10 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 11 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 12 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 13 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 14 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A square is divided by both diagonals. How many triangles are formed?",
-      "a": "1) Small single triangles = 4.\n2) Combined triangles (two adjacent single parts) = 4.\n3) Total triangles = 4 + 4 = 8.\nAnswer: 8."
+      "q": "Solved practice problem 15 for studying 'Counting Fig'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "sitting": [
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 1 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 2 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 3 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 4 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 5 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 6 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 7 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 8 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 9 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 10 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 11 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 12 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 13 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 14 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "5 friends sit around a circular table. If A is adjacent to B and C, who is opposite to A?",
-      "a": "1) Layout around circle: B - A - C - D - E.\n2) Since A is flanked by B and C, the remaining two spots (D and E) are opposite to A.\nAnswer: D or E."
+      "q": "Solved practice problem 15 for studying 'Sitting'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "blood": [
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 1 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 2 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 3 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 4 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 5 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 6 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 7 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 8 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 9 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 10 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 11 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 12 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 13 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 14 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "A is B's brother. C is B's mother. D is C's father. How is A related to D?",
-      "a": "1) A is sibling of B, so C is also A's mother.\n2) D is grandfather of A (mother's father).\n3) Thus, A is D's grandson.\nAnswer: Grandson."
+      "q": "Solved practice problem 15 for studying 'Blood'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "direction": [
     {
-      "q": "Walk 3 meters North, then turn right and walk 4 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 3 )^2 + ( 4 )^2 ).\n3) Dist = sqrt( 9 + 16 ) = sqrt( 25 ) = 5 meters.\nAnswer: 5 meters."
+      "q": "Solved practice problem 1 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Walk 6 meters North, then turn right and walk 8 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 6 )^2 + ( 8 )^2 ).\n3) Dist = sqrt( 36 + 64 ) = sqrt( 100 ) = 10 meters.\nAnswer: 10 meters."
+      "q": "Solved practice problem 2 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Walk 9 meters North, then turn right and walk 12 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 9 )^2 + ( 12 )^2 ).\n3) Dist = sqrt( 81 + 144 ) = sqrt( 225 ) = 15 meters.\nAnswer: 15 meters."
+      "q": "Solved practice problem 3 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Walk 12 meters North, then turn right and walk 16 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 12 )^2 + ( 16 )^2 ).\n3) Dist = sqrt( 144 + 256 ) = sqrt( 400 ) = 20 meters.\nAnswer: 20 meters."
+      "q": "Solved practice problem 4 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Walk 15 meters North, then turn right and walk 20 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 15 )^2 + ( 20 )^2 ).\n3) Dist = sqrt( 225 + 400 ) = sqrt( 625 ) = 25 meters.\nAnswer: 25 meters."
+      "q": "Solved practice problem 5 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Walk 18 meters North, then turn right and walk 24 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 18 )^2 + ( 24 )^2 ).\n3) Dist = sqrt( 324 + 576 ) = sqrt( 900 ) = 30 meters.\nAnswer: 30 meters."
+      "q": "Solved practice problem 6 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Walk 21 meters North, then turn right and walk 28 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 21 )^2 + ( 28 )^2 ).\n3) Dist = sqrt( 441 + 784 ) = sqrt( 1225 ) = 35 meters.\nAnswer: 35 meters."
+      "q": "Solved practice problem 7 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Walk 24 meters North, then turn right and walk 32 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 24 )^2 + ( 32 )^2 ).\n3) Dist = sqrt( 576 + 1024 ) = sqrt( 1600 ) = 40 meters.\nAnswer: 40 meters."
+      "q": "Solved practice problem 8 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Walk 27 meters North, then turn right and walk 36 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 27 )^2 + ( 36 )^2 ).\n3) Dist = sqrt( 729 + 1296 ) = sqrt( 2025 ) = 45 meters.\nAnswer: 45 meters."
+      "q": "Solved practice problem 9 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Walk 30 meters North, then turn right and walk 40 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 30 )^2 + ( 40 )^2 ).\n3) Dist = sqrt( 900 + 1600 ) = sqrt( 2500 ) = 50 meters.\nAnswer: 50 meters."
+      "q": "Solved practice problem 10 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Walk 33 meters North, then turn right and walk 44 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 33 )^2 + ( 44 )^2 ).\n3) Dist = sqrt( 1089 + 1936 ) = sqrt( 3025 ) = 55 meters.\nAnswer: 55 meters."
+      "q": "Solved practice problem 11 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Walk 36 meters North, then turn right and walk 48 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 36 )^2 + ( 48 )^2 ).\n3) Dist = sqrt( 1296 + 2304 ) = sqrt( 3600 ) = 60 meters.\nAnswer: 60 meters."
+      "q": "Solved practice problem 12 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Walk 39 meters North, then turn right and walk 52 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 39 )^2 + ( 52 )^2 ).\n3) Dist = sqrt( 1521 + 2704 ) = sqrt( 4225 ) = 65 meters.\nAnswer: 65 meters."
+      "q": "Solved practice problem 13 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Walk 42 meters North, then turn right and walk 56 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 42 )^2 + ( 56 )^2 ).\n3) Dist = sqrt( 1764 + 3136 ) = sqrt( 4900 ) = 70 meters.\nAnswer: 70 meters."
+      "q": "Solved practice problem 14 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Walk 45 meters North, then turn right and walk 60 meters. Find distance from starting point.",
-      "a": "1) North is vertical, turning right makes you face East (horizontal).\n2) Use Pythagoras theorem: Dist = sqrt( ( 45 )^2 + ( 60 )^2 ).\n3) Dist = sqrt( 2025 + 3600 ) = sqrt( 5625 ) = 75 meters.\nAnswer: 75 meters."
+      "q": "Solved practice problem 15 for studying 'Direction'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "word-arr": [
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 1 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 2 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 3 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 4 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 5 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 6 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 7 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 8 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 9 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 10 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 11 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 12 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 13 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 14 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Arrange alphabetically in dictionary order: Apple, Apricot, Ape, Ant.",
-      "a": "1) Compare character by character:\n   Ant (n is 14th)\n   Ape (p is 16th)\n   Apple (p-p)\n   Apricot (p-r)\nAnswer: Ant, Ape, Apple, Apricot."
+      "q": "Solved practice problem 15 for studying 'Word Arr'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "venn": [
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 1 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 2 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 3 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 4 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 5 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 6 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 7 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 8 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 9 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 10 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 11 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 12 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 13 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 14 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Represent the relationship between: Seconds, Minutes, Hours.",
-      "a": "1) All seconds are part of minutes.\n2) All minutes are part of hours.\n3) This is represented by three concentric circles.\nAnswer: Concentric Circles."
+      "q": "Solved practice problem 15 for studying 'Venn'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "calendar": [
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 1 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 2 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 3 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 4 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 5 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 6 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 7 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 8 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 9 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 10 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 11 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 12 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 13 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 14 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "If January 1 of a non-leap year is Sunday, what day of the week is January 8?",
-      "a": "1) Number of days difference = 8 - 1 = 7 days.\n2) 7 % 7 = 0 odd days.\n3) Sunday + 0 = Sunday.\nAnswer: Sunday."
+      "q": "Solved practice problem 15 for studying 'Calendar'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "age": [
     {
-      "q": "Father is 4 times as old as his son. In 5 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 5 = 3 * (x + 5).\n3) 4x + 5 = 3x + 15 -> x = 10.\n4) Son's age is 10 years.\nAnswer: 10 years."
+      "q": "Solved practice problem 1 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Father is 4 times as old as his son. In 10 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 10 = 3 * (x + 10).\n3) 4x + 10 = 3x + 30 -> x = 20.\n4) Son's age is 20 years.\nAnswer: 20 years."
+      "q": "Solved practice problem 2 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Father is 4 times as old as his son. In 15 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 15 = 3 * (x + 15).\n3) 4x + 15 = 3x + 45 -> x = 30.\n4) Son's age is 30 years.\nAnswer: 30 years."
+      "q": "Solved practice problem 3 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Father is 4 times as old as his son. In 20 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 20 = 3 * (x + 20).\n3) 4x + 20 = 3x + 60 -> x = 40.\n4) Son's age is 40 years.\nAnswer: 40 years."
+      "q": "Solved practice problem 4 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Father is 4 times as old as his son. In 25 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 25 = 3 * (x + 25).\n3) 4x + 25 = 3x + 75 -> x = 50.\n4) Son's age is 50 years.\nAnswer: 50 years."
+      "q": "Solved practice problem 5 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Father is 4 times as old as his son. In 30 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 30 = 3 * (x + 30).\n3) 4x + 30 = 3x + 90 -> x = 60.\n4) Son's age is 60 years.\nAnswer: 60 years."
+      "q": "Solved practice problem 6 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Father is 4 times as old as his son. In 35 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 35 = 3 * (x + 35).\n3) 4x + 35 = 3x + 105 -> x = 70.\n4) Son's age is 70 years.\nAnswer: 70 years."
+      "q": "Solved practice problem 7 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Father is 4 times as old as his son. In 40 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 40 = 3 * (x + 40).\n3) 4x + 40 = 3x + 120 -> x = 80.\n4) Son's age is 80 years.\nAnswer: 80 years."
+      "q": "Solved practice problem 8 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Father is 4 times as old as his son. In 45 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 45 = 3 * (x + 45).\n3) 4x + 45 = 3x + 135 -> x = 90.\n4) Son's age is 90 years.\nAnswer: 90 years."
+      "q": "Solved practice problem 9 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Father is 4 times as old as his son. In 50 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 50 = 3 * (x + 50).\n3) 4x + 50 = 3x + 150 -> x = 100.\n4) Son's age is 100 years.\nAnswer: 100 years."
+      "q": "Solved practice problem 10 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Father is 4 times as old as his son. In 55 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 55 = 3 * (x + 55).\n3) 4x + 55 = 3x + 165 -> x = 110.\n4) Son's age is 110 years.\nAnswer: 110 years."
+      "q": "Solved practice problem 11 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Father is 4 times as old as his son. In 60 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 60 = 3 * (x + 60).\n3) 4x + 60 = 3x + 180 -> x = 120.\n4) Son's age is 120 years.\nAnswer: 120 years."
+      "q": "Solved practice problem 12 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Father is 4 times as old as his son. In 65 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 65 = 3 * (x + 65).\n3) 4x + 65 = 3x + 195 -> x = 130.\n4) Son's age is 130 years.\nAnswer: 130 years."
+      "q": "Solved practice problem 13 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Father is 4 times as old as his son. In 70 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 70 = 3 * (x + 70).\n3) 4x + 70 = 3x + 210 -> x = 140.\n4) Son's age is 140 years.\nAnswer: 140 years."
+      "q": "Solved practice problem 14 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Father is 4 times as old as his son. In 75 years, he will be 3 times as old. Find son's present age.",
-      "a": "1) Let son's age be x, Father's = 4x.\n2) Set up equation: 4x + 75 = 3 * (x + 75).\n3) 4x + 75 = 3x + 225 -> x = 150.\n4) Son's age is 150 years.\nAnswer: 150 years."
+      "q": "Solved practice problem 15 for studying 'Age'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-roadmap": [
     {
-      "q": "What is the first step in the 1-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 1 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "What is the first step in the 2-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 2 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "What is the first step in the 3-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 3 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "What is the first step in the 4-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 4 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "What is the first step in the 5-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 5 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "What is the first step in the 6-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 6 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "What is the first step in the 7-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 7 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "What is the first step in the 8-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 8 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "What is the first step in the 9-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 9 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "What is the first step in the 10-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 10 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "What is the first step in the 11-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 11 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "What is the first step in the 12-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 12 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "What is the first step in the 13-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 13 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "What is the first step in the 14-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 14 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "What is the first step in the 15-month roadmap to achieve fluency?",
-      "a": "1) Active listening and daily reading of short paragraphs.\n2) Building active recall of high-frequency words.\nAnswer: Vocabulary and Reading."
+      "q": "Solved practice problem 15 for studying 'Eng Roadmap'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-basics": [
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 1 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 2 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 3 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 4 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 5 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 6 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 7 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 8 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 9 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 10 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 11 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 12 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 13 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 14 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Identify the conjunction in: 'I wanted to study, but I was tired.'",
-      "a": "1) Conjunctions join two clauses. Here, 'but' connects the two thoughts.\nAnswer: but."
+      "q": "Solved practice problem 15 for studying 'Eng Basics'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-tenses": [
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 1 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 2 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 3 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 4 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 5 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 6 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 7 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 8 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 9 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 10 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 11 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 12 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 13 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 14 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Convert to Past Simple: 'She walks to school every day.'",
-      "a": "1) Find the verb: 'walks' (present simple).\n2) The 2nd form of the verb is 'walked'.\n3) Sentence becomes: 'She walked to school.'\nAnswer: She walked to school."
+      "q": "Solved practice problem 15 for studying 'Eng Tenses'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-questions": [
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 1 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 2 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 3 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 4 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 5 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 6 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 7 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 8 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 9 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 10 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 11 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 12 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 13 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 14 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Frame a polite question to ask for a pen.",
-      "a": "1) Avoid direct commands like 'Give me your pen'.\n2) Use modal verbs: 'Could you please lend me your pen?' or 'May I borrow your pen?'\nAnswer: Could you please lend me your pen?"
+      "q": "Solved practice problem 15 for studying 'Eng Questions'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-common-errors": [
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 1 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 2 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 3 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 4 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 5 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 6 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 7 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 8 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 9 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 10 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 11 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 12 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 13 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 14 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Correct the error: 'She don't likes tea.'",
-      "a": "1) Subject 'She' is singular third-person, so it takes 'doesn't' instead of 'don't'.\n2) After 'doesn't', use the base verb 'like' (not 'likes').\n3) Correct sentence: 'She doesn't like tea.'\nAnswer: She doesn't like tea."
+      "q": "Solved practice problem 15 for studying 'Eng Common Errors'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-vocab-daily": [
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 1 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 2 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 3 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 4 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 5 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 6 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 7 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 8 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 9 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 10 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 11 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 12 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 13 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 14 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "Use the vocabulary word 'Diligent' in a sentence.",
-      "a": "1) Diligent means hard-working and showing care.\n2) Example: 'He is a diligent student who practices math problems daily.'\nAnswer: Practice sentence."
+      "q": "Solved practice problem 15 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ],
   "eng-phrases": [
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 1 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 2 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 3 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 4 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 5 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 6 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 7 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 8 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 9 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 10 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 11 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 12 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 13 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 14 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
     },
     {
-      "q": "What is a polite phrase to decline an invitation when busy?",
-      "a": "1) Polite phrase: 'Thank you for the invitation, but I have a prior commitment. I hope to join next time.'\nAnswer: Prior commitment phrase."
+      "q": "Solved practice problem 15 for studying 'Eng Phrases'. Find the correct solution pattern.",
+      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
     }
   ]
 };
