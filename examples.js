@@ -751,26 +751,202 @@ var EXAMPLES = {
   ],
   "simple-eq": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Linear equations express relationships between variables in a single degree.\n\u26a1 **Formula/Shortcut**: Formulate linear equation: ax + b = c.\n\n**Question**: At Starline Cinema, Manager Karan reports ticket sales for a screening. VIP tickets cost $50 and regular tickets cost $20. If 100 tickets were sold for a total of $2,900, find the number of VIP tickets sold.",
-      "a": "\ud83d\udccb **Given**: Total tickets = 100. VIP cost = $50. Regular cost = $20. Total revenue = $2,900.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Let VIP tickets be v. Regular tickets are 100 - v. Set up the equation: 50v + 20(100 - v) = 2900.\n\n**Step-by-step Solution**:\n1) Expand: 50v + 2000 - 20v = 2900.\n2) Combine like terms: 30v + 2000 = 2900.\n3) Subtract 2000: 30v = 900.\n4) Divide: v = 30.\n\n\u2728 **Final Answer**: 30"
+      "q": "Solve: 3x+7=22.",
+      "a": "3x = 15 -> x = 5. Answer: x=5."
+    },
+    {
+      "q": "Solve: 2(x-3)+5=15.",
+      "a": "2x - 6 + 5 = 15 -> 2x - 1 = 15 -> 2x = 16 -> x = 8. Answer: x=8."
+    },
+    {
+      "q": "Solve for x,y: x+y=10, x-y=4.",
+      "a": "Adding gives 2x = 14 -> x = 7. Subtracting gives 2y = 6 -> y = 3. Answer: x=7, y=3."
+    },
+    {
+      "q": "Two numbers sum to 45, differ by 5. Find them.",
+      "a": "Let numbers be x and y. x + y = 45, x - y = 5. Adding gives 2x = 50 -> x = 25. Then y = 20. Answer: 25 and 20."
+    },
+    {
+      "q": "A number increased by 15 equals thrice the number. Find it.",
+      "a": "x + 15 = 3x -> 2x = 15 -> x = 7.5. Answer: 7.5."
+    },
+    {
+      "q": "Five years ago, a father was 4x his son's age; in 5 years he'll be 2x the son's age. Find present ages.",
+      "a": "Let son be s, father be f. f - 5 = 4(s - 5) -> f - 4s = -15. f + 5 = 2(s + 5) -> f - 2s = 5. Subtracting gives 2s = 20 -> s = 10, f = 25. Answer: Son is 10, Father is 25."
+    },
+    {
+      "q": "Solve: x/3+x/4=7.",
+      "a": "7x/12 = 7 -> 7x = 84 -> x = 12. Answer: x=12."
+    },
+    {
+      "q": "Two numbers are in ratio 3:5; adding 10 to each gives ratio 5:7. Find them.",
+      "a": "Let numbers be 3k, 5k. (3k + 10) / (5k + 10) = 5/7 -> 21k + 70 = 25k + 50 -> 4k = 20 -> k = 5. Numbers are 15 and 25. Answer: 15 and 25."
+    },
+    {
+      "q": "Solve: 2x+3y=13, 3x-2y=0.",
+      "a": "From second, y = 1.5x. Substitute in first: 2x + 4.5x = 13 -> 6.5x = 13 -> x = 2, y = 3. Answer: x=2, y=3."
+    },
+    {
+      "q": "3 pens + 2 pencils cost \u20b936; 5 pens + 3 pencils cost \u20b958. Find each cost.",
+      "a": "3x + 2y = 36, 5x + 3y = 58. Multiply first by 3: 9x + 6y = 108. Multiply second by 2: 10x + 6y = 116. Subtracting gives x = 8 (pen). Substitute: 24 + 2y = 36 -> y = 6 (pencil). Answer: Pen=\u20b98, Pencil=\u20b96."
+    },
+    {
+      "q": "A two-digit number's digits sum to 9. Subtracting 27 reverses the digits.",
+      "a": "Let number be 10a + b. a + b = 9. 10a + b - 27 = 10b + a -> 9a - 9b = 27 -> a - b = 3. Adding gives 2a = 12 -> a = 6, b = 3. Number is 63. Answer: 63."
+    },
+    {
+      "q": "Solve: (x+2)/3 - (x-1)/4 = 1.",
+      "a": "Multiply by 12: 4(x+2) - 3(x-1) = 12 -> 4x + 8 - 3x + 3 = 12 -> x + 11 = 12 -> x = 1. Answer: x=1."
     }
   ],
   "quadratic": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Quadratic equations involve a variable squared and typically have two roots.\n\u26a1 **Formula/Shortcut**: Roots of ax^2 + bx + c = 0 are x = [-b +- sqrt(b^2 - 4ac)] / 2a.\n\n**Question**: Data Analyst Sarah at PingMe Social app calculates user session engagement. The utility score (U) is given by U = -t^2 + 12t - 20, where t is session length in minutes. Find the session length t that yields a utility score of 12.",
-      "a": "\ud83d\udccb **Given**: Equation: -t^2 + 12t - 20 = 12.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Rearrange the equation into standard quadratic form (at^2 + bt + c = 0) and factorize to solve for t.\n\n**Step-by-step Solution**:\n1) Move all terms to one side: t^2 - 12t + 32 = 0.\n2) Split the middle term: t^2 - 8t - 4t + 32 = 0.\n3) Group terms: t(t - 8) - 4(t - 8) = 0 -> (t - 8)(t - 4) = 0.\n4) Roots: t = 8 or t = 4.\n\n\u2728 **Final Answer**: 4 minutes or 8 minutes"
+      "q": "Solve x\u00b2-7x+12=0.",
+      "a": "(x-3)(x-4)=0 -> x=3, 4. Answer: x=3, 4."
+    },
+    {
+      "q": "Solve x\u00b2-5x-14=0.",
+      "a": "(x-7)(x+2)=0 -> x=7, -2. Answer: x=7, -2."
+    },
+    {
+      "q": "Solve 2x\u00b2-3x-5=0.",
+      "a": "(2x-5)(x+1)=0 -> x=5/2, -1. Answer: x=5/2, -1."
+    },
+    {
+      "q": "Find the sum and product of roots of x\u00b2-9x+20=0.",
+      "a": "Sum = -b/a = 9. Product = c/a = 20. Answer: Sum=9, Product=20."
+    },
+    {
+      "q": "One root of x\u00b2-7x+k=0 is 3. Find k and the other root.",
+      "a": "Substitute x=3: 9 - 21 + k = 0 -> k = 12. Sum of roots = 7, so other root = 4. Answer: k=12, other root=4."
+    },
+    {
+      "q": "Solve x\u00b2+2x-8=0 using the formula.",
+      "a": "x = [-2 +- sqrt(4 - 4(1)(-8))] / 2 = [-2 +- sqrt(36)] / 2 = [-2 +- 6] / 2 -> x = 2, -4. Answer: x=2, -4."
+    },
+    {
+      "q": "Find the nature of roots of x\u00b2-4x+4=0.",
+      "a": "D = b^2 - 4ac = 16 - 16 = 0 -> equal real roots (x=2, 2). Answer: equal real roots (x=2,2)."
+    },
+    {
+      "q": "Find the nature of roots of 2x\u00b2+3x+5=0.",
+      "a": "D = 9 - 40 = -31 < 0 -> no real roots. Answer: no real roots."
+    },
+    {
+      "q": "A number and its reciprocal sum to 26/5. Find the number.",
+      "a": "x + 1/x = 26/5 -> 5x^2 - 26x + 5 = 0 -> (5x-1)(x-5) = 0 -> x = 5 or 1/5. Answer: 5 or 1/5."
+    },
+    {
+      "q": "The product of two consecutive positive integers is 240. Find them.",
+      "a": "x(x+1) = 240 -> x^2 + x - 240 = 0 -> (x-15)(x+16) = 0 -> x = 15. Integers are 15 and 16. Answer: 15 and 16."
+    },
+    {
+      "q": "Form a quadratic equation with roots 4 and -3.",
+      "a": "Sum = 1, Product = -12 -> x^2 - x - 12 = 0. Answer: x^2-x-12=0."
+    },
+    {
+      "q": "A rectangle's length is 3 more than its breadth; area=54 sq units. Find the dimensions.",
+      "a": "x(x+3) = 54 -> x^2 + 3x - 54 = 0 -> (x-6)(x+9) = 0 -> breadth = 6, length = 9. Answer: 6 and 9."
     }
   ],
   "inequalities": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Inequalities define acceptable intervals rather than single solutions.\n\u26a1 **Formula/Shortcut**: If (x - a)(x - b) <= 0 and a < b, then a <= x <= b.\n\n**Question**: AeroTech Parts manufacturer designs structural brackets. The thickness error (x) in microns must satisfy the inequality: x^2 - 6x - 27 <= 0. Find the range of acceptable error.",
-      "a": "\ud83d\udccb **Given**: Inequality: x^2 - 6x - 27 <= 0.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Factorize the quadratic expression to find the boundary roots, then determine the interval where the product is negative or zero.\n\n**Step-by-step Solution**:\n1) Factorize: (x - 9)(x + 3) <= 0.\n2) Find boundary roots: x = 9 and x = -3.\n3) Since the inequality is '<=', the solution lies in the closed interval between the roots: -3 <= x <= 9.\n\n\u2728 **Final Answer**: -3 to 9 microns"
+      "q": "Solve 2x+5>11.",
+      "a": "2x > 6 -> x > 3. Answer: x>3."
+    },
+    {
+      "q": "Solve -3x+7<=1.",
+      "a": "-3x <= -6 -> x >= 2. Answer: x>=2."
+    },
+    {
+      "q": "Solve 4<=2x-2<10.",
+      "a": "6 <= 2x < 12 -> 3 <= x < 6. Answer: 3<=x<6."
+    },
+    {
+      "q": "Solve (x-2)/3>1.",
+      "a": "x - 2 > 3 -> x > 5. Answer: x>5."
+    },
+    {
+      "q": "Solve |x-3|<5.",
+      "a": "-5 < x-3 < 5 -> -2 < x < 8. Answer: -2<x<8."
+    },
+    {
+      "q": "Solve |2x+1|>=7.",
+      "a": "2x+1 >= 7 or 2x+1 <= -7 -> 2x >= 6 or 2x <= -8 -> x >= 3 or x <= -4. Answer: x>=3 or x<=-4."
+    },
+    {
+      "q": "Solve x\u00b2-5x+6<0.",
+      "a": "(x-2)(x-3) < 0 -> 2 < x < 3. Answer: 2<x<3."
+    },
+    {
+      "q": "Solve x\u00b2-9>=0.",
+      "a": "(x-3)(x+3) >= 0 -> x <= -3 or x >= 3. Answer: x<=-3 or x>=3."
+    },
+    {
+      "q": "Solve (x-1)(x+4)>0.",
+      "a": "Roots are 1, -4. Product is positive outside: x < -4 or x > 1. Answer: x<-4 or x>1."
+    },
+    {
+      "q": "Solve 3x-2<x+8<=2x+5.",
+      "a": "First part: 2x < 10 -> x < 5. Second part: x >= 3. Combining gives 3 <= x < 5. Answer: 3<=x<5."
+    },
+    {
+      "q": "Twice a number, decreased by 5, is at least 9. Find the range.",
+      "a": "2x - 5 >= 9 -> 2x >= 14 -> x >= 7. Answer: x>=7."
+    },
+    {
+      "q": "Solve -2<(x+1)/3<=4.",
+      "a": "-6 < x + 1 <= 12 -> -7 < x <= 11. Answer: -7<x<=11."
     }
   ],
   "progressions": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Progressions are sequences with constant common differences (AP) or ratios (GP).\n\u26a1 **Formula/Shortcut**: Sum of AP = n/2 * (2a + (n-1)d).\n\n**Question**: Solaris Power installs solar array grids. On day 1, the panels generate 50 kWh. Every day, optimization increases output by 15 kWh. What is the total energy generated by the array over the first 10 days?",
-      "a": "\ud83d\udccb **Given**: First term (a) = 50. Common difference (d) = 15. Terms (n) = 10.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Use the Arithmetic Progression (AP) sum formula to compute the total accumulated energy.\n\n**Step-by-step Solution**:\n1) Substitute values: S_10 = 10/2 * [2*50 + (10-1)*15].\n2) Calculate brackets: S_10 = 5 * [100 + 9 * 15].\n3) Multiply: S_10 = 5 * [100 + 135] = 5 * 235 = 1175 kWh.\n\n\u2728 **Final Answer**: 1175 kWh"
+      "q": "Find the 10th term of AP 3,7,11,...",
+      "a": "a = 3, d = 4. T_10 = 3 + 9 * 4 = 39. Answer: 39."
+    },
+    {
+      "q": "Find the sum of the first 20 terms of AP 5,8,11,...",
+      "a": "a = 5, d = 3. S_20 = 10 * [10 + 19 * 3] = 10 * [10 + 57] = 670. Answer: 670."
+    },
+    {
+      "q": "Find the number of terms in AP 2,5,8,...,101.",
+      "a": "101 = 2 + (n-1)*3 -> 99 = (n-1)*3 -> n-1 = 33 -> n = 34. Answer: 34."
+    },
+    {
+      "q": "Find the 8th term of GP 2,6,18,...",
+      "a": "a = 2, r = 3. T_8 = 2 * 3^7 = 2 * 2187 = 4,374. Answer: 4,374."
+    },
+    {
+      "q": "Find the sum of the first 6 terms of GP 3,6,12,...",
+      "a": "a = 3, r = 2. S_6 = 3 * (2^6 - 1) / (2 - 1) = 3 * 63 = 189. Answer: 189."
+    },
+    {
+      "q": "Find the sum to infinity of GP 8,4,2,1,...",
+      "a": "a = 8, r = 1/2. S_inf = 8 / (1 - 1/2) = 16. Answer: 16."
+    },
+    {
+      "q": "Insert 3 arithmetic means between 4 and 24.",
+      "a": "Let sequence be 4, a1, a2, a3, 24. d = (24 - 4) / 4 = 5. Means are 9, 14, 19. Answer: 9, 14, 19."
+    },
+    {
+      "q": "Find x such that x-1, x+1, 2x+3 are in AP.",
+      "a": "2(x+1) = (x-1) + (2x+3) -> 2x+2 = 3x+2 -> x = 0. Answer: x=0."
+    },
+    {
+      "q": "S_n=3n\u00b2+2n for an AP's sum. Find the 5th term.",
+      "a": "S_5 = 3(25) + 10 = 85. S_4 = 3(16) + 8 = 56. T_5 = S_5 - S_4 = 85 - 56 = 29. Answer: 29."
+    },
+    {
+      "q": "Find the geometric mean of 4 and 16.",
+      "a": "GM = sqrt(4 * 16) = sqrt(64) = 8. Answer: 8."
+    },
+    {
+      "q": "The 3rd term of a GP is 12, the 6th is 96. Find r and a.",
+      "a": "T_6 / T_3 = r^3 = 96/12 = 8 -> r = 2. a * 4 = 12 -> a = 3. Answer: r=2, a=3."
+    },
+    {
+      "q": "Find the sum of the first 15 terms of an AP with a=7, d=-2.",
+      "a": "S_15 = 7.5 * [14 + 14 * (-2)] = 7.5 * [14 - 28] = 7.5 * (-14) = -105. Answer: -105."
     }
   ],
   "geometry": [

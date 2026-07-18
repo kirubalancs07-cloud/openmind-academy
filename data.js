@@ -1313,11 +1313,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Solve for x: 3x - 5 = 2x + 8.',
-            opts: ['13', '3', '5', '8'],
-            ans: 0,
-            exam: 'SSC MTS 2020',
-            sol: 'Subtracting 2x: x - 5 = 8. Adding 5: x = 13.'
+            q: 'Solve 4x-9=15.',
+            opts: ['x=4', 'x=5', 'x=6', 'x=8'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '4x = 15 + 9 -> 4x = 24 -> x = 6.'
+          },
+          {
+            q: 'Solve for x,y: x+y=20, x-y=6.',
+            opts: ['x=12, y=8', 'x=13, y=7', 'x=14, y=6', 'x=15, y=5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Adding the two equations: 2x = 26 -> x = 13. Substituting x: 13 + y = 20 -> y = 7.'
+          },
+          {
+            q: 'Two numbers sum to 60, differ by 12. Find them.',
+            opts: ['32 and 28', '34 and 26', '36 and 24', '40 and 20'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Let the numbers be a and b. a + b = 60, a - b = 12. Adding gives 2a = 72 -> a = 36. Then b = 60 - 36 = 24.'
+          },
+          {
+            q: 'A number decreased by 9 equals half the number. Find it.',
+            opts: ['x=12', 'x=15', 'x=16', 'x=18'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'x - 9 = x / 2 -> x - x / 2 = 9 -> x / 2 = 9 -> x = 18.'
+          },
+          {
+            q: 'Solve x/2+x/5=7.',
+            opts: ['x=8', 'x=10', 'x=12', 'x=14'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Find a common denominator (10): 5x/10 + 2x/10 = 7 -> 7x/10 = 7 -> x = 10.'
+          },
+          {
+            q: 'Two numbers are in ratio 2:3; adding 5 to each gives ratio 3:4. Find them.',
+            opts: ['6 and 9', '8 and 12', '10 and 15', '12 and 18'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Let the numbers be 2k and 3k. (2k + 5) / (3k + 5) = 3 / 4 -> 4(2k + 5) = 3(3k + 5) -> 8k + 20 = 9k + 15 -> k = 5. The numbers are 10 and 15.'
+          },
+          {
+            q: '4 pens + 3 pencils cost ₹47; 2 pens + 5 pencils cost ₹41. Find each cost.',
+            opts: ['Pen=₹7, Pencil=₹6', 'Pen=₹8, Pencil=₹5', 'Pen=₹9, Pencil=₹4', 'Pen=₹10, Pencil=₹3'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let pen = x, pencil = y. 4x + 3y = 47 and 2x + 5y = 41. Multiply the second by 2: 4x + 10y = 82. Subtract the first: 7y = 35 -> y = 5. Substituting: 2x + 25 = 41 -> 2x = 16 -> x = 8. So Pen=₹8, Pencil=₹5.'
           }
         ]
       }
@@ -1337,11 +1379,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If sum of roots of x² - kx + 12 = 0 is 7, find the value of k.',
-            opts: ['7', '-7', '12', '-12'],
+            q: 'Solve x²-8x+15=0.',
+            opts: ['x=2,6', 'x=3,5', 'x=4,4', 'x=1,15'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Factor x^2 - 8x + 15 = 0 into (x - 3)(x - 5) = 0. Roots are x = 3, 5.'
+          },
+          {
+            q: 'Solve x²-2x-24=0.',
+            opts: ['x=6,-4', 'x=8,-3', 'x=12,-2', 'x=4,-6'],
             ans: 0,
-            exam: 'SSC CGL 2021',
-            sol: 'Sum of roots = -(-k)/1 = k.\nGiven sum = 7, so k = 7.'
+            exam: 'Practice Question',
+            sol: 'Factor x^2 - 2x - 24 = 0 into (x - 6)(x + 4) = 0. Roots are x = 6, -4.'
+          },
+          {
+            q: 'Solve 3x²-5x-2=0.',
+            opts: ['x=-1/3,1', 'x=-1/3,2', 'x=-2,1/3', 'x=-1,2/3'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Factor 3x^2 - 5x - 2 = 0 into (3x + 1)(x - 2) = 0. Roots are x = -1/3, 2.'
+          },
+          {
+            q: 'Find the sum and product of roots of x²-6x+8=0.',
+            opts: ['Sum=6, Product=8', 'Sum=-6, Product=8', 'Sum=8, Product=6', 'Sum=6, Product=-8'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'For ax^2 + bx + c = 0, Sum of roots = -b/a = -(-6)/1 = 6. Product of roots = c/a = 8/1 = 8.'
+          },
+          {
+            q: 'One root of x²-9x+k=0 is 4. Find k and the other root.',
+            opts: ['k=18, other root=5', 'k=20, other root=5', 'k=20, other root=4', 'k=24, other root=5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'If 4 is a root, 4^2 - 9(4) + k = 0 -> 16 - 36 + k = 0 -> k = 20. Sum of roots = 9, so the other root = 9 - 4 = 5.'
+          },
+          {
+            q: 'Find the nature of roots of x²-6x+9=0.',
+            opts: ['real and distinct', 'equal roots (x=3,3)', 'imaginary roots', 'no real roots'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Discriminant D = b^2 - 4ac = (-6)^2 - 4(1)(9) = 36 - 36 = 0. Since D = 0, roots are real and equal (x=3,3).'
+          },
+          {
+            q: 'The product of two consecutive positive integers is 210. Find them.',
+            opts: ['12 and 13', '13 and 14', '14 and 15', '15 and 16'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Let integers be x and x+1. x(x+1) = 210 -> x^2 + x - 210 = 0 -> (x + 15)(x - 14) = 0. Since x is positive, x = 14. The integers are 14 and 15.'
           }
         ]
       }
@@ -1360,11 +1444,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Solve the inequality: 5 - 3x < 11.',
-            opts: ['x > -2', 'x < -2', 'x > 2', 'x < 2'],
+            q: 'Solve 3x-4>11.',
+            opts: ['x>3', 'x>4', 'x>5', 'x>6'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '3x - 4 > 11 -> 3x > 15 -> x > 5.'
+          },
+          {
+            q: 'Solve -2x+9≤3.',
+            opts: ['x≤3', 'x≥3', 'x≤-3', 'x≥-3'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '-2x + 9 <= 3 -> -2x <= -6. Dividing by -2 and reversing the inequality gives x >= 3.'
+          },
+          {
+            q: 'Solve 5≤3x-1<14.',
+            opts: ['2≤x<5', '1.5≤x<4.5', '2≤x≤5', '3≤x<6'],
             ans: 0,
-            exam: 'SSC CHSL 2021',
-            sol: 'Subtract 5: -3x < 6.\nDivide by -3 and reverse sign: x > -2.'
+            exam: 'Practice Question',
+            sol: 'Add 1 to all sides: 6 <= 3x < 15. Divide by 3: 2 <= x < 5.'
+          },
+          {
+            q: 'Solve |x+2|<6.',
+            opts: ['-6<x<6', '-8<x<4', '-4<x<8', '-8<x<8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '|x+2| < 6 -> -6 < x + 2 < 6. Subtracting 2: -8 < x < 4.'
+          },
+          {
+            q: 'Solve x²-7x+10≤0.',
+            opts: ['x≤2 or x≥5', '2≤x≤5', '2<x<5', 'x<2 or x>5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Factor x^2 - 7x + 10 = (x - 2)(x - 5) <= 0. The roots are 2 and 5. Since it is <= 0, the solution is 2 <= x <= 5.'
+          },
+          {
+            q: 'Solve (x-2)(x+5)<0.',
+            opts: ['x<-5 or x>2', '-5<x<2', '-5≤x≤2', 'x≤-5 or x≥2'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'The roots are 2 and -5. Since the product is < 0, the solution lies between the roots: -5 < x < 2.'
+          },
+          {
+            q: 'Solve -1<(x-2)/4≤3.',
+            opts: ['-2<x≤12', '-4<x≤14', '-2<x≤14', '-2≤x<14'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Multiply by 4: -4 < x - 2 <= 12. Add 2: -2 < x <= 14.'
           }
         ]
       }
@@ -1386,11 +1512,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the sum of the infinite GP: 1, 1/2, 1/4, 1/8...',
-            opts: ['2', '1.5', '3', '4'],
+            q: 'Find the 12th term of AP 4,9,14,...',
+            opts: ['54', '59', '64', '69'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'T_n = a + (n - 1)d. Here a = 4, d = 5, n = 12. T_12 = 4 + 11 * 5 = 4 + 55 = 59.'
+          },
+          {
+            q: 'Find the sum of the first 25 terms of AP 6,10,14,...',
+            opts: ['1,250', '1,300', '1,350', '1,400'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'S_n = (n/2)[2a + (n-1)d]. Here a = 6, d = 4, n = 25. S_25 = (25/2)[12 + 24 * 4] = (25/2)[12 + 96] = (25/2)[108] = 25 * 54 = 1,350.'
+          },
+          {
+            q: 'Find the number of terms in AP 5,9,13,...,101.',
+            opts: ['23', '24', '25', '26'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'T_n = a + (n-1)d -> 101 = 5 + (n-1)*4 -> 96 = (n-1)*4 -> n-1 = 24 -> n = 25.'
+          },
+          {
+            q: 'Find the 6th term of GP 3,9,27,...',
+            opts: ['243', '486', '729', '2187'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'T_n = a * r^(n-1). Here a = 3, r = 3, n = 6. T_6 = 3 * 3^5 = 3 * 243 = 729.'
+          },
+          {
+            q: 'Find the sum of the first 5 terms of GP 4,8,16,...',
+            opts: ['60', '62', '120', '124'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'S_n = a(r^n - 1)/(r - 1). Here a = 4, r = 2, n = 5. S_5 = 4 * (2^5 - 1) / (2 - 1) = 4 * 31 = 124.'
+          },
+          {
+            q: 'Find the sum to infinity of GP 12,6,3,...',
+            opts: ['18', '20', '24', '30'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'S_inf = a / (1 - r). Here a = 12, r = 1/2. S_inf = 12 / (1 - 1/2) = 12 / (1/2) = 24.'
+          },
+          {
+            q: 'The 4th term of a GP is 24, the 7th is 192. Find r and the first term.',
+            opts: ['r=2, a=3', 'r=3, a=2', 'r=2, a=6', 'r=4, a=1.5'],
             ans: 0,
-            exam: 'SSC CGL 2020',
-            sol: 'Here a = 1, r = 1/2.\nSum = a / (1 - r) = 1 / (1 - 1/2) = 1 / (1/2) = 2.'
+            exam: 'Practice Question',
+            sol: 'T_4 = a * r^3 = 24. T_7 = a * r^6 = 192. T_7 / T_4 = r^3 = 192 / 24 = 8 -> r = 2. Then a * 8 = 24 -> a = 3.'
           }
         ]
       }
