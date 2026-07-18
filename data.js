@@ -1781,11 +1781,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'In how many ways can the letters of the word "CAT" be arranged?',
-            opts: ['6', '3', '24', '12'],
+            q: 'Arrange the letters of "NUMBER".',
+            opts: ['120', '360', '720', '5040'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '"NUMBER" has 6 unique letters. Total arrangements = 6! = 720.'
+          },
+          {
+            q: 'Arrange the letters of "ENGINEERING" (E=3, N=3, G=2, I=2, R=1, 11 letters).',
+            opts: ['138,600', '277,200', '554,400', '1,108,800'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total letters = 11. E repeats 3 times, N 3 times, G 2 times, I 2 times. Arrangements = 11! / (3! * 3! * 2! * 2!) = 39,916,800 / (6 * 6 * 2 * 2) = 277,200.'
+          },
+          {
+            q: 'Seat 6 people around a circular table.',
+            opts: ['120', '240', '360', '720'],
             ans: 0,
-            exam: 'SSC CPO 2021',
-            sol: 'CAT has 3 unique letters. Number of arrangements = 3! = 6.'
+            exam: 'Practice Question',
+            sol: 'Circular arrangement of n objects = (n - 1)!. For 6 people, ways = (6 - 1)! = 5! = 120.'
+          },
+          {
+            q: 'Select 4 people from a group of 10.',
+            opts: ['120', '150', '210', '252'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Number of ways = 10C4 = (10 * 9 * 8 * 7) / (4 * 3 * 2 * 1) = 210.'
+          },
+          {
+            q: 'Form a committee of 2 men and 3 women from 5 men and 6 women.',
+            opts: ['120', '160', '200', '240'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Ways = 5C2 * 6C3 = 10 * 20 = 200.'
+          },
+          {
+            q: 'How many 3-digit numbers can be formed from digits 1–6 without repetition?',
+            opts: ['90', '100', '120', '150'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Number of ways = 6P3 = 6 * 5 * 4 = 120.'
+          },
+          {
+            q: 'Seat 3 boys and 2 girls in a row with all boys together.',
+            opts: ['12', '24', '36', '48'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Treat the 3 boys as 1 single block. This block and the 2 girls give 3 entities. These can be arranged in 3! = 6 ways. The 3 boys can be arranged internally in 3! = 6 ways. Total ways = 6 * 6 = 36.'
           }
         ]
       }
@@ -1804,11 +1846,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'What is the probability of getting a sum of 7 when two dice are rolled?',
-            opts: ['1/6', '1/12', '5/36', '1/9'],
+            q: 'A die is rolled once. Find the probability of an even number.',
+            opts: ['1/3', '1/2', '2/3', '5/6'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Even numbers on a die = {2, 4, 6}. Probability = 3 / 6 = 1/2.'
+          },
+          {
+            q: 'Two coins are tossed. Find the probability of at least one head.',
+            opts: ['1/4', '1/2', '3/4', '1'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Sample space = {HH, HT, TH, TT}. Favorable outcomes (at least 1 head) = {HH, HT, TH} = 3. Probability = 3/4.'
+          },
+          {
+            q: 'A card is drawn from a deck. Find the probability it\'s a queen.',
+            opts: ['1/52', '1/26', '1/13', '1/4'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Number of queens in a deck = 4. Total cards = 52. Probability = 4 / 52 = 1/13.'
+          },
+          {
+            q: 'A bag has 6 red and 4 blue balls. Find the probability of drawing blue.',
+            opts: ['2/5', '3/5', '1/2', '3/10'],
             ans: 0,
-            exam: 'SSC CGL 2020',
-            sol: 'Total outcomes = 6 × 6 = 36.\nFavorable outcomes for sum of 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes.\nProbability = 6 / 36 = 1/6.'
+            exam: 'Practice Question',
+            sol: 'Blue balls = 4. Total balls = 10. Probability = 4 / 10 = 2/5.'
+          },
+          {
+            q: 'Two dice are rolled. Find the probability the sum is 8.',
+            opts: ['1/12', '5/36', '1/6', '7/36'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total outcomes = 36. Favorable outcomes for sum of 8: (2,6), (3,5), (4,4), (5,3), (6,2) = 5. Probability = 5/36.'
+          },
+          {
+            q: 'A coin is tossed 3 times. Find the probability of exactly 2 heads.',
+            opts: ['1/4', '3/8', '1/2', '5/8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total outcomes = 8. Favorable outcomes (exactly 2 heads): {HHT, HTH, THH} = 3. Probability = 3/8.'
+          },
+          {
+            q: 'From 4 men and 4 women, 2 are chosen. Find the probability both are men.',
+            opts: ['1/4', '3/14', '5/14', '3/8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Favorable ways = 4C2 = 6. Total ways = 8C2 = 28. Probability = 6 / 28 = 3/14.'
           }
         ]
       }

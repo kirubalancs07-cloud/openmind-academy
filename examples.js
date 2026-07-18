@@ -1101,14 +1101,102 @@ var EXAMPLES = {
   ],
   "pnc": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Permutations calculate ordered arrangements; combinations calculate unordered selections.\n\u26a1 **Formula/Shortcut**: nCr = n! / (r! * (n-r)!).\n\n**Question**: Coordinator Neha of the Summit-2026 Secretariat needs to select 4 expert panelists out of 7 available international delegates. How many different panels can be formed?",
-      "a": "\ud83d\udccb **Given**: Total candidates n = 7, selected panel members r = 4.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Use the combinations formula 7C4 (which is equal to 7C3) to determine selection ways.\n\n**Step-by-step Solution**:\n1) 7C4 = 7C3 = (7 * 6 * 5) / (3 * 2 * 1).\n2) Cancel terms: 3 * 2 * 1 = 6 in denominator cancels out 6 in numerator.\n3) Result = 7 * 5 = 35 ways.\n\n\u2728 **Final Answer**: 35"
+      "q": "Arrange the letters of 'MATHS'.",
+      "a": "5 distinct letters -> 5! = 120. Answer: 120."
+    },
+    {
+      "q": "Arrange the letters of 'STATISTICS' (S=3, T=3, A=1, I=2, C=1, 10 letters).",
+      "a": "10! / (3! * 3! * 2!) = 39,916,800 / (6 * 6 * 2) = 50,400. Answer: 50,400."
+    },
+    {
+      "q": "Seat 5 people in a row.",
+      "a": "5! = 120. Answer: 120."
+    },
+    {
+      "q": "Seat 5 people around a circular table.",
+      "a": "(5 - 1)! = 4! = 24. Answer: 24."
+    },
+    {
+      "q": "Select 3 people from a group of 8.",
+      "a": "8C3 = (8 * 7 * 6) / (3 * 2 * 1) = 56. Answer: 56."
+    },
+    {
+      "q": "Arrange 3 books chosen from 7 different books on a shelf.",
+      "a": "7P3 = 7 * 6 * 5 = 210. Answer: 210."
+    },
+    {
+      "q": "Form a committee of 3 men and 2 women from 6 men and 4 women.",
+      "a": "6C3 * 4C2 = 20 * 6 = 120. Answer: 120."
+    },
+    {
+      "q": "Arrange the letters of 'LEADER' (E repeats twice, 6 letters).",
+      "a": "6! / 2! = 360. Answer: 360."
+    },
+    {
+      "q": "How many 4-digit numbers can be formed from digits 1-5 without repetition?",
+      "a": "5P4 = 120. Answer: 120."
+    },
+    {
+      "q": "Seat 4 boys and 3 girls in a row with all girls together.",
+      "a": "Treat girls as 1 block: 5! * 3! = 120 * 6 = 720. Answer: 720."
+    },
+    {
+      "q": "Find the number of diagonals in a hexagon.",
+      "a": "n(n - 3) / 2 = 6 * 3 / 2 = 9. Answer: 9."
+    },
+    {
+      "q": "From 6 men and 4 women, form a 5-member committee with at least 2 women.",
+      "a": "Cases: 2W3M (4C2 * 6C3 = 120), 3W2M (4C3 * 6C2 = 60), 4W1M (4C4 * 6C1 = 6). Sum = 186. Answer: 186."
     }
   ],
   "probability": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Probability is the ratio of favorable outcomes to total possible outcomes.\n\u26a1 **Formula/Shortcut**: P(A) = Favorable outcomes / Total outcomes.\n\n**Question**: Inspector Kim at VoltMax Batteries tests a batch of 8 lithium battery cells. The batch contains exactly 2 defective cells. If Kim selects 2 cells at random, what is the probability that both are defective?",
-      "a": "\ud83d\udccb **Given**: Total cells = 8, Defective cells = 2. Drawn cells = 2.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Find probability of drawing the first defective cell (2/8) and multiply it by the probability of drawing the second defective cell from the remaining pool (1/7).\n\n**Step-by-step Solution**:\n1) P(First defective) = 2/8 = 1/4.\n2) P(Second defective) = 1/7.\n3) Combined probability = (1/4) * (1/7) = 1/28.\n\n\u2728 **Final Answer**: 1/28"
+      "q": "A die is rolled once. Find the probability of a number greater than 4.",
+      "a": "Favorable outcomes = {5, 6}. Probability = 2 / 6 = 1/3. Answer: 1/3."
+    },
+    {
+      "q": "Two coins are tossed. Find the probability of exactly one head.",
+      "a": "Favorable outcomes = {HT, TH}. Probability = 2 / 4 = 1/2. Answer: 1/2."
+    },
+    {
+      "q": "A card is drawn from a 52-card deck. Find the probability it is a king.",
+      "a": "Kings in deck = 4. Probability = 4 / 52 = 1/13. Answer: 1/13."
+    },
+    {
+      "q": "A bag has 5 red and 7 blue balls. Find the probability of drawing a red ball.",
+      "a": "Red balls = 5. Total balls = 12. Probability = 5 / 12. Answer: 5/12."
+    },
+    {
+      "q": "Two dice are rolled. Find the probability the sum is 7.",
+      "a": "Favorable outcomes = 6. Total = 36. Probability = 6 / 36 = 1/6. Answer: 1/6."
+    },
+    {
+      "q": "A bag has 4 red, 5 green, and 6 blue balls. Find the probability of green or blue.",
+      "a": "Green + Blue = 11. Total = 15. Probability = 11/15. Answer: 11/15."
+    },
+    {
+      "q": "Two cards are drawn without replacement. Find the probability both are aces.",
+      "a": "Probability = (4 / 52) * (3 / 51) = (1 / 13) * (1 / 17) = 1/221. Answer: 1/221."
+    },
+    {
+      "q": "A coin is tossed 3 times. Find the probability of at least 2 heads.",
+      "a": "Favorable outcomes = {HHT, HTH, THH, HHH}. Probability = 4 / 8 = 1/2. Answer: 1/2."
+    },
+    {
+      "q": "From 5 men and 3 women, 2 people are chosen. Find the probability both are women.",
+      "a": "Favorable = 3C2 = 3. Total = 8C2 = 28. Probability = 3 / 28. Answer: 3/28."
+    },
+    {
+      "q": "A number from 1-30 is picked. Find the probability it is a multiple of 4 or 5.",
+      "a": "Multiples of 4 = 7. Multiples of 5 = 6. Common (20) = 1. Total = 7 + 6 - 1 = 12. Probability = 12 / 30 = 2/5. Answer: 2/5."
+    },
+    {
+      "q": "Two dice are thrown. Find the probability the product is even.",
+      "a": "P(odd product) = P(odd on both) = (3/6) * (3/6) = 1/4. P(even product) = 1 - 1/4 = 3/4. Answer: 3/4."
+    },
+    {
+      "q": "A bag has 3 red and 2 black balls. Two are drawn without replacement. Find the probability both are red.",
+      "a": "Probability = (3 / 5) * (2 / 4) = 6 / 20 = 3/10. Answer: 3/10."
     }
   ],
   "crypt": [
