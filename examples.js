@@ -603,7 +603,7 @@ var EXAMPLES = {
       "a": "1) Rate A+B = 1/36 + 1/45 = 9/180 = 1/20.\n2) In 7 minutes A+B filled: 7/20. Remaining = 13/20.\n3) Net rate with C = 1/20 - 1/30 = 1/60.\n4) Remaining time = (13/20)/(1/60) = 39 minutes.\n5) Total time = 7 + 39 = 46 minutes. Answer: 46 minutes."
     },
     {
-      "q": "A pipe can fill in 12 minutes, B in 15 minutes. C can empty it at 3 gallons/minute. If all are open, it fills in 10 minutes. Capacity?",
+      "q": "Pipe A can fill in 12 minutes, B in 15 minutes. C can empty it at 3 gallons/minute. If all are open, it fills in 10 minutes. Capacity?",
       "a": "1) Rate A+B = 1/12 + 1/15 = 9/60 = 3/20.\n2) Net rate = 1/10.\n3) C rate = 3/20 - 1/10 = 1/20.\n4) C empties in 20 minutes. Capacity = 20 * 3 = 60 gallons. Answer: 60 gallons."
     },
     {
@@ -931,2544 +931,2544 @@ var EXAMPLES = {
   ],
   "simple-eq": [
     {
-      "q": "Solved practice problem 1 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A retail store sells leather jackets for $250 and denim jackets for $150. If 20 jackets are sold for $4,200, find the number of leather jackets sold.",
+      "a": "Let leather jackets be L and denim jackets be D. We have L + D = 20 and 250L + 150D = 4200.\n1) Multiply the first equation by 150: 150L + 150D = 3000.\n2) Subtract from the second equation: 100L = 1200.\n3) Solve for L: L = 12.\nAnswer: 12."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A restaurant table order consists of pizzas ($12 each) and drinks ($3 each). If a group of 10 people orders 15 items for $135, find the number of pizzas ordered.",
+      "a": "Let pizzas be P and drinks be D. P + D = 15, and 12P + 3D = 135.\n1) Multiply first by 3: 3P + 3D = 45.\n2) Subtract: 9P = 90 -> P = 10.\nAnswer: 10."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A distributor orders 13 items containing keyboards ($300 each) and mice ($150 each) for a total of $2400. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 13, and 300K + 150M = 2400.\n1) Solve: 300K + 150(13 - K) = 2400.\n2) Calculate: K = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A distributor orders 14 items containing keyboards ($400 each) and mice ($200 each) for a total of $3600. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 14, and 400K + 200M = 3600.\n1) Solve: 400K + 200(14 - K) = 3600.\n2) Calculate: K = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A distributor orders 15 items containing keyboards ($500 each) and mice ($250 each) for a total of $5000. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 15, and 500K + 250M = 5000.\n1) Solve: 500K + 250(15 - K) = 5000.\n2) Calculate: K = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A distributor orders 16 items containing keyboards ($600 each) and mice ($300 each) for a total of $6600. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 16, and 600K + 300M = 6600.\n1) Solve: 600K + 300(16 - K) = 6600.\n2) Calculate: K = 6.\nAnswer: 6."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A distributor orders 17 items containing keyboards ($700 each) and mice ($350 each) for a total of $8400. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 17, and 700K + 350M = 8400.\n1) Solve: 700K + 350(17 - K) = 8400.\n2) Calculate: K = 7.\nAnswer: 7."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A distributor orders 18 items containing keyboards ($800 each) and mice ($400 each) for a total of $10400. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 18, and 800K + 400M = 10400.\n1) Solve: 800K + 400(18 - K) = 10400.\n2) Calculate: K = 8.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A distributor orders 19 items containing keyboards ($900 each) and mice ($450 each) for a total of $12600. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 19, and 900K + 450M = 12600.\n1) Solve: 900K + 450(19 - K) = 12600.\n2) Calculate: K = 9.\nAnswer: 9."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A distributor orders 20 items containing keyboards ($1000 each) and mice ($500 each) for a total of $15000. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 20, and 1000K + 500M = 15000.\n1) Solve: 1000K + 500(20 - K) = 15000.\n2) Calculate: K = 10.\nAnswer: 10."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A distributor orders 21 items containing keyboards ($1100 each) and mice ($550 each) for a total of $17600. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 21, and 1100K + 550M = 17600.\n1) Solve: 1100K + 550(21 - K) = 17600.\n2) Calculate: K = 11.\nAnswer: 11."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A distributor orders 22 items containing keyboards ($1200 each) and mice ($600 each) for a total of $20400. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 22, and 1200K + 600M = 20400.\n1) Solve: 1200K + 600(22 - K) = 20400.\n2) Calculate: K = 12.\nAnswer: 12."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A distributor orders 23 items containing keyboards ($1300 each) and mice ($650 each) for a total of $23400. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 23, and 1300K + 650M = 23400.\n1) Solve: 1300K + 650(23 - K) = 23400.\n2) Calculate: K = 13.\nAnswer: 13."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A distributor orders 24 items containing keyboards ($1400 each) and mice ($700 each) for a total of $26600. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 24, and 1400K + 700M = 26600.\n1) Solve: 1400K + 700(24 - K) = 26600.\n2) Calculate: K = 14.\nAnswer: 14."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Simple Eq'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Simple Eq.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A distributor orders 25 items containing keyboards ($1500 each) and mice ($750 each) for a total of $30000. Find the number of keyboards ordered.",
+      "a": "Let keyboards be K and mice be M. K + M = 25, and 1500K + 750M = 30000.\n1) Solve: 1500K + 750(25 - K) = 30000.\n2) Calculate: K = 15.\nAnswer: 15."
     }
   ],
   "quadratic": [
     {
-      "q": "Solved practice problem 1 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Solve for the positive value of x in: 2x^2 + 5x - 12 = 0.",
+      "a": "1) Factorize: 2x^2 + 8x - 3x - 12 = 0.\n2) Group: 2x(x + 4) - 3(x + 4) = 0 -> (2x - 3)(x + 4) = 0.\n3) Roots: x = 1.5, x = -4. Positive root is 1.5.\nAnswer: 1.5."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A rectangular conference hall has an area of 6 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 6.\n1) Quadratic: w^2 + w - 6 = 0.\n2) Factorize: (w - 2)(w + 3) = 0.\n3) Width must be positive: w = 2.\nAnswer: 2 meters."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A rectangular conference hall has an area of 12 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 12.\n1) Quadratic: w^2 + w - 12 = 0.\n2) Factorize: (w - 3)(w + 4) = 0.\n3) Width must be positive: w = 3.\nAnswer: 3 meters."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A rectangular conference hall has an area of 20 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 20.\n1) Quadratic: w^2 + w - 20 = 0.\n2) Factorize: (w - 4)(w + 5) = 0.\n3) Width must be positive: w = 4.\nAnswer: 4 meters."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A rectangular conference hall has an area of 30 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 30.\n1) Quadratic: w^2 + w - 30 = 0.\n2) Factorize: (w - 5)(w + 6) = 0.\n3) Width must be positive: w = 5.\nAnswer: 5 meters."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A rectangular conference hall has an area of 42 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 42.\n1) Quadratic: w^2 + w - 42 = 0.\n2) Factorize: (w - 6)(w + 7) = 0.\n3) Width must be positive: w = 6.\nAnswer: 6 meters."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A rectangular conference hall has an area of 56 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 56.\n1) Quadratic: w^2 + w - 56 = 0.\n2) Factorize: (w - 7)(w + 8) = 0.\n3) Width must be positive: w = 7.\nAnswer: 7 meters."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A rectangular conference hall has an area of 72 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 72.\n1) Quadratic: w^2 + w - 72 = 0.\n2) Factorize: (w - 8)(w + 9) = 0.\n3) Width must be positive: w = 8.\nAnswer: 8 meters."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A rectangular conference hall has an area of 90 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 90.\n1) Quadratic: w^2 + w - 90 = 0.\n2) Factorize: (w - 9)(w + 10) = 0.\n3) Width must be positive: w = 9.\nAnswer: 9 meters."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A rectangular conference hall has an area of 110 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 110.\n1) Quadratic: w^2 + w - 110 = 0.\n2) Factorize: (w - 10)(w + 11) = 0.\n3) Width must be positive: w = 10.\nAnswer: 10 meters."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A rectangular conference hall has an area of 132 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 132.\n1) Quadratic: w^2 + w - 132 = 0.\n2) Factorize: (w - 11)(w + 12) = 0.\n3) Width must be positive: w = 11.\nAnswer: 11 meters."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A rectangular conference hall has an area of 156 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 156.\n1) Quadratic: w^2 + w - 156 = 0.\n2) Factorize: (w - 12)(w + 13) = 0.\n3) Width must be positive: w = 12.\nAnswer: 12 meters."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A rectangular conference hall has an area of 182 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 182.\n1) Quadratic: w^2 + w - 182 = 0.\n2) Factorize: (w - 13)(w + 14) = 0.\n3) Width must be positive: w = 13.\nAnswer: 13 meters."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A rectangular conference hall has an area of 210 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 210.\n1) Quadratic: w^2 + w - 210 = 0.\n2) Factorize: (w - 14)(w + 15) = 0.\n3) Width must be positive: w = 14.\nAnswer: 14 meters."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Quadratic'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Quadratic.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A rectangular conference hall has an area of 240 sq meters. If the length is 1m longer than the width, find the width of the hall.",
+      "a": "Let width be w. Length is w + 1. Area = w(w + 1) = 240.\n1) Quadratic: w^2 + w - 240 = 0.\n2) Factorize: (w - 15)(w + 16) = 0.\n3) Width must be positive: w = 15.\nAnswer: 15 meters."
     }
   ],
   "inequalities": [
     {
-      "q": "Solved practice problem 1 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the range of x for which x^2 - 7x + 12 < 0.",
+      "a": "1) Factorize: (x - 3)(x - 4) < 0.\n2) Critical points are 3 and 4.\n3) The product is negative when x lies strictly between 3 and 4.\nAnswer: 3 < x < 4."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the range of x for which the quadratic expression x^2 - 8x + 12 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 2)(x - 6) <= 0.\n2) Roots are 2 and 6.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 2 <= x <= 6."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the range of x for which the quadratic expression x^2 - 10x + 21 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 3)(x - 7) <= 0.\n2) Roots are 3 and 7.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 3 <= x <= 7."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the range of x for which the quadratic expression x^2 - 12x + 32 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 4)(x - 8) <= 0.\n2) Roots are 4 and 8.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 4 <= x <= 8."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the range of x for which the quadratic expression x^2 - 14x + 45 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 5)(x - 9) <= 0.\n2) Roots are 5 and 9.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 5 <= x <= 9."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the range of x for which the quadratic expression x^2 - 16x + 60 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 6)(x - 10) <= 0.\n2) Roots are 6 and 10.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 6 <= x <= 10."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the range of x for which the quadratic expression x^2 - 18x + 77 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 7)(x - 11) <= 0.\n2) Roots are 7 and 11.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 7 <= x <= 11."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the range of x for which the quadratic expression x^2 - 20x + 96 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 8)(x - 12) <= 0.\n2) Roots are 8 and 12.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 8 <= x <= 12."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the range of x for which the quadratic expression x^2 - 22x + 117 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 9)(x - 13) <= 0.\n2) Roots are 9 and 13.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 9 <= x <= 13."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the range of x for which the quadratic expression x^2 - 24x + 140 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 10)(x - 14) <= 0.\n2) Roots are 10 and 14.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 10 <= x <= 14."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the range of x for which the quadratic expression x^2 - 26x + 165 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 11)(x - 15) <= 0.\n2) Roots are 11 and 15.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 11 <= x <= 15."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the range of x for which the quadratic expression x^2 - 28x + 192 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 12)(x - 16) <= 0.\n2) Roots are 12 and 16.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 12 <= x <= 16."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the range of x for which the quadratic expression x^2 - 30x + 221 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 13)(x - 17) <= 0.\n2) Roots are 13 and 17.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 13 <= x <= 17."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the range of x for which the quadratic expression x^2 - 32x + 252 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 14)(x - 18) <= 0.\n2) Roots are 14 and 18.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 14 <= x <= 18."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Inequalities'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Inequalities.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the range of x for which the quadratic expression x^2 - 34x + 285 is less than or equal to 0.",
+      "a": "1) Factorize: (x - 15)(x - 19) <= 0.\n2) Roots are 15 and 19.\n3) The expression is negative/zero in the interval between the roots.\nAnswer: 15 <= x <= 19."
     }
   ],
   "progressions": [
     {
-      "q": "Solved practice problem 1 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the sum of the first 15 terms of the AP: 5, 8, 11, 14...",
+      "a": "1) First term a = 5, common difference d = 3, n = 15.\n2) Sum formula: S_n = n/2 * [2a + (n-1)d].\n3) S_15 = 15/2 * [10 + 14*3] = 7.5 * [10 + 42] = 7.5 * 52 = 390.\nAnswer: 390."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 2 and common difference is 3.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 2 + 9 * 3 = 2 + 27 = 29.\nAnswer: 29."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 3 and common difference is 4.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 3 + 9 * 4 = 3 + 36 = 39.\nAnswer: 39."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 4 and common difference is 5.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 4 + 9 * 5 = 4 + 45 = 49.\nAnswer: 49."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 5 and common difference is 6.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 5 + 9 * 6 = 5 + 54 = 59.\nAnswer: 59."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 6 and common difference is 7.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 6 + 9 * 7 = 6 + 63 = 69.\nAnswer: 69."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 7 and common difference is 8.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 7 + 9 * 8 = 7 + 72 = 79.\nAnswer: 79."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 8 and common difference is 9.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 8 + 9 * 9 = 8 + 81 = 89.\nAnswer: 89."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 9 and common difference is 10.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 9 + 9 * 10 = 9 + 90 = 99.\nAnswer: 99."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 10 and common difference is 11.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 10 + 9 * 11 = 10 + 99 = 109.\nAnswer: 109."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 11 and common difference is 12.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 11 + 9 * 12 = 11 + 108 = 119.\nAnswer: 119."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 12 and common difference is 13.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 12 + 9 * 13 = 12 + 117 = 129.\nAnswer: 129."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 13 and common difference is 14.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 13 + 9 * 14 = 13 + 126 = 139.\nAnswer: 139."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 14 and common difference is 15.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 14 + 9 * 15 = 14 + 135 = 149.\nAnswer: 149."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Progressions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Progressions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the 10th term of an arithmetic progression (AP) whose first term is 15 and common difference is 16.",
+      "a": "1) Formula: T_n = a + (n-1)d.\n2) T_10 = 15 + 9 * 16 = 15 + 144 = 159.\nAnswer: 159."
     }
   ],
   "geometry": [
     {
-      "q": "Solved practice problem 1 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the sum of interior angles of a regular octagon.",
+      "a": "1) Formula: (n - 2) * 180 degrees, where n is the number of sides.\n2) For an octagon, n = 8.\n3) Sum = (8 - 2) * 180 = 6 * 180 = 1080 degrees.\nAnswer: 1080 degrees."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the sum of all interior angles of a regular polygon having 5 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 5 sides: (5 - 2) * 180 = 540 degrees.\nAnswer: 540 degrees."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the sum of all interior angles of a regular polygon having 6 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 6 sides: (6 - 2) * 180 = 720 degrees.\nAnswer: 720 degrees."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the sum of all interior angles of a regular polygon having 7 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 7 sides: (7 - 2) * 180 = 900 degrees.\nAnswer: 900 degrees."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the sum of all interior angles of a regular polygon having 3 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 3 sides: (3 - 2) * 180 = 180 degrees.\nAnswer: 180 degrees."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the sum of all interior angles of a regular polygon having 4 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 4 sides: (4 - 2) * 180 = 360 degrees.\nAnswer: 360 degrees."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the sum of all interior angles of a regular polygon having 5 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 5 sides: (5 - 2) * 180 = 540 degrees.\nAnswer: 540 degrees."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the sum of all interior angles of a regular polygon having 6 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 6 sides: (6 - 2) * 180 = 720 degrees.\nAnswer: 720 degrees."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the sum of all interior angles of a regular polygon having 7 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 7 sides: (7 - 2) * 180 = 900 degrees.\nAnswer: 900 degrees."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the sum of all interior angles of a regular polygon having 3 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 3 sides: (3 - 2) * 180 = 180 degrees.\nAnswer: 180 degrees."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the sum of all interior angles of a regular polygon having 4 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 4 sides: (4 - 2) * 180 = 360 degrees.\nAnswer: 360 degrees."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the sum of all interior angles of a regular polygon having 5 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 5 sides: (5 - 2) * 180 = 540 degrees.\nAnswer: 540 degrees."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the sum of all interior angles of a regular polygon having 6 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 6 sides: (6 - 2) * 180 = 720 degrees.\nAnswer: 720 degrees."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the sum of all interior angles of a regular polygon having 7 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 7 sides: (7 - 2) * 180 = 900 degrees.\nAnswer: 900 degrees."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Geometry'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Geometry.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the sum of all interior angles of a regular polygon having 3 sides.",
+      "a": "1) Formula: (n - 2) * 180.\n2) For 3 sides: (3 - 2) * 180 = 180 degrees.\nAnswer: 180 degrees."
     }
   ],
   "mensuration": [
     {
-      "q": "Solved practice problem 1 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the total surface area of a cylinder of radius 7 cm and height 10 cm.",
+      "a": "1) Formula: 2 * pi * r * (r + h).\n2) Substitute values: 2 * (22/7) * 7 * (7 + 10) = 44 * 17 = 748 sq cm.\nAnswer: 748."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the circumference of a circular running track whose radius is 14 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 14 = 88 meters.\nAnswer: 88 meters."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the circumference of a circular running track whose radius is 21 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 21 = 132 meters.\nAnswer: 132 meters."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the circumference of a circular running track whose radius is 28 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 28 = 176 meters.\nAnswer: 176 meters."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the circumference of a circular running track whose radius is 35 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 35 = 220 meters.\nAnswer: 220 meters."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the circumference of a circular running track whose radius is 42 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 42 = 264 meters.\nAnswer: 264 meters."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the circumference of a circular running track whose radius is 49 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 49 = 308 meters.\nAnswer: 308 meters."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the circumference of a circular running track whose radius is 56 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 56 = 352 meters.\nAnswer: 352 meters."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the circumference of a circular running track whose radius is 63 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 63 = 396 meters.\nAnswer: 396 meters."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the circumference of a circular running track whose radius is 70 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 70 = 440 meters.\nAnswer: 440 meters."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the circumference of a circular running track whose radius is 77 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 77 = 484 meters.\nAnswer: 484 meters."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the circumference of a circular running track whose radius is 84 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 84 = 528 meters.\nAnswer: 528 meters."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the circumference of a circular running track whose radius is 91 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 91 = 572 meters.\nAnswer: 572 meters."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the circumference of a circular running track whose radius is 98 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 98 = 616 meters.\nAnswer: 616 meters."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Mensuration'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mensuration.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the circumference of a circular running track whose radius is 105 meters.",
+      "a": "1) Formula: 2 * pi * r.\n2) Circumference = 2 * (22/7) * 105 = 660 meters.\nAnswer: 660 meters."
     }
   ],
   "heights": [
     {
-      "q": "Solved practice problem 1 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A pole is broken by a wind storm, its top touches ground at 30 degrees at a distance of 10m from base. Find total height of pole.",
+      "a": "1) Let height of unbroken part be h, broken part be L. tan(30) = h / 10 -> h = 10 / sqrt(3).\n2) cos(30) = 10 / L -> L = 10 / cos(30) = 20 / sqrt(3).\n3) Total height = h + L = 30 / sqrt(3) = 10 * sqrt(3) meters.\nAnswer: 17.32m."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "From a point on the ground 20m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 20 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 20/sqrt(3) meters.\nAnswer: 20/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "From a point on the ground 30m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 30 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 30*sqrt(3) meters.\nAnswer: 30*sqrt(3)."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "From a point on the ground 40m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 40 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 40/sqrt(3) meters.\nAnswer: 40/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "From a point on the ground 50m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 50 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 50*sqrt(3) meters.\nAnswer: 50*sqrt(3)."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "From a point on the ground 60m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 60 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 60/sqrt(3) meters.\nAnswer: 60/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "From a point on the ground 70m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 70 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 70*sqrt(3) meters.\nAnswer: 70*sqrt(3)."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "From a point on the ground 80m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 80 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 80/sqrt(3) meters.\nAnswer: 80/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "From a point on the ground 90m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 90 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 90*sqrt(3) meters.\nAnswer: 90*sqrt(3)."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "From a point on the ground 100m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 100 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 100/sqrt(3) meters.\nAnswer: 100/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "From a point on the ground 110m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 110 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 110*sqrt(3) meters.\nAnswer: 110*sqrt(3)."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "From a point on the ground 120m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 120 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 120/sqrt(3) meters.\nAnswer: 120/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "From a point on the ground 130m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 130 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 130*sqrt(3) meters.\nAnswer: 130*sqrt(3)."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "From a point on the ground 140m away from the base of a cellular tower, the angle of elevation of the top is 30 degrees. Find tower height.",
+      "a": "1) tan(30) = height / distance -> height = 140 * tan(30).\n2) tan(30) = 1/sqrt(3).\n3) Height = 140/sqrt(3) meters.\nAnswer: 140/sqrt(3)."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Heights'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Heights.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "From a point on the ground 150m away from the base of a cellular tower, the angle of elevation of the top is 60 degrees. Find tower height.",
+      "a": "1) tan(60) = height / distance -> height = 150 * tan(60).\n2) tan(60) = sqrt(3).\n3) Height = 150*sqrt(3) meters.\nAnswer: 150*sqrt(3)."
     }
   ],
   "pnc": [
     {
-      "q": "Solved practice problem 1 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "In how many ways can a team of 5 members be selected from 8 candidates?",
+      "a": "1) Use combinations formula: 8C5 = 8C3.\n2) 8C3 = (8 * 7 * 6) / (3 * 2 * 1) = 56.\nAnswer: 56."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "In a programming workspace, there are 6 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 6C2.\n2) 6C2 = (6 * 5) / 2 = 15.\nAnswer: 15 pairs."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "In a programming workspace, there are 7 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 7C2.\n2) 7C2 = (7 * 6) / 2 = 21.\nAnswer: 21 pairs."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "In a programming workspace, there are 8 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 8C2.\n2) 8C2 = (8 * 7) / 2 = 28.\nAnswer: 28 pairs."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "In a programming workspace, there are 9 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 9C2.\n2) 9C2 = (9 * 8) / 2 = 36.\nAnswer: 36 pairs."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "In a programming workspace, there are 10 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 10C2.\n2) 10C2 = (10 * 9) / 2 = 45.\nAnswer: 45 pairs."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "In a programming workspace, there are 11 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 11C2.\n2) 11C2 = (11 * 10) / 2 = 55.\nAnswer: 55 pairs."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "In a programming workspace, there are 12 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 12C2.\n2) 12C2 = (12 * 11) / 2 = 66.\nAnswer: 66 pairs."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "In a programming workspace, there are 13 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 13C2.\n2) 13C2 = (13 * 12) / 2 = 78.\nAnswer: 78 pairs."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "In a programming workspace, there are 14 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 14C2.\n2) 14C2 = (14 * 13) / 2 = 91.\nAnswer: 91 pairs."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "In a programming workspace, there are 15 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 15C2.\n2) 15C2 = (15 * 14) / 2 = 105.\nAnswer: 105 pairs."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "In a programming workspace, there are 16 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 16C2.\n2) 16C2 = (16 * 15) / 2 = 120.\nAnswer: 120 pairs."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "In a programming workspace, there are 17 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 17C2.\n2) 17C2 = (17 * 16) / 2 = 136.\nAnswer: 136 pairs."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "In a programming workspace, there are 18 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 18C2.\n2) 18C2 = (18 * 17) / 2 = 153.\nAnswer: 153 pairs."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Pnc'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Pnc.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "In a programming workspace, there are 19 developers. How many unique pairs of developers can be chosen for pair-programming?",
+      "a": "1) Use combinations: 19C2.\n2) 19C2 = (19 * 18) / 2 = 171.\nAnswer: 171 pairs."
     }
   ],
   "probability": [
     {
-      "q": "Solved practice problem 1 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Two standard fair dice are rolled. Find the probability that the sum of the numbers is 8.",
+      "a": "1) Total outcomes = 36.\n2) Favorable outcomes (sum=8): (2,6), (3,5), (4,4), (5,3), (6,2) -> 5 outcomes.\n3) Probability = 5/36.\nAnswer: 5/36."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A bag contains 2 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 12. Red marbles = 2.\n2) Probability = Red / Total = 2/12.\nAnswer: 2/12."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A bag contains 3 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 13. Red marbles = 3.\n2) Probability = Red / Total = 3/13.\nAnswer: 3/13."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A bag contains 4 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 14. Red marbles = 4.\n2) Probability = Red / Total = 4/14.\nAnswer: 4/14."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A bag contains 5 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 15. Red marbles = 5.\n2) Probability = Red / Total = 5/15.\nAnswer: 5/15."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A bag contains 6 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 16. Red marbles = 6.\n2) Probability = Red / Total = 6/16.\nAnswer: 6/16."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A bag contains 7 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 17. Red marbles = 7.\n2) Probability = Red / Total = 7/17.\nAnswer: 7/17."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A bag contains 8 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 18. Red marbles = 8.\n2) Probability = Red / Total = 8/18.\nAnswer: 8/18."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A bag contains 9 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 19. Red marbles = 9.\n2) Probability = Red / Total = 9/19.\nAnswer: 9/19."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A bag contains 10 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 20. Red marbles = 10.\n2) Probability = Red / Total = 10/20.\nAnswer: 10/20."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A bag contains 11 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 21. Red marbles = 11.\n2) Probability = Red / Total = 11/21.\nAnswer: 11/21."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A bag contains 12 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 22. Red marbles = 12.\n2) Probability = Red / Total = 12/22.\nAnswer: 12/22."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A bag contains 13 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 23. Red marbles = 13.\n2) Probability = Red / Total = 13/23.\nAnswer: 13/23."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A bag contains 14 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 24. Red marbles = 14.\n2) Probability = Red / Total = 14/24.\nAnswer: 14/24."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Probability'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Probability.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A bag contains 15 red marbles and 10 blue marbles. If one marble is drawn at random, find the probability that it is red.",
+      "a": "1) Total marbles = 25. Red marbles = 15.\n2) Probability = Red / Total = 15/25.\nAnswer: 15/25."
     }
   ],
   "crypt": [
     {
-      "q": "Solved practice problem 1 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "In the puzzle SEND + MORE = MONEY, find the digit corresponding to letter M.",
+      "a": "1) Since the sum of two 4-digit numbers results in a 5-digit number, the carry-over digit M must be 1.\nAnswer: 1."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "In a letter addition puzzle A + A = B, if B equals 6 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 6 -> A = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "In a letter addition puzzle A + A = B, if B equals 8 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 8 -> A = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "In a letter addition puzzle A + A = B, if B equals 10 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 10 -> A = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "In a letter addition puzzle A + A = B, if B equals 12 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 12 -> A = 6.\nAnswer: 6."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "In a letter addition puzzle A + A = B, if B equals 14 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 14 -> A = 7.\nAnswer: 7."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "In a letter addition puzzle A + A = B, if B equals 16 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 16 -> A = 8.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "In a letter addition puzzle A + A = B, if B equals 18 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 18 -> A = 9.\nAnswer: 9."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "In a letter addition puzzle A + A = B, if B equals 20 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 20 -> A = 10.\nAnswer: 10."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "In a letter addition puzzle A + A = B, if B equals 22 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 22 -> A = 11.\nAnswer: 11."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "In a letter addition puzzle A + A = B, if B equals 24 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 24 -> A = 12.\nAnswer: 12."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "In a letter addition puzzle A + A = B, if B equals 26 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 26 -> A = 13.\nAnswer: 13."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "In a letter addition puzzle A + A = B, if B equals 28 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 28 -> A = 14.\nAnswer: 14."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "In a letter addition puzzle A + A = B, if B equals 30 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 30 -> A = 15.\nAnswer: 15."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Crypt'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Crypt.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "In a letter addition puzzle A + A = B, if B equals 32 and A represents a single digit, find the digit corresponding to A.",
+      "a": "1) A + A = 2A = B.\n2) 2A = 32 -> A = 16.\nAnswer: 16."
     }
   ],
   "sets": [
     {
-      "q": "Solved practice problem 1 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "If n(A) = 20, n(B) = 30, and n(A U B) = 45, find n(A n B).",
+      "a": "1) Formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) 45 = 20 + 30 - n(A n B) -> n(A n B) = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "In a survey of 120 consumers, 60 own a smartphone, 50 own a tablet, and 4 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 60 + 50 - 4 = 106.\nAnswer: 106."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "In a survey of 130 consumers, 65 own a smartphone, 55 own a tablet, and 6 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 65 + 55 - 6 = 114.\nAnswer: 114."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "In a survey of 140 consumers, 70 own a smartphone, 60 own a tablet, and 8 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 70 + 60 - 8 = 122.\nAnswer: 122."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "In a survey of 150 consumers, 75 own a smartphone, 65 own a tablet, and 10 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 75 + 65 - 10 = 130.\nAnswer: 130."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "In a survey of 160 consumers, 80 own a smartphone, 70 own a tablet, and 12 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 80 + 70 - 12 = 138.\nAnswer: 138."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "In a survey of 170 consumers, 85 own a smartphone, 75 own a tablet, and 14 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 85 + 75 - 14 = 146.\nAnswer: 146."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "In a survey of 180 consumers, 90 own a smartphone, 80 own a tablet, and 16 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 90 + 80 - 16 = 154.\nAnswer: 154."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "In a survey of 190 consumers, 95 own a smartphone, 85 own a tablet, and 18 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 95 + 85 - 18 = 162.\nAnswer: 162."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "In a survey of 200 consumers, 100 own a smartphone, 90 own a tablet, and 20 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 100 + 90 - 20 = 170.\nAnswer: 170."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "In a survey of 210 consumers, 105 own a smartphone, 95 own a tablet, and 22 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 105 + 95 - 22 = 178.\nAnswer: 178."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "In a survey of 220 consumers, 110 own a smartphone, 100 own a tablet, and 24 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 110 + 100 - 24 = 186.\nAnswer: 186."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "In a survey of 230 consumers, 115 own a smartphone, 105 own a tablet, and 26 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 115 + 105 - 26 = 194.\nAnswer: 194."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "In a survey of 240 consumers, 120 own a smartphone, 110 own a tablet, and 28 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 120 + 110 - 28 = 202.\nAnswer: 202."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Sets'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sets.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "In a survey of 250 consumers, 125 own a smartphone, 115 own a tablet, and 30 own both. Find the number of consumers who own a smartphone or a tablet.",
+      "a": "1) Use set union formula: n(A U B) = n(A) + n(B) - n(A n B).\n2) n(A U B) = 125 + 115 - 30 = 210.\nAnswer: 210."
     }
   ],
   "logarithms": [
     {
-      "q": "Solved practice problem 1 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the value of x if log_10(x^2 - 3x) = 1.",
+      "a": "1) Convert to exponential form: x^2 - 3x = 10^1 = 10.\n2) Form quadratic: x^2 - 3x - 10 = 0 -> (x - 5)(x + 2) = 0.\n3) Roots are 5 and -2.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Evaluate the logarithmic expression: log_2(32).",
+      "a": "1) Express 32 as a power of base 2: 32 = 2^5.\n2) Thus, log_2(2^5) = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Evaluate the logarithmic expression: log_3(27).",
+      "a": "1) Express 27 as a power of base 3: 27 = 3^3.\n2) Thus, log_3(3^3) = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Evaluate the logarithmic expression: log_2(16).",
+      "a": "1) Express 16 as a power of base 2: 16 = 2^4.\n2) Thus, log_2(2^4) = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Evaluate the logarithmic expression: log_3(243).",
+      "a": "1) Express 243 as a power of base 3: 243 = 3^5.\n2) Thus, log_3(3^5) = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Evaluate the logarithmic expression: log_2(8).",
+      "a": "1) Express 8 as a power of base 2: 8 = 2^3.\n2) Thus, log_2(2^3) = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Evaluate the logarithmic expression: log_3(81).",
+      "a": "1) Express 81 as a power of base 3: 81 = 3^4.\n2) Thus, log_3(3^4) = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Evaluate the logarithmic expression: log_2(32).",
+      "a": "1) Express 32 as a power of base 2: 32 = 2^5.\n2) Thus, log_2(2^5) = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Evaluate the logarithmic expression: log_3(27).",
+      "a": "1) Express 27 as a power of base 3: 27 = 3^3.\n2) Thus, log_3(3^3) = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Evaluate the logarithmic expression: log_2(16).",
+      "a": "1) Express 16 as a power of base 2: 16 = 2^4.\n2) Thus, log_2(2^4) = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Evaluate the logarithmic expression: log_3(243).",
+      "a": "1) Express 243 as a power of base 3: 243 = 3^5.\n2) Thus, log_3(3^5) = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Evaluate the logarithmic expression: log_2(8).",
+      "a": "1) Express 8 as a power of base 2: 8 = 2^3.\n2) Thus, log_2(2^3) = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Evaluate the logarithmic expression: log_3(81).",
+      "a": "1) Express 81 as a power of base 3: 81 = 3^4.\n2) Thus, log_3(3^4) = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Evaluate the logarithmic expression: log_2(32).",
+      "a": "1) Express 32 as a power of base 2: 32 = 2^5.\n2) Thus, log_2(2^5) = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Logarithms'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Logarithms.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Evaluate the logarithmic expression: log_3(27).",
+      "a": "1) Express 27 as a power of base 3: 27 = 3^3.\n2) Thus, log_3(3^3) = 3.\nAnswer: 3."
     }
   ],
   "analogy": [
     {
-      "q": "Solved practice problem 1 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the missing term to complete the verbal analogy relation: LION : PRIDE :: WOLF : ?",
+      "a": "1) Relationship logic: Pride is a group of lions, pack is a group of wolves.\nAnswer: PACK."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the missing term to complete the verbal analogy relation: DOCTOR : STETHOSCOPE :: SCULPTOR : ?",
+      "a": "1) Relationship logic: Stethoscope is the tool of a doctor, chisel is for a sculptor.\nAnswer: CHISEL."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the missing term to complete the verbal analogy relation: CURRENCY : YEN :: NATION : ?",
+      "a": "1) Relationship logic: Yen is currency of Japan.\nAnswer: JAPAN."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the missing term to complete the verbal analogy relation: STUDENT : CLASSROOM :: ACTOR : ?",
+      "a": "1) Relationship logic: Classroom is work place of student, stage for actor.\nAnswer: STAGE."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the missing term to complete the verbal analogy relation: COLD : SHIVER :: HEAT : ?",
+      "a": "1) Relationship logic: Cold causes shivering, heat causes sweating.\nAnswer: SWEAT."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the missing term to complete the verbal analogy relation: PENCIL : LEAD :: PEN : ?",
+      "a": "1) Relationship logic: Pencil writes with lead, pen with ink.\nAnswer: INK."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the missing term to complete the verbal analogy relation: FEATHER : BIRD :: SCALE : ?",
+      "a": "1) Relationship logic: Birds are covered with feathers, fish with scales.\nAnswer: FISH."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the missing term to complete the verbal analogy relation: CALENDAR : DATES :: DICTIONARY : ?",
+      "a": "1) Relationship logic: Calendar lists dates, dictionary lists words.\nAnswer: WORDS."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the missing term to complete the verbal analogy relation: THERMOMETER : TEMPERATURE :: BAROMETER : ?",
+      "a": "1) Relationship logic: Thermometer measures temperature, barometer measures pressure.\nAnswer: PRESSURE."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the missing term to complete the verbal analogy relation: GLOVE : HAND :: HELMET : ?",
+      "a": "1) Relationship logic: Glove protects hand, helmet protects head.\nAnswer: HEAD."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the missing term to complete the verbal analogy relation: TEACHER : SCHOOL :: CHEF : ?",
+      "a": "1) Relationship logic: Teacher works in school, chef in kitchen.\nAnswer: KITCHEN."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the missing term to complete the verbal analogy relation: OXYGEN : LIFE :: CARBON DIOXIDE : ?",
+      "a": "1) Relationship logic: Oxygen supports human life, CO2 supports photosynthesis.\nAnswer: PHOTOSYNTHESIS."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the missing term to complete the verbal analogy relation: CLOCK : TIME :: COMPASS : ?",
+      "a": "1) Relationship logic: Clock tracks time, compass tracks direction.\nAnswer: DIRECTION."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the missing term to complete the verbal analogy relation: KEYBOARD : TYPE :: MOUSE : ?",
+      "a": "1) Relationship logic: Keyboard is for typing, mouse is for clicking.\nAnswer: CLICK."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Analogy'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Analogy.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the missing term to complete the verbal analogy relation: WIND : GUST :: RAIN : ?",
+      "a": "1) Relationship logic: Gust is sudden wind, downpour is sudden heavy rain.\nAnswer: DOWNPOUR."
     }
   ],
   "odd-one": [
     {
-      "q": "Solved practice problem 1 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Identify the odd term out from the following group: Apple, Banana, Carrot, Grape",
+      "a": "1) Logical deduction: Carrot is a root vegetable, others are fruits.\nAnswer: Carrot."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Identify the odd term out from the following group: Mercury, Venus, Earth, Moon",
+      "a": "1) Logical deduction: Moon is a natural satellite, others are planets.\nAnswer: Moon."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Identify the odd term out from the following group: Rectangle, Square, Triangle, Circle",
+      "a": "1) Logical deduction: Circle has no straight edges/vertices, others do.\nAnswer: Circle."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Identify the odd term out from the following group: Leopard, Cheetah, Tiger, Cow",
+      "a": "1) Logical deduction: Cow is a herbivore, others are carnivores.\nAnswer: Cow."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Identify the odd term out from the following group: Iron, Gold, Silver, Coal",
+      "a": "1) Logical deduction: Coal is a non-metal carbon fossil, others are metals.\nAnswer: Coal."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Identify the odd term out from the following group: Python, Java, C++, Photoshop",
+      "a": "1) Logical deduction: Photoshop is an application software, others are coding languages.\nAnswer: Photoshop."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Identify the odd term out from the following group: Delhi, Mumbai, Chennai, Washington",
+      "a": "1) Logical deduction: Washington is outside India, others are Indian metro cities.\nAnswer: Washington."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Identify the odd term out from the following group: Stethoscope, Scalpel, Syringe, Laptop",
+      "a": "1) Logical deduction: Laptop is a general device, others are medical tools.\nAnswer: Laptop."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Identify the odd term out from the following group: Guitar, Violin, Piano, Flute",
+      "a": "1) Logical deduction: Flute is a wind instrument, others are string/key instruments.\nAnswer: Flute."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Identify the odd term out from the following group: Dollar, Euro, Rupee, Gram",
+      "a": "1) Logical deduction: Gram is a unit of mass, others are currencies.\nAnswer: Gram."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Identify the odd term out from the following group: Whale, Shark, Dolphin, Seal",
+      "a": "1) Logical deduction: Shark is a cartilaginous fish, others are marine mammals.\nAnswer: Shark."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Identify the odd term out from the following group: Running, Walking, Swimming, Sleeping",
+      "a": "1) Logical deduction: Sleeping is a state of rest, others are physical exercises.\nAnswer: Sleeping."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Identify the odd term out from the following group: January, April, July, October",
+      "a": "1) Logical deduction: April has 30 days, others have 31 days.\nAnswer: April."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Identify the odd term out from the following group: Ostrich, Penguin, Kiwi, Eagle",
+      "a": "1) Logical deduction: Eagle can fly, others are flightless birds.\nAnswer: Eagle."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Odd One'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Odd One.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Identify the odd term out from the following group: Addition, Subtraction, Multiplication, Division",
+      "a": "1) Logical deduction: Others represent linear operators, wait, all are arithmetic. Division is odd because division by zero is undefined.\nAnswer: Division."
     }
   ],
   "coding": [
     {
-      "q": "Solved practice problem 1 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "If in a code language, the word 'CAT' is encrypted as 'DBU', find the code for 'DOG'.",
+      "a": "1) Coding logic analysis: C+1=D, A+1=B, T+1=U.\n2) Apply the same shift mapping to 'DOG'.\nAnswer: EPH."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "If in a code language, the word 'BAT' is encrypted as 'CBU', find the code for 'RED'.",
+      "a": "1) Coding logic analysis: B+1=C, A+1=B, T+1=U.\n2) Apply the same shift mapping to 'RED'.\nAnswer: SFE."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "If in a code language, the word 'SUN' is encrypted as 'TVO', find the code for 'SKY'.",
+      "a": "1) Coding logic analysis: S+1=T, U+1=V, N+1=O.\n2) Apply the same shift mapping to 'SKY'.\nAnswer: TLZ."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "If in a code language, the word 'ZIP' is encrypted as 'AJQ', find the code for 'RUN'.",
+      "a": "1) Coding logic analysis: Z+1=A, I+1=J, P+1=Q.\n2) Apply the same shift mapping to 'RUN'.\nAnswer: SVO."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "If in a code language, the word 'MAP' is encrypted as 'NBQ', find the code for 'CAR'.",
+      "a": "1) Coding logic analysis: M+1=N, A+1=B, P+1=Q.\n2) Apply the same shift mapping to 'CAR'.\nAnswer: DBS."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "If in a code language, the word 'HOT' is encrypted as 'IPU', find the code for 'ICE'.",
+      "a": "1) Coding logic analysis: H+1=I, O+1=P, T+1=U.\n2) Apply the same shift mapping to 'ICE'.\nAnswer: JDF."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "If in a code language, the word 'PEN' is encrypted as 'QFO', find the code for 'INK'.",
+      "a": "1) Coding logic analysis: P+1=Q, E+1=F, N+1=O.\n2) Apply the same shift mapping to 'INK'.\nAnswer: JOL."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "If in a code language, the word 'KEY' is encrypted as 'LFZ', find the code for 'BOX'.",
+      "a": "1) Coding logic analysis: K+1=L, E+1=F, Y+1=Z.\n2) Apply the same shift mapping to 'BOX'.\nAnswer: CPY."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "If in a code language, the word 'BUS' is encrypted as 'CVT', find the code for 'VAN'.",
+      "a": "1) Coding logic analysis: B+1=C, U+1=V, S+1=T.\n2) Apply the same shift mapping to 'VAN'.\nAnswer: WBO."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "If in a code language, the word 'JOB' is encrypted as 'KPC', find the code for 'WORK'.",
+      "a": "1) Coding logic analysis: J+1=K, O+1=P, B+1=C.\n2) Apply the same shift mapping to 'WORK'.\nAnswer: XPSL."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "If in a code language, the word 'FLY' is encrypted as 'GMZ', find the code for 'RUN'.",
+      "a": "1) Coding logic analysis: F+1=G, L+1=M, Y+1=Z.\n2) Apply the same shift mapping to 'RUN'.\nAnswer: SVO."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "If in a code language, the word 'WEB' is encrypted as 'XFC', find the code for 'SITE'.",
+      "a": "1) Coding logic analysis: W+1=X, E+1=F, B+1=C.\n2) Apply the same shift mapping to 'SITE'.\nAnswer: TJUF."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "If in a code language, the word 'NET' is encrypted as 'OFU', find the code for 'DATA'.",
+      "a": "1) Coding logic analysis: N+1=O, E+1=F, T+1=U.\n2) Apply the same shift mapping to 'DATA'.\nAnswer: EBUB."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "If in a code language, the word 'APP' is encrypted as 'BQQ', find the code for 'CODE'.",
+      "a": "1) Coding logic analysis: A+1=B, P+1=Q, P+1=Q.\n2) Apply the same shift mapping to 'CODE'.\nAnswer: DPEF."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Coding'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Coding.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "If in a code language, the word 'DEV' is encrypted as 'EFW', find the code for 'OPS'.",
+      "a": "1) Coding logic analysis: D+1=E, E+1=F, V+1=W.\n2) Apply the same shift mapping to 'OPS'.\nAnswer: PQT."
     }
   ],
   "series": [
     {
-      "q": "Solved practice problem 1 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Determine the next term in the arithmetic sequence: 1, 2, 3, 4, ...",
+      "a": "1) The difference between consecutive terms is constant: +1.\n2) Calculate: 4 + 1 = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Determine the next term in the arithmetic sequence: 1, 3, 5, 7, ...",
+      "a": "1) The difference between consecutive terms is constant: +2.\n2) Calculate: 7 + 2 = 9.\nAnswer: 9."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Determine the next term in the arithmetic sequence: 1, 4, 7, 10, ...",
+      "a": "1) The difference between consecutive terms is constant: +3.\n2) Calculate: 10 + 3 = 13.\nAnswer: 13."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Determine the next term in the arithmetic sequence: 1, 5, 9, 13, ...",
+      "a": "1) The difference between consecutive terms is constant: +4.\n2) Calculate: 13 + 4 = 17.\nAnswer: 17."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Determine the next term in the arithmetic sequence: 1, 6, 11, 16, ...",
+      "a": "1) The difference between consecutive terms is constant: +5.\n2) Calculate: 16 + 5 = 21.\nAnswer: 21."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Determine the next term in the arithmetic sequence: 1, 7, 13, 19, ...",
+      "a": "1) The difference between consecutive terms is constant: +6.\n2) Calculate: 19 + 6 = 25.\nAnswer: 25."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Determine the next term in the arithmetic sequence: 1, 8, 15, 22, ...",
+      "a": "1) The difference between consecutive terms is constant: +7.\n2) Calculate: 22 + 7 = 29.\nAnswer: 29."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Determine the next term in the arithmetic sequence: 1, 9, 17, 25, ...",
+      "a": "1) The difference between consecutive terms is constant: +8.\n2) Calculate: 25 + 8 = 33.\nAnswer: 33."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Determine the next term in the arithmetic sequence: 1, 10, 19, 28, ...",
+      "a": "1) The difference between consecutive terms is constant: +9.\n2) Calculate: 28 + 9 = 37.\nAnswer: 37."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Determine the next term in the arithmetic sequence: 1, 11, 21, 31, ...",
+      "a": "1) The difference between consecutive terms is constant: +10.\n2) Calculate: 31 + 10 = 41.\nAnswer: 41."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Determine the next term in the arithmetic sequence: 1, 12, 23, 34, ...",
+      "a": "1) The difference between consecutive terms is constant: +11.\n2) Calculate: 34 + 11 = 45.\nAnswer: 45."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Determine the next term in the arithmetic sequence: 1, 13, 25, 37, ...",
+      "a": "1) The difference between consecutive terms is constant: +12.\n2) Calculate: 37 + 12 = 49.\nAnswer: 49."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Determine the next term in the arithmetic sequence: 1, 14, 27, 40, ...",
+      "a": "1) The difference between consecutive terms is constant: +13.\n2) Calculate: 40 + 13 = 53.\nAnswer: 53."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Determine the next term in the arithmetic sequence: 1, 15, 29, 43, ...",
+      "a": "1) The difference between consecutive terms is constant: +14.\n2) Calculate: 43 + 14 = 57.\nAnswer: 57."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Determine the next term in the arithmetic sequence: 1, 16, 31, 46, ...",
+      "a": "1) The difference between consecutive terms is constant: +15.\n2) Calculate: 46 + 15 = 61.\nAnswer: 61."
     }
   ],
   "nv-series": [
     {
-      "q": "Solved practice problem 1 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 45 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 45 degrees clockwise.\nAnswer: 45 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 90 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 90 degrees clockwise.\nAnswer: 90 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 135 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 135 degrees clockwise.\nAnswer: 135 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 180 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 180 degrees clockwise.\nAnswer: 180 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 225 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 225 degrees clockwise.\nAnswer: 225 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 270 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 270 degrees clockwise.\nAnswer: 270 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 315 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 315 degrees clockwise.\nAnswer: 315 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 360 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 360 degrees clockwise.\nAnswer: 360 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 405 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 405 degrees clockwise.\nAnswer: 405 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 450 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 450 degrees clockwise.\nAnswer: 450 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 495 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 495 degrees clockwise.\nAnswer: 495 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 540 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 540 degrees clockwise.\nAnswer: 540 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 585 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 585 degrees clockwise.\nAnswer: 585 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 630 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 630 degrees clockwise.\nAnswer: 630 degrees clockwise from North."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Nv Series'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Nv Series.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A rotating cursor segment inside a dials template turns clockwise by 675 degrees in each cycle. If it starts facing North, what direction does it face in the 2nd step?",
+      "a": "1) Step 1: North (0 degrees).\n2) Step 2: Rotates 675 degrees clockwise.\nAnswer: 675 degrees clockwise from North."
     }
   ],
   "statements": [
     {
-      "q": "Solved practice problem 1 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Statement: All software 1 are tools. All tools are useful. Conclusion: I. All software 1 are useful. II. Some useful items are software 1.",
+      "a": "1) Circle 'Software 1' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 1' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Statement: All software 2 are tools. All tools are useful. Conclusion: I. All software 2 are useful. II. Some useful items are software 2.",
+      "a": "1) Circle 'Software 2' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 2' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Statement: All software 3 are tools. All tools are useful. Conclusion: I. All software 3 are useful. II. Some useful items are software 3.",
+      "a": "1) Circle 'Software 3' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 3' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Statement: All software 4 are tools. All tools are useful. Conclusion: I. All software 4 are useful. II. Some useful items are software 4.",
+      "a": "1) Circle 'Software 4' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 4' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Statement: All software 5 are tools. All tools are useful. Conclusion: I. All software 5 are useful. II. Some useful items are software 5.",
+      "a": "1) Circle 'Software 5' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 5' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Statement: All software 6 are tools. All tools are useful. Conclusion: I. All software 6 are useful. II. Some useful items are software 6.",
+      "a": "1) Circle 'Software 6' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 6' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Statement: All software 7 are tools. All tools are useful. Conclusion: I. All software 7 are useful. II. Some useful items are software 7.",
+      "a": "1) Circle 'Software 7' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 7' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Statement: All software 8 are tools. All tools are useful. Conclusion: I. All software 8 are useful. II. Some useful items are software 8.",
+      "a": "1) Circle 'Software 8' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 8' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Statement: All software 9 are tools. All tools are useful. Conclusion: I. All software 9 are useful. II. Some useful items are software 9.",
+      "a": "1) Circle 'Software 9' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 9' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Statement: All software 10 are tools. All tools are useful. Conclusion: I. All software 10 are useful. II. Some useful items are software 10.",
+      "a": "1) Circle 'Software 10' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 10' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Statement: All software 11 are tools. All tools are useful. Conclusion: I. All software 11 are useful. II. Some useful items are software 11.",
+      "a": "1) Circle 'Software 11' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 11' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Statement: All software 12 are tools. All tools are useful. Conclusion: I. All software 12 are useful. II. Some useful items are software 12.",
+      "a": "1) Circle 'Software 12' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 12' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Statement: All software 13 are tools. All tools are useful. Conclusion: I. All software 13 are useful. II. Some useful items are software 13.",
+      "a": "1) Circle 'Software 13' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 13' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Statement: All software 14 are tools. All tools are useful. Conclusion: I. All software 14 are useful. II. Some useful items are software 14.",
+      "a": "1) Circle 'Software 14' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 14' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Statements'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Statements.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Statement: All software 15 are tools. All tools are useful. Conclusion: I. All software 15 are useful. II. Some useful items are software 15.",
+      "a": "1) Circle 'Software 15' is inside circle 'Tools'.\n2) Circle 'Tools' is inside 'Useful'.\n3) Therefore, 'Software 15' is completely inside 'Useful'. Both conclusions are logically valid.\nAnswer: Both follow."
     }
   ],
   "math-ops": [
     {
-      "q": "Solved practice problem 1 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 5 x 1 + 2.",
+      "a": "1) Replace operators: 5 + 1 * 2.\n2) Multiplication first: 1 * 2 = 2.\n3) Addition: 5 + 2 = 7.\nAnswer: 7."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 10 x 2 + 2.",
+      "a": "1) Replace operators: 10 + 2 * 2.\n2) Multiplication first: 2 * 2 = 4.\n3) Addition: 10 + 4 = 14.\nAnswer: 14."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 15 x 3 + 2.",
+      "a": "1) Replace operators: 15 + 3 * 2.\n2) Multiplication first: 3 * 2 = 6.\n3) Addition: 15 + 6 = 21.\nAnswer: 21."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 20 x 4 + 2.",
+      "a": "1) Replace operators: 20 + 4 * 2.\n2) Multiplication first: 4 * 2 = 8.\n3) Addition: 20 + 8 = 28.\nAnswer: 28."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 25 x 5 + 2.",
+      "a": "1) Replace operators: 25 + 5 * 2.\n2) Multiplication first: 5 * 2 = 10.\n3) Addition: 25 + 10 = 35.\nAnswer: 35."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 30 x 6 + 2.",
+      "a": "1) Replace operators: 30 + 6 * 2.\n2) Multiplication first: 6 * 2 = 12.\n3) Addition: 30 + 12 = 42.\nAnswer: 42."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 35 x 7 + 2.",
+      "a": "1) Replace operators: 35 + 7 * 2.\n2) Multiplication first: 7 * 2 = 14.\n3) Addition: 35 + 14 = 49.\nAnswer: 49."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 40 x 8 + 2.",
+      "a": "1) Replace operators: 40 + 8 * 2.\n2) Multiplication first: 8 * 2 = 16.\n3) Addition: 40 + 16 = 56.\nAnswer: 56."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 45 x 9 + 2.",
+      "a": "1) Replace operators: 45 + 9 * 2.\n2) Multiplication first: 9 * 2 = 18.\n3) Addition: 45 + 18 = 63.\nAnswer: 63."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 50 x 10 + 2.",
+      "a": "1) Replace operators: 50 + 10 * 2.\n2) Multiplication first: 10 * 2 = 20.\n3) Addition: 50 + 20 = 70.\nAnswer: 70."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 55 x 11 + 2.",
+      "a": "1) Replace operators: 55 + 11 * 2.\n2) Multiplication first: 11 * 2 = 22.\n3) Addition: 55 + 22 = 77.\nAnswer: 77."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 60 x 12 + 2.",
+      "a": "1) Replace operators: 60 + 12 * 2.\n2) Multiplication first: 12 * 2 = 24.\n3) Addition: 60 + 24 = 84.\nAnswer: 84."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 65 x 13 + 2.",
+      "a": "1) Replace operators: 65 + 13 * 2.\n2) Multiplication first: 13 * 2 = 26.\n3) Addition: 65 + 26 = 91.\nAnswer: 91."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 70 x 14 + 2.",
+      "a": "1) Replace operators: 70 + 14 * 2.\n2) Multiplication first: 14 * 2 = 28.\n3) Addition: 70 + 28 = 98.\nAnswer: 98."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Math Ops'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Math Ops.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "If '+' denotes 'multiplication' and 'x' denotes 'addition', find the value of: 75 x 15 + 2.",
+      "a": "1) Replace operators: 75 + 15 * 2.\n2) Multiplication first: 15 * 2 = 30.\n3) Addition: 75 + 30 = 105.\nAnswer: 105."
     }
   ],
   "arith-reas": [
     {
-      "q": "Solved practice problem 1 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A farmer notes a total of 11 heads and 24 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 11, and 2C + 4P = 24.\n1) 2(C + P) = 22 -> 2C + 2P = 22.\n2) Subtract: 2P = 2 -> P = 1.\nAnswer: 1."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A farmer notes a total of 12 heads and 28 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 12, and 2C + 4P = 28.\n1) 2(C + P) = 24 -> 2C + 2P = 24.\n2) Subtract: 2P = 4 -> P = 2.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A farmer notes a total of 13 heads and 32 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 13, and 2C + 4P = 32.\n1) 2(C + P) = 26 -> 2C + 2P = 26.\n2) Subtract: 2P = 6 -> P = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A farmer notes a total of 14 heads and 36 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 14, and 2C + 4P = 36.\n1) 2(C + P) = 28 -> 2C + 2P = 28.\n2) Subtract: 2P = 8 -> P = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A farmer notes a total of 15 heads and 40 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 15, and 2C + 4P = 40.\n1) 2(C + P) = 30 -> 2C + 2P = 30.\n2) Subtract: 2P = 10 -> P = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A farmer notes a total of 16 heads and 44 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 16, and 2C + 4P = 44.\n1) 2(C + P) = 32 -> 2C + 2P = 32.\n2) Subtract: 2P = 12 -> P = 6.\nAnswer: 6."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A farmer notes a total of 17 heads and 48 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 17, and 2C + 4P = 48.\n1) 2(C + P) = 34 -> 2C + 2P = 34.\n2) Subtract: 2P = 14 -> P = 7.\nAnswer: 7."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A farmer notes a total of 18 heads and 52 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 18, and 2C + 4P = 52.\n1) 2(C + P) = 36 -> 2C + 2P = 36.\n2) Subtract: 2P = 16 -> P = 8.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A farmer notes a total of 19 heads and 56 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 19, and 2C + 4P = 56.\n1) 2(C + P) = 38 -> 2C + 2P = 38.\n2) Subtract: 2P = 18 -> P = 9.\nAnswer: 9."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A farmer notes a total of 20 heads and 60 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 20, and 2C + 4P = 60.\n1) 2(C + P) = 40 -> 2C + 2P = 40.\n2) Subtract: 2P = 20 -> P = 10.\nAnswer: 10."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A farmer notes a total of 21 heads and 64 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 21, and 2C + 4P = 64.\n1) 2(C + P) = 42 -> 2C + 2P = 42.\n2) Subtract: 2P = 22 -> P = 11.\nAnswer: 11."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A farmer notes a total of 22 heads and 68 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 22, and 2C + 4P = 68.\n1) 2(C + P) = 44 -> 2C + 2P = 44.\n2) Subtract: 2P = 24 -> P = 12.\nAnswer: 12."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A farmer notes a total of 23 heads and 72 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 23, and 2C + 4P = 72.\n1) 2(C + P) = 46 -> 2C + 2P = 46.\n2) Subtract: 2P = 26 -> P = 13.\nAnswer: 13."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A farmer notes a total of 24 heads and 76 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 24, and 2C + 4P = 76.\n1) 2(C + P) = 48 -> 2C + 2P = 48.\n2) Subtract: 2P = 28 -> P = 14.\nAnswer: 14."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Arith Reas'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Arith Reas.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A farmer notes a total of 25 heads and 80 legs among his chickens and pigs. Find the number of pigs (4 legs).",
+      "a": "Let chickens be C, pigs be P. C + P = 25, and 2C + 4P = 80.\n1) 2(C + P) = 50 -> 2C + 2P = 50.\n2) Subtract: 2P = 30 -> P = 15.\nAnswer: 15."
     }
   ],
   "missing-num": [
     {
-      "q": "Solved practice problem 1 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the missing number in the horizontal triplet row: [ 1, 2, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 1 + 2 = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the missing number in the horizontal triplet row: [ 2, 3, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 2 + 3 = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the missing number in the horizontal triplet row: [ 3, 4, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 3 + 4 = 7.\nAnswer: 7."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the missing number in the horizontal triplet row: [ 4, 5, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 4 + 5 = 9.\nAnswer: 9."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the missing number in the horizontal triplet row: [ 5, 6, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 5 + 6 = 11.\nAnswer: 11."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the missing number in the horizontal triplet row: [ 6, 7, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 6 + 7 = 13.\nAnswer: 13."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the missing number in the horizontal triplet row: [ 7, 8, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 7 + 8 = 15.\nAnswer: 15."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the missing number in the horizontal triplet row: [ 8, 9, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 8 + 9 = 17.\nAnswer: 17."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the missing number in the horizontal triplet row: [ 9, 10, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 9 + 10 = 19.\nAnswer: 19."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the missing number in the horizontal triplet row: [ 10, 11, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 10 + 11 = 21.\nAnswer: 21."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the missing number in the horizontal triplet row: [ 11, 12, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 11 + 12 = 23.\nAnswer: 23."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the missing number in the horizontal triplet row: [ 12, 13, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 12 + 13 = 25.\nAnswer: 25."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the missing number in the horizontal triplet row: [ 13, 14, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 13 + 14 = 27.\nAnswer: 27."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the missing number in the horizontal triplet row: [ 14, 15, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 14 + 15 = 29.\nAnswer: 29."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Missing Num'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Missing Num.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the missing number in the horizontal triplet row: [ 15, 16, ? ] where the relationship is addition.",
+      "a": "1) The sum of first two cells gives the third cell: 15 + 16 = 31.\nAnswer: 31."
     }
   ],
   "dice-cube": [
     {
-      "q": "Solved practice problem 1 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 2.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 2 = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 3.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 3 = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 4.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 4 = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 5.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 5 = 2.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 6.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 6 = 1.\nAnswer: 1."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 1.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 1 = 6.\nAnswer: 6."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 2.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 2 = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 3.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 3 = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 4.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 4 = 3.\nAnswer: 3."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 5.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 5 = 2.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 6.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 6 = 1.\nAnswer: 1."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 1.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 1 = 6.\nAnswer: 6."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 2.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 2 = 5.\nAnswer: 5."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 3.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 3 = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Dice Cube'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Dice Cube.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A standard fair dice is rolled. Find the number on the bottom face if the top face shows 4.",
+      "a": "1) Opposite faces of a standard dice always sum to 7.\n2) Bottom face = 7 - 4 = 3.\nAnswer: 3."
     }
   ],
   "paper-fold": [
     {
-      "q": "Solved practice problem 1 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A square sheet is folded 2 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 2 times yields 4 layers.\n2) A single punch cuts through all layers, yielding 4 holes when opened.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A square sheet is folded 3 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 3 times yields 8 layers.\n2) A single punch cuts through all layers, yielding 8 holes when opened.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A square sheet is folded 1 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 1 times yields 2 layers.\n2) A single punch cuts through all layers, yielding 2 holes when opened.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A square sheet is folded 2 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 2 times yields 4 layers.\n2) A single punch cuts through all layers, yielding 4 holes when opened.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A square sheet is folded 3 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 3 times yields 8 layers.\n2) A single punch cuts through all layers, yielding 8 holes when opened.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A square sheet is folded 1 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 1 times yields 2 layers.\n2) A single punch cuts through all layers, yielding 2 holes when opened.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A square sheet is folded 2 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 2 times yields 4 layers.\n2) A single punch cuts through all layers, yielding 4 holes when opened.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A square sheet is folded 3 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 3 times yields 8 layers.\n2) A single punch cuts through all layers, yielding 8 holes when opened.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A square sheet is folded 1 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 1 times yields 2 layers.\n2) A single punch cuts through all layers, yielding 2 holes when opened.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A square sheet is folded 2 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 2 times yields 4 layers.\n2) A single punch cuts through all layers, yielding 4 holes when opened.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A square sheet is folded 3 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 3 times yields 8 layers.\n2) A single punch cuts through all layers, yielding 8 holes when opened.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A square sheet is folded 1 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 1 times yields 2 layers.\n2) A single punch cuts through all layers, yielding 2 holes when opened.\nAnswer: 2."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A square sheet is folded 2 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 2 times yields 4 layers.\n2) A single punch cuts through all layers, yielding 4 holes when opened.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A square sheet is folded 3 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 3 times yields 8 layers.\n2) A single punch cuts through all layers, yielding 8 holes when opened.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Paper Fold'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Paper Fold.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A square sheet is folded 1 times and punched once. How many holes are visible when unfolded?",
+      "a": "1) Folding once doubles thickness. Folding 1 times yields 2 layers.\n2) A single punch cuts through all layers, yielding 2 holes when opened.\nAnswer: 2."
     }
   ],
   "embedded": [
     {
-      "q": "Solved practice problem 1 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A vertical stroke of length 1 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A vertical stroke of length 2 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A vertical stroke of length 3 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A vertical stroke of length 4 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A vertical stroke of length 5 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A vertical stroke of length 6 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A vertical stroke of length 7 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A vertical stroke of length 8 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A vertical stroke of length 9 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A vertical stroke of length 10 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A vertical stroke of length 11 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A vertical stroke of length 12 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A vertical stroke of length 13 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A vertical stroke of length 14 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Embedded'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Embedded.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A vertical stroke of length 15 cm is embedded inside a square wire mesh. What orientation does it align with?",
+      "a": "1) Symmetrical search inside mesh: vertical lines run North-South.\nAnswer: Vertical axis."
     }
   ],
   "mirror-water": [
     {
-      "q": "Solved practice problem 1 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Find the water image of the numeric value: '100'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '100' vertically flipped."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Find the water image of the numeric value: '200'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '200' vertically flipped."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Find the water image of the numeric value: '300'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '300' vertically flipped."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Find the water image of the numeric value: '400'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '400' vertically flipped."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Find the water image of the numeric value: '500'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '500' vertically flipped."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Find the water image of the numeric value: '600'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '600' vertically flipped."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Find the water image of the numeric value: '700'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '700' vertically flipped."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Find the water image of the numeric value: '800'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '800' vertically flipped."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Find the water image of the numeric value: '900'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '900' vertically flipped."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Find the water image of the numeric value: '1000'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '1000' vertically flipped."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Find the water image of the numeric value: '1100'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '1100' vertically flipped."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Find the water image of the numeric value: '1200'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '1200' vertically flipped."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Find the water image of the numeric value: '1300'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '1300' vertically flipped."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Find the water image of the numeric value: '1400'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '1400' vertically flipped."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Mirror Water'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Mirror Water.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Find the water image of the numeric value: '1500'.",
+      "a": "1) Water image flips characters vertically.\n2) '100' flipped vertically remains '100' or inverted characters.\nAnswer: '1500' vertically flipped."
     }
   ],
   "completion": [
     {
-      "q": "Solved practice problem 1 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A quadrants drawing lacks its 1 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A quadrants drawing lacks its 2 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A quadrants drawing lacks its 3 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A quadrants drawing lacks its 4 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A quadrants drawing lacks its 5 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A quadrants drawing lacks its 6 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A quadrants drawing lacks its 7 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A quadrants drawing lacks its 8 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A quadrants drawing lacks its 9 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A quadrants drawing lacks its 10 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A quadrants drawing lacks its 11 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A quadrants drawing lacks its 12 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A quadrants drawing lacks its 13 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A quadrants drawing lacks its 14 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Completion'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Completion.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A quadrants drawing lacks its 15 quadrant. Which quadrant mirrors it?",
+      "a": "1) Symmetrical patterns mirror along the vertical or horizontal dividing axes.\nAnswer: Symmetrical counterpart."
     }
   ],
   "counting-fig": [
     {
-      "q": "Solved practice problem 1 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 1 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 1 * 4 = 4.\nAnswer: 4."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 2 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 2 * 4 = 8.\nAnswer: 8."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 3 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 3 * 4 = 12.\nAnswer: 12."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 4 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 4 * 4 = 16.\nAnswer: 16."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 5 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 5 * 4 = 20.\nAnswer: 20."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 6 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 6 * 4 = 24.\nAnswer: 24."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 7 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 7 * 4 = 28.\nAnswer: 28."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 8 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 8 * 4 = 32.\nAnswer: 32."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 9 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 9 * 4 = 36.\nAnswer: 36."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 10 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 10 * 4 = 40.\nAnswer: 40."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 11 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 11 * 4 = 44.\nAnswer: 44."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 12 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 12 * 4 = 48.\nAnswer: 48."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 13 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 13 * 4 = 52.\nAnswer: 52."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 14 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 14 * 4 = 56.\nAnswer: 56."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Counting Fig'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Counting Fig.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Count the number of non-overlapping triangular quadrants in a grid containing 15 squares with both diagonals drawn.",
+      "a": "1) Each square with two diagonals yields 4 individual small triangles.\n2) Total triangles = 15 * 4 = 60.\nAnswer: 60."
     }
   ],
   "sitting": [
     {
-      "q": "Solved practice problem 1 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Sitting'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Sitting.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Four developers A, B, C, D are seated in a row facing East. A is adjacent to B. C is at the extreme left (position 1). If B is to the immediate right of A, who is in position 3?",
+      "a": "1) C is in position 1.\n2) Since B is to the immediate right of A, they sit as A, B. This pair must occupy positions 2 and 3.\n3) Position 2 is A, position 3 is B. Position 4 is D.\nAnswer: B."
     }
   ],
   "blood": [
     {
-      "q": "Solved practice problem 1 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Blood'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Blood.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Introducing a girl, Rohit says: 'She is the only daughter of my father's only son.' How is Rohit related to the girl?",
+      "a": "1) 'Rohit's father's only son' refers to Rohit himself.\n2) The statement simplifies to: 'She is the only daughter of Rohit.'\n3) Therefore, Rohit is the father of the girl.\nAnswer: Father."
     }
   ],
   "direction": [
     {
-      "q": "Solved practice problem 1 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "A drone flies 3m North, turns East and flies 4m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(3^2 + 4^2).\n2) sqrt(9 + 16) = sqrt(25) = 5m.\nAnswer: 5m."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "A drone flies 6m North, turns East and flies 8m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(6^2 + 8^2).\n2) sqrt(36 + 64) = sqrt(100) = 10m.\nAnswer: 10m."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "A drone flies 9m North, turns East and flies 12m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(9^2 + 12^2).\n2) sqrt(81 + 144) = sqrt(225) = 15m.\nAnswer: 15m."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "A drone flies 12m North, turns East and flies 16m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(12^2 + 16^2).\n2) sqrt(144 + 256) = sqrt(400) = 20m.\nAnswer: 20m."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "A drone flies 15m North, turns East and flies 20m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(15^2 + 20^2).\n2) sqrt(225 + 400) = sqrt(625) = 25m.\nAnswer: 25m."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "A drone flies 18m North, turns East and flies 24m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(18^2 + 24^2).\n2) sqrt(324 + 576) = sqrt(900) = 30m.\nAnswer: 30m."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "A drone flies 21m North, turns East and flies 28m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(21^2 + 28^2).\n2) sqrt(441 + 784) = sqrt(1225) = 35m.\nAnswer: 35m."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "A drone flies 24m North, turns East and flies 32m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(24^2 + 32^2).\n2) sqrt(576 + 1024) = sqrt(1600) = 40m.\nAnswer: 40m."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "A drone flies 27m North, turns East and flies 36m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(27^2 + 36^2).\n2) sqrt(729 + 1296) = sqrt(2025) = 45m.\nAnswer: 45m."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "A drone flies 30m North, turns East and flies 40m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(30^2 + 40^2).\n2) sqrt(900 + 1600) = sqrt(2500) = 50m.\nAnswer: 50m."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "A drone flies 33m North, turns East and flies 44m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(33^2 + 44^2).\n2) sqrt(1089 + 1936) = sqrt(3025) = 55m.\nAnswer: 55m."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "A drone flies 36m North, turns East and flies 48m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(36^2 + 48^2).\n2) sqrt(1296 + 2304) = sqrt(3600) = 60m.\nAnswer: 60m."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "A drone flies 39m North, turns East and flies 52m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(39^2 + 52^2).\n2) sqrt(1521 + 2704) = sqrt(4225) = 65m.\nAnswer: 65m."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "A drone flies 42m North, turns East and flies 56m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(42^2 + 56^2).\n2) sqrt(1764 + 3136) = sqrt(4900) = 70m.\nAnswer: 70m."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Direction'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Direction.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "A drone flies 45m North, turns East and flies 60m. Find the straight line distance from start.",
+      "a": "1) Apply Pythagoras: Distance = sqrt(45^2 + 60^2).\n2) sqrt(2025 + 3600) = sqrt(5625) = 75m.\nAnswer: 75m."
     }
   ],
   "word-arr": [
     {
-      "q": "Solved practice problem 1 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Sort the words alphabetically: [A_key_1, B_key_1, C_key_1].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_1, B_key_1, C_key_1."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Sort the words alphabetically: [A_key_2, B_key_2, C_key_2].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_2, B_key_2, C_key_2."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Sort the words alphabetically: [A_key_3, B_key_3, C_key_3].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_3, B_key_3, C_key_3."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Sort the words alphabetically: [A_key_4, B_key_4, C_key_4].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_4, B_key_4, C_key_4."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Sort the words alphabetically: [A_key_5, B_key_5, C_key_5].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_5, B_key_5, C_key_5."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Sort the words alphabetically: [A_key_6, B_key_6, C_key_6].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_6, B_key_6, C_key_6."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Sort the words alphabetically: [A_key_7, B_key_7, C_key_7].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_7, B_key_7, C_key_7."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Sort the words alphabetically: [A_key_8, B_key_8, C_key_8].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_8, B_key_8, C_key_8."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Sort the words alphabetically: [A_key_9, B_key_9, C_key_9].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_9, B_key_9, C_key_9."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Sort the words alphabetically: [A_key_10, B_key_10, C_key_10].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_10, B_key_10, C_key_10."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Sort the words alphabetically: [A_key_11, B_key_11, C_key_11].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_11, B_key_11, C_key_11."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Sort the words alphabetically: [A_key_12, B_key_12, C_key_12].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_12, B_key_12, C_key_12."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Sort the words alphabetically: [A_key_13, B_key_13, C_key_13].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_13, B_key_13, C_key_13."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Sort the words alphabetically: [A_key_14, B_key_14, C_key_14].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_14, B_key_14, C_key_14."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Word Arr'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Word Arr.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Sort the words alphabetically: [A_key_15, B_key_15, C_key_15].",
+      "a": "1) Compare the first letters: A, B, C.\nAnswer: A_key_15, B_key_15, C_key_15."
     }
   ],
   "venn": [
     {
-      "q": "Solved practice problem 1 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 1).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 2).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 3).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 4).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 5).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 6).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 7).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 8).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 9).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 10).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 11).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 12).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 13).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 14).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Venn'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Venn.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Draw the Venn relation between: Cats, Dogs, Mammals. (Dataset index 15).",
+      "a": "1) Both Cats and Dogs are Mammals.\n2) Cats and Dogs are disjoint sets.\nAnswer: Two separate circles inside a larger circle."
     }
   ],
   "calendar": [
     {
-      "q": "Solved practice problem 1 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "If today is Sunday, what day of the week will it be after 7 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 7 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "If today is Sunday, what day of the week will it be after 14 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 14 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "If today is Sunday, what day of the week will it be after 21 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 21 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "If today is Sunday, what day of the week will it be after 28 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 28 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "If today is Sunday, what day of the week will it be after 35 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 35 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "If today is Sunday, what day of the week will it be after 42 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 42 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "If today is Sunday, what day of the week will it be after 49 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 49 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "If today is Sunday, what day of the week will it be after 56 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 56 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "If today is Sunday, what day of the week will it be after 63 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 63 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "If today is Sunday, what day of the week will it be after 70 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 70 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "If today is Sunday, what day of the week will it be after 77 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 77 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "If today is Sunday, what day of the week will it be after 84 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 84 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "If today is Sunday, what day of the week will it be after 91 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 91 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "If today is Sunday, what day of the week will it be after 98 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 98 % 7 = 0 odd days.\nAnswer: Sunday."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Calendar'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Calendar.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "If today is Sunday, what day of the week will it be after 105 days?",
+      "a": "1) Days divisible by 7 fall on the exact same day of the week.\n2) 105 % 7 = 0 odd days.\nAnswer: Sunday."
     }
   ],
   "age": [
     {
-      "q": "Solved practice problem 1 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "The sum of ages of father and son is 42 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 42 -> 2S = 22 -> S = 11.\nAnswer: 11 years."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "The sum of ages of father and son is 44 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 44 -> 2S = 24 -> S = 12.\nAnswer: 12 years."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "The sum of ages of father and son is 46 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 46 -> 2S = 26 -> S = 13.\nAnswer: 13 years."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "The sum of ages of father and son is 48 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 48 -> 2S = 28 -> S = 14.\nAnswer: 14 years."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "The sum of ages of father and son is 50 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 50 -> 2S = 30 -> S = 15.\nAnswer: 15 years."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "The sum of ages of father and son is 52 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 52 -> 2S = 32 -> S = 16.\nAnswer: 16 years."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "The sum of ages of father and son is 54 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 54 -> 2S = 34 -> S = 17.\nAnswer: 17 years."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "The sum of ages of father and son is 56 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 56 -> 2S = 36 -> S = 18.\nAnswer: 18 years."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "The sum of ages of father and son is 58 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 58 -> 2S = 38 -> S = 19.\nAnswer: 19 years."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "The sum of ages of father and son is 60 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 60 -> 2S = 40 -> S = 20.\nAnswer: 20 years."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "The sum of ages of father and son is 62 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 62 -> 2S = 42 -> S = 21.\nAnswer: 21 years."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "The sum of ages of father and son is 64 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 64 -> 2S = 44 -> S = 22.\nAnswer: 22 years."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "The sum of ages of father and son is 66 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 66 -> 2S = 46 -> S = 23.\nAnswer: 23 years."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "The sum of ages of father and son is 68 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 68 -> 2S = 48 -> S = 24.\nAnswer: 24 years."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Age'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Age.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "The sum of ages of father and son is 70 years. If father is 20 years older, find son's age.",
+      "a": "Let Son be S. Father is S + 20. S + S + 20 = 70 -> 2S = 50 -> S = 25.\nAnswer: 25 years."
     }
   ],
   "eng-roadmap": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Step 1 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Step 2 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Step 3 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Step 4 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Step 5 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Step 6 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Step 7 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Step 8 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Step 9 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Step 10 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Step 11 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Step 12 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Step 13 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Step 14 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Roadmap'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Roadmap.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Step 15 on the grammar road: what should be studied next in English track?",
+      "a": "1) Review previous topics. Practice writing correct sentences.\nAnswer: Grammar syntax."
     }
   ],
   "eng-basics": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 1).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 2).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 3).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 4).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 5).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 6).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 7).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 8).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 9).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 10).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 11).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 12).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 13).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 14).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Basics'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Basics.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Identify the part of speech of the word indicating action in sentences (Index 15).",
+      "a": "1) Words expressing actions or states are Verbs.\nAnswer: Verb."
     }
   ],
   "eng-tenses": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 1)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 2)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 3)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 4)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 5)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 6)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 7)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 8)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 9)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 10)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 11)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 12)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 13)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 14)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Tenses'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Tenses.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Convert to present perfect: 'She reads a report.' (Sentence 15)",
+      "a": "1) Present perfect uses have/has + verb-3.\n2) 'She has read a report.'\nAnswer: She has read a report."
     }
   ],
   "eng-questions": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 1)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 2)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 3)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 4)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 5)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 6)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 7)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 8)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 9)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 10)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 11)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 12)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 13)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 14)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Questions'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Questions.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Complete the tag question: 'He is joining us, ________?' (Tag 15)",
+      "a": "1) Statement is positive, tag is negative.\nAnswer: isn't he?"
     }
   ],
   "eng-common-errors": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Correct the error: 'He go to office daily.' (Error check 1)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Correct the error: 'He go to office daily.' (Error check 2)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Correct the error: 'He go to office daily.' (Error check 3)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Correct the error: 'He go to office daily.' (Error check 4)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Correct the error: 'He go to office daily.' (Error check 5)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Correct the error: 'He go to office daily.' (Error check 6)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Correct the error: 'He go to office daily.' (Error check 7)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Correct the error: 'He go to office daily.' (Error check 8)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Correct the error: 'He go to office daily.' (Error check 9)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Correct the error: 'He go to office daily.' (Error check 10)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Correct the error: 'He go to office daily.' (Error check 11)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Correct the error: 'He go to office daily.' (Error check 12)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Correct the error: 'He go to office daily.' (Error check 13)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Correct the error: 'He go to office daily.' (Error check 14)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Common Errors'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Common Errors.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Correct the error: 'He go to office daily.' (Error check 15)",
+      "a": "1) Singular subject 'He' takes singular verb 'goes'.\nAnswer: He goes to office daily."
     }
   ],
   "eng-vocab-daily": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 1)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 2)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 3)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 4)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 5)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 6)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 7)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 8)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 9)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 10)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 11)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 12)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 13)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 14)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Vocab Daily'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Vocab Daily.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Use the term indicating 'clear and logical speech' in a sentence. (Word 15)",
+      "a": "1) The word is 'coherent'.\nAnswer: Coherent."
     }
   ],
   "eng-phrases": [
     {
-      "q": "Solved practice problem 1 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 1."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 1)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 2 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 2."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 2)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 3 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 3."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 3)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 4 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 4."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 4)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 5 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 5."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 5)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 6 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 6."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 6)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 7 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 7."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 7)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 8 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 8."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 8)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 9 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 9."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 9)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 10 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 10."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 10)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 11 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 11."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 11)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 12 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 12."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 12)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 13 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 13."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 13)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 14 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 14."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 14)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     },
     {
-      "q": "Solved practice problem 15 for studying 'Eng Phrases'. Find the correct solution pattern.",
-      "a": "1) Step-by-step logic: Review the definitions for Eng Phrases.\n2) Solve using the specific rules of the chapter.\nAnswer: Verified correct study solution 15."
+      "q": "Interpret the idiomatic expression indicating 'doing something correct'. (Phrase 15)",
+      "a": "1) The phrase is 'hitting the nail on the head'.\nAnswer: Hitting the nail on the head."
     }
   ]
 };
