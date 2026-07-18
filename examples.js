@@ -651,14 +651,102 @@ var EXAMPLES = {
   ],
   "si-ci": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Simple interest is constant; compound interest compounds interest on interest.\n\u26a1 **Formula/Shortcut**: Difference between CI and SI for 2 years = P * (R / 100)^2.\n\n**Question**: Borrower Arjun secures a mortgage loan of $250,000 from Apex Mortgages at a rate of 8% per annum. What is the difference between the compound interest and simple interest on this principal for a duration of 2 years?",
-      "a": "\ud83d\udccb **Given**: Principal (P) = $250,000. Rate (R) = 8%. Time = 2 years.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Apply the 2-year difference formula directly.\n\n**Step-by-step Solution**:\n1) Substitute values: Difference = 250,000 * (8 / 100)^2.\n2) Calculate terms: Difference = 250,000 * (0.08)^2 = 250,000 * 0.0064.\n3) Multiply: Difference = $1,600.\n\n\u2728 **Final Answer**: $1,600"
+      "q": "Find the SI on \u20b95,000 at 8% p.a. for 3 years.",
+      "a": "SI = (5000 * 8 * 3) / 100 = \u20b91,200. Answer: \u20b91,200."
+    },
+    {
+      "q": "Find the CI on \u20b95,000 at 8% p.a. for 2 years (annual compounding).",
+      "a": "A = 5000 * (1.08)^2 = 5000 * 1.1664 = \u20b95,832. CI = 5832 - 5000 = \u20b9832. Answer: \u20b9832."
+    },
+    {
+      "q": "Find the difference between CI and SI on \u20b98,000 at 10% for 2 years.",
+      "a": "Difference = P * (R/100)^2 = 8000 * (10/100)^2 = 8000 * 0.01 = \u20b980. Answer: \u20b980."
+    },
+    {
+      "q": "A sum amounts to \u20b9850 in 3 years and \u20b9925 in 4 years at SI. Find the rate and principal.",
+      "a": "SI for 1 year = 925 - 850 = \u20b975. P = 850 - 3 * 75 = 850 - 225 = \u20b9625. Rate = (75 / 625) * 100 = 12%. Answer: Rate 12%, Principal \u20b9625."
+    },
+    {
+      "q": "Find the CI on \u20b910,000 for 1.5 years at 10% p.a., compounded half-yearly.",
+      "a": "Half-yearly R = 5%, n = 3 periods. A = 10000 * (1.05)^3 = 10000 * 1.157625 = \u20b911,576.25. CI = 11576.25 - 10000 = \u20b91,576.25. Answer: \u20b91,576.25."
+    },
+    {
+      "q": "Find the amount on \u20b915,000 at 12% p.a. compounded annually for 3 years.",
+      "a": "A = 15000 * (1.12)^3 = 15000 * 1.404928 = \u20b921,073.92. Answer: \u20b921,073.92."
+    },
+    {
+      "q": "A sum triples itself in 20 years at SI. Find the rate.",
+      "a": "Let Principal = P, Amount = 3P -> SI = 2P. SI = PRT/100 -> 2P = P * R * 20 / 100 -> R = 10%. Answer: 10%."
+    },
+    {
+      "q": "Find the difference between CI and SI on \u20b920,000 for 2 years at 10% p.a.",
+      "a": "Difference = P * (R/100)^2 = 20000 * (10/100)^2 = \u20b9200. Answer: \u20b9200."
+    },
+    {
+      "q": "A sum doubles in 8 years at SI. In how many years will it triple?",
+      "a": "Doubles in 8 years -> SI = P, so R = 100/8 = 12.5%. To triple, SI = 2P -> T = 2P / (P * 0.125) = 16 years. Answer: 16 years."
+    },
+    {
+      "q": "Find the CI on \u20b912,000 at 10% p.a. for 3 years, compounded annually.",
+      "a": "A = 12000 * (1.1)^3 = \u20b915,972. CI = 15972 - 12000 = \u20b93,972. Answer: \u20b93,972."
+    },
+    {
+      "q": "The difference between CI and SI on a sum for 2 years at 15% p.a. is \u20b9450. Find the sum.",
+      "a": "Difference = P * (R/100)^2 -> 450 = P * (15/100)^2 -> 450 = P * 0.0225 -> P = 450 / 0.0225 = \u20b920,000. Answer: \u20b920,000."
+    },
+    {
+      "q": "A town's population grows at 5% p.a. (compound growth) from 40,000. Find the population after 2 years.",
+      "a": "Population = 40000 * (1.05)^2 = 40000 * 1.1025 = 44,100. Answer: 44,100."
     }
   ],
   "allegations": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Alligations determine the mixing ratio of ingredients to achieve a target average price or concentration.\n\u26a1 **Formula/Shortcut**: Ratio of Cheap quantity to Dear quantity = (Dear price - Mean price) / (Mean price - Cheap price).\n\n**Question**: Chemist Dr. Aisha at PureChem Labs needs to mix a sanitizing agent with 90% alcohol concentration with another of 60% alcohol concentration to produce a batch containing 70% alcohol concentration. In what ratio must they be mixed?",
-      "a": "\ud83d\udccb **Given**: Dear concentration = 90%. Cheap concentration = 60%. Target mean concentration = 70%.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Apply the allegation ratio rule to find the proportions of 60% and 90% solutions.\n\n**Step-by-step Solution**:\n1) Ratio (Cheap : Dear) = (90 - 70) : (70 - 60).\n2) Calculate differences: Ratio = 20 : 10.\n3) Simplify: Ratio = 2 : 1.\n4) This means 2 parts of the 60% solution for every 1 part of the 90% solution.\n\n\u2728 **Final Answer**: 2:1"
+      "q": "In what ratio should tea worth \u20b960/kg be mixed with tea worth \u20b980/kg to get a mixture worth \u20b965/kg?",
+      "a": "By allegation: Ratio = (80 - 65) : (65 - 60) = 15 : 5 = 3:1. Answer: 3:1."
+    },
+    {
+      "q": "A shopkeeper mixes 20 kg rice at \u20b940/kg with 30 kg at \u20b960/kg. Find the average price.",
+      "a": "Average price = (20 * 40 + 30 * 60) / (20 + 30) = (800 + 1800) / 50 = 2600 / 50 = \u20b952/kg. Answer: \u20b952/kg."
+    },
+    {
+      "q": "In what ratio must water be mixed with milk costing \u20b915/liter to get a mixture worth \u20b912/liter?",
+      "a": "Water cost = 0. By allegation: Ratio (Water:Milk) = (15 - 12) : (12 - 0) = 3 : 12 = 1:4. Answer: 1:4."
+    },
+    {
+      "q": "A container has 40 liters of milk. 4 liters are withdrawn and replaced with water, repeated 3 times. Find the milk left.",
+      "a": "Milk left = 40 * (1 - 4/40)^3 = 40 * (0.9)^3 = 40 * 0.729 = 29.16 liters. Answer: 29.16 liters."
+    },
+    {
+      "q": "Solutions of 25% and 40% alcohol are mixed to get 30 liters of a 30% solution. Find the quantities.",
+      "a": "Ratio (25%:40%) = (40 - 30) : (30 - 25) = 10 : 5 = 2:1. So, 25% solution = 30 * (2/3) = 20 L, 40% solution = 30 * (1/3) = 10 L. Answer: 20 L of 25%, 10 L of 40%."
+    },
+    {
+      "q": "In what proportion must rice at \u20b935/kg be mixed with rice at \u20b945/kg to get a mixture worth \u20b941/kg?",
+      "a": "By allegation: Ratio = (45 - 41) : (41 - 35) = 4 : 6 = 2:3. Answer: 2:3."
+    },
+    {
+      "q": "A 60-liter mixture has milk:water = 5:1. 12 liters of the mixture is removed and replaced with water. Find the new ratio.",
+      "a": "Initial: milk = 50L, water = 10L. In 12L removed: milk = 10L, water = 2L. Remaining: milk = 40L, water = 8L. Add 12L water -> milk = 40L, water = 20L. New ratio = 40:20 = 2:1. Answer: 2:1."
+    },
+    {
+      "q": "Sugar varieties at \u20b925/kg and \u20b930/kg are mixed in ratio 3:2. Find the mixture's cost per kg.",
+      "a": "Average price = (3 * 25 + 2 * 30) / 5 = (75 + 60) / 5 = 135 / 5 = \u20b927/kg. Answer: \u20b927/kg."
+    },
+    {
+      "q": "In what ratio should oils at \u20b990/liter and \u20b9120/liter be mixed to get a mixture at \u20b9100/liter?",
+      "a": "By allegation: Ratio = (120 - 100) : (100 - 90) = 20 : 10 = 2:1. Answer: 2:1."
+    },
+    {
+      "q": "A 20-liter mixture of milk and water is 20% water. How much water must be added to make it 25% water?",
+      "a": "Milk = 16L (80%), water = 4L. In new mixture, milk = 16L should be 75%. Total volume = 16 / 0.75 = 21.33L. Water to add = 21.33 - 20 = 1.33 liters. Answer: 1.33 liters."
+    },
+    {
+      "q": "A container has 80 liters of pure milk. 8 liters are withdrawn and replaced with water, twice. Find the milk left.",
+      "a": "Milk left = 80 * (1 - 8/80)^2 = 80 * (0.9)^2 = 80 * 0.81 = 64.8 liters. Answer: 64.8 liters."
+    },
+    {
+      "q": "Two vessels have milk:water = 3:2 and 5:3. Equal quantities from both are mixed. Find the resulting milk:water ratio.",
+      "a": "Average milk fraction = (3/5 + 5/8) / 2 = (49/40) / 2 = 49/80. Resulting ratio = 49 : (80 - 49) = 49:31. Answer: 49:31."
     }
   ],
   "simple-eq": [

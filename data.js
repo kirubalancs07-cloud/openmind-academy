@@ -1181,11 +1181,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'The difference between SI and CI on a sum for 2 years at 10% per annum is $50. Find the principal.',
-            opts: ['$5000', '$4000', '$6000', '$3000'],
-            ans: 0,
-            exam: 'SSC CGL 2021',
-            sol: 'Difference (Diff) = P × (R / 100)²\n50 = P × (10 / 100)² = P × (1 / 100)\nPrincipal (P) = 50 × 100 = 5000.'
+            q: 'Find the SI on ₹6,000 at 9% for 4 years.',
+            opts: ['₹1,800', '₹2,000', '₹2,160', '₹2,400'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'SI = (P * R * T) / 100 = (6000 * 9 * 4) / 100 = 60 * 36 = ₹2,160.'
+          },
+          {
+            q: 'Find the CI on ₹6,000 at 10% for 2 years.',
+            opts: ['₹1,200', '₹1,260', '₹1,300', '₹1,320'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Amount A = P * (1 + R/100)^T = 6000 * (1.1)^2 = 6000 * 1.21 = ₹7,260. CI = A - P = 7260 - 6000 = ₹1,260.'
+          },
+          {
+            q: 'Find the difference between CI and SI on ₹10,000 at 12% for 2 years.',
+            opts: ['₹120', '₹140', '₹144', '₹150'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Difference = P * (R/100)^2 = 10000 * (12/100)^2 = 10000 * (144 / 10000) = ₹144.'
+          },
+          {
+            q: 'A sum amounts to ₹1,200 in 2 years and ₹1,500 in 5 years at SI. Find the rate and principal.',
+            opts: ['Rate 8%, Principal ₹1,000', 'Rate 10%, Principal ₹1,000', 'Rate 10%, Principal ₹900', 'Rate 12%, Principal ₹1,000'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'SI for 3 years (from 2nd to 5th year) = 1500 - 1200 = 300. Annual SI = 300 / 3 = 100. Principal P = Amount in 2 years - 2 * Annual SI = 1200 - 200 = ₹1,000. Rate = (100 / 1000) * 100 = 10%.'
+          },
+          {
+            q: 'Find the CI on ₹8,000 for 1 year at 10% p.a., compounded half-yearly.',
+            opts: ['₹800', '₹820', '₹840', '₹850'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'For half-yearly, R = 10% / 2 = 5% per half-year, T = 1 * 2 = 2 periods. A = 8000 * (1.05)^2 = 8000 * 1.1025 = ₹8,820. CI = 8820 - 8000 = ₹820.'
+          },
+          {
+            q: 'A sum doubles itself in 10 years at SI. Find the rate.',
+            opts: ['5%', '8%', '10%', '12.5%'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Let Principal be P. Amount = 2P, so SI = P. SI = PRT/100 -> P = P * R * 10 / 100 -> R = 10%.'
+          },
+          {
+            q: 'The difference between CI and SI on a sum for 2 years at 10% is ₹100. Find the sum.',
+            opts: ['₹8,000', '₹9,000', '₹10,000', '₹12,000'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Difference = P * (R/100)^2 -> 100 = P * (10/100)^2 -> 100 = P * (1/100) -> P = 100 * 100 = ₹10,000.'
           }
         ]
       }
@@ -1204,11 +1246,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'In what ratio must rice at $60/kg be mixed with rice at $90/kg to get a mixture worth $72/kg?',
-            opts: ['3:2', '2:3', '4:3', '1:2'],
-            ans: 0,
-            exam: 'SSC CHSL 2022',
-            sol: 'Cheaper = 60, Dearer = 90, Mean = 72.\nRatio = (90 - 72) : (72 - 60) = 18 : 12 = 3:2.'
+            q: 'In what ratio should tea worth ₹50/kg be mixed with tea worth ₹70/kg to get a mixture worth ₹56/kg?',
+            opts: ['3:2', '7:3', '5:3', '4:3'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'By allegation rule: Ratio (Cheaper : Dearer) = (70 - 56) : (56 - 50) = 14 : 6 = 7:3.'
+          },
+          {
+            q: 'A shopkeeper mixes 15 kg rice at ₹30/kg with 25 kg at ₹50/kg. Find the average price.',
+            opts: ['₹40/kg', '₹42.5/kg', '₹45/kg', '₹47.5/kg'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total cost = 15 * 30 + 25 * 50 = 450 + 1250 = 1700. Total quantity = 15 + 25 = 40 kg. Average price = 1700 / 40 = ₹42.5/kg.'
+          },
+          {
+            q: 'In what ratio must water be mixed with milk costing ₹18/liter to get a mixture worth ₹15/liter?',
+            opts: ['1:4', '1:5', '1:6', '2:5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Water cost is ₹0. Cheaper (water) = 0, Dearer (milk) = 18, Mean = 15. Ratio (Water : Milk) = (18 - 15) : (15 - 0) = 3 : 15 = 1:5.'
+          },
+          {
+            q: 'A container has 50 liters of milk; 5 liters withdrawn and replaced with water, twice. Find the milk left.',
+            opts: ['40 liters', '40.5 liters', '41.2 liters', '42.5 liters'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Milk left = Initial * (1 - x/V)^n = 50 * (1 - 5/50)^2 = 50 * (0.9)^2 = 50 * 0.81 = 40.5 liters.'
+          },
+          {
+            q: 'Alcohol solutions of 20% and 50% are mixed to get 30 liters of a 30% solution. Find the quantities.',
+            opts: ['15 L of each', '20 L of 20%, 10 L of 50%', '10 L of 20%, 20 L of 50%', '18 L of 20%, 12 L of 50%'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'By allegation: Ratio (20% : 50%) = (50 - 30) : (30 - 20) = 20 : 10 = 2:1. Total = 30 L -> 20 L of 20% and 10 L of 50%.'
+          },
+          {
+            q: 'In what proportion must rice at ₹40/kg be mixed with rice at ₹60/kg to get a mixture worth ₹52/kg?',
+            opts: ['1:2', '2:3', '3:4', '3:5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'By allegation: Ratio = (60 - 52) : (52 - 40) = 8 : 12 = 2:3.'
+          },
+          {
+            q: 'Sugar varieties at ₹22/kg and ₹28/kg are mixed in ratio 2:3. Find the mixture\'s cost per kg.',
+            opts: ['₹24.8/kg', '₹25.0/kg', '₹25.6/kg', '₹26.2/kg'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Average price = (2 * 22 + 3 * 28) / 5 = (44 + 84) / 5 = 128 / 5 = ₹25.6/kg.'
           }
         ]
       }
