@@ -504,18 +504,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If A\'s salary is 25% more than B\'s, by what percentage is B\'s salary less than A\'s?',
-            opts: ['20%', '25%', '15%', '33.33%'],
-            ans: 0,
-            exam: 'SSC CGL 2023',
-            sol: 'If B = 100, then A = 125. B is less than A by 25.\nPercentage = (25 / 125) × 100 = 20%.'
+            q: 'Find 18% of 650.',
+            opts: ['108', '115', '117', '121'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '18% of 650 = (18 / 100) * 650 = 18 * 6.5 = 117.'
           },
           {
-            q: 'A town\'s population increases by 10% in the first year and decreases by 10% in the second. What is the net change?',
-            opts: ['1% decrease', '1% increase', 'No change', '2% decrease'],
-            ans: 0,
-            exam: 'SSC CHSL 2021',
-            sol: 'Using successive formula: x = 10, y = -10.\nNet Change = 10 - 10 + (10 * -10)/100 = -1% (1% decrease).'
+            q: 'A number falls from 400 to 340. Find the % decrease.',
+            opts: ['12%', '15%', '18%', '20%'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Decrease = 400 - 340 = 60. Percentage decrease = (60 / 400) * 100 = 15%.'
+          },
+          {
+            q: 'Find the number whose 45% is 180.',
+            opts: ['360', '400', '440', '480'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let the number be x. 0.45 * x = 180 -> x = 180 / 0.45 = 400.'
+          },
+          {
+            q: 'Marked price ₹3,000, successive discounts 10% and 5%. Find the selling price.',
+            opts: ['₹2,500', '₹2,550', '₹2,565', '₹2,600'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Price after first discount (10%) = 3000 * 0.9 = 2700. Price after second discount (5%) = 2700 * 0.95 = 2565.'
+          },
+          {
+            q: 'Winner gets 55% of votes and wins by 1,500 votes. Find total votes.',
+            opts: ['12,000', '15,000', '18,000', '20,000'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Winner gets 55%, so loser gets 45%. Vote gap = 55% - 45% = 10% of total votes. 10% of total = 1500 -> total = 15,000.'
+          },
+          {
+            q: 'A\'s salary is 20% less than B\'s. By what % is B\'s salary more than A\'s?',
+            opts: ['20%', '22.5%', '25%', '33.33%'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'If B\'s salary is 100, A\'s is 80. B is more than A by 20. Percentage more = (20 / 80) * 100 = 25%.'
+          },
+          {
+            q: 'Rice price falls 25%. Find the % rise in consumption to keep expenditure constant.',
+            opts: ['20%', '25%', '30%', '33.33%'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'Percentage rise = (fall / (100 - fall)) * 100 = (25 / 75) * 100 = 33.33%.'
           }
         ]
       }
@@ -539,11 +574,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'An article is sold at a discount of 10% and still makes a profit of 20%. Find the ratio of CP to MP.',
-            opts: ['3:4', '4:3', '5:6', '3:5'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Use formula: CP / MP = (100 - D%) / (100 + P%)\nCP / MP = (100 - 10) / (100 + 20) = 90 / 120 = 3 / 4.'
+            q: 'CP=₹650, SP=₹780. Find the profit%.',
+            opts: ['15%', '18%', '20%', '25%'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Profit = 780 - 650 = 130. Profit% = (130 / 650) * 100 = 20%.'
+          },
+          {
+            q: 'An article sold at 15% loss, CP=₹2,000. Find SP.',
+            opts: ['₹1,650', '₹1,700', '₹1,750', '₹1,800'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'SP = CP * (1 - Loss%) = 2000 * 0.85 = ₹1,700.'
+          },
+          {
+            q: 'A shopkeeper marks goods 50% above cost, gives a 20% discount. Find the profit%.',
+            opts: ['15%', '20%', '25%', '30%'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let CP = 100. MP = 150. SP = 150 * 0.8 = 120. Profit% = (120 - 100) = 20%.'
+          },
+          {
+            q: 'Find CP if SP=₹828 at 15% profit.',
+            opts: ['₹700', '₹720', '₹750', '₹780'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'CP = SP / (1 + Profit%) = 828 / 1.15 = ₹720.'
+          },
+          {
+            q: 'A man sells two items at ₹900 each — 10% gain on one, 10% loss on the other. Find the overall result.',
+            opts: ['No profit no loss', '1% net loss', '1% net gain', '2% net loss'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'When two items are sold at the same price, one with x% profit and another with x% loss, there is an overall loss of x^2/100%. Loss% = 10^2/100 = 1% net loss.'
+          },
+          {
+            q: 'A trader uses a false weight of 950g instead of 1kg. Find his gain%.',
+            opts: ['5%', '5.26%', '5.5%', '5.8%'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Gain% = (Error / False weight) * 100 = (50 / 950) * 100 = 5.26%.'
+          },
+          {
+            q: 'CP of 20 articles = SP of 16 articles. Find the profit%.',
+            opts: ['20%', '25%', '30%', '33.33%'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Profit% = ((CP count - SP count) / SP count) * 100 = ((20 - 16) / 16) * 100 = (4 / 16) * 100 = 25%.'
           }
         ]
       }
