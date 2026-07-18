@@ -151,32 +151,252 @@ var EXAMPLES = {
   ],
   "percentages": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Percentages express values as fractions of 100, and successive changes are multiplicative.\n\u26a1 **Formula/Shortcut**: Net percentage change after successive changes x% and y% = x + y + (xy/100) %.\n\n**Question**: Buyer Anya wants to purchase a premium smart speaker on CartValue Ltd. The store offers a flat 20% store discount, and Anya applies a stacked bank coupon for an additional 10% off the discounted price. Find the total effective percentage discount Anya receives.",
-      "a": "\ud83d\udccb **Given**: Successive discounts of 20% and 10%.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Apply the successive percentage change formula, treating discounts as negative values (-20 and -10).\n\n**Step-by-step Solution**:\n1) Substitute into the formula: Net change = -20 + (-10) + ((-20 * -10) / 100) %.\n2) Simplify terms: Net change = -30 + (200 / 100) = -30 + 2 = -28%.\n3) The negative sign indicates a decrease, meaning the total discount is 28%.\n\n\u2728 **Final Answer**: 28%"
+      "q": "Find 35% of 480.",
+      "a": "35% of 480 = (35/100) * 480 = 168. Answer: 168."
+    },
+    {
+      "q": "A number rises from 250 to 300. Find the % increase.",
+      "a": "Increase = 300 - 250 = 50. % increase = (50/250) * 100 = 20%. Answer: 20%."
+    },
+    {
+      "q": "Find the number whose 24% is 108.",
+      "a": "Let the number be x. 0.24 * x = 108 -> x = 108 / 0.24 = 450. Answer: 450."
+    },
+    {
+      "q": "Price rises 20%, then falls 20%. Find the net % change.",
+      "a": "Net % change = a + b + (ab/100) = 20 - 20 + (20 * -20)/100 = -4% (net decrease of 4%). Answer: -4%."
+    },
+    {
+      "q": "Successive discounts of 10% and 15% on \u20b92,000. Find the net price.",
+      "a": "Effective discount = 10 + 15 - (10 * 15)/100 = 23.5%. Net Price = \u20b92,000 * (1 - 0.235) = \u20b91,530. Answer: \u20b91,530."
+    },
+    {
+      "q": "In an election of two candidates, the winner gets 60% of votes and wins by 4,800 votes. Find total votes.",
+      "a": "Winner: 60%, Loser: 40%. Difference = 20%. 20% of total = 4,800 -> total = 24,000. Answer: 24,000."
+    },
+    {
+      "q": "A's income is 25% more than B's. By what % is B's income less than A's?",
+      "a": "If B = 100, A = 125. B's income is 25 less than A's. % less = (25/125) * 100 = 20%. Answer: 20%."
+    },
+    {
+      "q": "A student scores 462 out of 700. Find the percentage.",
+      "a": "(462 / 700) * 100 = 66%. Answer: 66%."
+    },
+    {
+      "q": "A town's population grows 10% yearly from 5,000. Find population after 2 years.",
+      "a": "Population = 5000 * 1.1 * 1.1 = 6,050. Answer: 6,050."
+    },
+    {
+      "q": "A tank loses 40% of its water on Monday, then 25% of what remains on Tuesday. If full capacity is 1,000 L, find the remaining volume.",
+      "a": "After Monday: 1000 * 0.6 = 600 L. After Tuesday: 600 * 0.75 = 450 L. Answer: 450 L."
+    },
+    {
+      "q": "Sugar price falls 20%. By what % can consumption rise to keep expenditure unchanged?",
+      "a": "Percentage rise = (fall / (100 - fall)) * 100 = (20 / 80) * 100 = 25%. Answer: 25%."
+    },
+    {
+      "q": "In a class, 60% are boys. 10% of boys and 15% of girls are absent. What % of the whole class is present?",
+      "a": "Assume 100 students: 60 boys, 40 girls. Absent boys = 6, absent girls = 6. Total absent = 12. Present = 88%. Answer: 88%."
     }
   ],
   "profit-loss": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Profit and loss are calculated relative to Cost Price (CP), while discounts are on Marked Price (MP).\n\u26a1 **Formula/Shortcut**: CP = SP * 100 / (100 + Profit%).\n\n**Question**: Baker Pierre of Crust & Crumb bakery sells a custom sourdough bundle for $144, making a neat profit of 20%. Find the cost price of producing one bundle.",
-      "a": "\ud83d\udccb **Given**: Selling Price (SP) = $144. Profit = 20%.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Apply the Cost Price formula to find the base cost from the selling price and profit percentage.\n\n**Step-by-step Solution**:\n1) Set up equation: CP = 144 * 100 / (100 + 20).\n2) Simplify denominator: CP = 14400 / 120.\n3) Divide: CP = $120.\n\n\u2728 **Final Answer**: $120"
+      "q": "CP=\u20b9800, SP=\u20b9920. Find profit%.",
+      "a": "Profit = 920 - 800 = 120. Profit% = (120/800) * 100 = 15%. Answer: 15%."
+    },
+    {
+      "q": "An article sold at a 12% loss, CP=\u20b91,500. Find SP.",
+      "a": "SP = 1500 * (1 - 0.12) = \u20b91,320. Answer: \u20b91,320."
+    },
+    {
+      "q": "A shopkeeper marks goods 40% above cost, then gives a 15% discount. Find profit%.",
+      "a": "Let CP = 100. MP = 140. SP = 140 * 0.85 = 119. Profit% = (119 - 100) = 19%. Answer: 19%."
+    },
+    {
+      "q": "Find CP if SP=\u20b9690 at 15% profit.",
+      "a": "CP = 690 / 1.15 = \u20b9600. Answer: \u20b9600."
+    },
+    {
+      "q": "A man sells two articles at \u20b91,200 each - 20% gain on one, 20% loss on the other. Find overall result.",
+      "a": "Loss% = 20^2 / 100 = 4% net loss. Answer: 4% net loss."
+    },
+    {
+      "q": "A trader uses a false weight of 900g instead of 1kg while buying and selling at the same marked price. Find his gain%.",
+      "a": "Gain% = ((True - False) / False) * 100 = (100 / 900) * 100 = 11.11%. Answer: 11.11%."
+    },
+    {
+      "q": "CP=\u20b9500. Shopkeeper wants 25% profit after giving a 20% discount on MP. Find MP.",
+      "a": "Target SP = 500 * 1.25 = 625. MP = 625 / 0.8 = \u20b9781.25. Answer: \u20b9781.25."
+    },
+    {
+      "q": "A dealer sells a machine at a 5% loss. Had he sold it for \u20b92,000 more, he'd have gained 10%. Find the CP.",
+      "a": "Difference in percentage = 10% - (-5%) = 15%. 15% of CP = 2,000 -> CP = 2000 / 0.15 = \u20b913,333.33. Answer: \u20b913,333.33."
+    },
+    {
+      "q": "CP of 15 articles = SP of 12 articles. Find the profit%.",
+      "a": "Profit% = ((15 - 12) / 12) * 100 = (3/12) * 100 = 25%. Answer: 25%."
+    },
+    {
+      "q": "A shopkeeper gives a 10% discount on MP and still gains 8%. If CP=\u20b9450, find the MP.",
+      "a": "SP = 450 * 1.08 = 486. MP = 486 / 0.9 = \u20b9540. Answer: \u20b9540."
+    },
+    {
+      "q": "Selling 45 lemons for \u20b940 causes a 20% loss. How many lemons must be sold for \u20b924 to gain 20%?",
+      "a": "CP of 45 lemons = 40 / 0.8 = 50. CP per lemon = 50 / 45 = 10/9. Target SP per lemon = (10/9) * 1.2 = 4/3. Lemons sold for \u20b924 = 24 / (4/3) = 18. Answer: 18."
+    },
+    {
+      "q": "A retailer buys at 20% discount on MP and sells at MP. Find the profit%.",
+      "a": "Let MP = 100. CP = 80. SP = 100. Profit = 20. Profit% = (20/80) * 100 = 25%. Answer: 25%."
     }
   ],
   "ratio-prop": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Ratios compare quantities, and proportions show the equality of two ratios.\n\u26a1 **Formula/Shortcut**: If A:B = x:y, then A = x*k and B = y*k for some constant k.\n\n**Question**: At Greenwood Hostel, Mess Warden Rajesh divides a monthly grocery budget of $2,400 among three wings (North, South, East) in the ratio 3:4:5. Find the budget share allocated to the South wing.",
-      "a": "\ud83d\udccb **Given**: Total budget = $2,400. Ratio = 3:4:5.\n\ud83d\udee0\ufe0f **Method/Shortcut**: The South wing's share is the ratio part of the South wing divided by the sum of all ratio parts, multiplied by the total budget.\n\n**Step-by-step Solution**:\n1) Sum of ratio parts = 3 + 4 + 5 = 12 parts.\n2) Value of one part = 2400 / 12 = $200.\n3) South wing has 4 parts: 4 * 200 = $800.\n\n\u2728 **Final Answer**: $800"
+      "q": "Simplify the ratio 45:60.",
+      "a": "Divide both terms by HCF (15) -> 45:60 = 3:4. Answer: 3:4."
+    },
+    {
+      "q": "If a:b=2:3 and b:c=4:5, find a:b:c.",
+      "a": "Scale b to 12: a:b = 8:12, b:c = 12:15 -> a:b:c = 8:12:15. Answer: 8:12:15."
+    },
+    {
+      "q": "Divide \u20b91,200 among A, B, C in ratio 2:3:5.",
+      "a": "Total parts = 10. A's share = 2/10 * 1200 = \u20b9240. B's share = 3/10 * 1200 = \u20b9360. C's share = 5/10 * 1200 = \u20b9600. Answer: A=\u20b9240, B=\u20b9360, C=\u20b9600."
+    },
+    {
+      "q": "Find the fourth proportional to 3, 5, 12.",
+      "a": "3/5 = 12/x -> x = (5 * 12)/3 = 20. Answer: 20."
+    },
+    {
+      "q": "Find the third proportional to 4 and 8.",
+      "a": "x = b^2 / a = 8^2 / 4 = 16. Answer: 16."
+    },
+    {
+      "q": "Find the mean proportional between 9 and 16.",
+      "a": "x = sqrt(9 * 16) = sqrt(144) = 12. Answer: 12."
+    },
+    {
+      "q": "x varies directly as y; x=15 when y=5. Find x when y=8.",
+      "a": "x = k * y -> 15 = k * 5 -> k = 3. When y = 8, x = 3 * 8 = 24. Answer: 24."
+    },
+    {
+      "q": "x varies inversely as y; x=10 when y=6. Find x when y=15.",
+      "a": "x * y = k -> 10 * 6 = 60. When y = 15, x = 60 / 15 = 4. Answer: 4."
+    },
+    {
+      "q": "Two numbers are in ratio 5:7. Subtracting 20 from each gives ratio 3:5. Find the numbers.",
+      "a": "Let numbers be 5k, 7k. (5k - 20)/(7k - 20) = 3/5 -> 25k - 100 = 21k - 60 -> 4k = 40 -> k = 10. Numbers are 50 and 70. Answer: 50 and 70."
+    },
+    {
+      "q": "A sum is split so A:B=2:3 and B:C=4:5. If C gets \u20b9300, find A's share.",
+      "a": "Scale A:B:C = 8:12:15. C gets \u20b9300 -> 15 parts = 300 -> 1 part = 20. A gets 8 parts = 8 * 20 = \u20b9160. Answer: \u20b9160."
+    },
+    {
+      "q": "A train's speed varies inversely with time for a fixed distance. It covers a route in 5 hrs at 60 km/h. Find the time at 75 km/h.",
+      "a": "Speed * Time = Constant -> 60 * 5 = 300. Time at 75 km/h = 300 / 75 = 4 hrs. Answer: 4 hrs."
+    },
+    {
+      "q": "8 men build a wall in 12 days. Using inverse variation, find the days needed by 6 men.",
+      "a": "Men * Days = Constant -> 8 * 12 = 96. Days for 6 men = 96 / 6 = 16 days. Answer: 16 days."
     }
   ],
   "partnership": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Partnership profits are shared in the ratio of the product of capital investment and time duration.\n\u26a1 **Formula/Shortcut**: Profit Ratio = (Capital1 * Time1) : (Capital2 * Time2).\n\n**Question**: Investors Zara and Dev pool funds for a token mining venture under EtherPool Co. Zara invests $5,000 for 12 months, while Dev joins later and invests $8,000 for 6 months. If the venture generates a net profit of $11,000 at the end of the year, find Dev's share.",
-      "a": "\ud83d\udccb **Given**: Zara's capital = $5,000, time = 12 months. Dev's capital = $8,000, time = 6 months. Total profit = $11,000.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Calculate the investment-time product for each partner to establish the profit-sharing ratio.\n\n**Step-by-step Solution**:\n1) Zara's value = 5000 * 12 = 60,000. Dev's value = 8000 * 6 = 48,000.\n2) Simplify the profit ratio Zara:Dev = 60,000 : 48,000 = 5:4.\n3) Sum of ratio parts = 5 + 4 = 9 parts.\n4) Dev's share = (4 / 9) * 11,000 = $4,888.89.\n\n\u2728 **Final Answer**: $4,888.89"
+      "q": "A and B invest \u20b95,000 and \u20b97,000 for a year. Find the profit ratio.",
+      "a": "Profit ratio is same as capital ratio: 5,000 : 7,000 = 5:7. Answer: 5:7."
+    },
+    {
+      "q": "A invests \u20b98,000 for 12 months, B invests \u20b96,000 for 8 months. Find the ratio.",
+      "a": "Profit ratio = (8000 * 12) : (6000 * 8) = 96000 : 48000 = 2:1. Answer: 2:1."
+    },
+    {
+      "q": "A, B, C invest \u20b94,000, \u20b96,000, \u20b98,000 for a year; profit=\u20b99,000. Find each share.",
+      "a": "Ratio = 2:3:4. Total parts = 9. A's share = 2000, B's share = 3000, C's share = 4000. Answer: A=\u20b92,000, B=\u20b93,000, C=\u20b94,000."
+    },
+    {
+      "q": "A starts with \u20b910,000. After 4 months B joins with \u20b915,000. Find the profit ratio at year-end.",
+      "a": "Profit ratio = (10000 * 12) : (15000 * 8) = 120,000 : 120,000 = 1:1. Answer: 1:1."
+    },
+    {
+      "q": "A, B, C invest in ratio 2:3:5 for the same period; total profit \u20b95,000. Find B's share.",
+      "a": "B's share = (3/10) * 5,000 = \u20b91,500. Answer: \u20b91,500."
+    },
+    {
+      "q": "A invests \u20b912,000 for 6 months, B invests \u20b98,000 for 9 months, C invests \u20b96,000 for 12 months. Find the ratio.",
+      "a": "Profit ratio = (12000 * 6) : (8000 * 9) : (6000 * 12) = 72,000 : 72,000 : 72,000 = 1:1:1. Answer: 1:1:1."
+    },
+    {
+      "q": "A and B invest \u20b915,000 and \u20b925,000. After 4 months A withdraws \u20b95,000. Find the profit ratio at year-end.",
+      "a": "A's share = 15000 * 4 + 10000 * 8 = 140,000. B's share = 25000 * 12 = 300,000. Ratio = 140 : 300 = 7:15. Answer: 7:15."
+    },
+    {
+      "q": "A, B, C start with capitals in ratio 3:5:7. After 4 months A doubles his capital. Find the year-end ratio.",
+      "a": "A's share = 3 * 4 + 6 * 8 = 60. B's share = 5 * 12 = 60. C's share = 7 * 12 = 84. Ratio = 60:60:84 = 5:5:7. Answer: 5:5:7."
+    },
+    {
+      "q": "Total profit \u20b918,000 shared between A and B in ratio 4:5. Find B's share.",
+      "a": "B's share = (5/9) * 18,000 = \u20b910,000. Answer: \u20b910,000."
+    },
+    {
+      "q": "A, B, C invest in ratio 2:3:4 for 6, 8, 9 months respectively. Find the profit-sharing ratio.",
+      "a": "Ratio = (2*6) : (3*8) : (4*9) = 12 : 24 : 36 = 1:2:3. Answer: 1:2:3."
+    },
+    {
+      "q": "A invests \u20b920,000 for the full year; B invests \u20b915,000 for 8 months. Total profit=\u20b99,200. Find A's share.",
+      "a": "A's share = 20000 * 12 = 240,000. B's share = 15000 * 8 = 120,000. Ratio = 2:1. A's share = (2/3) * 9200 = \u20b96,133.33. Answer: \u20b96,133.33."
+    },
+    {
+      "q": "Three partners share a \u20b924,000 profit in ratio 3:4:5 (equal time). Find the gap between the largest and smallest share.",
+      "a": "Total parts = 12. Largest share = (5/12) * 24000 = 10,000. Smallest share = (3/12) * 24000 = 6,000. Difference = 4,000. Answer: \u20b94,000."
     }
   ],
   "averages": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: An average is the sum of all observations divided by the total number of observations.\n\u26a1 **Formula/Shortcut**: Average = Sum of terms / Number of terms.\n\n**Question**: In the CyberArena Pro gaming league, gamer Zephyr scores 150, 185, 210, and 240 points in the first four matches. What score must Zephyr achieve in the fifth match to maintain an average of 200 points?",
-      "a": "\ud83d\udccb **Given**: First 4 scores: 150, 185, 210, 240. Target average = 200. Total matches = 5.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Use the relation: Target Sum = Target Average * Total terms. Subtract the sum of the first 4 scores from the target sum.\n\n**Step-by-step Solution**:\n1) Sum of 4 matches = 150 + 185 + 210 + 240 = 785 points.\n2) Target sum for 5 matches = 200 * 5 = 1000 points.\n3) Score needed in 5th match = 1000 - 785 = 215 points.\n\n\u2728 **Final Answer**: 215 points"
+      "q": "Find the average of 12, 18, 24, 30, 36.",
+      "a": "Average = (12+18+24+30+36)/5 = 120/5 = 24. Answer: 24."
+    },
+    {
+      "q": "Average age of 30 students is 12. Including the teacher, it becomes 13. Find the teacher's age.",
+      "a": "Sum of 30 students = 360. Sum of 31 people = 31 * 13 = 403. Teacher's age = 403 - 360 = 43 years. Answer: 43 years."
+    },
+    {
+      "q": "Average of 5 numbers is 27. Excluding one, the average of the remaining 4 is 25. Find the excluded number.",
+      "a": "Sum of 5 = 135. Sum of 4 = 100. Excluded number = 135 - 100 = 35. Answer: 35."
+    },
+    {
+      "q": "A cricketer's average in 10 innings is 42. He scores 98 in the 11th. Find the new average.",
+      "a": "Sum of 10 innings = 420. Sum of 11 innings = 420 + 98 = 518. New average = 518 / 11 = 47.09. Answer: 47.09."
+    },
+    {
+      "q": "Average weight of 8 people rises by 2.5 kg when a 60 kg person is replaced. Find the new person's weight.",
+      "a": "Total increase = 8 * 2.5 = 20 kg. New weight = 60 + 20 = 80 kg. Answer: 80 kg."
+    },
+    {
+      "q": "Find the average of the first 20 natural numbers.",
+      "a": "Sum = n(n+1)/2 = 20 * 21 / 2 = 210. Average = 210 / 20 = 10.5. Answer: 10.5."
+    },
+    {
+      "q": "A train covers 100 km at 50 km/h and the next 100 km at 40 km/h. Find the average speed.",
+      "a": "Average speed = 2xy/(x+y) = (2 * 50 * 40)/(50 + 40) = 4000 / 90 = 44.44 km/h. Answer: 44.44 km/h."
+    },
+    {
+      "q": "Average marks of 40 students is 60. 10 students averaging 50 leave. Find the new average of the remaining 30.",
+      "a": "Total marks = 2400. Leaving marks = 500. Remaining marks = 1900. New average = 1900 / 30 = 63.33. Answer: 63.33."
+    },
+    {
+      "q": "The average of three consecutive even numbers is 24. Find the numbers.",
+      "a": "Middle number is 24. The numbers are 22, 24, 26. Answer: 22, 24, 26."
+    },
+    {
+      "q": "The average of 6 numbers is 18. Excluding two numbers, the remaining 4 average 20. Find the sum of the excluded numbers.",
+      "a": "Sum of 6 = 108. Sum of 4 = 80. Sum of excluded = 108 - 80 = 28. Answer: 28."
+    },
+    {
+      "q": "Runs scored in 5 matches: 45, 67, 32, 89, 52. Find the average.",
+      "a": "Average = (45+67+32+89+52)/5 = 285/5 = 57. Answer: 57."
+    },
+    {
+      "q": "Average salary of 12 employees is \u20b928,000. Including a manager earning \u20b952,000, find the new average for 13.",
+      "a": "Total salary = 12 * 28,000 + 52,000 = 336,000 + 52,000 = 388,000. New average = 388,000 / 13 = \u20b929,846.15. Answer: \u20b929,846.15."
     }
   ],
   "time-work": [

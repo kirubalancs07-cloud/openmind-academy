@@ -640,11 +640,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the mean proportional between 9 and 64.',
-            opts: ['24', '18', '27', '36'],
+            q: 'Simplify the ratio 72:96.',
+            opts: ['2:3', '3:4', '4:5', '5:6'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Divide both terms by their HCF, which is 24: 72/24 = 3, 96/24 = 4. Ratio = 3:4.'
+          },
+          {
+            q: 'If a:b=3:4 and b:c=5:6, find a:b:c.',
+            opts: ['15:20:24', '15:18:24', '12:15:20', '3:5:6'],
             ans: 0,
-            exam: 'SSC CPO 2022',
-            sol: 'Mean proportional = √(a * b) = √(9 * 64) = 3 * 8 = 24.'
+            exam: 'Practice Question',
+            sol: "Multiply first ratio by 5 and second ratio by 4 to make the 'b' terms equal to 20: a:b = 15:20, b:c = 20:24 -> a:b:c = 15:20:24."
+          },
+          {
+            q: 'Divide ₹2,400 among A, B, C in ratio 3:4:5.',
+            opts: ['₹500:₹800:₹1,100', '₹600:₹800:₹1,000', '₹600:₹900:₹900', '₹400:₹800:₹1,200'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total parts = 3 + 4 + 5 = 12. One part = 2400 / 12 = 200. A = 3*200 = ₹600, B = 4*200 = ₹800, C = 5*200 = ₹1,000.'
+          },
+          {
+            q: 'Find the fourth proportional to 6, 8, 15.',
+            opts: ['16', '18', '20', '22'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Fourth proportional x is given by 6 / 8 = 15 / x -> x = (8 * 15) / 6 = 120 / 6 = 20.'
+          },
+          {
+            q: 'Find the third proportional to 5 and 10.',
+            opts: ['15', '18', '20', '25'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Third proportional x is given by b^2 / a = 10^2 / 5 = 100 / 5 = 20.'
+          },
+          {
+            q: 'x varies inversely as y; x=12 when y=4. Find x when y=8.',
+            opts: ['4', '6', '8', '12'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Since x varies inversely as y, x * y = constant. 12 * 4 = 48. When y = 8, x * 8 = 48 -> x = 6.'
+          },
+          {
+            q: 'Two numbers are in ratio 4:5. Adding 10 to each gives ratio 6:7. Find the numbers.',
+            opts: ['16 and 20', '20 and 25', '24 and 30', '12 and 15'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let the numbers be 4k and 5k. (4k + 10) / (5k + 10) = 6/7 -> 28k + 70 = 30k + 60 -> 2k = 10 -> k = 5. Numbers are 20 and 25.'
           }
         ]
       }
@@ -663,11 +705,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A and B invest in a business in the ratio 3:5. If A invests for 8 months and B for 6 months, find their profit sharing ratio.',
-            opts: ['4:5', '5:4', '1:1', '3:5'],
-            ans: 0,
-            exam: 'SSC MTS 2021',
-            sol: 'Profit ratio = (Inv_A × Time_A) : (Inv_B × Time_B) = (3 × 8) : (5 × 6) = 24 : 30 = 4:5.'
+            q: 'A and B invest ₹6,000 and ₹9,000 for a year. Find the profit ratio.',
+            opts: ['1:2', '2:3', '3:4', '3:5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Profit ratio is proportional to investment: 6000 : 9000 = 2:3.'
+          },
+          {
+            q: 'A invests ₹10,000 for 12 months, B invests ₹5,000 for 6 months. Find the ratio.',
+            opts: ['2:1', '3:1', '4:1', '1:1'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Profit ratio = (10000 * 12) : (5000 * 6) = 120,000 : 30,000 = 4:1.'
+          },
+          {
+            q: 'A, B, C invest ₹3,000, ₹5,000, ₹7,000 for a year; profit=₹7,500. Find C\'s share.',
+            opts: ['₹2,500', '₹3,000', '₹3,500', '₹4,000'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Ratio = 3:5:7. Total parts = 15. C\'s share = (7 / 15) * 7500 = 3,500.'
+          },
+          {
+            q: 'A starts with ₹12,000. After 3 months B joins with ₹18,000. Find the year-end ratio.',
+            opts: ['2:3', '3:4', '8:9', '1:1'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'A\'s investment-time = 12000 * 12 = 144,000. B\'s investment-time = 18000 * 9 = 162,000. Ratio = 144 : 162 = 8:9.'
+          },
+          {
+            q: 'A, B invest in ratio 3:7 for the same period; total profit ₹8,000. Find A\'s share.',
+            opts: ['₹2,000', '₹2,400', '₹2,800', '₹3,000'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total parts = 10. A\'s share = (3 / 10) * 8000 = ₹2,400.'
+          },
+          {
+            q: 'A invests ₹15,000 for 5 months, B invests ₹10,000 for 8 months. Find the ratio.',
+            opts: ['3:2', '4:3', '15:16', '5:8'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Profit ratio = (15000 * 5) : (10000 * 8) = 75,000 : 80,000 = 15:16.'
+          },
+          {
+            q: 'Total profit ₹27,000 shared between A and B in ratio 5:4. Find A\'s share.',
+            opts: ['₹12,000', '₹13,500', '₹15,000', '₹16,000'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Total parts = 9. A\'s share = (5 / 9) * 27000 = ₹15,000.'
           }
         ]
       }
@@ -687,11 +771,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'The average of 5 consecutive odd numbers is 25. What is the largest number?',
-            opts: ['29', '27', '31', '25'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'For odd/even consecutive numbers, the average is the middle number.\nNumbers: _ , _ , 25 , _ , _\nSince they are odd: 21, 23, 25, 27, 29. The largest is 29.'
+            q: 'Find the average of 15, 25, 35, 45, 55.',
+            opts: ['30', '35', '40', '45'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Since the numbers are in arithmetic progression, the average is the middle term, which is 35.'
+          },
+          {
+            q: 'Average age of 25 students is 11. Including the teacher, it becomes 12. Find the teacher\'s age.',
+            opts: ['35 years', '37 years', '40 years', '42 years'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Sum of 25 students = 25 * 11 = 275. Sum with teacher = 26 * 12 = 312. Teacher age = 312 - 275 = 37 years.'
+          },
+          {
+            q: 'Average of 6 numbers is 30. Excluding one, the remaining 5 average 28. Find the excluded number.',
+            opts: ['35', '38', '40', '42'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Sum of 6 numbers = 6 * 30 = 180. Sum of 5 numbers = 5 * 28 = 140. Excluded number = 180 - 140 = 40.'
+          },
+          {
+            q: 'A cricketer\'s average in 8 innings is 35. He scores 75 in the 9th. Find the new average.',
+            opts: ['37.5', '38.25', '39.44', '40.12'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Sum of 8 innings = 8 * 35 = 280. Sum of 9 innings = 280 + 75 = 355. New average = 355 / 9 = 39.44.'
+          },
+          {
+            q: 'Average weight of 10 people rises by 3 kg when a 55 kg person is replaced. Find the new person\'s weight.',
+            opts: ['65 kg', '75 kg', '85 kg', '95 kg'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Total weight increase = 10 * 3 = 30 kg. New weight = 55 + 30 = 85 kg.'
+          },
+          {
+            q: 'A car covers 150 km at 60 km/h and the next 150 km at 50 km/h. Find the average speed.',
+            opts: ['52.5 km/h', '54.55 km/h', '55 km/h', '56.25 km/h'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Since distances are equal, Average Speed = 2xy / (x + y) = (2 * 60 * 50) / (60 + 50) = 6000 / 110 = 54.55 km/h.'
+          },
+          {
+            q: 'Average marks of a class of 50 is 65. 10 students averaging 55 leave. Find the new average of the remaining 40.',
+            opts: ['66.5', '67.0', '67.5', '68.0'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Initial total marks = 50 * 65 = 3250. Marks of leaving students = 10 * 55 = 550. Remaining total = 3250 - 550 = 2700. New average = 2700 / 40 = 67.5.'
           }
         ]
       }
