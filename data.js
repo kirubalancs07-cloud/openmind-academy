@@ -838,11 +838,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A can do a piece of work in 10 days and B in 15 days. Working together, how many days will they take?',
-            opts: ['6', '5', '8', '7.5'],
+            q: 'A finishes a job in 8 days, B in 12 days. Find the time together.',
+            opts: ['4 days', '4.8 days', '5 days', '5.2 days'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Combined rate = 1/8 + 1/12 = 5/24. Time together = 24 / 5 = 4.8 days.'
+          },
+          {
+            q: '10 men finish a job in 15 days. Find the men needed for 6 days.',
+            opts: ['20 men', '22 men', '25 men', '28 men'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'M1 * D1 = M2 * D2 -> 10 * 15 = M2 * 6 -> M2 = 150 / 6 = 25 men.'
+          },
+          {
+            q: 'A is thrice as efficient as B; together they finish in 9 days. Find each one\'s time.',
+            opts: ['B=36 days, A=12 days', 'B=27 days, A=9 days', 'B=48 days, A=16 days', 'B=30 days, A=10 days'],
             ans: 0,
-            exam: 'SSC CGL 2021',
-            sol: 'Working together = (10 × 15) / (10 + 15) = 150 / 25 = 6 days.'
+            exam: 'Practice Question',
+            sol: 'Let B\'s rate = x, then A\'s rate = 3x. Combined rate = 4x = 1/9 -> x = 1/36. So B takes 36 days, and A takes 12 days.'
+          },
+          {
+            q: 'A (18 days) works 6 days, then B finishes the rest in 15 days. Find B\'s individual time.',
+            opts: ['20 days', '22.5 days', '24 days', '25 days'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'A does 6/18 = 1/3 of the work. Remaining work = 2/3. B does 2/3 of the work in 15 days -> B\'s total time = 15 * (3/2) = 22.5 days.'
+          },
+          {
+            q: 'A, B, C together finish in 8 days; A alone 20 days, B alone 30 days. Find C\'s time.',
+            opts: ['20 days', '22 days', '24 days', '26 days'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'C\'s rate = 1/8 - 1/20 - 1/30 = (15 - 6 - 4)/120 = 5/120 = 1/24. C takes 24 days.'
+          },
+          {
+            q: 'Efficiency ratio A:B = 4:3; A finishes in 15 days. Find B\'s time.',
+            opts: ['18 days', '20 days', '22 days', '24 days'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Time taken is inversely proportional to efficiency. Time_B = Time_A * (Eff_A / Eff_B) = 15 * (4/3) = 20 days.'
+          },
+          {
+            q: '24 men finish a job in 20 days at 7 hrs/day. Find the days for 28 men at 6 hrs/day.',
+            opts: ['18 days', '20 days', '22 days', '24 days'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'M1 * D1 * H1 = M2 * D2 * H2 -> 24 * 20 * 7 = 28 * D2 * 6 -> D2 = (24 * 20 * 7) / (28 * 6) = 20 days.'
           }
         ]
       }
@@ -861,11 +903,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A pipe can fill a tank in 8 hours, but a leak at the bottom empties it in 12 hours. How long to fill when both open?',
-            opts: ['24 hours', '16 hours', '20 hours', '12 hours'],
-            ans: 0,
-            exam: 'SSC CHSL 2022',
-            sol: 'Net rate = 1/8 - 1/12 = (3 - 2) / 24 = 1/24. Thus, it takes 24 hours.'
+            q: 'Pipe A fills in 5 hrs, B in 10 hrs. Find the time together.',
+            opts: ['3 hrs', '3.33 hrs', '3.5 hrs', '4 hrs'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Net rate = 1/5 + 1/10 = 3/10. Time = 10/3 = 3.33 hours.'
+          },
+          {
+            q: 'Pipe A fills in 6 hrs, pipe B empties in 9 hrs. Both opened together — find the time.',
+            opts: ['12 hrs', '15 hrs', '18 hrs', '24 hrs'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Net rate = 1/6 - 1/9 = (3 - 2)/18 = 1/18. Time = 18 hours.'
+          },
+          {
+            q: 'Two pipes fill in 10 and 12 min; a third empties in 15 min. All opened together — find the time.',
+            opts: ['7.5 min', '8.0 min', '8.57 min', '9.0 min'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Net rate = 1/10 + 1/12 - 1/15 = (6 + 5 - 4)/60 = 7/60. Time = 60/7 = 8.57 min.'
+          },
+          {
+            q: 'A pipe fills in 20 min; with a leak, it takes 25 min. Find the leak\'s emptying time alone.',
+            opts: ['80 min', '90 min', '100 min', '120 min'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Leak rate = 1/20 - 1/25 = (5 - 4)/100 = 1/100. Time = 100 min.'
+          },
+          {
+            q: 'Taps (8, 12 hrs) opened together, second closed 2 hrs before completion. Find the total time.',
+            opts: ['5.0 hrs', '5.6 hrs', '6.0 hrs', '6.4 hrs'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let total time be x. x/8 + (x-2)/12 = 1 -> 3x/24 + 2(x-2)/24 = 1 -> 5x - 4 = 24 -> 5x = 28 -> x = 5.6 hours.'
+          },
+          {
+            q: 'Three pipes fill in 12, 16, 24 hrs. All opened together — find the time.',
+            opts: ['4.8 hrs', '5.0 hrs', '5.33 hrs', '6.0 hrs'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Net rate = 1/12 + 1/16 + 1/24 = (4 + 3 + 2)/48 = 9/48 = 3/16. Time = 16/3 = 5.33 hours.'
+          },
+          {
+            q: 'Pipe A fills in 10 hrs, pipe B empties in 15 hrs. Both opened for 4 hrs, then B closed. Find the total time.',
+            opts: ['10 hrs', '11.33 hrs', '12.67 hrs', '14 hrs'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Filled in 4 hrs = 4 * (1/10 - 1/15) = 4 * (1/30) = 4/30 = 2/15. Remaining = 13/15. A takes (13/15) / (1/10) = 130/15 = 8.67 hours. Total time = 4 + 8.67 = 12.67 hours.'
           }
         ]
       }
@@ -888,11 +972,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A train travels at 72 km/h. How many meters does it travel in 15 seconds?',
-            opts: ['300 m', '250 m', '350 m', '400 m'],
+            q: 'Convert 54 km/h to m/s.',
+            opts: ['10 m/s', '12 m/s', '15 m/s', '20 m/s'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '54 km/h = 54 * (5/18) = 15 m/s.'
+          },
+          {
+            q: 'A car covers 180 km in 3 hrs. Find the speed.',
+            opts: ['50 km/h', '55 km/h', '60 km/h', '65 km/h'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Speed = Distance / Time = 180 / 3 = 60 km/h.'
+          },
+          {
+            q: 'Trains of 100m and 150m cross in opposite directions at 45 km/h and 36 km/h. Find the crossing time.',
+            opts: ['9.5 sec', '10.2 sec', '11.11 sec', '12.5 sec'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Relative speed = 45 + 36 = 81 km/h = 81 * (5/18) = 22.5 m/s. Total distance = 100 + 150 = 250m. Time = 250 / 22.5 = 11.11 seconds.'
+          },
+          {
+            q: 'A man goes at 15 km/h and returns at 25 km/h. Find the average speed.',
+            opts: ['18.75 km/h', '19.25 km/h', '20 km/h', '21.5 km/h'],
             ans: 0,
-            exam: 'SSC MTS 2021',
-            sol: 'Convert speed to m/s: 72 × (5/18) = 20 m/s.\nDistance = Speed × Time = 20 × 15 = 300 meters.'
+            exam: 'Practice Question',
+            sol: 'Average speed = 2xy / (x + y) = (2 * 15 * 25) / (15 + 25) = 750 / 40 = 18.75 km/h.'
+          },
+          {
+            q: 'A 120m train crosses a 180m platform in 10 sec. Find the speed in km/h.',
+            opts: ['90 km/h', '100 km/h', '108 km/h', '120 km/h'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Total distance = 120 + 180 = 300m. Speed = 300 / 10 = 30 m/s. Convert to km/h: 30 * (18/5) = 108 km/h.'
+          },
+          {
+            q: 'A thief at 9 m/s is chased by police at 12 m/s, starting 80m behind. Find the catching time.',
+            opts: ['20 sec', '24 sec', '26.67 sec', '30 sec'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Relative speed = 12 - 9 = 3 m/s. Time to catch = 80 / 3 = 26.67 seconds.'
+          },
+          {
+            q: 'Cyclists start from the same point in opposite directions at 12 km/h and 18 km/h. Find the distance apart after 3 hrs.',
+            opts: ['75 km', '80 km', '90 km', '100 km'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Relative speed = 12 + 18 = 30 km/h. Distance apart = Speed * Time = 30 * 3 = 90 km.'
           }
         ]
       }
