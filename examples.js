@@ -951,20 +951,152 @@ var EXAMPLES = {
   ],
   "geometry": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Geometric rules define angles and dimensions of polygons and circles.\n\u26a1 **Formula/Shortcut**: Sum of interior angles of regular n-gon = (n - 2) * 180 degrees.\n\n**Question**: Architect Farhan of ArchiDesign Partners designs a regular hexagonal convention hall roof. Find the measure of each interior angle of the regular hexagon.",
-      "a": "\ud83d\udccb **Given**: Number of sides n = 6.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Find the total sum of interior angles using the formula, then divide by the number of angles (6) to find the value of each angle.\n\n**Step-by-step Solution**:\n1) Total sum of interior angles = (6 - 2) * 180 = 4 * 180 = 720 degrees.\n2) Measure of each interior angle = 720 / 6 = 120 degrees.\n\n\u2728 **Final Answer**: 120 degrees"
+      "q": "Two angles of a triangle are 55\u00b0 and 65\u00b0. Find the third.",
+      "a": "Third angle = 180 - (55 + 65) = 60\u00b0. Answer: 60\u00b0."
+    },
+    {
+      "q": "A right triangle has legs 6 and 8. Find the hypotenuse.",
+      "a": "Hypotenuse = sqrt(6^2 + 8^2) = sqrt(36 + 64) = 10. Answer: 10."
+    },
+    {
+      "q": "A triangle's angles are in ratio 2:3:4. Find each.",
+      "a": "Total parts = 9. One part = 180 / 9 = 20\u00b0. Angles are 40\u00b0, 60\u00b0, 80\u00b0. Answer: 40\u00b0, 60\u00b0, 80\u00b0."
+    },
+    {
+      "q": "Find the area of a triangle with base 12 cm, height 9 cm.",
+      "a": "Area = 0.5 * 12 * 9 = 54 cm\u00b2. Answer: 54 cm\u00b2."
+    },
+    {
+      "q": "Similar triangles have sides in ratio 3:5; smaller area is 27 cm\u00b2. Find larger area.",
+      "a": "Area ratio = (3/5)^2 = 9/25. Larger area = 27 * (25/9) = 75 cm\u00b2. Answer: 75 cm\u00b2."
+    },
+    {
+      "q": "Find the sum of interior angles of a hexagon.",
+      "a": "Sum = (6 - 2) * 180 = 720\u00b0. Answer: 720\u00b0."
+    },
+    {
+      "q": "Each interior angle of a regular polygon is 150\u00b0. Find the number of sides.",
+      "a": "Exterior angle = 180 - 150 = 30\u00b0. Number of sides = 360 / 30 = 12. Answer: 12 sides."
+    },
+    {
+      "q": "An arc subtends 80\u00b0 at the center. Find the angle it subtends at the circumference.",
+      "a": "Circumference angle = Center angle / 2 = 80 / 2 = 40\u00b0. Answer: 40\u00b0."
+    },
+    {
+      "q": "Tangent PT from external point P; OP=13 cm, radius=5 cm. Find PT.",
+      "a": "PT = sqrt(OP^2 - r^2) = sqrt(169 - 25) = 12 cm. Answer: 12 cm."
+    },
+    {
+      "q": "Find the diagonal of a square with side 10 cm.",
+      "a": "Diagonal = side * sqrt(2) = 10 * 1.414 = 14.14 cm. Answer: 10*sqrt(2) cm (approx 14.14 cm)."
+    },
+    {
+      "q": "D, E are midpoints of AB, AC in \u25b3ABC; DE=6 cm. Find BC.",
+      "a": "By Midpoint Theorem, BC = 2 * DE = 12 cm. Answer: 12 cm."
+    },
+    {
+      "q": "A triangle's median is 15 cm. Find the distance from the vertex to the centroid.",
+      "a": "Centroid divides median in 2:1. Distance from vertex = (2/3) * 15 = 10 cm. Answer: 10 cm."
     }
   ],
   "mensuration": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Mensuration computes surface areas and volumes of 3D solids.\n\u26a1 **Formula/Shortcut**: Surface Area of sphere = 4 * pi * r^2.\n\n**Question**: Designer Tanvi at EcoSoap Co creates spherical organic soaps of radius 3.5 cm. What is the surface area of wrapper paper needed for one soap bar? (Use pi = 22/7)",
-      "a": "\ud83d\udccb **Given**: Radius r = 3.5 cm = 7/2 cm.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Apply the spherical surface area formula directly using fractional values to simplify calculation.\n\n**Step-by-step Solution**:\n1) Formula: Area = 4 * (22/7) * (7/2) * (7/2).\n2) Cancel terms: Area = 4 * 22 * 7 * 7 / (7 * 4) = 22 * 7 = 154 sq cm.\n\n\u2728 **Final Answer**: 154 sq cm"
+      "q": "Find the area of a rectangle: length 15 m, breadth 8 m.",
+      "a": "Area = 15 * 8 = 120 m\u00b2. Answer: 120 m\u00b2."
+    },
+    {
+      "q": "Find the perimeter of a square with side 9 cm.",
+      "a": "Perimeter = 4 * 9 = 36 cm. Answer: 36 cm."
+    },
+    {
+      "q": "Find the area of a circle with radius 7 cm (\u03c0=22/7).",
+      "a": "Area = \u03c0r\u00b2 = (22/7) * 7 * 7 = 154 cm\u00b2. Answer: 154 cm\u00b2."
+    },
+    {
+      "q": "Find the curved surface area of a cylinder: radius 7 cm, height 10 cm.",
+      "a": "CSA = 2\u03c0rh = 2 * (22/7) * 7 * 10 = 440 cm\u00b2. Answer: 440 cm\u00b2."
+    },
+    {
+      "q": "Find the volume of a cylinder: radius 7 cm, height 10 cm.",
+      "a": "Volume = \u03c0r\u00b2h = (22/7) * 7 * 7 * 10 = 1,540 cm\u00b3. Answer: 1,540 cm\u00b3."
+    },
+    {
+      "q": "Find the curved surface area of a cone: radius 6 cm, slant height 10 cm.",
+      "a": "CSA = \u03c0rl = (22/7) * 6 * 10 = 188.57 cm\u00b2. Answer: 188.57 cm\u00b2."
+    },
+    {
+      "q": "Find the volume of a cone: radius 6 cm, height 14 cm.",
+      "a": "Volume = (1/3) * \u03c0r\u00b2h = (1/3) * (22/7) * 6 * 6 * 14 = 528 cm\u00b3. Answer: 528 cm\u00b3."
+    },
+    {
+      "q": "Find the volume of a sphere with radius 3 cm (\u03c0=22/7).",
+      "a": "Volume = (4/3) * \u03c0r\u00b3 = (4/3) * (22/7) * 3 * 3 * 3 = 792/7 = 113.14 cm\u00b3. Answer: 113.14 cm\u00b3."
+    },
+    {
+      "q": "Find the total surface area of a sphere with radius 7 cm.",
+      "a": "TSA = 4\u03c0r\u00b2 = 4 * (22/7) * 7 * 7 = 616 cm\u00b2. Answer: 616 cm\u00b2."
+    },
+    {
+      "q": "Find the volume of a cuboid 10 cm \u00d7 6 cm \u00d7 4 cm.",
+      "a": "Volume = 10 * 6 * 4 = 240 cm\u00b3. Answer: 240 cm\u00b3."
+    },
+    {
+      "q": "Find the total surface area of a cube with side 6 cm.",
+      "a": "TSA = 6 * side\u00b2 = 6 * 36 = 216 cm\u00b2. Answer: 216 cm\u00b2."
+    },
+    {
+      "q": "A field 60 m \u00d7 40 m needs fencing at \u20b915/meter. Find the cost.",
+      "a": "Perimeter = 2(60 + 40) = 200 m. Cost = 200 * 15 = \u20b93,000. Answer: \u20b93,000."
     }
   ],
   "heights": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Heights and distances apply right-angled trigonometry to physical measurements.\n\u26a1 **Formula/Shortcut**: tan(theta) = Opposite / Adjacent.\n\n**Question**: Technician Suresh of TeleLink Corp installs a microwave link antenna. A support cable is anchored to the ground at a 60-degree angle, 12 meters away from the antenna pole base. Find the height of the antenna pole.",
-      "a": "\ud83d\udccb **Given**: Distance (Adjacent) = 12m. Angle of elevation = 60 degrees. (tan(60) = sqrt(3)).\n\ud83d\udee0\ufe0f **Method/Shortcut**: Use the tangent ratio formula: tan(60) = height / 12.\n\n**Step-by-step Solution**:\n1) Set up equation: height = 12 * tan(60).\n2) Substitute value: height = 12 * sqrt(3) meters.\n3) Estimate height: 12 * 1.732 = 20.78m.\n\n\u2728 **Final Answer**: 12*sqrt(3) meters (approx 20.78m)"
+      "q": "Angle of elevation of a tower from 50 m away is 45\u00b0. Find the height.",
+      "a": "height = 50 * tan 45\u00b0 = 50 * 1 = 50 m. Answer: 50 m."
+    },
+    {
+      "q": "From 30 m away, angle of elevation is 60\u00b0. Find the height.",
+      "a": "height = 30 * tan 60\u00b0 = 30 * \u221a3 = 51.96 m. Answer: 30*sqrt(3) m (approx 51.96 m)."
+    },
+    {
+      "q": "A ladder makes 60\u00b0 with the ground, foot 5 m from the wall. Find the ladder's length.",
+      "a": "Length = 5 / cos 60\u00b0 = 5 / 0.5 = 10 m. Answer: 10 m."
+    },
+    {
+      "q": "Angle of elevation of a tower from 100 m away is 30\u00b0. Find the height.",
+      "a": "height = 100 * tan 30\u00b0 = 100 / \u221a3 = 57.74 m. Answer: 100/sqrt(3) m (approx 57.74 m)."
+    },
+    {
+      "q": "From the top of a 60 m building, angle of depression to a car is 30\u00b0. Find the distance.",
+      "a": "distance = 60 / tan 30\u00b0 = 60 * \u221a3 = 103.92 m. Answer: 60*sqrt(3) m (approx 103.92 m)."
+    },
+    {
+      "q": "Two points on the same side of a tower see elevations 30\u00b0 and 60\u00b0, 40 m apart. Find tower height.",
+      "a": "Let points be A and B. d1 = h / tan 60\u00b0 = h / \u221a3. d2 = h / tan 30\u00b0 = h * \u221a3. d2 - d1 = h(\u221a3 - 1/e) = 2h/\u221a3 = 40 -> h = 20\u221a3 \u2248 34.64 m. Answer: 20*sqrt(3) m (approx 34.64 m)."
+    },
+    {
+      "q": "A kite flies at 60 m height, string inclined 30\u00b0 to the horizontal. Find the string's length.",
+      "a": "String length = 60 / sin 30\u00b0 = 60 / 0.5 = 120 m. Answer: 120 m."
+    },
+    {
+      "q": "From an 80 m cliff, angles of depression to two boats are 45\u00b0 and 30\u00b0. Find the distance between them.",
+      "a": "d1 = 80 / tan 45\u00b0 = 80 m. d2 = 80 / tan 30\u00b0 = 80\u221a3 \u2248 138.56 m. Distance = 80\u221a3 - 80 = 80(\u221a3 - 1) \u2248 58.56 m. Answer: 58.56 m."
+    },
+    {
+      "q": "Sun's elevation changes from 30\u00b0 to 60\u00b0; a tower's shadow shortens by 30 m. Find the height.",
+      "a": "Shadow shortening = h(\u221a3 - 1/\u221a3) = 2h/\u221a3 = 30 -> h = 15\u221a3 \u2248 25.98 m. Answer: 15*sqrt(3) m (approx 25.98 m)."
+    },
+    {
+      "q": "From a 25 m tower's top, angle of depression to a ground point is 60\u00b0. Find the distance.",
+      "a": "distance = 25 / tan 60\u00b0 = 25 / \u221a3 = 14.43 m. Answer: 25/sqrt(3) m (approx 14.43 m)."
+    },
+    {
+      "q": "A 6 m pole casts a 2\u221a3 m shadow. Find the sun's angle of elevation.",
+      "a": "tan \u03b8 = 6 / 2\u221a3 = 3 / \u221a3 = \u221a3 -> \u03b8 = 60\u00b0. Answer: 60\u00b0."
+    },
+    {
+      "q": "Towers of 30 m and 18 m stand on level ground; elevation of taller tower from shorter one's foot is 60\u00b0. Find the distance between them.",
+      "a": "distance = 30 / tan 60\u00b0 = 30 / \u221a3 = 10\u221a3 \u2248 17.32 m. Answer: 10*sqrt(3) m (approx 17.32 m)."
     }
   ],
   "pnc": [

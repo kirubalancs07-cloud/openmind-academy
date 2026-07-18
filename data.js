@@ -1579,11 +1579,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'In a circle, a chord of length 16cm is at a distance of 6cm from the center. Find the radius.',
-            opts: ['10 cm', '8 cm', '12 cm', '14 cm'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'The perpendicular from center bisects the chord into segments of 8cm.\nForms a right triangle with base = 8cm and perpendicular = 6cm.\nHypotenuse (radius) = √(6² + 8²) = 10 cm.'
+            q: 'Two angles of a triangle are 48° and 72°. Find the third.',
+            opts: ['50°', '55°', '60°', '65°'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Third angle = 180° - (48° + 72°) = 180° - 120° = 60°.'
+          },
+          {
+            q: 'A right triangle has legs 9 and 12. Find the hypotenuse.',
+            opts: ['13', '14', '15', '17'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Hypotenuse = √(9² + 12²) = √(81 + 144) = √225 = 15.'
+          },
+          {
+            q: 'A triangle\'s angles are in ratio 3:4:5. Find each.',
+            opts: ['30°, 60°, 90°', '40°, 60°, 80°', '45°, 60°, 75°', '50°, 50°, 80°'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Total parts = 3 + 4 + 5 = 12. One part = 180° / 12 = 15°. Angles are 3*15° = 45°, 4*15° = 60°, 5*15° = 75°.'
+          },
+          {
+            q: 'Find the area of a triangle with base 15 cm, height 8 cm.',
+            opts: ['50 cm²', '55 cm²', '60 cm²', '120 cm²'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Area = 0.5 * base * height = 0.5 * 15 * 8 = 60 cm².'
+          },
+          {
+            q: 'Find the sum of interior angles of an octagon.',
+            opts: ['720°', '900°', '1,080°', '1,260°'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Sum of interior angles = (n - 2) * 180° = (8 - 2) * 180° = 6 * 180° = 1,080°.'
+          },
+          {
+            q: 'Each interior angle of a regular polygon is 160°. Find the number of sides.',
+            opts: ['15 sides', '16 sides', '18 sides', '20 sides'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Exterior angle = 180° - 160° = 20°. Number of sides = 360° / 20° = 18 sides.'
+          },
+          {
+            q: 'Tangent from external point P; OP=17 cm, radius=8 cm. Find the tangent length.',
+            opts: ['12 cm', '13 cm', '15 cm', '16 cm'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Tangent length = √(OP² - r²) = √(17² - 8²) = √(289 - 64) = √225 = 15 cm.'
           }
         ]
       }
@@ -1606,11 +1648,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If the radius of a sphere is doubled, how many times will its volume become?',
-            opts: ['8 times', '4 times', '2 times', '16 times'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Volume is proportional to r³. If r is doubled, volume increases by 2³ = 8 times.'
+            q: 'Find the area of a rectangle: length 20 m, breadth 12 m.',
+            opts: ['200 m²', '220 m²', '240 m²', '260 m²'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Area = length * breadth = 20 * 12 = 240 m².'
+          },
+          {
+            q: 'Find the perimeter of a square with side 14 cm.',
+            opts: ['48 cm', '52 cm', '56 cm', '60 cm'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Perimeter = 4 * side = 4 * 14 = 56 cm.'
+          },
+          {
+            q: 'Find the area of a circle with radius 14 cm (π=22/7).',
+            opts: ['44 cm²', '154 cm²', '308 cm²', '616 cm²'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'Area = πr² = (22/7) * 14 * 14 = 22 * 2 * 14 = 616 cm².'
+          },
+          {
+            q: 'Find the volume of a cube with side 7 cm.',
+            opts: ['294 cm³', '343 cm³', '400 cm³', '512 cm³'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Volume = side³ = 7³ = 343 cm³.'
+          },
+          {
+            q: 'Find the total surface area of a cuboid 8 cm × 5 cm × 3 cm.',
+            opts: ['120 cm²', '140 cm²', '158 cm²', '180 cm²'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'TSA = 2(lb + bh + hl) = 2(8*5 + 5*3 + 3*8) = 2(40 + 15 + 24) = 2(79) = 158 cm².'
+          },
+          {
+            q: 'Find the volume of a cylinder: radius 14 cm, height 5 cm.',
+            opts: ['1,540 cm³', '2,200 cm³', '3,080 cm³', '6,160 cm³'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Volume = πr²h = (22/7) * 14 * 14 * 5 = 22 * 2 * 14 * 5 = 44 * 70 = 3,080 cm³.'
+          },
+          {
+            q: 'Find the cost of fencing a field 80 m × 50 m at ₹20/meter.',
+            opts: ['₹2,600', '₹4,800', '₹5,200', '₹5,600'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Perimeter = 2(80 + 50) = 2(130) = 260 m. Cost = 260 * 20 = ₹5,200.'
           }
         ]
       }
@@ -1629,11 +1713,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A shadow of a tower is √3 times its height. Find the angle of elevation of the sun.',
+            q: 'A tower\'s elevation from 40 m away is 45°. Find the height.',
+            opts: ['30 m', '34.64 m', '40 m', '45 m'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'tan 45° = height / distance -> 1 = height / 40 -> height = 40 m.'
+          },
+          {
+            q: 'From 20 m away, elevation is 60°. Find the height.',
+            opts: ['20 m', '30 m', '34.64 m', '40 m'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'tan 60° = height / 20 -> √3 = height / 20 -> height = 20√3 ≈ 34.64 m.'
+          },
+          {
+            q: 'A ladder leans at 45°, foot 6 m from the wall. Find the ladder\'s length.',
+            opts: ['6 m', '8.49 m', '9 m', '10 m'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'cos 45° = adjacent / hypotenuse -> 1/√2 = 6 / length -> length = 6√2 ≈ 8.49 m.'
+          },
+          {
+            q: 'From the top of a 45 m building, angle of depression to a car is 30°. Find the distance.',
+            opts: ['45 m', '60 m', '77.94 m', '90 m'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'tan 30° = height / distance -> 1/√3 = 45 / distance -> distance = 45√3 ≈ 77.94 m.'
+          },
+          {
+            q: 'Sun\'s elevation changes from 30° to 45°; shadow shortens by 20 m. Find the tower\'s height.',
+            opts: ['20 m', '27.32 m', '30 m', '37.32 m'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let height be h. d1 = h (for 45°), d2 = h√3 (for 30°). d2 - d1 = h(√3 - 1) = 20 -> h = 20 / (√3 - 1) = 20(√3 + 1)/2 = 10(√3 + 1) ≈ 27.32 m.'
+          },
+          {
+            q: 'A kite flies at 80 m height, string inclined at 30°. Find the string\'s length.',
+            opts: ['120 m', '140 m', '160 m', '180 m'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'sin 30° = height / string -> 1/2 = 80 / string -> string = 160 m.'
+          },
+          {
+            q: 'A 9 m pole casts a 9 m shadow. Find the sun\'s angle of elevation.',
             opts: ['30°', '45°', '60°', '90°'],
-            ans: 0,
-            exam: 'SSC CHSL 2021',
-            sol: 'Let height be h. Shadow = h√3.\ntan θ = Height / Shadow = h / (h√3) = 1/√3.\nθ = 30°.'
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'tan θ = height / shadow = 9 / 9 = 1 -> θ = 45°.'
           }
         ]
       }
