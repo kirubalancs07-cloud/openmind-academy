@@ -1042,11 +1042,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A boat goes 24 km downstream in 2 hours and upstream in 4 hours. Find the speed of boat in still water.',
-            opts: ['9 km/h', '8 km/h', '10 km/h', '6 km/h'],
+            q: 'Boat speed=12 km/h, stream=2 km/h. Find downstream and upstream speeds.',
+            opts: ['14 km/h and 10 km/h', '13 km/h and 11 km/h', '15 km/h and 9 km/h', '16 km/h and 8 km/h'],
             ans: 0,
-            exam: 'SSC CPO 2021',
-            sol: 'Downstream speed = 24 / 2 = 12 km/h.\nUpstream speed = 24 / 4 = 6 km/h.\nBoat speed = (12 + 6) / 2 = 9 km/h.'
+            exam: 'Practice Question',
+            sol: 'Downstream speed = boat + stream = 12 + 2 = 14 km/h. Upstream speed = boat - stream = 12 - 2 = 10 km/h.'
+          },
+          {
+            q: 'A boat covers 36 km downstream in 3 hrs. Find the downstream speed.',
+            opts: ['10 km/h', '11 km/h', '12 km/h', '13 km/h'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Downstream speed = Distance / Time = 36 / 3 = 12 km/h.'
+          },
+          {
+            q: 'Downstream speed=22 km/h, upstream=14 km/h. Find the boat and stream speed.',
+            opts: ['Boat 17 km/h, Stream 5 km/h', 'Boat 18 km/h, Stream 4 km/h', 'Boat 19 km/h, Stream 3 km/h', 'Boat 20 km/h, Stream 2 km/h'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Boat speed = (Down + Up)/2 = (22 + 14)/2 = 18 km/h. Stream speed = (Down - Up)/2 = (22 - 14)/2 = 4 km/h.'
+          },
+          {
+            q: 'A man rows 24 km downstream in 2 hrs and returns in 4 hrs. Find the boat and stream speed.',
+            opts: ['Boat 8 km/h, Stream 4 km/h', 'Boat 9 km/h, Stream 3 km/h', 'Boat 10 km/h, Stream 2 km/h', 'Boat 11 km/h, Stream 1 km/h'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Downstream speed = 24 / 2 = 12 km/h. Upstream speed = 24 / 4 = 6 km/h. Boat speed = (12 + 6)/2 = 9 km/h. Stream speed = (12 - 6)/2 = 3 km/h.'
+          },
+          {
+            q: 'A man rows upstream at 9 km/h, downstream at 15 km/h. Find the boat and stream rate.',
+            opts: ['Boat 11 km/h, Stream 4 km/h', 'Boat 12 km/h, Stream 3 km/h', 'Boat 13 km/h, Stream 2 km/h', 'Boat 14 km/h, Stream 1 km/h'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Boat speed = (15 + 9)/2 = 12 km/h. Stream speed = (15 - 9)/2 = 3 km/h.'
+          },
+          {
+            q: 'A boat takes 5 hrs to go 25 km upstream; boat\'s still-water speed=8 km/h. Find the stream speed.',
+            opts: ['2 km/h', '2.5 km/h', '3 km/h', '3.5 km/h'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Upstream speed = 25 / 5 = 5 km/h. Stream speed = boat speed - upstream speed = 8 - 5 = 3 km/h.'
+          },
+          {
+            q: 'A boat\'s still-water speed is 3 times the stream\'s; it covers 40 km downstream in 2 hrs. Find the upstream time.',
+            opts: ['3 hrs', '3.5 hrs', '4 hrs', '4.5 hrs'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Let stream speed be x, boat speed 3x. Downstream speed = 40 / 2 = 20 km/h. 4x = 20 -> x = 5 (stream = 5, boat = 15). Upstream speed = 15 - 5 = 10 km/h. Time upstream = 40 / 10 = 4 hours.'
           }
         ]
       }
@@ -1068,11 +1110,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A and B run in opposite directions on a 400m circular track at 8 m/s and 12 m/s. When will they meet?',
-            opts: ['20s', '40s', '50s', '25s'],
+            q: 'A 500m track; runners at 6 m/s and 4 m/s, same direction. Find the meeting time.',
+            opts: ['125 sec', '200 sec', '250 sec', '500 sec'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Relative speed = 6 - 4 = 2 m/s. Meeting time = 500 / 2 = 250 seconds.'
+          },
+          {
+            q: 'Same track, opposite directions at 7 m/s and 3 m/s. Find the meeting time.',
+            opts: ['40 sec', '50 sec', '60 sec', '75 sec'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Relative speed = 7 + 3 = 10 m/s. Meeting time = 500 / 10 = 50 seconds.'
+          },
+          {
+            q: 'In a 250m race, A beats B by 25m. Find the speed ratio.',
+            opts: ['5:4', '10:9', '25:24', '1:1'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'When A runs 250m, B runs 225m. Speed ratio = 250 : 225 = 10:9.'
+          },
+          {
+            q: 'A beats B by 20m in a 200m race, or by 4 sec. Find B\'s speed.',
+            opts: ['4 m/s', '4.5 m/s', '5 m/s', '6 m/s'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'B covers the remaining 20m in 4 seconds. B\'s speed = 20 / 4 = 5 m/s.'
+          },
+          {
+            q: 'Cyclists on a 600m track at 18 m/s and 12 m/s, same direction. Find the time for the faster to lap the slower.',
+            opts: ['60 sec', '80 sec', '100 sec', '120 sec'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Relative speed = 18 - 12 = 6 m/s. Time to lap = 600 / 6 = 100 seconds.'
+          },
+          {
+            q: 'A (10 m/s) gives B a 50m start in a 500m race and B wins by 10 sec. Find B\'s speed.',
+            opts: ['7.5 m/s', '9.0 m/s', '10.5 m/s', '11.25 m/s'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'A\'s time = 500 / 10 = 50 sec. Since B wins by 10 sec, B\'s time = 50 - 10 = 40 sec. B starts 50m ahead, so B covers 450m. B\'s speed = 450 / 40 = 11.25 m/s.'
+          },
+          {
+            q: 'Two athletes run 1500m; the first finishes 20 sec before the second, speed ratio 5:4. Find each one\'s time.',
+            opts: ['t₁=80 sec, t₂=100 sec', 't₁=90 sec, t₂=110 sec', 't₁=100 sec, t₂=120 sec', 't₁=120 sec, t₂=140 sec'],
             ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Opposite direction: Relative speed = 8 + 12 = 20 m/s.\nTime to meet = 400 / 20 = 20 seconds.'
+            exam: 'Practice Question',
+            sol: 'Let their times be t₁ and t₂. Since the speed ratio is 5:4, the time ratio is 4:5. So t₁ = 4k and t₂ = 5k. The difference in time is t₂ - t₁ = k = 20 sec. Thus, t₁ = 4 * 20 = 80 sec, and t₂ = 5 * 20 = 100 sec.'
           }
         ]
       }

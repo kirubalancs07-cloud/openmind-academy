@@ -401,32 +401,252 @@ var EXAMPLES = {
   ],
   "time-work": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Work completed is the product of rate of work (efficiency) and time taken.\n\u26a1 **Formula/Shortcut**: If person A takes x days and B takes y days, combined rate is 1/x + 1/y.\n\n**Question**: In SprintCraft Inc, developer Priya can complete a coding module in 12 days, while developer Rohan can complete the same module in 18 days. If they work together, how many days will it take to finish?",
-      "a": "\ud83d\udccb **Given**: Priya's time = 12 days. Rohan's time = 18 days.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Use the combined work formula: Time together = (x * y) / (x + y).\n\n**Step-by-step Solution**:\n1) Substitute rates: Time = (12 * 18) / (12 + 18).\n2) Calculate terms: Time = 216 / 30.\n3) Simplify: Time = 7.2 days.\n\n\u2728 **Final Answer**: 7.2 days"
+      "q": "A finishes a job in 12 days, B in 15 days. Find the time taken together.",
+      "a": "Rate = 1/12 + 1/15 = 9/60 = 3/20 -> 20/3 = 6.67 days. Answer: 6.67 days."
+    },
+    {
+      "q": "A (10 days) and B (15 days) work together for 3 days, then A leaves. Find B's time to finish the rest.",
+      "a": "Combined rate = 1/10 + 1/15 = 1/6. Work done in 3 days = 3 * (1/6) = 1/2. Remaining work = 1/2. B's time = (1/2) / (1/15) = 7.5 days. Answer: 7.5 days."
+    },
+    {
+      "q": "12 men finish a job in 18 days. How many men are needed to finish it in 8 days?",
+      "a": "Men * Days = Constant -> 12 * 18 = 216. Men needed = 216 / 8 = 27 men. Answer: 27 men."
+    },
+    {
+      "q": "A is twice as efficient as B; together they finish in 12 days. Find each one's individual time.",
+      "a": "Let B's rate = x, A's rate = 2x. Combined rate = 3x = 1/12 -> x = 1/36. B takes 36 days, A takes 18 days. Answer: B=36 days, A=18 days."
+    },
+    {
+      "q": "A works alone for 4 days (out of a 20-day job), then B finishes the remaining work in 12 days. Find B's individual time.",
+      "a": "A does 4/20 = 1/5. Remaining = 4/5. B does 4/5 in 12 days -> B's rate = (4/5)/12 = 1/15 -> B takes 15 days. Answer: 15 days."
+    },
+    {
+      "q": "15 women finish a job in 24 days. In how many days can 8 women finish it?",
+      "a": "Women * Days = Constant -> 15 * 24 = 360. Days for 8 women = 360 / 8 = 45 days. Answer: 45 days."
+    },
+    {
+      "q": "A, B, C together finish a job in 6 days. A alone takes 18 days, B alone 24 days. Find C's individual time.",
+      "a": "C's rate = 1/6 - 1/18 - 1/24 = (12 - 4 - 3)/72 = 5/72. C's time = 72 / 5 = 14.4 days. Answer: 14.4 days."
+    },
+    {
+      "q": "A (15 days) and B (10 days) start together, but A leaves 5 days before completion. Find the total days taken.",
+      "a": "Let total days be x. (x-5)/15 + x/10 = 1 -> 2(x-5) + 3x = 30 -> 5x - 10 = 30 -> 5x = 40 -> x = 8 days. Answer: 8 days."
+    },
+    {
+      "q": "Efficiency ratio of A:B = 3:2. A finishes in 20 days. Find B's time.",
+      "a": "Time ratio is inverse of efficiency ratio = 2:3. B's time = 20 * (3/2) = 30 days. Answer: 30 days."
+    },
+    {
+      "q": "20 men finish a job in 15 days working 8 hrs/day. How many days will 25 men take working 6 hrs/day?",
+      "a": "M1 * D1 * H1 = M2 * D2 * H2 -> 20 * 15 * 8 = 25 * D2 * 6 -> 2400 = 150 * D2 -> D2 = 16 days. Answer: 16 days."
+    },
+    {
+      "q": "A alone takes 24 days, B alone takes 32 days. Find their combined time.",
+      "a": "Combined rate = 1/24 + 1/32 = 7/96. Combined time = 96 / 7 = 13.71 days. Answer: 13.71 days."
+    },
+    {
+      "q": "A completes 1/3 of a job in 5 days. At this rate, how many more days for the rest?",
+      "a": "Total job takes 5 * 3 = 15 days. Remaining 2/3 takes 15 - 5 = 10 more days. Answer: 10 more days."
     }
   ],
   "pipes": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Inlet pipes add to the volume, while outlet pipes subtract from it.\n\u26a1 **Formula/Shortcut**: Net filling rate = 1/Inlet_Time - 1/Outlet_Time.\n\n**Question**: At AgriGrow Farms, an automated drip-irrigation reservoir has an inlet pump that can fill the reservoir in 6 hours, while a bottom release valve can drain the full reservoir in 10 hours. If both the pump and the valve are opened simultaneously, how long will it take to fill the empty reservoir?",
-      "a": "\ud83d\udccb **Given**: Inlet time = 6 hours. Outlet time = 10 hours.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Calculate the net hourly filling rate by subtracting the outlet rate from the inlet rate.\n\n**Step-by-step Solution**:\n1) Net rate = 1/6 - 1/10.\n2) Common denominator (30): Net rate = 5/30 - 3/30 = 2/30 = 1/15.\n3) Time to fill = 15 hours.\n\n\u2728 **Final Answer**: 15 hours"
+      "q": "Pipe A fills a tank in 6 hrs, B in 8 hrs. Find the time together.",
+      "a": "Rate = 1/6 + 1/8 = 7/24. Time together = 24/7 = 3.43 hrs. Answer: 3.43 hrs."
+    },
+    {
+      "q": "Pipe A fills in 4 hrs, pipe B empties in 6 hrs. Both opened together. Find the time to fill.",
+      "a": "Net rate = 1/4 - 1/6 = (3-2)/12 = 1/12. Time to fill = 12 hrs. Answer: 12 hrs."
+    },
+    {
+      "q": "Two pipes fill in 12 and 15 min; a third empties in 20 min. All three opened together. Find the time to fill.",
+      "a": "Net rate = 1/12 + 1/15 - 1/20 = (5 + 4 - 3)/60 = 6/60 = 1/10. Time = 10 min. Answer: 10 min."
+    },
+    {
+      "q": "A pipe fills a tank in 30 min; due to a leak, it takes 40 min. Find the time the leak alone would take to empty it.",
+      "a": "Leak rate = 1/30 - 1/40 = (4-3)/120 = 1/120. Time = 120 min. Answer: 120 min."
+    },
+    {
+      "q": "Taps A (10 hrs) and B (15 hrs) opened together, but B is closed 3 hrs before completion. Find the total time.",
+      "a": "Let total time be x. x/10 + (x-3)/15 = 1 -> 3x + 2(x-3) = 30 -> 5x - 6 = 30 -> 5x = 36 -> x = 7.2 hrs. Answer: 7.2 hrs."
+    },
+    {
+      "q": "Two inlets (20, 25 min) and one outlet (30 min) opened together. Find the time to fill.",
+      "a": "Net rate = 1/20 + 1/25 - 1/30 = (15 + 12 - 10)/300 = 17/300. Time = 300/17 = 17.65 min. Answer: 17.65 min."
+    },
+    {
+      "q": "A pipe fills in 5 hrs; with a leak, it takes 1 hr more. Find the leak's emptying time alone.",
+      "a": "Normal rate = 1/5, actual rate = 1/6. Leak rate = 1/5 - 1/6 = 1/30. Time = 30 hrs. Answer: 30 hrs."
+    },
+    {
+      "q": "A and B together fill a cistern in 6 hrs; A alone takes 5 hrs less than B alone. Find each one's time.",
+      "a": "Let B take x hrs, A takes x-5. 1/(x-5) + 1/x = 1/6 -> (2x-5)/(x^2-5x) = 1/6 -> 12x - 30 = x^2 - 5x -> x^2 - 17x + 30 = 0 -> (x-15)(x-2) = 0. Since A takes x-5, x must be 15. B takes 15 hrs, A takes 10 hrs. Answer: B=15 hrs, A=10 hrs."
+    },
+    {
+      "q": "Pipe A fills in 12 hrs, pipe B (leak) empties in 18 hrs. Tank is 1/3 full; both opened. Find the time to fill completely.",
+      "a": "Net rate = 1/12 - 1/18 = 1/36. Remaining to fill = 2/3. Time = (2/3) / (1/36) = 24 hrs. Answer: 24 hrs."
+    },
+    {
+      "q": "Three pipes fill in 10, 15, 20 hrs. All opened together. Find the time to fill.",
+      "a": "Net rate = 1/10 + 1/15 + 1/20 = (6 + 4 + 3)/60 = 13/60. Time = 60/13 = 4.62 hrs. Answer: 4.62 hrs."
+    },
+    {
+      "q": "Pipe A fills in 8 hrs, pipe B empties in 12 hrs. Both opened for 4 hrs (empty tank), then B is closed. Find the total time to fill.",
+      "a": "Filled in 4 hrs = 4 * (1/8 - 1/12) = 4 * (1/24) = 1/6. Remaining = 5/6. Time for A to fill remaining = (5/6) / (1/8) = 40/6 = 6.67 hrs. Total time = 4 + 6.67 = 10.67 hrs. Answer: 10.67 hrs."
+    },
+    {
+      "q": "Pipe A fills in 12 min, B empties in 18 min. Both opened for 6 min, then B is closed. Find the total time.",
+      "a": "Filled in 6 min = 6 * (1/12 - 1/18) = 6 * (1/36) = 1/6. Remaining = 5/6. Time for A to fill remaining = (5/6) / (1/12) = 10 min. Total time = 6 + 10 = 16 min. Answer: 16 min."
     }
   ],
   "time-dist": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Speed is distance divided by time, and relative speed is the sum or difference of speeds.\n\u26a1 **Formula/Shortcut**: Distance = Speed * Time.\n\n**Question**: SkyDrop Express dispatches a delivery drone from the city center to a suburban warehouse 30 km away. The drone travels at a speed of 45 km/h. How many minutes does it take the drone to reach the warehouse?",
-      "a": "\ud83d\udccb **Given**: Distance = 30 km. Speed = 45 km/h.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Calculate time in hours using Time = Distance / Speed, then convert the hours to minutes.\n\n**Step-by-step Solution**:\n1) Time in hours = 30 / 45 = 2/3 hours.\n2) Convert to minutes: (2/3) * 60 = 40 minutes.\n\n\u2728 **Final Answer**: 40 minutes"
+      "q": "Convert 72 km/h to m/s.",
+      "a": "72 * (5/18) = 20 m/s. Answer: 20 m/s."
+    },
+    {
+      "q": "A car covers 240 km in 4 hrs. Find the speed.",
+      "a": "Speed = 240 / 4 = 60 km/h. Answer: 60 km/h."
+    },
+    {
+      "q": "A man walks at 5 km/h for 3 hrs. Find the distance.",
+      "a": "Distance = 5 * 3 = 15 km. Answer: 15 km."
+    },
+    {
+      "q": "Trains of 120m and 180m run in opposite directions at 54 km/h and 36 km/h. Find the crossing time.",
+      "a": "Relative speed = 54 + 36 = 90 km/h = 90 * (5/18) = 25 m/s. Total distance = 120 + 180 = 300m. Crossing time = 300 / 25 = 12 sec. Answer: 12 sec."
+    },
+    {
+      "q": "Trains of 150m each run in the same direction at 60 km/h and 42 km/h. Find the crossing time.",
+      "a": "Relative speed = 60 - 42 = 18 km/h = 18 * (5/18) = 5 m/s. Total distance = 150 + 150 = 300m. Crossing time = 300 / 5 = 60 sec. Answer: 60 sec."
+    },
+    {
+      "q": "A man goes at 20 km/h and returns at 30 km/h. Find the average speed.",
+      "a": "Average speed = 2xy/(x+y) = (2 * 20 * 30)/(20 + 30) = 1200 / 50 = 24 km/h. Answer: 24 km/h."
+    },
+    {
+      "q": "A 100m train crosses a 200m platform in 15 sec. Find the speed in km/h.",
+      "a": "Total distance = 100 + 200 = 300m. Speed = 300 / 15 = 20 m/s = 20 * (18/5) = 72 km/h. Answer: 72 km/h."
+    },
+    {
+      "q": "A car's speed rises by 20 km/h and it reaches a 300 km destination 30 min earlier. Find the original speed.",
+      "a": "Let speed be x. 300/x - 300/(x+20) = 0.5 -> 300 * 20 = 0.5 * x * (x+20) -> x(x+20) = 12000 -> x^2 + 20x - 12000 = 0 -> (x-100)(x+120) = 0 -> speed = 100 km/h. Answer: 100 km/h."
+    },
+    {
+      "q": "A thief at 8 m/s is chased by police at 10 m/s, starting 100m behind. Find the time to catch him.",
+      "a": "Relative speed = 10 - 8 = 2 m/s. Time to catch = 100 / 2 = 50 sec. Answer: 50 sec."
+    },
+    {
+      "q": "A boy at 4 km/h reaches school 5 min late; at 5 km/h he's 10 min early. Find the distance.",
+      "a": "Let distance be d. d/4 - d/5 = 15/60 -> d/20 = 1/4 -> d = 5 km. Answer: 5 km."
+    },
+    {
+      "q": "Cyclists start from the same point in opposite directions at 15 km/h and 20 km/h. Find the distance apart after 2 hrs.",
+      "a": "Relative speed = 15 + 20 = 35 km/h. Distance apart = 35 * 2 = 70 km. Answer: 70 km."
+    },
+    {
+      "q": "A train at 90 km/h crosses a pole in 8 sec. Find the train's length.",
+      "a": "Speed = 90 * (5/18) = 25 m/s. Length = Speed * Time = 25 * 8 = 200 m. Answer: 200 m."
     }
   ],
   "boats": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Downstream speed includes stream velocity; upstream speed subtracts it.\n\u26a1 **Formula/Shortcut**: Downstream speed (D) = u + v. Upstream speed (U) = u - v. (u = speed in still water, v = stream speed).\n\n**Question**: The Ganges Cruiser tourist ferry travels at 18 km/h in still water. On a river flowing at 4 km/h, how long will it take the ferry to travel 44 km upstream?",
-      "a": "\ud83d\udccb **Given**: Ferry still speed u = 18 km/h. River speed v = 4 km/h. Distance = 44 km.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Find the upstream speed by subtracting the river speed from the ferry speed, then divide the distance by this speed.\n\n**Step-by-step Solution**:\n1) Upstream speed = 18 - 4 = 14 km/h.\n2) Time = Distance / Upstream speed = 44 / 14 = 22 / 7 = 3.14 hours.\n\n\u2728 **Final Answer**: 3.14 hours (or 3 hours 8 minutes)"
+      "q": "Boat speed=15 km/h, stream=3 km/h. Find downstream and upstream speeds.",
+      "a": "Downstream speed = 15 + 3 = 18 km/h. Upstream speed = 15 - 3 = 12 km/h. Answer: 18 km/h and 12 km/h."
+    },
+    {
+      "q": "A boat covers 24 km downstream in 2 hrs. Find the downstream speed.",
+      "a": "Downstream speed = 24 / 2 = 12 km/h. Answer: 12 km/h."
+    },
+    {
+      "q": "Downstream speed=20 km/h, upstream=12 km/h. Find the boat and stream speed.",
+      "a": "Boat speed = (20 + 12)/2 = 16 km/h. Stream speed = (20 - 12)/2 = 4 km/h. Answer: Boat 16 km/h, Stream 4 km/h."
+    },
+    {
+      "q": "A man rows 30 km downstream in 3 hrs and returns in 5 hrs. Find the boat and stream speed.",
+      "a": "Downstream speed = 30 / 3 = 10 km/h. Upstream speed = 30 / 5 = 6 km/h. Boat speed = (10 + 6)/2 = 8 km/h. Stream speed = (10 - 6)/2 = 2 km/h. Answer: Boat 8 km/h, Stream 2 km/h."
+    },
+    {
+      "q": "Boat speed still water=10 km/h; upstream time is twice the downstream time. Find the stream speed.",
+      "a": "Let stream speed be x. Upstream rate = 10-x, Downstream rate = 10+x. Time is inversely proportional to speed -> 10+x = 2*(10-x) -> 10+x = 20 - 2x -> 3x = 10 -> x = 3.33 km/h. Answer: 3.33 km/h."
+    },
+    {
+      "q": "A boat goes 15 km upstream in 3 hrs and 15 km downstream in 1.5 hrs. Find the boat and stream speed.",
+      "a": "Upstream speed = 15 / 3 = 5 km/h. Downstream speed = 15 / 1.5 = 10 km/h. Boat speed = (10 + 5)/2 = 7.5 km/h. Stream speed = (10 - 5)/2 = 2.5 km/h. Answer: Boat 7.5 km/h, Stream 2.5 km/h."
+    },
+    {
+      "q": "Boat speed=12 km/h, stream=4 km/h. Find the time to row 32 km downstream.",
+      "a": "Downstream speed = 12 + 4 = 16 km/h. Time = 32 / 16 = 2 hrs. Answer: 2 hrs."
+    },
+    {
+      "q": "A man rows upstream at 8 km/h, downstream at 14 km/h. Find the boat and stream rate.",
+      "a": "Boat speed = (14 + 8)/2 = 11 km/h. Stream speed = (14 - 8)/2 = 3 km/h. Answer: Boat 11 km/h, Stream 3 km/h."
+    },
+    {
+      "q": "A boat takes 4 hrs to go 20 km upstream; boat's still-water speed=8 km/h. Find the stream speed.",
+      "a": "Upstream speed = 20 / 4 = 5 km/h. Stream speed = boat speed - upstream speed = 8 - 5 = 3 km/h. Answer: 3 km/h."
+    },
+    {
+      "q": "A boat's still-water speed is 4 times the stream's. It covers 60 km downstream in 3 hrs. Find the time upstream.",
+      "a": "Let stream be x, boat be 4x. Downstream rate = 5x = 60 / 3 = 20 km/h -> x = 4. Boat speed = 16 km/h, stream = 4 km/h. Upstream rate = 16 - 4 = 12 km/h. Time upstream = 60 / 12 = 5 hrs. Answer: 5 hrs."
+    },
+    {
+      "q": "A man rows 48 km and back in 14 hrs, and rowing 4 km downstream takes the same time as 3 km upstream. Find the stream speed.",
+      "a": "Speed ratio Down/Up = 4:3. Let Down = 4x, Up = 3x. 48/(4x) + 48/(3x) = 14 -> 12/x + 16/x = 14 -> 28/x = 14 -> x = 2. Down = 8, Up = 6. Stream rate = (8-6)/2 = 1 km/h. Answer: 1 km/h."
+    },
+    {
+      "q": "Downstream speed=18 km/h; 54 km upstream takes 6 hrs. Find the stream speed.",
+      "a": "Upstream rate = 54 / 6 = 9 km/h. Stream rate = (Down - Up)/2 = (18 - 9)/2 = 4.5 km/h. Answer: 4.5 km/h."
     }
   ],
   "circular": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Meeting times on a circular track depend on relative speed and track length.\n\u26a1 **Formula/Shortcut**: Meeting time for opposite directions = Length / (Speed1 + Speed2).\n\n**Question**: At VeloSpeed Arena, riders Nidhi and Marc start cycling from the same point on a 400m circular velodrome track at speeds of 12 m/s and 8 m/s in opposite directions. After how many seconds will they meet for the first time?",
-      "a": "\ud83d\udccb **Given**: Track length = 400m. Speed1 = 12 m/s, Speed2 = 8 m/s in opposite directions.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Calculate relative speed by adding their individual speeds, then divide the track length by the relative speed.\n\n**Step-by-step Solution**:\n1) Relative speed = 12 + 8 = 20 m/s.\n2) First meeting time = Track length / Relative speed = 400 / 20 = 20 seconds.\n\n\u2728 **Final Answer**: 20 seconds"
+      "q": "A 400m track; runners at 5 m/s and 4 m/s, same direction. Find the time to meet again.",
+      "a": "Relative speed = 5 - 4 = 1 m/s. Meeting time = 400 / 1 = 400 sec. Answer: 400 sec."
+    },
+    {
+      "q": "Same track, opposite directions at 5 m/s and 3 m/s. Find the first meeting time.",
+      "a": "Relative speed = 5 + 3 = 8 m/s. Meeting time = 400 / 8 = 50 sec. Answer: 50 sec."
+    },
+    {
+      "q": "In a 200m race, A beats B by 20m. Find the speed ratio.",
+      "a": "When A covers 200m, B covers 180m. Speed ratio = 200 : 180 = 10:9. Answer: 10:9."
+    },
+    {
+      "q": "A finishes a 100m race in 20 sec, giving B a 10m start; A wins by 5 sec. Find B's speed.",
+      "a": "A's time = 20s. B's time = 20 + 5 = 25s. B covers 90m in 25s -> B's speed = 90 / 25 = 3.6 m/s. Answer: 3.6 m/s."
+    },
+    {
+      "q": "Cars on a 900m circular track at 15 m/s and 10 m/s, same direction. Find the time for the faster to lap the slower.",
+      "a": "Relative speed = 15 - 10 = 5 m/s. Time to lap = 900 / 5 = 180 sec. Answer: 180 sec."
+    },
+    {
+      "q": "A beats B by 30m or 10 sec in a 200m race. Find A's speed.",
+      "a": "B's speed = 30 / 10 = 3 m/s. B's time for 200m = 200 / 3 = 66.67 sec. A's time = 66.67 - 10 = 56.67 sec. A's speed = 200 / 56.67 = 3.53 m/s. Answer: 3.53 m/s."
+    },
+    {
+      "q": "A 720m circular track; cyclists in opposite directions at 20 m/s and 16 m/s. Find the first meeting time and how many times they meet before both return to start together.",
+      "a": "First meeting = 720 / (20 + 16) = 20 sec. A's lap time = 36s, B's lap time = 45s. LCM(36, 45) = 180s. In 180s, number of meetings = 180 / 20 = 9. Answer: 9 meetings."
+    },
+    {
+      "q": "In a 600m race, A beats B by 100m. In a 300m race with the same speeds, find A's margin.",
+      "a": "Speed ratio = 600 : 500 = 6:5. In 300m race, when A runs 300m, B runs 300 * (5/6) = 250m. Margin = 300 - 250 = 50m. Answer: 50m."
+    },
+    {
+      "q": "A and B run 1 km; A gives B a 100m start and wins by 10 sec. A's speed=5 m/s. Find B's speed.",
+      "a": "A's time = 1000 / 5 = 200 sec. B's time = 200 + 10 = 210 sec. B covers 900m in 210 sec -> B's speed = 900 / 210 = 4.29 m/s. (Note: The previous simplified calculation was 4.74 m/s, but 900/190 = 4.74, meaning A wins by 10 sec if B's time is 190? No, if A wins, B takes more time. If A wins by 10 sec, B's time = 200 + 10 = 210s. Speed = 900/210 = 4.29 m/s. Let's use 4.29 m/s). Answer: 4.29 m/s."
+    },
+    {
+      "q": "A 300m circular track; runners at 6 m/s and 4 m/s, same direction. Find the number of overtakes in 10 minutes.",
+      "a": "Relative speed = 2 m/s. Time to lap = 300 / 2 = 150 sec. In 600 sec (10 min), lappings = 600 / 150 = 4 times. Answer: 4 times."
+    },
+    {
+      "q": "A beats B by 40m in a 400m race; B beats C by 30m in a 300m race. Find A's margin over C in a 200m race.",
+      "a": "Speed ratio A:B = 400:360 = 10:9. B:C = 300:270 = 10:9. Scale A:B:C = 100:90:81. In 200m, A covers 200m, C covers 200 * 0.81 = 162m. Margin = 38m. Answer: 38m."
+    },
+    {
+      "q": "Two athletes run 1200m; the first finishes 30 sec before the second, speed ratio 5:4. Find each one's time.",
+      "a": "Time ratio = 4:5. Let t1 = 4k, t2 = 5k. k = 30s. t1 = 120 sec, t2 = 150 sec. Answer: t1=120 sec, t2=150 sec."
     }
   ],
   "si-ci": [
