@@ -788,6 +788,13 @@ h1, h2, h3, h4, h5, h6 {
   .analytics-grid {
     grid-template-columns: 1fr;
   }
+  .nav-links {
+    gap: 0.5rem;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.5rem;
+  }
   .toast {
     left: 1rem;
     right: 1rem;

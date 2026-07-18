@@ -177,7 +177,7 @@ function buildHome() {
     engTxt.innerText = engM.done + ' of ' + engM.total + ' topics completed (' + engM.pct + '%)';
   }
   if (navText) {
-    navText.innerText = globM.pct + '% Complete';
+    navText.innerText = globM.pct + '%';
   }
 
   // Bookmarks panel

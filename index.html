@@ -31,15 +31,15 @@
         </div>
         <span style="font-family:'Space Grotesk'; font-weight:700; font-size:1.1rem; color:var(--fg);">OpenMind</span>
       </button>
-      <div class="flex items-center gap-4">
-        <div class="nav-links hidden md:flex mr-2">
+      <div class="flex items-center gap-2 sm:gap-4">
+        <div class="nav-links flex mr-1 sm:mr-2">
           <button class="nav-link" id="navLinkHome" onclick="navigate('home')">Home</button>
           <button class="nav-link" id="navLinkAnalytics" onclick="navigate('analytics')">Analytics</button>
         </div>
-        <div class="os-badge"><i class="fas fa-lock-open" style="font-size:0.6rem"></i> Open Source</div>
-        <div id="navProgress" class="flex items-center gap-2 text-xs" style="color:var(--fg-secondary)">
+        <div class="os-badge hidden sm:inline-block"><i class="fas fa-lock-open" style="font-size:0.6rem"></i> Open Source</div>
+        <div id="navProgress" class="flex items-center gap-1.5 text-xs" style="color:var(--fg-secondary)">
           <i class="fas fa-chart-line"></i>
-          <span id="navProgressText">0% Complete</span>
+          <span id="navProgressText">0%</span>
         </div>
       </div>
     </div>
