@@ -293,25 +293,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the units digit of 23^47 + 17^54.',
-            opts: ['4', '6', '8', '0'],
-            ans: 1,
-            exam: 'SSC CGL 2022',
-            sol: 'For 23^47: unit digit of 3 has cyclicity 4. 47 % 4 = 3, so unit digit is 3^3 = 27 (ends in 7).\nFor 17^54: unit digit of 7 has cyclicity 4. 54 % 4 = 2, so unit digit is 7^2 = 49 (ends in 9).\nSum = 7 + 9 = 16, which ends in 6.'
+            q: 'Find the units digit of 9^301.',
+            opts: ['1', '3', '7', '9'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: '9^1 = 9, 9^2 = 81 (ends in 1). Odd powers of 9 end in 9. Since 301 is odd, the units digit is 9.'
           },
           {
-            q: 'If the number 5432x7 is divisible by 9, find the digit x.',
-            opts: ['3', '6', '8', '7'],
-            ans: 1,
-            exam: 'SSC CHSL 2021',
-            sol: 'Sum of digits must be divisible by 9. Sum = 5 + 4 + 3 + 2 + x + 7 = 21 + x.\nThe nearest multiple of 9 greater than 21 is 27. Thus, x = 27 - 21 = 6.'
-          },
-          {
-            q: 'Find the remainder when 67^67 + 67 is divided by 68.',
-            opts: ['66', '67', '1', '0'],
+            q: 'Is 4,983 divisible by 11?',
+            opts: ['Yes', 'No', 'Cannot be determined', 'Only if multiplied by 3'],
             ans: 0,
-            exam: 'SSC CPO 2020',
-            sol: 'Using modular arithmetic: 67 ≡ -1 (mod 68).\nTherefore, 67^67 + 67 ≡ (-1)^67 + (-1) = -1 - 1 = -2 (mod 68).\nA negative remainder of -2 is equivalent to 68 - 2 = 66.'
+            exam: 'Practice Question',
+            sol: 'Alternating sum from right to left: 3 - 8 + 9 - 4 = 0. Since the alternating sum is 0, the number is divisible by 11.'
+          },
+          {
+            q: 'Find the remainder when 3^50 is divided by 8.',
+            opts: ['1', '3', '5', '7'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: '3^2 = 9 ≡ 1 (mod 8). Therefore, 3^50 = (3^2)^25 ≡ 1^25 ≡ 1 (mod 8).'
+          },
+          {
+            q: 'Find the remainder when 12,345 is divided by 9.',
+            opts: ['3', '5', '6', '8'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'The remainder of a number when divided by 9 is equal to the remainder of its digit sum. Sum of digits = 1+2+3+4+5 = 15. 15 % 9 = 6.'
+          },
+          {
+            q: 'Find the number of values of y for which 3y6 is divisible by 6.',
+            opts: ['2', '3', '4', '5'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'For divisibility by 6, the number must be divisible by both 2 and 3. Since the last digit is 6, it is divisible by 2. For divisibility by 3, the digit sum 3 + y + 6 = 9 + y must be divisible by 3. Thus, y can be 0, 3, 6, or 9 (4 values).'
+          },
+          {
+            q: 'Find the units digit of 6^250 + 9^99.',
+            opts: ['1', '3', '5', '7'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Units digit of 6^250 is always 6. Units digit of 9^99 (odd power of 9) is 9. Sum of units digits = 6 + 9 = 15, which ends in 5.'
+          },
+          {
+            q: 'Find the remainder when 2^100 is divided by 9.',
+            opts: ['2', '5', '7', '8'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '2^3 = 8 ≡ -1 (mod 9). Thus, 2^100 = 2 * (2^3)^33 ≡ 2 * (-1)^33 = -2 (mod 9). A negative remainder of -2 is equivalent to 9 - 2 = 7.'
           }
         ]
       }
@@ -339,18 +367,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'The HCF of two numbers is 12 and their LCM is 72. If one of the numbers is 24, find the other.',
-            opts: ['36', '48', '60', '18'],
-            ans: 0,
-            exam: 'SSC CGL 2021',
-            sol: 'Using Product of Numbers = HCF × LCM:\n24 × Number = 12 × 72\nNumber = (12 × 72) / 24 = 36.'
+            q: 'Find the HCF of 84 and 120.',
+            opts: ['6', '12', '18', '24'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Prime factorization: 84 = 2^2 * 3 * 7, 120 = 2^3 * 3 * 5. HCF = 2^2 * 3 = 12.'
           },
           {
-            q: 'Find the greatest 4-digit number divisible by 15, 25, and 30.',
-            opts: ['9900', '9850', '9750', '9950'],
+            q: 'Find the LCM of 24 and 36.',
+            opts: ['48', '60', '72', '108'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Prime factorization: 24 = 2^3 * 3, 36 = 2^2 * 3^2. LCM = 2^3 * 3^2 = 8 * 9 = 72.'
+          },
+          {
+            q: 'HCF and LCM of two numbers are 9 and 270. One number is 45; find the other.',
+            opts: ['36', '45', '54', '63'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Using Product of Numbers = HCF × LCM:\n45 × Number = 9 × 270\nNumber = (9 × 270) / 45 = 54.'
+          },
+          {
+            q: 'Find the smallest number that leaves remainder 1 when divided by 6, 9, or 15.',
+            opts: ['46', '61', '91', '121'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Find the LCM of 6, 9, and 15, which is 90. Since it leaves a remainder of 1 in each case, add 1: 90 + 1 = 91.'
+          },
+          {
+            q: 'Find the HCF of the fractions 3/5, 6/11, 9/20.',
+            opts: ['3/220', '6/110', '9/220', '3/55'],
             ans: 0,
-            exam: 'SSC MTS 2022',
-            sol: 'LCM of 15, 25, and 30 is 150.\nThe largest 4-digit number is 9999.\n9999 / 150 gives a quotient of 66 and remainder of 99.\nGreatest number = 9999 - 99 = 9900.'
+            exam: 'Practice Question',
+            sol: 'HCF of fractions = HCF(Numerators) / LCM(Denominators) = HCF(3, 6, 9) / LCM(5, 11, 20) = 3 / 220.'
+          },
+          {
+            q: 'Three runners complete a lap in 6, 9, and 12 minutes. After how many minutes do they meet again at the start?',
+            opts: ['18 min', '24 min', '36 min', '48 min'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'The meeting time at the start point is the LCM of their individual lap times: LCM(6, 9, 12) = 36 minutes.'
+          },
+          {
+            q: 'Find the greatest number that divides 445 and 572, leaving remainders 4 and 5 respectively.',
+            opts: ['43', '53', '63', '73'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Subtract the remainders first: 445 - 4 = 441, and 572 - 5 = 567. Find HCF of 441 and 567:\n441 = 3^2 * 7^2, 567 = 3^4 * 7. HCF = 3^2 * 7 = 63.'
           }
         ]
       }
@@ -369,11 +432,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Simplify: 45 - [38 - {60 / 3 - (6 - 9 / 3)}]',
-            opts: ['24', '21', '27', '30'],
-            ans: 0,
-            exam: 'SSC CHSL 2022',
-            sol: '1) Inner bracket: (6 - 9 / 3) = 6 - 3 = 3.\n2) Middle brace: {60 / 3 - 3} = 20 - 3 = 17.\n3) Outer bracket: [38 - 17] = 21.\n4) Final expression: 45 - 21 = 24.'
+            q: 'Simplify: 24 - [6 + {8 - (5-2)}].',
+            opts: ['11', '13', '15', '17'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '1) Innermost parentheses: (5 - 2) = 3.\n2) Middle brace: {8 - 3} = 5.\n3) Outer bracket: [6 + 5] = 11.\n4) Final calculation: 24 - 11 = 13.'
+          },
+          {
+            q: 'Simplify: (4/5) of 25 + (2/3) of 18.',
+            opts: ['28', '30', '32', '34'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '1) (4/5) of 25 = 20.\n2) (2/3) of 18 = 12.\n3) Sum = 20 + 12 = 32.'
+          },
+          {
+            q: 'Simplify: 0.6x0.6 + 0.4x0.4 + 2x0.6x0.4.',
+            opts: ['0.8', '1', '1.2', '1.6'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'This matches the algebraic identity a^2 + b^2 + 2ab = (a + b)^2. Here a = 0.6 and b = 0.4. Value = (0.6 + 0.4)^2 = 1.0^2 = 1.'
+          },
+          {
+            q: 'Simplify: 5⅔ - 2⅓ + 1½.',
+            opts: ['4 1/3', '4 1/2', '4 5/6', '5 1/6'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Convert to improper fractions: 17/3 - 7/3 + 3/2 = 10/3 + 3/2 = 20/6 + 9/6 = 29/6 = 4 5/6.'
+          },
+          {
+            q: 'Find √1.21 × √0.81.',
+            opts: ['0.099', '0.99', '1.1', '9.9'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '√1.21 = 1.1, and √0.81 = 0.9. Product = 1.1 × 0.9 = 0.99.'
+          },
+          {
+            q: 'Simplify: 18 ÷ 3 of 2 + 4x2 - 6.',
+            opts: ['3', '5', '8', '11'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: "BODMAS: 'of' takes priority over division. 3 of 2 = 6. Then perform division: 18 / 6 = 3. Perform multiplication: 4 * 2 = 8. Combining terms: 3 + 8 - 6 = 5."
+          },
+          {
+            q: 'Simplify: (9.8² - 0.2²) ÷ (9.8-0.2).',
+            opts: ['9.6', '9.8', '10', '10.2'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Using the identity (a^2 - b^2) / (a - b) = a + b:\n(9.8^2 - 0.2^2) / (9.8 - 0.2) = 9.8 + 0.2 = 10.'
           }
         ]
       }

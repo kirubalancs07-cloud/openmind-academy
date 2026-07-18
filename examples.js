@@ -1,20 +1,152 @@
 var EXAMPLES = {
   "numbers": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Divisibility and remainders form the bedrock of number theory in competitive exams.\n\u26a1 **Formula/Shortcut**: For base ending in d, the unit digit cycles every 4 powers (cyclicity = 4).\n\n**Question**: To prevent unauthorized high-frequency trades, the NSE Code-Alpha system generates a daily validation key equal to the units digit of 3427^983 + 2423^514. Find the validation key.",
-      "a": "\ud83d\udccb **Given**: Base values 3427 (ends in 7) and 2423 (ends in 3). Exponents are 983 and 514.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Find the unit digit of each term by dividing the exponents by 4 to find the remainder, then raise the unit digit of the base to that remainder.\n\n**Step-by-step Solution**:\n1) For 3427^983: The base unit digit is 7. Divide exponent 983 by 4 -> 983 % 4 = 3.\n2) 7^3 = 343, which ends in 3. So the first term's unit digit is 3.\n3) For 2423^514: The base unit digit is 3. Divide exponent 514 by 4 -> 514 % 4 = 2.\n4) 3^2 = 9. So the second term's unit digit is 9.\n5) Sum the unit digits: 3 + 9 = 12. The unit digit of the sum is 2.\n\n\u2728 **Final Answer**: 2"
+      "q": "Check whether 2,728 is divisible by 11.",
+      "a": "Alternating sum (right to left): 8 - 2 + 7 - 2 = 11. Since 11 is divisible by 11, the answer is Yes."
+    },
+    {
+      "q": "Check whether 47,835 is divisible by 9.",
+      "a": "Digit sum = 4 + 7 + 8 + 3 + 5 = 27. Since 27 is divisible by 9, the answer is Yes."
+    },
+    {
+      "q": "Check whether 3,528 is divisible by 4.",
+      "a": "Last two digits = 28. Since 28 / 4 = 7 exactly, the answer is Yes."
+    },
+    {
+      "q": "Check whether 3,653 is divisible by 7 (osculator method).",
+      "a": "365 - (3 * 2) = 359; 35 - (9 * 2) = 17. Since 17 is not divisible by 7, the answer is No."
+    },
+    {
+      "q": "Check whether 4,326 is divisible by 6.",
+      "a": "Last digit is 6 (even) -> divisible by 2. Digit sum = 4 + 3 + 2 + 6 = 15 -> divisible by 3. Since both are true, it is divisible by 6. Answer: Yes."
+    },
+    {
+      "q": "Find the units digit of 7^123.",
+      "a": "Cycle of 7: 7, 9, 3, 1 (length 4). 123 % 4 = 3 -> 3rd term = 3. Answer: 3."
+    },
+    {
+      "q": "Find the units digit of 8^57.",
+      "a": "Cycle of 8: 8, 4, 2, 6 (length 4). 57 % 4 = 1 -> 1st term = 8. Answer: 8."
+    },
+    {
+      "q": "Find the units digit of 4^33.",
+      "a": "Cycle of 4: 4, 6 (length 2). 33 is odd -> 1st term = 4. Answer: 4."
+    },
+    {
+      "q": "Find the remainder when 2^40 is divided by 7.",
+      "a": "2^3 = 8 \u2261 1 (mod 7). 40 = 3 * 13 + 1 -> 2^40 \u2261 1^13 * 2 = 2. Answer: 2."
+    },
+    {
+      "q": "Find the remainder when 17^23 is divided by 5.",
+      "a": "17 \u2261 2 (mod 5). Cycle of 2 mod 5: 2, 4, 3, 1 (length 4). 23 % 4 = 3 -> 3rd term = 3. Answer: 3."
+    },
+    {
+      "q": "Find the number of values of digit x for which 5x4 is divisible by 3.",
+      "a": "Digit sum = 9 + x, divisible by 3 when x = 0, 3, 6, 9 -> 4 values. Answer: 4."
+    },
+    {
+      "q": "Find the units digit of 23^45 + 34^56.",
+      "a": "Units digit of 23^45 is units digit of 3^45 (cycle length 4; 45 % 4 = 1 -> 3). Units digit of 34^56 is units digit of 4^56 (even power -> 6). Sum = 3 + 6 = 9. Answer: 9."
     }
   ],
   "hcf-lcm": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: HCF represents the greatest common divisor; LCM represents the smallest common multiple.\n\u26a1 **Formula/Shortcut**: Product of two numbers = HCF * LCM.\n\n**Question**: Supervisor Meera at Crate-Flow Logistics needs to pack three batches of products containing 144, 180, and 252 items into bins of equal size such that no products are mixed. Find the maximum possible size of each bin.",
-      "a": "\ud83d\udccb **Given**: Batches of size 144, 180, and 252.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Calculate the Highest Common Factor (HCF) of the three batch sizes to find the largest bin size that divides all three batches evenly.\n\n**Step-by-step Solution**:\n1) Factorize the numbers:\n   - 144 = 2^4 * 3^2\n   - 180 = 2^2 * 3^2 * 5\n   - 252 = 2^2 * 3^2 * 7\n2) Identify the common prime factors with the lowest exponents: 2^2 and 3^2.\n3) Multiply them: HCF = 2^2 * 3^2 = 4 * 9 = 36.\n\n\u2728 **Final Answer**: 36 items per bin"
+      "q": "Find the HCF of 48 and 60.",
+      "a": "48 = 2^4 * 3, 60 = 2^2 * 3 * 5 -> HCF = 2^2 * 3 = 12. Answer: 12."
+    },
+    {
+      "q": "Find the LCM of 12 and 18.",
+      "a": "12 = 2^2 * 3, 18 = 2 * 3^2 -> LCM = 2^2 * 3^2 = 36. Answer: 36."
+    },
+    {
+      "q": "HCF of two numbers is 6, LCM is 90, one number is 18. Find the other.",
+      "a": "Product = 6 * 90 = 540 -> other number = 540 / 18 = 30. Answer: 30."
+    },
+    {
+      "q": "Find the HCF of 36, 60, 84.",
+      "a": "Prime factors: 2^2 * 3^2, 2^2 * 3 * 5, 2^2 * 3 * 7 -> HCF = 2^2 * 3 = 12. Answer: 12."
+    },
+    {
+      "q": "Find the LCM of 15, 20, 25.",
+      "a": "15 = 3 * 5, 20 = 2^2 * 5, 25 = 5^2 -> LCM = 2^2 * 3 * 5^2 = 300. Answer: 300."
+    },
+    {
+      "q": "Three temple bells ring every 12, 18, and 24 minutes. After how long do they ring together again?",
+      "a": "The time they ring together is the LCM of 12, 18, and 24. LCM(12, 18, 24) = 72 minutes. Answer: 72 minutes."
+    },
+    {
+      "q": "Find the greatest number that divides 245 and 1,029, leaving remainder 5 in each case.",
+      "a": "Subtract remainders: 245 - 5 = 240, 1029 - 5 = 1024. HCF(240, 1024) = 16. Answer: 16."
+    },
+    {
+      "q": "Find the HCF of the fractions 4/9 and 10/21.",
+      "a": "HCF of fractions = HCF(Numerators) / LCM(Denominators) = HCF(4, 10) / LCM(9, 21) = 2 / 63. Answer: 2/63."
+    },
+    {
+      "q": "Find the LCM of the fractions 2/3, 4/9, 6/15.",
+      "a": "LCM of fractions = LCM(Numerators) / HCF(Denominators) = LCM(2, 4, 6) / HCF(3, 9, 15) = 12 / 3 = 4. Answer: 4."
+    },
+    {
+      "q": "Find the smallest number which, when divided by 8, 12, and 16, leaves remainder 5 each time.",
+      "a": "Find LCM of 8, 12, 16, which is 48. Add the remainder: 48 + 5 = 53. Answer: 53."
+    },
+    {
+      "q": "Two traffic signals change every 45 sec and 75 sec. If both change together at 8:00:00, when do they change together next?",
+      "a": "LCM(45, 75) = 225 sec = 3 min 45 sec. Next change time is 8:00:00 + 3 min 45 sec = 8:03:45. Answer: 8:03:45."
+    },
+    {
+      "q": "Find the largest number that divides 70 and 125, leaving remainders 5 and 8 respectively.",
+      "a": "Subtract remainders: 70 - 5 = 65, 125 - 8 = 117. HCF(65, 117) = 13. Answer: 13."
     }
   ],
   "simplification": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Simplifying complex expressions requires strict adherence to BODMAS rules and index laws.\n\u26a1 **Formula/Shortcut**: BODMAS order: Brackets (), {}, [], Of, Division, Multiplication, Addition, Subtraction.\n\n**Question**: PowerGrid Corp calculates the monthly domestic tariff rate for Consumer Kabir using the expression: 150 - [30 - {40 / 4 - (8 - 12 / 4)}]. Find the final tariff rate.",
-      "a": "\ud83d\udccb **Given**: Expression: 150 - [30 - {40 / 4 - (8 - 12 / 4)}].\n\ud83d\udee0\ufe0f **Method/Shortcut**: Evaluate the expression step-by-step starting from the innermost parentheses to the outermost brackets.\n\n**Step-by-step Solution**:\n1) Innermost parentheses: (8 - 12 / 4). Perform division first: 12 / 4 = 3. Then subtract: 8 - 3 = 5.\n2) Middle braces: {40 / 4 - 5}. Perform division first: 40 / 4 = 10. Then subtract: 10 - 5 = 5.\n3) Outer brackets: [30 - 5] = 25.\n4) Final calculation: 150 - 25 = 125.\n\n\u2728 **Final Answer**: 125"
+      "q": "Simplify: 15 + 6 * (8-3) / 5 - 2.",
+      "a": "BODMAS: 15 + 6 * 5 / 5 - 2 = 15 + 30 / 5 - 2 = 15 + 6 - 2 = 19. Answer: 19."
+    },
+    {
+      "q": "Simplify: [(3/4)+(2/3)] / (5/6).",
+      "a": "(17/12) / (5/6) = (17/12) * (6/5) = 17 / 10 = 1.7. Answer: 1.7."
+    },
+    {
+      "q": "Simplify: 0.75*0.4 + 0.05/0.5.",
+      "a": "0.3 + 0.1 = 0.4. Answer: 0.4."
+    },
+    {
+      "q": "Simplify: 12 - [8 - {6 - (5-3)}].",
+      "a": "12 - [8 - {6 - 2}] = 12 - [8 - 4] = 12 - 4 = 8. Answer: 8."
+    },
+    {
+      "q": "Simplify: (2.5)^2 - (1.5)^2.",
+      "a": "Using a^2 - b^2 = (a+b)(a-b) -> (2.5+1.5)(2.5-1.5) = 4 * 1 = 4. Answer: 4."
+    },
+    {
+      "q": "Find sqrt(0.0625).",
+      "a": "sqrt(0.0625) = 0.25. Answer: 0.25."
+    },
+    {
+      "q": "Simplify: 3 1/3 + 2 1/4 - 1 1/2.",
+      "a": "10/3 + 9/4 - 3/2 = (40 + 27 - 18) / 12 = 49 / 12 = 4 1/12. Answer: 4 1/12."
+    },
+    {
+      "q": "Simplify: 45% of 260 + 15% of 180.",
+      "a": "117 + 27 = 144. Answer: 144."
+    },
+    {
+      "q": "Simplify: 8 / 4 of 2 + 6*3 - 5.",
+      "a": "BODMAS: 'of' before division. 8 / 8 + 18 - 5 = 1 + 18 - 5 = 14. Answer: 14."
+    },
+    {
+      "q": "Simplify: 7.5*7.5 - 2.5*2.5.",
+      "a": "Using a^2 - b^2 = (a+b)(a-b) -> (7.5+2.5)(7.5-2.5) = 10 * 5 = 50. Answer: 50."
+    },
+    {
+      "q": "Simplify: [(1/2)+(1/3)] * [(1/2)-(1/3)].",
+      "a": "Using (a+b)(a-b) = a^2 - b^2 -> (1/2)^2 - (1/3)^2 = 1/4 - 1/9 = 5/36. Answer: 5/36."
+    },
+    {
+      "q": "Simplify: (3.2^3 + 1.8^3) / (3.2^2 - 3.2*1.8 + 1.8^2).",
+      "a": "Using a^3 + b^3 = (a+b)(a^2 - ab + b^2) -> this simplifies to a+b = 3.2 + 1.8 = 5. Answer: 5."
     }
   ],
   "percentages": [
