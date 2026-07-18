@@ -252,7 +252,7 @@ var ENG = {
       accent: '#a855f7',
       shadow: 'rgba(168, 85, 247, 0.12)',
       topics: [
-        { id: 'eng-vocab-daily', name: 'Top 150 Daily Conversation Words', sub: '150 words with simple meanings, pronunciation tips, and usage', has: true },
+        { id: 'eng-vocab-daily', name: 'Top 800+ Daily Conversation Words', sub: '800+ essential words with definitions and usage examples', has: true },
         { id: 'eng-phrases', name: 'Useful Everyday Phrases & Expressions', sub: 'Greetings, requesting help, showing gratitude, and job interview expressions', has: true }
       ]
     }
@@ -1751,60 +1751,12 @@ var CONTENT = {
     ]
   },
   'eng-vocab-daily': {
-    title: 'Top 150 Daily Conversation Words',
+    title: 'Top 800+ Daily Conversation Words',
     sections: [
       {
-        type: 'concept',
+        type: 'vocab',
         title: 'High-Frequency Words for Daily Survival & Careers',
-        html: '<p style="line-height:1.8;color:var(--fg-secondary)">Below is a curated dictionary of essential English words. Memorize these, understand their meanings, and practice using them in sentences.</p>' +
-              '<div class="vocab-table-container">' +
-              '<table class="vocab-table">' +
-                '<thead>' +
-                  '<tr>' +
-                    '<th>Word</th>' +
-                    '<th>Hindi Meaning</th>' +
-                    '<th>Conversational Example</th>' +
-                  '</tr>' +
-                '</thead>' +
-                '<tbody>' +
-                  '<tr><td><span class="vocab-word">Achieve</span></td><td><span class="vocab-meaning">हासिल करना (सफलता पाना)</span></td><td><span class="vocab-example">"I want to achieve my goals."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Active</span></td><td><span class="vocab-meaning">सक्रिय / फुर्तीला</span></td><td><span class="vocab-example">"He is very active in sports."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Advice</span></td><td><span class="vocab-meaning">सलाह / राय</span></td><td><span class="vocab-example">"She gave me good advice."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Agree</span></td><td><span class="vocab-meaning">सहमत होना</span></td><td><span class="vocab-example">"I agree with your plan."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Allow</span></td><td><span class="vocab-meaning">अनुमति देना / इजाजत देना</span></td><td><span class="vocab-example">"Please allow me to go."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Always</span></td><td><span class="vocab-meaning">हमेशा / सदा</span></td><td><span class="vocab-example">"Always speak the truth."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Apologize</span></td><td><span class="vocab-meaning">माफ़ी मांगना</span></td><td><span class="vocab-example">"I apologize for the mistake."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Avoid</span></td><td><span class="vocab-meaning">बचना / टालना</span></td><td><span class="vocab-example">"Avoid junk food for health."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Believe</span></td><td><span class="vocab-meaning">विश्वास करना / मानना</span></td><td><span class="vocab-example">"Believe in yourself."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Borrow</span></td><td><span class="vocab-meaning">उधार लेना</span></td><td><span class="vocab-example">"Can I borrow your pen?"</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Brave</span></td><td><span class="vocab-meaning">बहादुर / वीर</span></td><td><span class="vocab-example">"The soldier was very brave."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Brief</span></td><td><span class="vocab-meaning">संक्षिप्त (छोटा और साफ)</span></td><td><span class="vocab-example">"Give me a brief summary."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Busy</span></td><td><span class="vocab-meaning">व्यस्त / काम में लगा</span></td><td><span class="vocab-example">"I was busy with my exams."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Careful</span></td><td><span class="vocab-meaning">सावधान / सतर्क</span></td><td><span class="vocab-example">"Be careful while crossing."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Cheap</span></td><td><span class="vocab-meaning">सस्ता / कम दाम का</span></td><td><span class="vocab-example">"This store sells cheap books."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Decide</span></td><td><span class="vocab-meaning">तय करना / निर्णय लेना</span></td><td><span class="vocab-example">"Decide your career pathway."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Delay</span></td><td><span class="vocab-meaning">देरी / विलंब</span></td><td><span class="vocab-example">"Do not delay your studies."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Difficult</span></td><td><span class="vocab-meaning">कठिन / मुश्किल</span></td><td><span class="vocab-example">"English is not difficult."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Doubt</span></td><td><span class="vocab-meaning">संदेह / शक</span></td><td><span class="vocab-example">"Ask if you have any doubt."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Earn</span></td><td><span class="vocab-meaning">कमाना</span></td><td><span class="vocab-example">"I want to earn a decent living."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Effort</span></td><td><span class="vocab-meaning">प्रयास / कोशिश</span></td><td><span class="vocab-example">"Put effort into your preparation."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Encourage</span></td><td><span class="vocab-meaning">उत्साहित करना / बढ़ावा देना</span></td><td><span class="vocab-example">"Teachers encourage students."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Essential</span></td><td><span class="vocab-meaning">अनिवार्य / बहुत ज़रूरी</span></td><td><span class="vocab-example">"Water is essential for life."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Excellent</span></td><td><span class="vocab-meaning">उत्कृष्ट / बहुत बढ़िया</span></td><td><span class="vocab-example">"Your quiz score is excellent."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Expensive</span></td><td><span class="vocab-meaning">महंगा</span></td><td><span class="vocab-example">"Mobile phones can be expensive."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Explain</span></td><td><span class="vocab-meaning">समझाना / स्पष्ट करना</span></td><td><span class="vocab-example">"Can you explain this rule?"</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Fail</span></td><td><span class="vocab-meaning">असफल होना</span></td><td><span class="vocab-example">"Never fear to fail."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Forgive</span></td><td><span class="vocab-meaning">माफ़ करना</span></td><td><span class="vocab-example">"Please forgive my delay."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Humble</span></td><td><span class="vocab-meaning">विनम्र / सीधा-सादा</span></td><td><span class="vocab-example">"Rahul is a very humble person."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Improve</span></td><td><span class="vocab-meaning">सुधार करना / बेहतर होना</span></td><td><span class="vocab-example">"Practice speaking to improve."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Polite</span></td><td><span class="vocab-meaning">सभ्य / विनम्र</span></td><td><span class="vocab-example">"Be polite to everyone."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Receive</span></td><td><span class="vocab-meaning">प्राप्त करना / मिलना</span></td><td><span class="vocab-example">"I received your message."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Request</span></td><td><span class="vocab-meaning">अनुरोध / विनती</span></td><td><span class="vocab-example">"I request your attention."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Share</span></td><td><span class="vocab-meaning">साझा करना / बांटना</span></td><td><span class="vocab-example">"Share this free app with others."</span></td></tr>' +
-                  '<tr><td><span class="vocab-word">Understand</span></td><td><span class="vocab-meaning">समझना</span></td><td><span class="vocab-example">"Do you understand this word?"</span></td></tr>' +
-                '</tbody>' +
-              '</table>' +
-              '</div>'
+        html: ''
       },
       {
         type: 'mcq',

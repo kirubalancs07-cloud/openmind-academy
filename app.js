@@ -369,6 +369,26 @@ function buildTopic(topicId) {
         card.className = 'teaching-section mb-6';
         card.innerHTML = '<h3 class="text-md font-bold mb-2"><i class="fas fa-calculator text-emerald-400 mr-2"></i>' + sec.title + '</h3>' + sec.html;
         contentArea.appendChild(card);
+      } else if (sec.type === 'vocab') {
+        var card = document.createElement('div');
+        card.className = 'teaching-section mb-6';
+        var html = '<p style="line-height:1.8;color:var(--fg-secondary);margin-bottom:1.5rem">Below is a curated dictionary of 800+ essential daily conversation and career words in English. Memorize their meanings and practice using them in sentences.</p>';
+        html += '<div class="vocab-table-container">';
+        html += '<table class="vocab-table">';
+        html += '<thead><tr><th>Word</th><th>Meaning / Definition</th><th>Conversational Example</th></tr></thead>';
+        html += '<tbody>';
+        if (typeof VOCAB_WORDS !== 'undefined') {
+          VOCAB_WORDS.forEach(function(item) {
+            html += '<tr>' +
+              '<td><span class="vocab-word">' + item.w + '</span></td>' +
+              '<td><span class="vocab-meaning">' + item.m + '</span></td>' +
+              '<td><span class="vocab-example">"' + item.e + '"</span></td>' +
+              '</tr>';
+          });
+        }
+        html += '</tbody></table></div>';
+        card.innerHTML = '<h3 class="text-md font-bold mb-3"><i class="fas fa-book-open text-amber-500 mr-2"></i>' + sec.title + '</h3>' + html;
+        contentArea.appendChild(card);
       } else if (sec.type === 'mcq') {
         // Render Solved Examples from examples.js right before the practice quiz
         var topicExamples = typeof EXAMPLES !== 'undefined' ? EXAMPLES[topic.id] : null;
