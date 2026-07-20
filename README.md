@@ -12,4 +12,4 @@ Built with low-resource and underprivileged students in mind, it requires no wal
 - **Core Engine**: Vanilla Javascript (SPA routing, particles background simulation, local storage data syncing).
 ## Live Demo
 You can access the live website here:
-[https://openmind-academy.vercel.app/](https://kirubalancs07-cloud.github.io/openmind-academy/)
+[https://openmind-academy.vercel.app/](https://openmind-academy.vercel.app/)
