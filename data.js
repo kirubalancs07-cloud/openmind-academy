@@ -1913,11 +1913,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'In SEND + MORE = MONEY, what is the value of M?',
-            opts: ['1', '0', '9', '2'],
-            ans: 0,
-            exam: 'Placement Exam Pattern',
-            sol: 'Since we add two 4-digit numbers and get a 5-digit number, the carry-over digit M at the very left must be 1.'
+            q: 'AB + BA = 88. Find A+B.',
+            opts: ['A+B=6', 'A+B=8', 'A+B=10', 'A+B=11'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '10A + B + 10B + A = 11(A + B) = 88 -> A + B = 8.'
+          },
+          {
+            q: 'AB - BA = 18 (A>B). Find A-B.',
+            opts: ['A-B=1', 'A-B=2', 'A-B=3', 'A-B=4'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '10A + B - (10B + A) = 9(A - B) = 18 -> A - B = 2.'
+          },
+          {
+            q: 'AB + BA = 132 (A≠B). Find A+B.',
+            opts: ['A+B=10', 'A+B=11', 'A+B=12', 'A+B=13'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '11(A + B) = 132 -> A + B = 12.'
+          },
+          {
+            q: 'A two-digit number AB satisfies A+B=10 and AB-BA=54. Find A and B.',
+            opts: ['A=7, B=3', 'A=8, B=2', 'A=9, B=1', 'A=6, B=4'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '9(A - B) = 54 -> A - B = 6. Given A + B = 10. Adding both: 2A = 16 -> A = 8. Then B = 2.'
+          },
+          {
+            q: 'AB × 2 = CD, given A=1, B=4. Find C and D.',
+            opts: ['C=2, D=6', 'C=2, D=8', 'C=3, D=0', 'C=3, D=2'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'AB = 14. 14 * 2 = 28 -> C = 2, D = 8.'
+          },
+          {
+            q: 'AB + CD = EF, given A=1, B=5, C=6, D=9. Find E and F.',
+            opts: ['E=8, F=2', 'E=8, F=4', 'E=7, F=4', 'E=8, F=0'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'AB = 15, CD = 69. 15 + 69 = 84 -> E = 8, F = 4.'
+          },
+          {
+            q: 'AB - CD = EF, given A=9, B=3, C=2, D=8. Find E and F.',
+            opts: ['E=6, F=3', 'E=6, F=5', 'E=7, F=5', 'E=6, F=1'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'AB = 93, CD = 28. 93 - 28 = 65 -> E = 6, F = 5.'
           }
         ]
       }
@@ -1936,11 +1978,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'In a group, 70% speak English and 60% speak French. If 30% speak both, what % speaks neither?',
-            opts: ['0%', '10%', '20%', '5%'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'n(E ∪ F) = 70 + 60 - 30 = 100%.\nTherefore, 100% - 100% = 0% speak neither.'
+            q: 'n(A)=25, n(B)=18, n(A∩B)=10. Find n(A∪B).',
+            opts: ['28', '30', '33', '43'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'n(A ∪ B) = n(A) + n(B) - n(A ∩ B) = 25 + 18 - 10 = 33.'
+          },
+          {
+            q: 'In a class of 50, 28 like tea, 30 like coffee, 12 like both. Find how many like neither.',
+            opts: ['2', '4', '6', '8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'n(T ∪ C) = n(T) + n(C) - n(T ∩ B) = 28 + 30 - 12 = 46. Neither = 50 - 46 = 4.'
+          },
+          {
+            q: 'A={2,4,6,8}, B={4,8,12,16}. Find A∩B and A∪B.',
+            opts: ['A∩B={4}, A∪B={2,4,6,8,12,16}', 'A∩B={4,8}, A∪B={2,4,6,8,12,16}', 'A∩B={4,8}, A∪B={2,4,6,8,12}', 'A∩B={8}, A∪B={2,4,6,8,12,16}'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Intersection (common elements) = {4, 8}. Union (all elements) = {2, 4, 6, 8, 12, 16}.'
+          },
+          {
+            q: 'If f(x)=3x+2, find f(4).',
+            opts: ['10', '12', '14', '16'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'f(4) = 3(4) + 2 = 12 + 2 = 14.'
+          },
+          {
+            q: 'If f(x)=x+2, g(x)=2x, find (f∘g)(3).',
+            opts: ['6', '8', '10', '12'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'g(3) = 2(3) = 6. (f o g)(3) = f(g(3)) = f(6) = 6 + 2 = 8.'
+          },
+          {
+            q: 'Find the domain of f(x)=1/(x-5).',
+            opts: ['All real x except x=0', 'All real x except x=5', 'All real x except x=-5', 'All real x'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'The function is undefined when denominator is zero: x - 5 = 0 -> x = 5. So domain is all real x except x=5.'
+          },
+          {
+            q: 'In a group of 80, 50 speak French, 40 speak German, 15 speak neither. Find how many speak both.',
+            opts: ['15', '20', '25', '30'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Union (speak French or German) = Total - Neither = 80 - 15 = 65. n(F ∩ G) = n(F) + n(G) - n(F ∪ G) = 50 + 40 - 65 = 25.'
           }
         ]
       }
@@ -1964,11 +2048,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the value of log_2 (64).',
-            opts: ['6', '5', '4', '8'],
+            q: 'Find log₃27.',
+            opts: ['2', '3', '4', '9'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '27 = 3³. Therefore, log₃27 = 3.'
+          },
+          {
+            q: 'Find log₁₀10000.',
+            opts: ['3', '4', '5', '10'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '10000 = 10⁴. Therefore, log₁₀10000 = 4.'
+          },
+          {
+            q: 'Simplify log(4)+log(5).',
+            opts: ['log 9', 'log 20', 'log 2', 'log 45'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'log a + log b = log(a * b). log 4 + log 5 = log(4 * 5) = log 20.'
+          },
+          {
+            q: 'Simplify log(60)-log(12).',
+            opts: ['log 5', 'log 48', 'log 72', 'log 2'],
             ans: 0,
-            exam: 'SSC CGL 2019',
-            sol: '64 = 2^6. Therefore, log_2 (2^6) = 6 log_2 (2) = 6 × 1 = 6.'
+            exam: 'Practice Question',
+            sol: 'log a - log b = log(a / b). log 60 - log 12 = log(60 / 12) = log 5.'
+          },
+          {
+            q: 'Find x if log₃x=4.',
+            opts: ['x=12', 'x=64', 'x=81', 'x=243'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'log₃x = 4 -> x = 3⁴ = 81.'
+          },
+          {
+            q: 'Find log₇343.',
+            opts: ['2', '3', '4', '7'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '343 = 7³. Therefore, log₇343 = 3.'
+          },
+          {
+            q: 'If log₁₀3=0.4771, find log₁₀9.',
+            opts: ['0.9030', '0.9542', '1.4313', '0.4771'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'log₁₀9 = log₁₀(3²) = 2 * log₁₀3 = 2 * 0.4771 = 0.9542.'
           }
         ]
       }

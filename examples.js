@@ -1201,20 +1201,152 @@ var EXAMPLES = {
   ],
   "crypt": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Cryptarithmetic decodes word-based digit addition puzzles using logic.\n\u26a1 **Formula/Shortcut**: Carry-over in the highest digit place must be 1.\n\n**Question**: Cryptographer Elena at CryptoLabs Alpha decodes a transaction signature represented by: AB + AB = CAB. If each letter is a unique decimal digit (0-9), find the value of C.",
-      "a": "\ud83d\udccb **Given**: Equation: AB + AB = CAB.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Determine the value of C by analyzing the carry-over rules in a column addition.\n\n**Step-by-step Solution**:\n1) The sum of two 2-digit numbers (AB + AB) yields a 3-digit number (CAB).\n2) The highest place value digit of a sum of two numbers can have a maximum carry-over of 1.\n3) Therefore, C must be 1.\n\n\u2728 **Final Answer**: 1"
+      "q": "AB + BA = 66. Find A+B.",
+      "a": "10A + B + 10B + A = 11(A+B) = 66 -> A+B = 6. Answer: 6."
+    },
+    {
+      "q": "AB + BA = 121 (A\u2260B). Find A+B.",
+      "a": "11(A+B) = 121 -> A+B = 11. Answer: 11."
+    },
+    {
+      "q": "AB - BA = 27 (A>B). Find A-B.",
+      "a": "9(A-B) = 27 -> A-B = 3. Answer: 3."
+    },
+    {
+      "q": "AB - BA = 45 (A>B). Find A-B.",
+      "a": "9(A-B) = 45 -> A-B = 5. Answer: 5."
+    },
+    {
+      "q": "AB + CD = EE, all letters different digits. Find E.",
+      "a": "A sum of two-digit numbers with same digits in sum. Valid assignment: 21+34=55 -> E=5. Answer: 5."
+    },
+    {
+      "q": "Classic puzzle: SEND + MORE = MONEY. Find M.",
+      "a": "Since SEND + MORE is a 5-digit number, M must be 1. O must be 0, S is 9. E=5, N=6, R=8, D=7, Y=2. Answer: M=1."
+    },
+    {
+      "q": "A two-digit number AB satisfies A+B=9 and A-B=3. Find AB.",
+      "a": "A+B=9, A-B=3 -> 2A=12 -> A=6, B=3. The number is 63. Answer: 63."
+    },
+    {
+      "q": "AB + CD = EFG, all letters distinct. If 76 + 58 = 134, find E+F+G.",
+      "a": "E=1, F=3, G=4. E+F+G = 8. Answer: 8."
+    },
+    {
+      "q": "AB + CD = EFG, all letters distinct. If 83 + 59 = 142, find F.",
+      "a": "E=1, F=4, G=2. Value of F is 4. Answer: 4."
+    },
+    {
+      "q": "AB - CD = EF, all letters distinct. If 81 - 24 = 57, find E+F.",
+      "a": "E=5, F=7. E+F = 12. Answer: 12."
+    },
+    {
+      "q": "AB * 3 = CDE, all letters distinct. If 68 * 3 = 204, find C+D+E.",
+      "a": "C=2, D=0, E=4. C+D+E = 6. Answer: 6."
+    },
+    {
+      "q": "AB * 2 = CD, given A=1, B=4. Find C and D.",
+      "a": "14 * 2 = 28 -> C=2, D=8. Answer: C=2, D=8."
     }
   ],
   "sets": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Set theory organizes data elements into classes with unions and intersections.\n\u26a1 **Formula/Shortcut**: n(A U B) = n(A) + n(B) - n(A n B).\n\n**Question**: Analyst Leo at FlixPrime Streaming platform reports genre trends. Out of 100 subscribers, 60 watch Action movies, 50 watch Comedy movies, and 20 watch both genres. How many subscribers watch neither genre?",
-      "a": "\ud83d\udccb **Given**: Total subscribers = 100. Action (A) = 60. Comedy (B) = 50. Both (A n B) = 20.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Find subscribers who watch at least one genre using the union formula, then subtract this union from the total pool.\n\n**Step-by-step Solution**:\n1) Calculate union: n(A U B) = 60 + 50 - 20 = 90.\n2) Subscribers watching neither = Total - n(A U B) = 100 - 90 = 10.\n\n\u2728 **Final Answer**: 10"
+      "q": "n(A)=20, n(B)=15, n(A\u2229B)=8. Find n(A\u222aB).",
+      "a": "n(A\u222aB) = 20 + 15 - 8 = 27. Answer: 27."
+    },
+    {
+      "q": "In a class of 60, 35 like Maths, 30 like Science, 15 like both. Find how many like neither.",
+      "a": "n(M\u222aS) = 35 + 30 - 15 = 50. Neither = 60 - 50 = 10. Answer: 10."
+    },
+    {
+      "q": "A={1,2,3,4}, B={3,4,5,6}. Find A\u2229B and A\u222aB.",
+      "a": "A\u2229B = {3,4}, A\u222aB = {1,2,3,4,5,6}. Answer: A\u2229B={3,4}, A\u222aB={1,2,3,4,5,6}."
+    },
+    {
+      "q": "List the elements of A = {x : x is a prime number less than 10}.",
+      "a": "Primes less than 10: 2, 3, 5, 7. Answer: A={2,3,5,7}."
+    },
+    {
+      "q": "Of 100 people, 60 read newspaper A, 50 read B, 20 read both. Find how many read only A.",
+      "a": "Only A = 60 - 20 = 40. Answer: 40."
+    },
+    {
+      "q": "If f(x)=2x+3, find f(5).",
+      "a": "f(5) = 2(5) + 3 = 13. Answer: 13."
+    },
+    {
+      "q": "If f(x)=x\u00b2, g(x)=x+1, find (f\u2218g)(3).",
+      "a": "g(3) = 4. f(g(3)) = f(4) = 4^2 = 16. Answer: 16."
+    },
+    {
+      "q": "Find the domain of f(x)=1/(x-2).",
+      "a": "Denominator x-2 = 0 -> x=2. Domain is all real x except x=2. Answer: All real x except x=2."
+    },
+    {
+      "q": "If f(x)=3x-4, find f\u207b\u00b9(x).",
+      "a": "y = 3x - 4 -> x = (y+4)/3 -> f\u207b\u00b9(x) = (x+4)/3. Answer: f\u207b\u00b9(x) = (x+4)/3."
+    },
+    {
+      "q": "Of 50 students, 20 play cricket, 25 play football, 10 play both. Find how many play neither.",
+      "a": "Union = 20 + 25 - 10 = 35. Neither = 50 - 35 = 15. Answer: 15."
+    },
+    {
+      "q": "A has 5 elements, B has 3 elements, and A,B are disjoint. Find n(A\u222aB).",
+      "a": "n(A\u222aB) = n(A) + n(B) = 5 + 3 = 8. Answer: 8."
+    },
+    {
+      "q": "In a group of 70, 45 speak Hindi, 33 speak English, 10 speak neither. Find how many speak both.",
+      "a": "Union = 70 - 10 = 60. speak both = 45 + 33 - 60 = 18. Answer: 18."
     }
   ],
   "logarithms": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Logarithms calculate exponent powers, measuring exponential scales like decibels.\n\u26a1 **Formula/Shortcut**: L = 10 * log_10(I / I_0).\n\n**Question**: Sound Director Amit at SonicStage Acoustics measures audio decibel levels. If a speaker produces an intensity ratio (I/I_0) of 1,000,000, find the sound level in decibels.",
-      "a": "\ud83d\udccb **Given**: Intensity ratio = 1,000,000.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Substitute the ratio into the decibel formula and evaluate the log base 10.\n\n**Step-by-step Solution**:\n1) Set up formula: L = 10 * log_10(1,000,000).\n2) Express intensity ratio as power of 10: 1,000,000 = 10^6.\n3) Evaluate log: log_10(10^6) = 6.\n4) Calculate level: L = 10 * 6 = 60 decibels.\n\n\u2728 **Final Answer**: 60 decibels"
+      "q": "Find log\u20828.",
+      "a": "8 = 2\u00b3. So log\u20828 = 3. Answer: 3."
+    },
+    {
+      "q": "Find log\u2081\u20801000.",
+      "a": "1000 = 10\u00b3. So log\u2081\u20801000 = 3. Answer: 3."
+    },
+    {
+      "q": "Simplify log(2)+log(3).",
+      "a": "log(2) + log(3) = log(2 * 3) = log 6. Answer: log 6."
+    },
+    {
+      "q": "Simplify log(20)-log(4).",
+      "a": "log(20) - log(4) = log(20 / 4) = log 5. Answer: log 5."
+    },
+    {
+      "q": "Find log\u208381.",
+      "a": "81 = 3\u2074. So log\u208381 = 4. Answer: 4."
+    },
+    {
+      "q": "Simplify 2log(5)+log(4).",
+      "a": "log(25) + log(4) = log(100) = 2. Answer: 2."
+    },
+    {
+      "q": "Find x if log\u2082x=5.",
+      "a": "x = 2\u2075 = 32. Answer: x=32."
+    },
+    {
+      "q": "Find log\u2085125.",
+      "a": "125 = 5\u00b3. So log\u2085125 = 3. Answer: 3."
+    },
+    {
+      "q": "Simplify log(1000)/log(10).",
+      "a": "log(1000) = 3, log(10) = 1. Ratio = 3 / 1 = 3. Answer: 3."
+    },
+    {
+      "q": "If log\u2081\u20802=0.3010, find log\u2081\u20808.",
+      "a": "log\u2081\u20808 = log\u2081\u2080(2\u00b3) = 3 * log\u2081\u20802 = 3 * 0.3010 = 0.9030. Answer: 0.9030."
+    },
+    {
+      "q": "Find the value of log\u2090a\u00b2.",
+      "a": "log\u2090a\u00b2 = 2. Answer: 2."
+    },
+    {
+      "q": "Simplify log(50)-log(5)+log(2).",
+      "a": "log(50/5) + log(2) = log(10) + log(2) = 1 + log 2. Answer: 1 + log 2."
     }
   ],
   "analogy": [
