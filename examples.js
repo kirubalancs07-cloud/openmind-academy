@@ -1351,20 +1351,152 @@ var EXAMPLES = {
   ],
   "analogy": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Verbal analogy tests the ability to map matching relationships between word pairs.\n\u26a1 **Formula/Shortcut**: Identify connection logic (e.g. Cause-Effect) and apply to the target pair.\n\n**Question**: Dr. Shalini at ClinixCare clinics explains medical analogies to interns. If 'Pathogen : Disease' represents a causal link, identify the matching term in: 'Allergen : ________'",
-      "a": "\ud83d\udccb **Given**: Pair: Pathogen : Disease. Target: Allergen : ?\n\ud83d\udee0\ufe0f **Method/Shortcut**: Analyze relationship: A pathogen causes a disease. Similarly, an allergen causes an allergic reaction.\n\n**Step-by-step Solution**:\n1) Logic is 'Cause -> Effect'.\n2) Allergen triggers an allergy / hypersensitivity response.\n\n\u2728 **Final Answer**: Allergy"
+      "q": "Doctor : Hospital :: Teacher : ?",
+      "a": "Workplace relationship: A doctor works in a hospital; a teacher works in a school. Answer: School."
+    },
+    {
+      "q": "Pen : Write :: Knife : ?",
+      "a": "Tool : function relationship: A pen is used to write; a knife is used to cut. Answer: Cut."
+    },
+    {
+      "q": "Puppy : Dog :: Kitten : ?",
+      "a": "Young : adult relationship: A puppy is a young dog; a kitten is a young cat. Answer: Cat."
+    },
+    {
+      "q": "Fish : Water :: Bird : ?",
+      "a": "Creature : habitat relationship: A fish lives/moves in water; a bird in the sky. Answer: Sky."
+    },
+    {
+      "q": "Author : Book :: Sculptor : ?",
+      "a": "Creator : creation relationship: An author writes a book; a sculptor makes a statue. Answer: Statue."
+    },
+    {
+      "q": "Optimistic : Pessimistic :: Generous : ?",
+      "a": "Antonym relationship: Optimistic is the opposite of pessimistic; generous is the opposite of miserly. Answer: Miserly."
+    },
+    {
+      "q": "Thermometer : Temperature :: Speedometer : ?",
+      "a": "Instrument : measurement relationship: A thermometer measures temperature; a speedometer measures speed. Answer: Speed."
+    },
+    {
+      "q": "Cow : Herd :: Wolf : ?",
+      "a": "Animal : group name relationship: A group of cows is a herd; a group of wolves is a pack. Answer: Pack."
+    },
+    {
+      "q": "Library : Books :: Museum : ?",
+      "a": "Place : contents relationship: A library houses books; a museum houses artifacts. Answer: Artifacts."
+    },
+    {
+      "q": "Bee : Hive :: Ant : ?",
+      "a": "Animal : home relationship: A bee lives in a hive; an ant lives in an anthill. Answer: Anthill."
+    },
+    {
+      "q": "Cobbler : Shoes :: Carpenter : ?",
+      "a": "Occupation : product relationship: A cobbler makes/repairs shoes; a carpenter makes furniture. Answer: Furniture."
+    },
+    {
+      "q": "Ounce : Weight :: Liter : ?",
+      "a": "Unit : quantity measured relationship: Ounce is a unit of weight; liter is a unit of volume. Answer: Volume."
     }
   ],
   "odd-one": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Odd One Out tests grouping classifications to locate the anomalous item.\n\u26a1 **Formula/Shortcut**: Locate the defining common property of 3 items, find the one lacking it.\n\n**Question**: Astronomer Dr. Robert at StarGaze Observatory groups solar system bodies: Venus, Jupiter, Saturn, Uranus. Identify the odd one out.",
-      "a": "\ud83d\udccb **Given**: List: Venus, Jupiter, Saturn, Uranus.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Classify the planets into terrestrial (rocky) vs gas giants (Jovian) categories.\n\n**Step-by-step Solution**:\n1) Jupiter, Saturn, and Uranus are massive gas giants with ring systems.\n2) Venus is a rocky terrestrial planet.\n3) Thus, Venus is the odd one out.\n\n\u2728 **Final Answer**: Venus"
+      "q": "Find the odd one out: Apple, Banana, Carrot, Mango.",
+      "a": "Carrot is a vegetable; others are fruits. Answer: Carrot."
+    },
+    {
+      "q": "Find the odd one out: Delhi, Mumbai, Chennai, Punjab.",
+      "a": "Punjab is a state; others are major cities. Answer: Punjab."
+    },
+    {
+      "q": "Find the odd one out: Piano, Guitar, Violin, Flute.",
+      "a": "Flute is a wind instrument; others are string instruments. Answer: Flute."
+    },
+    {
+      "q": "Find the odd one out: Triangle, Square, Circle, Cube.",
+      "a": "Cube is a 3D shape; others are 2D shapes. Answer: Cube."
+    },
+    {
+      "q": "Find the odd one out: Doctor, Engineer, Teacher, Hospital.",
+      "a": "Hospital is a workplace/location; others are occupations. Answer: Hospital."
+    },
+    {
+      "q": "Find the odd one out: Rose, Lotus, Jasmine, Cactus.",
+      "a": "Cactus is not classified as a flowering plant here (known for spikes/arid growth); others are flowering plants. Answer: Cactus."
+    },
+    {
+      "q": "Find the odd one out: Gold, Silver, Copper, Diamond.",
+      "a": "Diamond is a non-metal (carbon allotrope); others are metals. Answer: Diamond."
+    },
+    {
+      "q": "Find the odd one out: Cricket, Football, Hockey, Badminton.",
+      "a": "Badminton is a racquet sport; others are team field sports played with a ball. Answer: Badminton."
+    },
+    {
+      "q": "Find the odd one out: Whale, Dolphin, Shark, Octopus.",
+      "a": "Octopus is an invertebrate; others are vertebrates. Answer: Octopus."
+    },
+    {
+      "q": "Find the odd one out: Monday, Tuesday, March, Friday.",
+      "a": "March is a month; others are days of the week. Answer: March."
+    },
+    {
+      "q": "Find the odd one out: Rectangle, Rhombus, Trapezium, Sphere.",
+      "a": "Sphere is a 3D shape; others are 2D quadrilaterals. Answer: Sphere."
+    },
+    {
+      "q": "Find the odd one out: Kilogram, Meter, Liter, Second.",
+      "a": "Liter is a derived SI unit; others are base SI units. Answer: Liter."
     }
   ],
   "coding": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Coding-decoding shifts letters, symbols, or numbers according to an algorithmic key.\n\u26a1 **Formula/Shortcut**: Shift-based letter mapping: Shift each letter index by +k or -k.\n\n**Question**: Officer Varun at DefOps Command receives an encrypted transmission. If 'GUARD' is coded as 'IXCST' using a letter-shift cipher, decode the encrypted word 'TIGER'.",
-      "a": "\ud83d\udccb **Given**: Cipher code: GUARD -> IXCST. Target word: TIGER.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Analyze the index shift of each letter: G (+2) = I, U (+3) = X, A (+2) = C, R (+1) = S, D (+2) = T? Wait. Let's look at alphabetical positions:\n- G(7) -> I(9) (+2)\n- U(21) -> X(24) (+3)\n- A(1) -> C(3) (+2)\n- R(18) -> S(19) (+1)? No, let's re-verify: G(+2)=I, U(+3)=X, A(+2)=C, R(+1)=S, D(+16)=T? Let's check a standard progressive shift: +2, +3, +2, +1, +16? That is inconsistent.\nLet's use a simpler consistent coding: +2 shift for all consonants, +3 shift for vowels:\n- G (consonant) + 2 = I\n- U (vowel) + 3 = X\n- A (vowel) + 3 = D\n- R (consonant) + 2 = T\n- D (consonant) + 2 = F\nSo GUARD -> IXDTF. Let's use this logic on TIGER:\n- T (consonant) + 2 = V\n- I (vowel) + 3 = L\n- G (consonant) + 2 = I\n- E (vowel) + 3 = H\n- R (consonant) + 2 = T.\n\n**Step-by-step Solution**:\nIdentify consonant/vowel rules: Consonant gets +2, Vowel gets +3.\n1) T (consonant) -> V\n2) I (vowel) -> L\n3) G (consonant) -> I\n4) E (vowel) -> H\n5) R (consonant) -> T.\n\n\u2728 **Final Answer**: VLIHT"
+      "q": "If CAT is coded as DBU (each letter shifted +1), find the code for DOG.",
+      "a": "D(+1) = E, O(+1) = P, G(+1) = H. Answer: EPH."
+    },
+    {
+      "q": "If PAPER is coded as QBQFS (+1 shift), find the code for PENCIL.",
+      "a": "P(+1) = Q, E(+1) = F, N(+1) = O, C(+1) = D, I(+1) = J, L(+1) = M. Answer: QFODJM."
+    },
+    {
+      "q": "Using A=1, B=2, ... Z=26, find the code for CAB.",
+      "a": "C = 3, A = 1, B = 2. Answer: 3-1-2."
+    },
+    {
+      "q": "If TEACHER is coded as SDZBGDQ (-1 shift), decode QDZC using the same rule.",
+      "a": "Shift each letter in code forward by 1 (+1 shift): Q(+1)=R, D(+1)=E, Z(+1)=A, C(+1)=D. Answer: READ."
+    },
+    {
+      "q": "Using reverse-alphabet position (A=26, B=25, ... Z=1), find the code for SUN.",
+      "a": "S = 8, U = 6, N = 13. Answer: 8-6-13."
+    },
+    {
+      "q": "If MOTHER is coded as OQVJGT (+2 shift), decode HCVJGT using the same rule.",
+      "a": "Shift each letter backward by 2 (-2 shift): H(-2)=F, C(-2)=A, V(-2)=T, J(-2)=H, G(-2)=E, T(-2)=R. Answer: FATHER."
+    },
+    {
+      "q": "Using the opposite-letter code (A\u2194Z, B\u2194Y, ...), find the code for DOG.",
+      "a": "D \u2194 W, O \u2194 L, G \u2194 T. Answer: WLT."
+    },
+    {
+      "q": "Using the same opposite-letter code, decode GSV to find the original word.",
+      "a": "G \u2194 T, S \u2194 H, V \u2194 E. Answer: THE."
+    },
+    {
+      "q": "Using A=1, B=2, ... Z=26, decode 20-8-5.",
+      "a": "20 = T, 8 = H, 5 = E. Answer: THE."
+    },
+    {
+      "q": "Using the same numbering, decode 5-4-21-3-1-20-9-15-14.",
+      "a": "5=E, 4=D, 21=U, 3=C, 1=A, 20=T, 9=I, 15=O, 14=N. Answer: EDUCATION."
+    },
+    {
+      "q": "If COMPUTER is written in reverse as RETUPMOC, decode ELPPA using the same reversal rule.",
+      "a": "Reversing ELPPA gives APPLE. Answer: APPLE."
+    },
+    {
+      "q": "In a code, vowels shift to the next vowel in sequence (A\u2192E, E\u2192I, I\u2192O, O\u2192U, U\u2192A) and consonants stay the same. Code the word TABLE.",
+      "a": "T (consonant) -> T; A (vowel) -> E; B (consonant) -> B; L (consonant) -> L; E (vowel) -> I. Answer: TEBLI."
     }
   ],
   "series": [

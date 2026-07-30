@@ -2119,18 +2119,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: '"Tuesday" is related to "Mars" as "Thursday" is related to:',
-            opts: ['Venus', 'Mercury', 'Saturn', 'Jupiter'],
-            ans: 3,
-            exam: 'SSC CPO 2019',
-            sol: 'Days are named after astrological planets. Tuesday corresponds to Mars (Mardi/Martis), and Thursday corresponds to Jupiter (Jeudi/Jovis).'
+            q: 'Chef : Kitchen :: Pilot : ?',
+            opts: ['Airplane', 'Sky', 'Cockpit', 'Airport'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Chef works in a Kitchen (workplace relationship). Similarly, a Pilot works in a Cockpit.'
           },
           {
-            q: '"Meat" is to "Vegetarian" as "Alcohol" is to:',
-            opts: ['Teetotaller', 'Smoker', 'Water', 'Dietician'],
-            ans: 0,
-            exam: 'SSC CPO 2019',
-            sol: 'A vegetarian avoids eating meat, and a teetotaller avoids drinking alcohol.'
+            q: 'Hammer : Nail :: Scissors : ?',
+            opts: ['Cut', 'Paper', 'Cloth', 'Metal'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Hammer is used on a Nail. Scissors are used to cut Paper (tool : object relationship).'
+          },
+          {
+            q: 'Calf : Cow :: Foal : ?',
+            opts: ['Sheep', 'Goat', 'Horse', 'Donkey'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Calf is the offspring of a Cow (young : adult relationship). Similarly, a Foal is the offspring of a Horse.'
+          },
+          {
+            q: 'Frugal : Extravagant :: Timid : ?',
+            opts: ['Shy', 'Bold', 'Scared', 'Cautious'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Frugal and Extravagant are antonyms. Similarly, Timid and Bold are antonyms.'
+          },
+          {
+            q: 'Barometer : Pressure :: Ammeter : ?',
+            opts: ['Voltage', 'Resistance', 'Current', 'Power'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Barometer measures Pressure. Similarly, an Ammeter measures electrical Current.'
+          },
+          {
+            q: 'Lion : Pride :: Fish : ?',
+            opts: ['Flock', 'Pack', 'School', 'Herd'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'A group of lions is called a Pride. A group of fish is called a School.'
+          },
+          {
+            q: 'Potter : Pots :: Weaver : ?',
+            opts: ['Yarn', 'Cloth', 'Looms', 'Thread'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'A Potter makes Pots (worker : product). Similarly, a Weaver makes Cloth.'
           }
         ]
       }
@@ -2149,11 +2184,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Choose the odd one out:',
-            opts: ['Wheat', 'Rice', 'Barley', 'Mustard'],
+            q: 'Orange, Grapes, Potato, Papaya',
+            opts: ['Orange', 'Grapes', 'Potato', 'Papaya'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Potato is a vegetable (tuber) that grows underground; others are fruits.'
+          },
+          {
+            q: 'Kolkata, Bangalore, Kerala, Hyderabad',
+            opts: ['Kolkata', 'Bangalore', 'Kerala', 'Hyderabad'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Kerala is a state; others are major cities (which are also capital cities of Indian states).'
+          },
+          {
+            q: 'Drum, Tabla, Mridangam, Flute',
+            opts: ['Drum', 'Tabla', 'Mridangam', 'Flute'],
             ans: 3,
-            exam: 'SSC CHSL 2021',
-            sol: 'Wheat, Rice, and Barley are food grains/cereals, whereas Mustard is an oilseed.'
+            exam: 'Practice Question',
+            sol: 'Flute is a wind instrument; others are percussion instruments.'
+          },
+          {
+            q: 'Square, Rectangle, Cylinder, Rhombus',
+            opts: ['Square', 'Rectangle', 'Cylinder', 'Rhombus'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Cylinder is a 3D shape; others are 2D quadrilaterals.'
+          },
+          {
+            q: 'Nurse, Pilot, Lawyer, Airport',
+            opts: ['Nurse', 'Pilot', 'Lawyer', 'Airport'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'Airport is a location; others are professions.'
+          },
+          {
+            q: 'Tiger, Leopard, Elephant, Crocodile',
+            opts: ['Tiger', 'Leopard', 'Elephant', 'Crocodile'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'Crocodile is a reptile; others are mammals.'
+          },
+          {
+            q: 'Gram, Kilogram, Second, Ounce',
+            opts: ['Gram', 'Kilogram', 'Second', 'Ounce'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Second is a unit of time; others are units of mass/weight.'
           }
         ]
       }
@@ -2172,11 +2249,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If COMPUTER is coded as OCPMTURE, how is OHMS coded?',
-            opts: ['HOMSetc', 'HOMS', 'MHOS', 'OSMH'],
+            q: 'If DOG is coded as EPH (+1 shift), find the code for CAT.',
+            opts: ['DBU', 'BZS', 'DBV', 'EPH'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Each letter is shifted by +1: C->D, A->B, T->U.'
+          },
+          {
+            q: 'If BOOK is coded as DQQM (+2 shift), find the code for PAGE using the same rule.',
+            opts: ['RCIG', 'QBHG', 'RCIH', 'SDFH'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Each letter is shifted by +2: P(+2)->R, A(+2)->C, G(+2)->I, E(+2)->G.'
+          },
+          {
+            q: 'Using A=1, B=2, ... Z=26, find the code for SUN.',
+            opts: ['18-20-13', '19-21-14', '20-22-15', '19-20-14'],
             ans: 1,
-            exam: 'SSC CGL 2020',
-            sol: 'COMPUTER is coded by swapping adjacent letter pairs: CO->OC, MP->PM, UT->TU, ER->RE. Swapping OHMS in pairs: OH->HO, MS->SM, yielding HOMS.'
+            exam: 'Practice Question',
+            sol: 'Positions: S = 19, U = 21, N = 14.'
+          },
+          {
+            q: 'If MOTHER is coded as OQVJGT (+2 shift), decode UKUVGT using the same rule.',
+            opts: ['BROTHER', 'SISTER', 'COUSIN', 'FATHER'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Shift each letter in code backward by 2 (-2 shift): U(-2)->S, K(-2)->I, U(-2)->S, V(-2)->T, G(-2)->E, T(-2)->R.'
+          },
+          {
+            q: 'Using the opposite-letter code (A↔Z, B↔Y, ...), find the code for SUN.',
+            opts: ['HFM', 'GFL', 'HFN', 'IGM'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Opposite letters: S↔H, U↔F, N↔M.'
+          },
+          {
+            q: 'Using the same opposite-letter code, decode DZGVI to find the original word.',
+            opts: ['WATER', 'RIVER', 'EARTH', 'FIRE'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Opposite letters: D↔W, Z↔A, G↔T, V↔E, I↔R -> WATER.'
+          },
+          {
+            q: 'Using A=1, B=2, ... Z=26, decode 18-9-22-5-18.',
+            opts: ['WATER', 'RIVER', 'SHORE', 'LAKE'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Positions correspond to letters: 18=R, 9=I, 22=V, 5=E, 18=R -> RIVER.'
           }
         ]
       }
