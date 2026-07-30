@@ -2316,11 +2316,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the next term in the series: 2, 5, 11, 23, 47, ...',
-            opts: ['95', '96', '94', '98'],
-            ans: 0,
-            exam: 'SSC CGL 2021',
-            sol: 'Pattern: Each term is multiplied by 2 and then adds 1.\n2 × 2 + 1 = 5\n5 × 2 + 1 = 11\n... 47 × 2 + 1 = 95.'
+            q: 'Find the next number: 4, 7, 12, 19, 28, ?',
+            opts: ['35', '37', '39', '41'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Differences are 3, 5, 7, 9. The next difference should be 11. 28 + 11 = 39.'
+          },
+          {
+            q: 'Find the next number: 5, 15, 45, 135, ?',
+            opts: ['360', '395', '405', '415'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Pattern: Each term is multiplied by 3. 135 * 3 = 405.'
+          },
+          {
+            q: 'Find the missing number: 6, 12, 24, 48, ?, 192.',
+            opts: ['72', '84', '96', '120'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Pattern: Each term is multiplied by 2. 48 * 2 = 96.'
+          },
+          {
+            q: 'Find the next letter: B, E, H, K, ?',
+            opts: ['L', 'M', 'N', 'O'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Alphabetical positions: B=2, E=5, H=8, K=11. Gaps are +3. Next position is 14, which is N.'
+          },
+          {
+            q: 'Find the next term: 3, 8, 15, 24, 35, ?',
+            opts: ['45', '46', '48', '50'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Pattern: n² - 1. 2²-1=3, 3²-1=8, 4²-1=15, 5²-1=24, 6²-1=35. Next term is 7² - 1 = 48.'
+          },
+          {
+            q: 'Find the missing number: 2, 5, 11, 23, 47, ?',
+            opts: ['93', '94', '95', '96'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Pattern: Next term = Previous term * 2 + 1. 47 * 2 + 1 = 95.'
+          },
+          {
+            q: 'Find the next letter: Y, W, U, S, ?',
+            opts: ['P', 'Q', 'R', 'T'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Alphabetical positions: Y=25, W=23, U=21, S=19. Gaps are -2. Next position is 17, which is Q.'
           }
         ]
       }
@@ -2339,11 +2381,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If a triangle rotates 45° clockwise, then 90° CCW, then 135° CW, what is the net rotation?',
-            opts: ['90° CW', '90° CCW', '45° CW', '180°'],
+            q: 'A shape sequence gains one side each step: square(4), pentagon(5), hexagon(6), heptagon(7). Find the next shape.',
+            opts: ['Hexagon', 'Heptagon', 'Octagon', 'Nonagon'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'The sequence follows side counts: 4, 5, 6, 7. The next shape must have 8 sides, which is an Octagon.'
+          },
+          {
+            q: 'Dots inside squares: 2, 4, 6, 8. Find the next count.',
+            opts: ['9', '10', '12', '14'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Count increases by 2 each step. 8 + 2 = 10.'
+          },
+          {
+            q: 'A triangle\'s shaded vertex cycles: Top, Bottom-Left, Bottom-Right, ? Find the next position.',
+            opts: ['Top', 'Bottom-Left', 'Bottom-Right', 'Center'],
             ans: 0,
-            exam: 'TCS Visual Exam',
-            sol: 'Net rotation = +45° (CW) - 90° (CCW) + 135° (CW) = 90° CW.'
+            exam: 'Practice Question',
+            sol: 'A triangle has 3 vertices. The shading cycles through them in order, restarting after 3 steps. Thus, the next position is Top.'
+          },
+          {
+            q: 'An arrow rotates 90° clockwise each step, starting pointing Up. Find its direction after 3 steps.',
+            opts: ['Right', 'Down', 'Left', 'Up'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Start: Up. 1st step: 90° CW -> Right. 2nd step: 90° CW -> Down. 3rd step: 90° CW -> Left.'
+          },
+          {
+            q: 'Diagonals drawn inside a hexagon increase: 2, 4, 6, 8. Find the next count.',
+            opts: ['9', '10', '11', '12'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Count of diagonals increases by 2 each step. 8 + 2 = 10.'
+          },
+          {
+            q: 'A star\'s points increase: 5, 6, 7, 8. Find the next count.',
+            opts: ['8', '9', '10', '11'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Count increases by 1 each step. 8 + 1 = 9.'
+          },
+          {
+            q: 'A shape\'s side count doubles each step: 4, 8, 16, 32. Find the next count.',
+            opts: ['48', '50', '60', '64'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'Count doubles each step: 4 * 2 = 8, 8 * 2 = 16, 16 * 2 = 32. Next is 32 * 2 = 64.'
           }
         ]
       }

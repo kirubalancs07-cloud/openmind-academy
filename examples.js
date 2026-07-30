@@ -1501,14 +1501,102 @@ var EXAMPLES = {
   ],
   "series": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Series are sequential patterns with mathematical intervals.\n\u26a1 **Formula/Shortcut**: Identify incremental difference or ratio gaps between adjacent terms.\n\n**Question**: Engineer Ravi at MetroTraffic Command codes smart city signals. The timing delays follow the sequence: 4, 9, 19, 39, 79, ... seconds. Find the next delay interval.",
-      "a": "\ud83d\udccb **Given**: Sequence: 4, 9, 19, 39, 79.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Observe relation: Next term = Previous term * 2 + 1.\n\n**Step-by-step Solution**:\n1) 4 * 2 + 1 = 9.\n2) 9 * 2 + 1 = 19.\n3) 19 * 2 + 1 = 39.\n4) 39 * 2 + 1 = 79.\n5) Next delay = 79 * 2 + 1 = 158 + 1 = 159.\n\n\u2728 **Final Answer**: 159 seconds"
+      "q": "Find the next number: 2, 5, 10, 17, 26, ?",
+      "a": "Differences are 3, 5, 7, 9. The next difference should be 11. 26 + 11 = 37. Answer: 37."
+    },
+    {
+      "q": "Find the next number: 3, 9, 27, 81, ?",
+      "a": "Pattern: Each term is multiplied by 3. 81 * 3 = 243. Answer: 243."
+    },
+    {
+      "q": "Find the missing number: 7, 14, 28, 56, ?, 224.",
+      "a": "Pattern: Each term is multiplied by 2. 56 * 2 = 112. Answer: 112."
+    },
+    {
+      "q": "Find the next letter: A, C, E, G, ?",
+      "a": "Alphabetical positions: A=1, C=3, E=5, G=7. Next is 9, which is I. Answer: I."
+    },
+    {
+      "q": "Find the next term: 1, 4, 9, 16, 25, ?",
+      "a": "Pattern: Perfect squares: 1\u00b2, 2\u00b2, 3\u00b2, 4\u00b2, 5\u00b2. Next is 6\u00b2 = 36. Answer: 36."
+    },
+    {
+      "q": "Find the next term: 2, 6, 12, 20, 30, ?",
+      "a": "Differences are 4, 6, 8, 10. Next difference is 12. 30 + 12 = 42. Answer: 42."
+    },
+    {
+      "q": "Find the missing letter: B, D, G, K, ?",
+      "a": "Positions: B=2, D=4 (+2), G=7 (+3), K=11 (+4). Next position is 11 + 5 = 16, which is P. Answer: P."
+    },
+    {
+      "q": "Find the next number: 5, 11, 23, 47, ?",
+      "a": "Pattern: term * 2 + 1. 47 * 2 + 1 = 95. Answer: 95."
+    },
+    {
+      "q": "Find the missing number: 100, 50, 25, 12.5, ?",
+      "a": "Pattern: division by 2. 12.5 / 2 = 6.25. Answer: 6.25."
+    },
+    {
+      "q": "Find the next letter: Z, X, V, T, ?",
+      "a": "Positions: Z=26, X=24, V=22, T=20. Next is 18, which is R. Answer: R."
+    },
+    {
+      "q": "Find the missing number: 1, 1, 2, 3, 5, 8, ?",
+      "a": "Fibonacci pattern: Each term is the sum of the previous two terms. 5 + 8 = 13. Answer: 13."
+    },
+    {
+      "q": "Find the next pair: AB, DE, GH, JK, ?",
+      "a": "First letters: A, D, G, J (+3 shift -> M). Second letters: B, E, H, K (+3 shift -> N). Answer: MN."
     }
   ],
   "nv-series": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Non-verbal series track rotational or structural shifts in visual shapes.\n\u26a1 **Formula/Shortcut**: Check step rotation directions (e.g. 90 degrees) and quadrant indices.\n\n**Question**: Developer Rohit codes a cleaning robot vacuum RoboClean-X navigating square quadrants. The vacuum travels in the sequence: Top-Left -> Top-Right -> Bottom-Right. Predict the next quadrant.",
-      "a": "\ud83d\udccb **Given**: Sequence: Top-Left -> Top-Right -> Bottom-Right.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Identify the step rotation: The robot rotates 90 degrees clockwise inside the square layout.\n\n**Step-by-step Solution**:\n1) Step 1: Top-Left quadrant.\n2) Step 2: 90 degrees CW -> Top-Right.\n3) Step 3: 90 degrees CW -> Bottom-Right.\n4) Step 4: 90 degrees CW -> Bottom-Left.\n\n\u2728 **Final Answer**: Bottom-Left"
+      "q": "A shape sequence gains one side each step: triangle(3), square(4), pentagon(5), hexagon(6). Find the next shape.",
+      "a": "The side counts are 3, 4, 5, 6. The next shape must have 7 sides, which is a Heptagon. Answer: Heptagon."
+    },
+    {
+      "q": "Dots inside circles: 1, 2, 3, 4. Find the next count.",
+      "a": "The count increases by 1 each step. Next count is 5. Answer: 5."
+    },
+    {
+      "q": "A square's shaded corner cycles clockwise: Top-Left, Top-Right, Bottom-Right, Bottom-Left, ?.",
+      "a": "The shading moves CW to the next corner. After Bottom-Left, it returns to Top-Left. Answer: Top-Left."
+    },
+    {
+      "q": "An arrow rotates 45\u00b0 clockwise each step, starting pointing Up. Find its direction after 4 steps.",
+      "a": "Total rotation is 4 * 45\u00b0 = 180\u00b0 CW. An arrow pointing Up rotated 180\u00b0 points Down. Answer: Down."
+    },
+    {
+      "q": "Diagonals drawn inside a pentagon increase: 1, 2, 3, 4. Find the next count.",
+      "a": "The count increases by 1 each step. Next count is 5. Answer: 5."
+    },
+    {
+      "q": "A circle is divided into equal parts: 2, 4, 6, 8. Find the next count.",
+      "a": "The count increases by 2 each step. Next count is 10. Answer: 10."
+    },
+    {
+      "q": "An arrow rotates 90\u00b0 counter-clockwise each step, starting pointing Right. Find its direction after 3 steps.",
+      "a": "Start: Right. 1st: Up. 2nd: Left. 3rd: Down. Answer: Down."
+    },
+    {
+      "q": "A star's points increase: 4, 5, 6, 7. Find the next count.",
+      "a": "The count increases by 1 each step. Next count is 8. Answer: 8."
+    },
+    {
+      "q": "Lines radiating from a central point increase: 2, 4, 6, 8. Find the next count.",
+      "a": "The count increases by 2 each step. Next count is 10. Answer: 10."
+    },
+    {
+      "q": "A staircase of cubes increases in a triangular pattern: 1, 3, 6, 10. Find the next count.",
+      "a": "The differences are 2, 3, 4. Next difference is 5. 10 + 5 = 15. Answer: 15."
+    },
+    {
+      "q": "A pentagon rotates 72\u00b0 clockwise each step (matching its 5-fold symmetry), starting vertex-up. After 2 steps, how many more steps until it returns to its original orientation?",
+      "a": "A full rotation is 5 steps of 72\u00b0. After 2 steps, it needs 5 - 2 = 3 more steps. Answer: 3."
+    },
+    {
+      "q": "A shape's side count doubles each step: 3, 6, 12, 24. Find the next count.",
+      "a": "Each count is multiplied by 2. 24 * 2 = 48. Answer: 48."
     }
   ],
   "statements": [
