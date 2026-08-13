@@ -2448,11 +2448,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Statements: All pens are books. All books are pencils. Conclusions: I. All pens are pencils. II. Some pencils are books.',
-            opts: ['Both I and II follow', 'Only I follows', 'Only II follows', 'Neither follows'],
+            q: 'Statements: All pens are instruments. All instruments are tools. Conclusions: I. All pens are tools. II. Some tools are pens.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Pen circle is inside Instrument, which is inside Tool. All pens are tools is correct. Some tools are pens is also correct.'
+          },
+          {
+            q: 'Statements: Some teachers are writers. All writers are readers. Conclusions: I. Some teachers are readers. II. Some readers are teachers.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Teacher overlaps Writer. Writer is inside Reader. So Teacher must overlap Reader. Thus, both Some teachers are readers and Some readers are teachers follow.'
+          },
+          {
+            q: 'Statements: No dog is a cat. All cats are pets. Conclusions: I. No pet is a dog. II. Some pets are not dogs.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Dog does not overlap Cat. Cat is inside Pet. Since all cats are pets and no cat is a dog, the pets that are cats cannot be dogs. So, Some pets are not dogs. Only II follows.'
+          },
+          {
+            q: 'Statements: All coins are metals. Some metals are expensive. Conclusions: I. Some coins are expensive. II. All coins are expensive.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
             ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Pen circle is inside Book circle, which is inside Pencil circle.\nConclusion I: All pens are pencils (True, since Pen is inside Pencil).\nConclusion II: Some pencils are books (True, as pencil overlaps book circle).'
+            exam: 'Practice Question',
+            sol: 'As per the exam key: All coins are metals, and some metals are expensive, indicating some coins are expensive. Conclusion I follows.'
+          },
+          {
+            q: 'Statements: All apples are fruits. No fruit is a vegetable. Conclusions: I. No apple is a vegetable. II. No vegetable is an apple.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Apple is inside Fruit. Fruit and Vegetable do not overlap. So Apple cannot overlap Vegetable. Both conclusions follow.'
+          },
+          {
+            q: 'Statements: Some clouds are white. All white things are visible. Conclusions: I. Some clouds are visible. II. All clouds are visible.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Clouds overlap White. White is inside Visible. So Clouds overlap Visible. Only I follows.'
+          },
+          {
+            q: 'Statements: No book is a pen. Some pens are costly. Conclusions: I. No book is costly. II. Some costly items are not books.',
+            opts: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'No book is a pen. Some pens are costly. The costly items that are pens cannot be books. So Some costly items are not books. Only II follows.'
           }
         ]
       }
@@ -2471,11 +2513,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If "+" means "÷", "-" means "×", "÷" means "+" and "×" means "-", solve: 12 + 6 - 3 ÷ 2',
-            opts: ['8', '6', '12', '4'],
+            q: 'If \'+\' means \'×\', find 3+2+4.',
+            opts: ['9', '12', '24', '48'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Substitute \'+\' with \'×\' -> 3 × 2 × 4 = 24.'
+          },
+          {
+            q: 'If \'×\' means \'+\', find 5×3×2.',
+            opts: ['8', '10', '15', '30'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Substitute \'×\' with \'+\' -> 5 + 3 + 2 = 10.'
+          },
+          {
+            q: 'If \'−\' means \'÷\', find 60−4−3.',
+            opts: ['5', '12', '15', '45'],
             ans: 0,
-            exam: 'SSC CHSL 2021',
-            sol: 'Substitute symbols: 12 ÷ 6 × 3 + 2.\nApplying BODMAS:\n12 ÷ 6 = 2\n2 × 3 = 6\n6 + 2 = 8.'
+            exam: 'Practice Question',
+            sol: 'Substitute \'−\' with \'÷\' -> 60 ÷ 4 ÷ 3 = 15 ÷ 3 = 5.'
+          },
+          {
+            q: 'If \'÷\' means \'−\', find 30÷6÷2.',
+            opts: ['10', '18', '22', '24'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Substitute \'÷\' with \'−\' -> 30 - 6 - 2 = 22.'
+          },
+          {
+            q: 'If \'+\' means \'×\' and \'×\' means \'+\', find 6+2×5.',
+            opts: ['12', '16', '17', '20'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Substitute -> 6 × 2 + 5 = 12 + 5 = 17.'
+          },
+          {
+            q: 'If \'−\' means \'÷\' and \'÷\' means \'−\', find 24−6÷2.',
+            opts: ['2', '4', '6', '12'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Substitute -> 24 ÷ 6 - 2 = 4 - 2 = 2.'
+          },
+          {
+            q: 'If \'@\' means \'×\', \'#\' means \'+\', \'$\' means \'−\', evaluate 6 @ 4 # 8 $ 3.',
+            opts: ['24', '27', '29', '32'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Substitute -> 6 × 4 + 8 - 3 = 24 + 8 - 3 = 29.'
           }
         ]
       }
@@ -2519,11 +2603,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the missing number: Row 1: [3, 5, 16], Row 2: [5, 9, 28], Row 3: [7, 11, ?]',
-            opts: ['36', '32', '40', '38'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Pattern: (Col1 + Col2) × 2 = Col3.\nRow 1: (3+5)×2 = 16\nRow 2: (5+9)×2 = 28\nRow 3: (7+11)×2 = 36.'
+            q: 'Find the missing number: Row 1: [4, 6, 10], Row 2: [5, 7, 12], Row 3: [6, 8, ?]',
+            opts: ['12', '13', '14', '15'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Third column = First column + Second column. 6 + 8 = 14.'
+          },
+          {
+            q: 'Find the missing number: Row 1: [3, 4, 12], Row 2: [5, 6, 30], Row 3: [7, 8, ?]',
+            opts: ['48', '52', '56', '60'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Third column = First column * Second column. 7 * 8 = 56.'
+          },
+          {
+            q: 'Find the missing number: Row 1: [3, 4, 13], Row 2: [4, 5, 21], Row 3: [5, 6, ?]',
+            opts: ['29', '31', '33', '35'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Third column = First column squared + Second column. 5² + 6 = 25 + 6 = 31.'
+          },
+          {
+            q: 'Find the missing number: Row 1: [2, 3, 10], Row 2: [3, 4, 14], Row 3: [4, 5, ?]',
+            opts: ['16', '18', '20', '22'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Third column = (First column + Second column) * 2. (4 + 5) * 2 = 9 * 2 = 18.'
+          },
+          {
+            q: 'Find the missing number: Row 1: [6, 4, 20], Row 2: [7, 5, 24], Row 3: [8, 6, ?]',
+            opts: ['26', '28', '30', '32'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Third column = First column squared - Second column squared. 8² - 6² = 64 - 36 = 28.'
+          },
+          {
+            q: 'In a cross pattern where top * bottom = left * right. If top=9, bottom=4, left=6, what is right?',
+            opts: ['4', '5', '6', '8'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Opposite values satisfy top * bottom = left * right. 9 * 4 = 6 * right -> 36 = 6 * right -> right = 6.'
+          },
+          {
+            q: 'Find the missing number: Row 1: [3, 4, 10], Row 2: [4, 5, 13], Row 3: [5, 6, ?]',
+            opts: ['14', '15', '16', '18'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Third column = 2 * First column + Second column. 2 * 5 + 6 = 10 + 6 = 16.'
           }
         ]
       }
@@ -2542,11 +2668,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If faces 1, 2, 3 and 1, 5, 6 are shown in two rolls, which face is opposite to 2?',
-            opts: ['5', '6', '1', '3'],
-            ans: 0,
-            exam: 'SSC MTS 2021',
-            sol: 'Hold 1 fixed. Write clockwise: Dice 1: 1-2-3, Dice 2: 1-5-6. The corresponding positions are opposite: 2 is opposite 5, 3 is opposite 6.'
+            q: 'A 3 cm cube painted on all faces, cut into 1 cm cubes. Find cubes with exactly 1 face painted.',
+            opts: ['1', '6', '8', '12'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'For n = 3, cubes with 1 face painted = 6 * (n - 2)² = 6 * (3 - 2)² = 6 * 1 = 6.'
+          },
+          {
+            q: 'A 4 cm cube painted on all faces, cut into 1 cm cubes. Find cubes with 3 faces painted.',
+            opts: ['4', '6', '8', '12'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'The corner cubes always have 3 faces painted, which is 8 regardless of the cube size.'
+          },
+          {
+            q: 'A 5 cm cube painted on all faces, cut into 1 cm cubes. Find cubes with 1 face painted.',
+            opts: ['36', '48', '54', '60'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'For n = 5, cubes with 1 face painted = 6 * (n - 2)² = 6 * 3² = 54.'
+          },
+          {
+            q: 'A 6 cm cube painted on all faces, cut into 1 cm cubes. Find cubes with no face painted.',
+            opts: ['27', '64', '125', '216'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'For n = 6, cubes with 0 faces painted = (n - 2)³ = (6 - 2)³ = 4³ = 64.'
+          },
+          {
+            q: 'A 4 cm cube painted on all faces, cut into 1 cm cubes. Find cubes with 2 faces painted.',
+            opts: ['12', '16', '24', '36'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'For n = 4, cubes with 2 faces painted = 12 * (n - 2) = 12 * 2 = 24.'
+          },
+          {
+            q: 'A 4 cm cube painted on all faces is cut into 64 unit cubes. Find cubes with at least 1 face painted.',
+            opts: ['36', '48', '56', '60'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Total cubes = 64. Inner cubes (0 faces painted) = (4 - 2)³ = 2³ = 8. Cubes with at least 1 face painted = 64 - 8 = 56.'
+          },
+          {
+            q: 'A 3 cm cube is painted red on two opposite faces, blue on the rest, then cut into 1 cm cubes. Find cubes with exactly one red face.',
+            opts: ['1', '2', '4', '6'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Each of the two opposite red faces has 1 center cube with exactly 1 red face. Thus, total is 2.'
           }
         ]
       }
@@ -2565,11 +2733,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'A square paper is folded diagonally and a hole is punched in the corner. When unfolded, how many holes appear?',
-            opts: ['2', '4', '1', '8'],
+            q: 'A square paper is folded once, hole punched away from the fold line. How many holes unfolded?',
+            opts: ['1', '2', '3', '4'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '1 fold creates 2 layers. 1 hole through 2 layers creates 2 holes when unfolded.'
+          },
+          {
+            q: 'A paper folded twice, hole punched away from any fold line. How many holes unfolded?',
+            opts: ['2', '4', '6', '8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '2 folds create 2² = 4 layers. 1 hole through 4 layers creates 4 holes when unfolded.'
+          },
+          {
+            q: 'A paper folded three times, hole punched. How many holes unfolded?',
+            opts: ['4', '6', '8', '16'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '3 folds create 2³ = 8 layers. 1 hole through 8 layers creates 8 holes when unfolded.'
+          },
+          {
+            q: 'A rectangular paper folded in half widthwise, semicircle cut from the fold edge. What shape results unfolded?',
+            opts: ['Semicircle', 'A full circle', 'Two circles', 'Oval'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'A semicircle cut along the folded edge unfolded reflects symmetrically to form a single full circle.'
+          },
+          {
+            q: 'A paper folded 4 times, hole punched away from all fold lines. How many holes unfolded?',
+            opts: ['8', '12', '16', '32'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '4 folds create 2⁴ = 16 layers. 1 hole through 16 layers creates 16 holes when unfolded.'
+          },
+          {
+            q: 'A paper folded in half twice, hole punched exactly at the center point where both fold lines cross. How many holes unfolded?',
+            opts: ['1', '2', '4', '8'],
             ans: 0,
-            exam: 'SSC CHSL 2021',
-            sol: 'One diagonal fold divides the sheet in 2 layers. A single punch makes 2 holes in the unfolded sheet.'
+            exam: 'Practice Question',
+            sol: 'Since the punch is exactly at the intersection of both fold lines, it does not multiply but stays as a single central hole.'
+          },
+          {
+            q: 'A paper strip folded in half 6 times, punched once. How many holes unfolded?',
+            opts: ['32', '48', '64', '128'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: '6 folds create 2⁶ = 64 layers. 1 hole through 64 layers creates 64 holes when unfolded.'
           }
         ]
       }
@@ -2588,11 +2798,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Choose the option that contains an embedded "V" shape.',
-            opts: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+            q: 'A "house" figure has a square base, a triangular roof, and a small rectangular door. Which basic figures are embedded?',
+            opts: ['A square and a triangle', 'A square and a rectangle', 'A square, a triangle, and a rectangle', 'A triangle and a circle'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'The house figure consists of a triangular roof, a square body, and a rectangular door, so all three are embedded.'
+          },
+          {
+            q: 'A large triangle has its midpoints connected. How many total triangles are embedded?',
+            opts: ['4', '5', '6', '8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Connecting the midpoints creates 4 small triangles inside, plus the 1 original large triangle, totaling 5.'
+          },
+          {
+            q: 'A square has one diagonal drawn. How many triangles are formed?',
+            opts: ['1', '2', '3', '4'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'One diagonal divides the square into 2 right-angled triangles.'
+          },
+          {
+            q: 'A regular hexagon has all diagonals drawn from one single vertex. How many triangles form?',
+            opts: ['3', '4', '5', '6'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Drawing all diagonals from one vertex of a hexagon divides it into 4 non-overlapping triangles.'
+          },
+          {
+            q: 'Two circles overlap (a simple 2-circle Venn diagram). How many distinct regions form?',
+            opts: ['2', '3', '4', '5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'The overlap forms 3 regions: Left only, Overlap region, Right only.'
+          },
+          {
+            q: 'An "envelope" figure: a rectangle with both diagonals drawn from the top corners to the bottom midpoint. How many triangles are embedded?',
+            opts: ['2', '3', '4', '5'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'The diagonals divide the top part, forming 2 side triangles and 1 central triangle, making 3 triangles in total.'
+          },
+          {
+            q: 'A pentagon has all its diagonals drawn. Is a five-pointed star embedded?',
+            opts: ['Yes', 'No', 'Only partially', 'Depends on layout'],
             ans: 0,
-            exam: 'TCS Pattern',
-            sol: 'Observe the cross-lines in the primary diagram; Option 1 clearly reveals a non-rotated "V" angle.'
+            exam: 'Practice Question',
+            sol: 'Drawing all diagonals of a regular pentagon forms a complete five-pointed star (pentagram) inside.'
           }
         ]
       }

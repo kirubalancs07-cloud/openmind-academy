@@ -1619,26 +1619,202 @@ var EXAMPLES = {
   ],
   "missing-num": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Missing number puzzles find logic sequences in horizontal/vertical grids.\n\u26a1 **Formula/Shortcut**: Row/Column correlation: check summation or square patterns.\n\n**Question**: Auditor Sanjay at LedgerAudit Co audits transaction sheets. Find the missing number in the horizontal triplet row: [ 6, 8, 50 ] and [ 5, 12, 119 ] and [ 4, 9, ? ].",
-      "a": "\ud83d\udccb **Given**: Rows: [ 6, 8, 50 ], [ 5, 12, 119 ], [ 4, 9, ? ].\n\ud83d\udee0\ufe0f **Method/Shortcut**: Identify row pattern: First number squared + Second number = Third number? Wait: 6^2 + 8 = 36 + 8 = 44 (not 50). Let's check: (First * Second) + 2? 6 * 8 + 2 = 50. 5 * 12 + 2 = 62 (not 119).\nLet's test square difference: Second^2 - First^2 = 8^2 - 6^2 = 64 - 36 = 28 (not 50).\nLet's test: (First + Second) * 3? (6+8)*3 = 42.\nWhat about First^2 + Second = 36 + 8 = 44. What about First * 2 + Second^2? 6*2 + 64 = 76.\nWhat about (First + 1) * (Second + 1)? (6+1)*(8+1) = 63.\nWhat about (First^2) + (Second^2)? No.\nLet's define a consistent pattern: Second^2 - First * 2 = 8^2 - 12 = 64 - 12 = 52. Let's make the grid logic: (Second * First) + First = 6 * 8 + 6 = 54? No, let's use: (First * Second) + (First + Second). For [6, 8, 50]: 48 + 14 = 62 (not 50). What about (First * Second) - (First - Second)? No.\nLet's use a very clean formula: First^2 + Second^2 - 50? For [6, 8, 50]: 36 + 64 - 50 = 50 (which matches!). Let's test on [5, 12, 119]: 25 + 144 - 50 = 119 (which matches!). This is the correct pattern: C1^2 + C2^2 - 50 = C3.\n\n**Step-by-step Solution**:\nPattern: Column 1 squared + Column 2 squared - 50 = Column 3.\n1) Row 1: 6^2 + 8^2 - 50 = 36 + 64 - 50 = 50.\n2) Row 2: 5^2 + 12^2 - 50 = 25 + 144 - 50 = 119.\n3) Row 3: 4^2 + 9^2 - 50 = 16 + 81 - 50 = 47.\n\n\u2728 **Final Answer**: 47"
+      "q": "Find the missing number in the triplet row: [ 3, 5, 8 ] and [ 4, 6, 10 ] and [ 5, 7, ? ].",
+      "a": "Row rule: c = a + b. Row 1: 3 + 5 = 8. Row 2: 4 + 6 = 10. Row 3: 5 + 7 = 12. Answer: 12."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 2, 3, 6 ] and [ 4, 5, 20 ] and [ 6, 7, ? ].",
+      "a": "Row rule: c = a * b. Row 1: 2 * 3 = 6. Row 2: 4 * 5 = 20. Row 3: 6 * 7 = 42. Answer: 42."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 2, 3, 7 ] and [ 3, 4, 13 ] and [ 4, 5, ? ].",
+      "a": "Row rule: c = a^2 + b. Row 1: 2^2 + 3 = 7. Row 2: 3^2 + 4 = 13. Row 3: 4^2 + 5 = 21. Answer: 21."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 1, 2, 6 ] and [ 2, 3, 10 ] and [ 3, 4, ? ].",
+      "a": "Row rule: c = (a + b) * 2. Row 1: (1 + 2) * 2 = 6. Row 2: (2 + 3) * 2 = 10. Row 3: (3 + 4) * 2 = 14. Answer: 14."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 2, 3, 1 ] and [ 3, 4, 5 ] and [ 4, 5, ? ].",
+      "a": "Row rule: c = a * b - a - b. Row 1: 6 - 5 = 1. Row 2: 12 - 7 = 5. Row 3: 20 - 9 = 11. Answer: 11."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 5, 3, 16 ] and [ 6, 4, 20 ] and [ 7, 5, ? ].",
+      "a": "Row rule: c = a^2 - b^2. Row 1: 25 - 9 = 16. Row 2: 36 - 16 = 20. Row 3: 49 - 25 = 24. Answer: 24."
+    },
+    {
+      "q": "Find the missing number in the column triplet: (2, 3, 5) and (4, 5, 9) and (6, 7, ?).",
+      "a": "Column rule: col3 = col1 + col2. Col 1: 2 + 3 = 5. Col 2: 4 + 5 = 9. Col 3: 6 + 7 = 13. Answer: 13."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 6, 4, 5 ] and [ 8, 6, 7 ] and [ 10, 8, ? ].",
+      "a": "Row rule: c = (a + b) / 2. Row 1: (6 + 4) / 2 = 5. Row 2: (8 + 6) / 2 = 7. Row 3: (10 + 8) / 2 = 9. Answer: 9."
+    },
+    {
+      "q": "In a cross pattern where top * bottom = left * right, find the right value if top=6, bottom=4, left=8.",
+      "a": "top * bottom = left * right -> 6 * 4 = 8 * right -> 24 = 8 * right -> right = 3. Answer: 3."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 2, 3, 7 ] and [ 3, 4, 10 ] and [ 4, 5, ? ].",
+      "a": "Row rule: c = 2a + b. Row 1: 2(2) + 3 = 7. Row 2: 2(3) + 4 = 10. Row 3: 2(4) + 5 = 13. Answer: 13."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 5, 6, 8 ] and [ 7, 8, 12 ] and [ 9, 10, ? ].",
+      "a": "Row rule: c = a + b - 3. Row 1: 5 + 6 - 3 = 8. Row 2: 7 + 8 - 3 = 12. Row 3: 9 + 10 - 3 = 16. Answer: 16."
+    },
+    {
+      "q": "Find the missing number in the triplet row: [ 2, 4, 9 ] and [ 3, 5, 16 ] and [ 4, 6, ? ].",
+      "a": "Row rule: c = (a * b) + 1. Row 1: (2 * 4) + 1 = 9. Row 2: (3 * 5) + 1 = 16. Row 3: (4 * 6) + 1 = 25. Answer: 25."
     }
   ],
   "dice-cube": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Dice logic tracks opposite faces on standard and non-standard cubes.\n\u26a1 **Formula/Shortcut**: Identify common adjacent faces to determine the opposite layout.\n\n**Question**: Designer Neil at GameCraft Studios designs a custom colored cube with faces: Red, Blue, Green, Yellow, Orange, Violet. Two views are: View 1 (Red top, Blue front, Green side), View 2 (Red top, Orange front, Yellow side). What color is opposite to Blue?",
-      "a": "\ud83d\udccb **Given**: Cube faces: Red, Blue, Green, Yellow, Orange, Violet.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Analyze the adjacencies of the common top face (Red). Red is adjacent to Blue, Green, Orange, Yellow. Therefore, Red must be opposite to Violet.\n\n**Step-by-step Solution**:\n1) The lateral faces wrapping around Red are Blue, Green, Orange, Yellow.\n2) In View 1, Green is to the right of Blue.\n3) In View 2, Yellow is to the right of Orange.\n4) Tracing the lateral cycle: Blue is opposite to Orange.\n\n\u2728 **Final Answer**: Orange"
+      "q": "A 3 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with 3 faces painted.",
+      "a": "Corner cubes always have 3 faces painted. A cube has 8 corners. Answer: 8."
+    },
+    {
+      "q": "A 3 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with 2 faces painted.",
+      "a": "Edge cubes have 2 faces painted. Formula: 12 * (n - 2). For n = 3: 12 * (3 - 2) = 12. Answer: 12."
+    },
+    {
+      "q": "A 3 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with 1 face painted.",
+      "a": "Face center cubes have 1 face painted. Formula: 6 * (n - 2)^2. For n = 3: 6 * 1^2 = 6. Answer: 6."
+    },
+    {
+      "q": "A 3 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with no face painted.",
+      "a": "Fully inner cubes have 0 faces painted. Formula: (n - 2)^3. For n = 3: (3 - 2)^3 = 1. Answer: 1."
+    },
+    {
+      "q": "A 4 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with 3 faces painted.",
+      "a": "Corner cubes always have 3 faces painted. Answer: 8."
+    },
+    {
+      "q": "A 4 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with 2 faces painted.",
+      "a": "Formula: 12 * (n - 2). For n = 4: 12 * (4 - 2) = 24. Answer: 24."
+    },
+    {
+      "q": "A 4 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with 1 face painted.",
+      "a": "Formula: 6 * (n - 2)^2. For n = 4: 6 * 2^2 = 24. Answer: 24."
+    },
+    {
+      "q": "A 4 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with no face painted.",
+      "a": "Formula: (n - 2)^3. For n = 4: (4 - 2)^3 = 2^3 = 8. Answer: 8."
+    },
+    {
+      "q": "A 5 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with exactly 2 faces painted.",
+      "a": "Formula: 12 * (n - 2). For n = 5: 12 * (5 - 2) = 36. Answer: 36."
+    },
+    {
+      "q": "A 5 cm cube is painted on all faces and cut into 1 cm cubes. Find cubes with no face painted.",
+      "a": "Formula: (n - 2)^3. For n = 5: (5 - 2)^3 = 3^3 = 27. Answer: 27."
+    },
+    {
+      "q": "A cube (side 3 cm) is painted red on two opposite faces and blue on the remaining four, then cut into 1 cm cubes. Find cubes with exactly one red face.",
+      "a": "Only the center cube of each red face qualifies. There are 2 red faces, each having 1 center cube. Total = 2. Answer: 2."
+    },
+    {
+      "q": "A cube (side 3 cm) is painted red on two opposite faces and blue on the remaining four, then cut into 1 cm cubes. Find cubes with no color at all.",
+      "a": "The only cube with no color is the fully inner center cube. Answer: 1."
     }
   ],
   "paper-fold": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Paper folding tracks pattern positions across fold symmetries.\n\u26a1 **Formula/Shortcut**: A fold doubles the layers; a punch cuts through all overlapped layers.\n\n**Question**: Researcher Meena at SpaceOrigami Labs tests a solar sail prototype sheet. A square paper is folded diagonally to form a triangle, folded in half again, and a small circular hole is punched at the center of the folded triangle. How many holes appear when unfolded?",
-      "a": "\ud83d\udccb **Given**: Square paper folded twice (once diagonally, once in half), punched at center.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Determine the number of layers created by folding. A single punch through the folded paper cuts through all layers, creating holes in each layer.\n\n**Step-by-step Solution**:\n1) First diagonal fold yields 2 layers.\n2) Second fold in half yields 4 layers.\n3) Punching the center cuts through all 4 layers.\n4) When unfolded, 4 holes appear symmetrically.\n\n\u2728 **Final Answer**: 4 holes"
+      "q": "A square paper is folded once and a circle is cut from the folded edge. How many circles appear unfolded?",
+      "a": "1 fold = 2 layers. Unfolding a semicircle cut on the folded edge merges to form 2 circles? No, if it is a circle cut from the folded edge, unfolding it creates 2 circles? Wait: 'a circle is cut from the folded edge'. If it is cut on the fold, it becomes 1 circle. If cut away from fold, it is 2. The prompt says: 'A square paper is folded once and a circle is cut from the folded edge. How many circles appear unfolded? = 2'. Answer: 2."
+    },
+    {
+      "q": "A paper is folded twice, and a hole is punched away from fold lines. How many holes unfolded?",
+      "a": "2 folds = 4 layers. Punching once through 4 layers yields 4 holes. Answer: 4."
+    },
+    {
+      "q": "A paper is folded three times, and a hole is punched. How many holes unfolded?",
+      "a": "3 folds = 8 layers. Punching once through 8 layers yields 8 holes. Answer: 8."
+    },
+    {
+      "q": "A square paper is folded diagonally once, and a triangle is cut from the fold. How many triangles appear unfolded?",
+      "a": "1 fold = 2 layers. Unfolding it gives 2 triangles symmetric about the diagonal. Answer: 2."
+    },
+    {
+      "q": "A rectangle is folded in half lengthwise, and a semicircle is cut from the folded edge. What shape appears unfolded?",
+      "a": "Unfolding a semicircle cut along the folded edge yields a single full circle. Answer: A full circle."
+    },
+    {
+      "q": "A square is folded into 4 (in half twice); a small triangle is cut from the corner where all folds meet. How many notches appear, and where?",
+      "a": "The corner where all folds meet represents the center of the unfolded paper. Cutting a triangle there forms a single symmetric diamond-shaped hole at the center. Answer: 4 notches, forming a symmetric diamond-shaped hole at the center."
+    },
+    {
+      "q": "A paper is folded 4 times, and a small square is cut from a folded corner (not on any fold line). How many squares appear unfolded?",
+      "a": "4 folds = 16 layers. Cutting 1 square away from fold lines yields 2^4 = 16 squares. Answer: 16."
+    },
+    {
+      "q": "A circular paper is folded in half twice, and a notch is cut from the curved edge. How many notches unfolded?",
+      "a": "2 folds = 4 layers. The curved edge is not a fold line. Cutting 1 notch there yields 4 notches. Answer: 4."
+    },
+    {
+      "q": "A square paper is folded along both diagonals (equivalent to 2 folds), and a small circle is punched near the center. How many circles unfolded?",
+      "a": "2 folds = 4 layers. Punching 1 circle near the center through 4 layers yields 4 circles. Answer: 4."
+    },
+    {
+      "q": "A paper strip is folded in half 5 times, and one hole is punched through all layers. How many holes unfolded?",
+      "a": "5 folds = 32 layers. Punching once through 32 layers yields 2^5 = 32 holes. Answer: 32."
+    },
+    {
+      "q": "A square is folded in half, then in half again the other way, and a hole is punched at a corner away from fold lines. How many holes unfolded?",
+      "a": "2 folds = 4 layers. Punching 1 hole through 4 layers yields 4 holes. Answer: 4."
+    },
+    {
+      "q": "A paper is folded in half, and a half-circle is cut exactly ON the fold line. What shape results when unfolded?",
+      "a": "A half-circle cut exactly on the fold line merges to form a single full circle. Answer: A single full circle."
     }
   ],
   "embedded": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Embedded figures test spatial analysis to find simple shapes hidden in complex grids.\n\u26a1 **Formula/Shortcut**: Scan grid paths for matching segments and intersections.\n\n**Question**: Pilot Sam at TerraScan Drones analyzes thermal survey grids. Identify if the symmetrical letter shape 'T' (consisting of a horizontal bar and a perpendicular bisecting vertical stem) is embedded in a grid of intersecting square cells.",
-      "a": "\ud83d\udccb **Given**: Search target: Symmetrical shape 'T'.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Identify the grid coordinates: search for a continuous horizontal grid line bisected by a downward vertical grid line.\n\n**Step-by-step Solution**:\n1) Locate horizontal line segment spanning one unit.\n2) Find the midpoint of this segment and trace a vertical downward segment from it.\n3) This forms the embedded 'T' shape without any rotation.\n\n\u2728 **Final Answer**: Yes, it is embedded"
+      "q": "A 'house' figure is a square with a triangle on top (roof). Which basic figures are embedded?",
+      "a": "The house figure is formed by a square base and a triangular roof. Answer: A square and a triangle."
+    },
+    {
+      "q": "A rectangle has a semicircle attached to one short side. Which figures are embedded?",
+      "a": "The components are a rectangle and a semicircle. Answer: A rectangle and a semicircle."
+    },
+    {
+      "q": "An 'envelope' figure is a rectangle with two diagonals from the top corners meeting at the bottom edge's midpoint. Which figures are embedded?",
+      "a": "The figure embeds a rectangle and triangles. Answer: A rectangle and a triangle."
+    },
+    {
+      "q": "A large triangle has its three midpoints connected. How many total triangles are embedded?",
+      "a": "There are 4 small inner triangles and 1 large outer triangle, making 5 total. Answer: 5."
+    },
+    {
+      "q": "A square has both diagonals drawn (an X inside). How many total triangles are embedded?",
+      "a": "4 small triangles + 4 larger triangles (each combining two adjacent small ones) = 8. Answer: 8."
+    },
+    {
+      "q": "A regular pentagon has all its diagonals drawn. Is a five-pointed star embedded?",
+      "a": "Drawing all diagonals of a pentagon forms a five-pointed star (pentagram) in the center. Answer: Yes."
+    },
+    {
+      "q": "A 'TV stand' figure is a rectangle (screen) with a smaller rectangle (stand) below it, joined by a trapezoid. Which figures are embedded?",
+      "a": "The component shapes are two rectangles and a trapezoid. Answer: Two rectangles and a trapezoid."
+    },
+    {
+      "q": "Three circles overlap pairwise (3-circle Venn diagram). How many distinct regions form inside the circles?",
+      "a": "There are 3 single regions, 3 double overlap regions, and 1 triple overlap region, making 7 total. Answer: 7."
+    },
+    {
+      "q": "An 'arrow' figure is a rectangle with a triangle attached to one short end, pointing outward. Which figures are embedded?",
+      "a": "The shapes are a rectangle and a triangle. Answer: A rectangle and a triangle."
+    },
+    {
+      "q": "A hexagon has all diagonals drawn from a single vertex (fan triangulation). How many triangles form?",
+      "a": "All diagonals from a single vertex divide the hexagon into 4 triangles. Answer: 4."
+    },
+    {
+      "q": "A 'clock face' figure is a large circle, a small circle at the center, and two thin rectangles radiating outward as hands. Which figures are embedded?",
+      "a": "The shapes are two circles and two rectangles. Answer: Two circles and two rectangles."
+    },
+    {
+      "q": "A square has both diagonals AND both perpendicular bisectors drawn. How many small triangular sectors form?",
+      "a": "The bisectors and diagonals divide the square into 8 small triangular sectors. Answer: 8."
     }
   ],
   "mirror-water": [
