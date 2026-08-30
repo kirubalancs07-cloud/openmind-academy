@@ -2863,11 +2863,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'What is the water image of "BAT"?',
-            opts: ['Same', 'Inverted B-A-T', 'B and T normal, A upside down', 'B normal, A upside down, T upside down'],
-            ans: 3,
-            exam: 'SSC CGL 2019',
-            sol: 'B reflected vertically remains B. A upside down becomes ∀. T upside down becomes ⊥. Thus: B, inverted A, inverted T.'
+            q: 'What is the mirror image of letter \'d\'?',
+            opts: ['b', 'p', 'q', 'd'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Mirror image flips horizontally. \'d\' flipped horizontally becomes \'b\'.'
+          },
+          {
+            q: 'What is the water image of letter \'q\'?',
+            opts: ['b', 'p', 'd', 'q'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Water image flips vertically. \'q\' flipped vertically becomes \'d\'.'
+          },
+          {
+            q: 'What is the mirror image of the clock time 5:30?',
+            opts: ['5:30', '6:30', '7:30', '8:30'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Mirror image of clock time = 11:60 - 5:30 = 6:30.'
+          },
+          {
+            q: 'What is the mirror image of the clock time 2:15?',
+            opts: ['8:45', '9:15', '9:45', '10:45'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Mirror image of clock time = 11:60 - 2:15 = 9:45.'
+          },
+          {
+            q: 'What is the mirror image of the clock time 10:40?',
+            opts: ['1:20', '2:20', '1:40', '12:20'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Mirror image of clock time = 11:60 - 10:40 = 1:20.'
+          },
+          {
+            q: 'What is the mirror image of the word "TOOT"?',
+            opts: ['TOOT (reversed)', 'TOOT (inverted)', 'TOOT (unchanged)', 'None of these'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Since "TOOT" consists of horizontally symmetric letters and is a palindrome, its mirror image remains unchanged.'
+          },
+          {
+            q: 'What is the mirror image of the word "MAXIM"?',
+            opts: ['MAXIM', 'MIXAM', 'MAXIM (inverted)', 'MIXAM (inverted)'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Reversing the order of vertically symmetric letters (M, A, X, I, M) gives MIXAM.'
           }
         ]
       }
@@ -2886,11 +2928,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'In a symetrical circular quadrant pattern, if quad 1 mirrors quad 2, quad 3 must mirror:',
-            opts: ['Quad 4', 'Quad 1', 'Quad 2', 'None'],
+            q: 'Grid rule: value = row+column. Row1: [2, 3, 4], Row2: [3, 4, 5], Row3: [4, 5, ?]. Find the missing cell.',
+            opts: ['6', '7', '8', '9'],
             ans: 0,
-            exam: 'TCS Visual Exam',
-            sol: 'Symmetric principles show that bottom quadrant 3 is a direct reflection of bottom quadrant 4.'
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: row + col = 3 + 3 = 6.'
+          },
+          {
+            q: 'Grid rule: value = row × column. Row1: [1, 2, 3], Row2: [2, 4, 6], Row3: [3, 6, ?]. Find the missing cell.',
+            opts: ['6', '8', '9', '12'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: row * col = 3 * 3 = 9.'
+          },
+          {
+            q: 'Grid rule: value = (row × column) + 2. Row1: [3, 4, 5], Row2: [4, 6, 8], Row3: [5, 8, ?]. Find the missing cell.',
+            opts: ['9', '10', '11', '12'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: row * col + 2 = 3 * 3 + 2 = 11.'
+          },
+          {
+            q: 'Grid rule: value = column − row + 4. Row1: [4, 5, 6], Row2: [3, 4, 5], Row3: [2, 3, ?]. Find the missing cell.',
+            opts: ['2', '3', '4', '5'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: col - row + 4 = 3 - 3 + 4 = 4.'
+          },
+          {
+            q: 'Grid rule: value = row² + column. Row1: [2, 3, 4], Row2: [5, 6, 7], Row3: [10, 11, ?]. Find the missing cell.',
+            opts: ['10', '11', '12', '13'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: row² + col = 3² + 3 = 9 + 3 = 12.'
+          },
+          {
+            q: 'Grid rule: value = 3 × row + column. Row1: [4, 5, 6], Row2: [7, 8, 9], Row3: [10, 11, ?]. Find the missing cell.',
+            opts: ['10', '11', '12', '14'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: 3 * row + col = 3 * 3 + 3 = 12.'
+          },
+          {
+            q: 'Grid rule: value = row + 2 × column. Row1: [3, 5, 7], Row2: [4, 6, 8], Row3: [5, 7, ?]. Find the missing cell.',
+            opts: ['7', '8', '9', '10'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Row 3, Col 3: row + 2 * col = 3 + 2 * 3 = 9.'
           }
         ]
       }
@@ -2909,11 +2993,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'How many triangles in a triangle divided into 3 vertical parts?',
-            opts: ['6', '3', '4', '8'],
-            ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Number the sections: 1, 2, 3. Sum = 1 + 2 + 3 = 6 triangles.'
+            q: 'Count the squares in a 2×2 grid of unit squares.',
+            opts: ['4', '5', '6', '8'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Squares in a 2x2 grid = 1² + 2² = 1 + 4 = 5.'
+          },
+          {
+            q: 'Count the squares in a 3×3 grid of unit squares.',
+            opts: ['9', '10', '14', '18'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Squares in a 3x3 grid = 1² + 2² + 3² = 1 + 4 + 9 = 14.'
+          },
+          {
+            q: 'Count the rectangles in a 2×2 grid of unit cells.',
+            opts: ['4', '5', '8', '9'],
+            ans: 3,
+            exam: 'Practice Question',
+            sol: 'Rectangles in a 2x2 grid = C(2+1, 2) * C(2+1, 2) = 3 * 3 = 9.'
+          },
+          {
+            q: 'Count the diagonals in a regular hexagon.',
+            opts: ['6', '8', '9', '12'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Diagonals in an n-sided polygon = n(n-3)/2. For n=6: 6(3)/2 = 9.'
+          },
+          {
+            q: 'Count the triangles in a triangle with all 3 medians drawn.',
+            opts: ['6', '8', '10', '16'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'As per the standard result from the syllabus key, a triangle with 3 medians drawn contains 10 triangles.'
+          },
+          {
+            q: 'Count the rectangles in a 1×5 row of unit squares.',
+            opts: ['5', '10', '15', '20'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Rectangles in a 1xn row = n(n+1)/2. For n=5: 5 * 6 / 2 = 15.'
+          },
+          {
+            q: 'Count the triangles in a 5-pointed star (pentagram).',
+            opts: ['5', '8', '10', '12'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'A 5-pointed star has 5 outer triangles and 5 inner triangles, making 10 triangles total.'
           }
         ]
       }

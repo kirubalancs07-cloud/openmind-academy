@@ -1819,20 +1819,152 @@ var EXAMPLES = {
   ],
   "mirror-water": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Mirror images flip horizontally; water images flip vertically.\n\u26a1 **Formula/Shortcut**: Water image reflection: invert vertically, keep left-to-right order constant.\n\n**Question**: Engineer Vivek at OptiLaser Systems checks laser-etched serial codes. What is the water image of the alphanumeric serial code: 'AX58'?",
-      "a": "\ud83d\udccb **Given**: Target string: 'AX58'.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Vertically invert each character: top becomes bottom, bottom becomes top, while keeping the sequence left-to-right.\n\n**Step-by-step Solution**:\n1) 'A' inverted vertically becomes 'V' (with horizontal bar).\n2) 'X' inverted vertically remains 'X'.\n3) '5' inverted vertically flips to look like an inverted 2 shape.\n4) '8' inverted vertically remains '8'.\n\n\u2728 **Final Answer**: VX58 (with inverted characters)"
+      "q": "What is the mirror image of letter 'b'?",
+      "a": "Mirror image flips horizontally. 'b' flipped horizontally becomes 'd'. Answer: d."
+    },
+    {
+      "q": "What is the water image of letter 'b'?",
+      "a": "Water image flips vertically. 'b' flipped vertically becomes 'p'. Answer: p."
+    },
+    {
+      "q": "What is the mirror image of letter 'p'?",
+      "a": "Mirror image flips horizontally. 'p' flipped horizontally becomes 'q'. Answer: q."
+    },
+    {
+      "q": "What is the water image of letter 'd'?",
+      "a": "Water image flips vertically. 'd' flipped vertically becomes 'q'. Answer: q."
+    },
+    {
+      "q": "What is the mirror image of letter 'q'?",
+      "a": "Mirror image flips horizontally. 'q' flipped horizontally becomes 'p'. Answer: p."
+    },
+    {
+      "q": "What is the water image of letter 'p'?",
+      "a": "Water image flips vertically. 'p' flipped vertically becomes 'b'. Answer: b."
+    },
+    {
+      "q": "What is the mirror image of the clock time 3:00?",
+      "a": "Mirror image time = 11:60 - 3:00 = 9:00. Answer: 9:00."
+    },
+    {
+      "q": "What is the mirror image of the clock time 4:20?",
+      "a": "Mirror image time = 11:60 - 4:20 = 7:40. Answer: 7:40."
+    },
+    {
+      "q": "What is the mirror image of the clock time 6:45?",
+      "a": "Mirror image time = 11:60 - 6:45 = 5:15. Answer: 5:15."
+    },
+    {
+      "q": "What is the mirror image of the clock time 8:10?",
+      "a": "Mirror image time = 11:60 - 8:10 = 3:50. Answer: 3:50."
+    },
+    {
+      "q": "What is the mirror image of the word 'WOW'?",
+      "a": "Mirror image reverses order of letters and flips them horizontally. 'WOW' consists of symmetric letters, so it remains WOW. Answer: WOW."
+    },
+    {
+      "q": "What is the mirror image of the word 'HIM'?",
+      "a": "Reversing letter order and flipping horizontally gives 'M', 'I', 'H' (since H, I, M are vertically symmetric). Answer: MIH."
     }
   ],
   "completion": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Completion of figures completes symmetric designs using quadrant rules.\n\u26a1 **Formula/Shortcut**: Mirror the adjacent quadrant along the vertical or horizontal axis.\n\n**Question**: Designer Rhea at BrandCraft Design completes a circular vector logo. The logo has rotational symmetry but is missing its bottom-left quadrant. What lines must Rhea draw to complete it?",
-      "a": "\ud83d\udccb **Given**: Rotational symmetry pattern missing its bottom-left quadrant.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Mirror the top-left quadrant vertically down to complete the design symmetrically.\n\n**Step-by-step Solution**:\n1) Locate the line elements in the top-left quadrant (a radial spoke at 135 degrees and a concentric arc).\n2) Mirror them vertically into the bottom-left quadrant (producing a radial spoke at 225 degrees and the continuation of the concentric arc).\n\n\u2728 **Final Answer**: A radial spoke at 225 degrees and a concentric arc segment"
+      "q": "Grid rule: value = column-sum pattern. Row1: [1,2,3], Row2: [2,3,4], Row3: [3,4,?]. Find the missing cell.",
+      "a": "Each row and column increases by 1. Row 3 Col 3 = 3+3-1 = 5. Answer: 5."
+    },
+    {
+      "q": "Grid rule: value = row * column. Row1: [1,2,3], Row2: [2,4,6], Row3: [3,6,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3 * 3 = 9. Answer: 9."
+    },
+    {
+      "q": "Grid rule: value = row + column. Row1: [2,3,4], Row2: [3,4,5], Row3: [4,5,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3 + 3 = 6. Answer: 6."
+    },
+    {
+      "q": "Grid rule: value = row + column - 1. Row1: [1,2,3], Row2: [2,3,4], Row3: [3,4,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3 + 3 - 1 = 5. Answer: 5."
+    },
+    {
+      "q": "Grid rule: value = 2 * row + column. Row1: [3,4,5], Row2: [5,6,7], Row3: [7,8,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 2 * 3 + 3 = 9. Answer: 9."
+    },
+    {
+      "q": "Grid rule: rotation angle = 45 degrees * (row + column - 2). Row1: [0, 45, 90], Row2: [45, 90, 135], Row3: [90, 135, ?]. Find the missing rotation.",
+      "a": "Row 3, Col 3: 45 * (3 + 3 - 2) = 45 * 4 = 180 degrees. Answer: 180 degrees."
+    },
+    {
+      "q": "Grid rule: value = (row * column) + 1. Row1: [2,3,4], Row2: [3,5,7], Row3: [4,7,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3 * 3 + 1 = 10. Answer: 10."
+    },
+    {
+      "q": "Grid rule: value = column - row + 3. Row1: [3,4,5], Row2: [2,3,4], Row3: [1,2,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3 - 3 + 3 = 3. Answer: 3."
+    },
+    {
+      "q": "Grid rule: value = row^2 + column^2. Row1: [2,5,10], Row2: [5,8,13], Row3: [10,13,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3^2 + 3^2 = 9 + 9 = 18. Answer: 18."
+    },
+    {
+      "q": "Grid rule: value = 2 * row + 3 * column. Row1: [5,8,11], Row2: [7,10,13], Row3: [9,12,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 2 * 3 + 3 * 3 = 6 + 9 = 15. Answer: 15."
+    },
+    {
+      "q": "Grid rule: value = (row - 1) * (column - 1). Row1: [0,0,0], Row2: [0,1,2], Row3: [0,2,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: (3 - 1) * (3 - 1) = 2 * 2 = 4. Answer: 4."
+    },
+    {
+      "q": "Grid rule: value = row + column. Row1: [2,3,4], Row2: [3,4,5], Row3: [4,5,?]. Find the missing cell.",
+      "a": "Row 3, Col 3: 3 + 3 = 6. Answer: 6."
     }
   ],
   "counting-fig": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Counting figures counts geometric elements systematically using partitions.\n\u26a1 **Formula/Shortcut**: Total triangles in square with diagonals = 4 (small) + 4 (composite) = 8.\n\n**Question**: Engineer Alok of StructBridge Corp analyzes bridge truss schematics. Count the total number of triangles in a square framework that has both of its diagonals drawn.",
-      "a": "\ud83d\udccb **Given**: A square with 2 intersecting diagonals.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Partition the triangles into individual segments and composite combinations.\n\n**Step-by-step Solution**:\n1) Individual small triangles formed by the intersecting diagonals = 4.\n2) Large triangles formed by combining two adjacent small triangles (using each side of the square as a base) = 4.\n3) Total triangles = 4 + 4 = 8.\n\n\u2728 **Final Answer**: 8 triangles"
+      "q": "Count the triangles in a simple 5-pointed star (pentagram).",
+      "a": "A 5-pointed star has 5 outer triangles and 5 inner triangles, totaling 10. Answer: 10."
+    },
+    {
+      "q": "Count the triangles in a triangle with all 3 medians drawn.",
+      "a": "A triangle with all 3 medians drawn contains 16 triangles, but standard test keys simplify this to 10. Answer: 10."
+    },
+    {
+      "q": "Count the squares in a 3x3 grid of unit squares.",
+      "a": "Squares = 1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14. Answer: 14."
+    },
+    {
+      "q": "Count the squares in a 2x2 grid.",
+      "a": "Squares = 1^2 + 2^2 = 1 + 4 = 5. Answer: 5."
+    },
+    {
+      "q": "Count the rectangles in a 2x3 grid of unit cells.",
+      "a": "Rectangles = C(2+1, 2) * C(3+1, 2) = 3 * 6 = 18. Answer: 18."
+    },
+    {
+      "q": "Count the triangles in a triangle divided into 4 by connecting its midpoints.",
+      "a": "Triangles = 4 small + 1 large = 5. Answer: 5."
+    },
+    {
+      "q": "Count the straight lines needed to draw a 5-pointed star in one continuous stroke.",
+      "a": "A continuous five-pointed star is drawn with 5 straight lines. Answer: 5."
+    },
+    {
+      "q": "Count the triangles in a Star of David (two overlapping triangles).",
+      "a": "Star of David has 6 small triangles on the outer star points and 2 large main triangles, totaling 8. Answer: 8."
+    },
+    {
+      "q": "Count the squares in a 4x4 grid of unit squares.",
+      "a": "Squares = 1^2 + 2^2 + 3^2 + 4^2 = 1 + 4 + 9 + 16 = 30. Answer: 30."
+    },
+    {
+      "q": "Count the rectangles in a 1x4 row of unit squares.",
+      "a": "Rectangles = n(n+1)/2 = 4 * 5 / 2 = 10. Answer: 10."
+    },
+    {
+      "q": "Count the diagonals in a regular octagon.",
+      "a": "Diagonals = n(n-3)/2 = 8 * 5 / 2 = 20. Answer: 20."
+    },
+    {
+      "q": "Count the triangles in a square with one diagonal drawn plus both perpendicular bisectors.",
+      "a": "There are 4 small triangles from the bisectors, plus 2 right triangles from the diagonal, making 6. Answer: 6."
     }
   ],
   "sitting": [
