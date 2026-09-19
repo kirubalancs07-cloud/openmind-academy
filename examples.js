@@ -1987,26 +1987,202 @@ var EXAMPLES = {
   ],
   "word-arr": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Word arrangements sort lexical lists alphabetically.\n\u26a1 **Formula/Shortcut**: Compare letters index-by-index (1st, 2nd, 3rd) to establish order.\n\n**Question**: Librarian Ms. Gupta at the Central Library Archive indexes new paper titles. Arrange the words in alphabetical catalog order: [ Kernel, Keyboard, Keypad, Kennel ].",
-      "a": "\ud83d\udccb **Given**: Words: Kernel, Keyboard, Keypad, Kennel.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Compare the characters of each word letter-by-letter to determine order.\n\n**Step-by-step Solution**:\n1) 3rd letter comparison: Kennel (n) comes before Kernel (r) and Keyboard/Keypad (y).\n2) 4th letter comparison for Keyboard vs Keypad: 'b' in Keyboard comes before 'p' in Keypad.\n3) Resulting alphabetical sequence: Kennel, Kernel, Keyboard, Keypad.\n\n\u2728 **Final Answer**: Kennel, Kernel, Keyboard, Keypad"
+      "q": "Arrange the letters of 'COLD' alphabetically. Find the 2nd letter.",
+      "a": "Alphabetical order of letters: C, D, L, O. The 2nd letter is D. Answer: D."
+    },
+    {
+      "q": "How many arrangements of 'TABLE' keep the vowels (A,E) together?",
+      "a": "Treat (A,E) as one unit. Total units = 4. Arrangements = 4! * 2! = 48. Answer: 48."
+    },
+    {
+      "q": "Find the rank of 'CAT' among alphabetical permutations of its letters.",
+      "a": "Permutations starting with A: 2 (ACT, ATC). Next is CAT. Rank = 3. Answer: 3."
+    },
+    {
+      "q": "How many distinct arrangements of 'APPLE' (P repeats twice)?",
+      "a": "Total letters = 5, P repeats twice. Arrangements = 5! / 2! = 60. Answer: 60."
+    },
+    {
+      "q": "In how many ways can 'PENCIL' be arranged so vowels (E,I) occupy only odd positions (1,3,5)?",
+      "a": "Choose 2 odd positions for vowels: 3P2 = 6. Arrange 4 consonants in remaining 4 spots: 4! = 24. Total = 6 * 24 = 144. Answer: 144."
+    },
+    {
+      "q": "Arrangements of 'ORANGE' with all vowels (O,A,E) together.",
+      "a": "Vowels block (O,A,E) + 3 consonants = 4 units. Arrangements = 4! * 3! = 144. Answer: 144."
+    },
+    {
+      "q": "How many 4-letter words can be formed from 'NUMBER' (6 distinct letters) without repetition?",
+      "a": "6P4 = 6 * 5 * 4 * 3 = 360. Answer: 360."
+    },
+    {
+      "q": "Find the rank of 'BAT' among alphabetical permutations.",
+      "a": "Permutations starting with A: 2 (ABT, ATB). Next is BAT. Rank = 3. Answer: 3."
+    },
+    {
+      "q": "How many arrangements of 'SCHOOL' (O repeats twice)?",
+      "a": "Total letters = 6, O repeats twice. Arrangements = 6! / 2! = 360. Answer: 360."
+    },
+    {
+      "q": "How many 4-letter arrangements from 'GARDEN' (6 distinct letters) start with a vowel (A or E)?",
+      "a": "Choose vowel first (2 ways). Arrange remaining 3 spots from 5 letters: 5P3 = 60. Total = 2 * 60 = 120. Answer: 120."
+    },
+    {
+      "q": "Find the number of arrangements of 'MISSISSIPPI' (M=1, I=4, S=4, P=2, 11 letters).",
+      "a": "Total = 11! / (4! * 4! * 2!) = 34,650. Answer: 34,650."
+    },
+    {
+      "q": "How many arrangements of 'FLOWER' keep the vowels (O,E) apart (not together)?",
+      "a": "Total = 6! = 720. Vowels together = 5! * 2! = 240. Apart = 720 - 240 = 480. Answer: 480."
     }
   ],
   "venn": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Venn diagrams represent categorical relationships visually using overlapping circles.\n\u26a1 **Formula/Shortcut**: Define subclass nested circles or disjoint boundaries.\n\n**Question**: HR Lead Anjali at TalentSearch Corp maps candidate qualifications. Draw/identify the Venn relation representing the classes: 'Programmers, Java Developers, Musicians'.",
-      "a": "\ud83d\udccb **Given**: Classes: Programmers, Java Developers, Musicians.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Identify class relationships: All Java Developers are Programmers (subset). Some Programmers are Musicians, and some Musicians are Java Developers (overlap).\n\n**Step-by-step Solution**:\n1) Draw a circle for Java Developers inside the circle for Programmers.\n2) Draw a circle for Musicians overlapping both circles.\n\n\u2728 **Final Answer**: Circle for Java Developers nested inside Programmers, with both intersected by Musicians"
+      "q": "Venn relation for: Fruits, Mango, Apple",
+      "a": "Mango and Apple are separate, non-overlapping circles, both inside Fruits. Answer: Mango and Apple separate inside Fruits."
+    },
+    {
+      "q": "Venn relation for: Brother, Man, Father",
+      "a": "Brother and Father overlap, and both are inside Man. Answer: Overlapping Brother and Father inside Man."
+    },
+    {
+      "q": "Venn relation for: Students, Boys, Girls",
+      "a": "Boys and Girls are separate circles, both inside Students. Answer: Boys and Girls separate inside Students."
+    },
+    {
+      "q": "Venn relation for: Vehicles, Cars, Trucks",
+      "a": "Cars and Trucks are separate circles, both inside Vehicles. Answer: Cars and Trucks separate inside Vehicles."
+    },
+    {
+      "q": "Venn relation for: Teachers, Doctors, Women",
+      "a": "Three circles all partially overlapping. Answer: Three partially overlapping circles."
+    },
+    {
+      "q": "Venn relation for: Squares, Rectangles, Rhombuses",
+      "a": "Squares is the intersection region of Rectangles and Rhombuses. Answer: Squares inside both Rectangles and Rhombuses."
+    },
+    {
+      "q": "Venn relation for: Fish, Mammals, Whales",
+      "a": "Whales is nested inside Mammals; Fish is separate. Answer: Whales nested inside Mammals, Fish separate."
+    },
+    {
+      "q": "Venn relation for: Writers, Poets, Novelists",
+      "a": "Poets and Novelists overlap, both nested inside Writers. Answer: Overlapping Poets and Novelists nested inside Writers."
+    },
+    {
+      "q": "Venn relation for: Metals, Gold, Iron",
+      "a": "Gold and Iron are separate circles inside Metals. Answer: Gold and Iron separate inside Metals."
+    },
+    {
+      "q": "Venn relation for: Table, Furniture, Wood",
+      "a": "Table is inside Furniture; Wood overlaps Furniture and Table. Answer: Table inside Furniture, Wood overlapping both."
+    },
+    {
+      "q": "Venn relation for: Pen, Ink, Paper",
+      "a": "Three separate, non-overlapping circles. Answer: Three separate circles."
+    },
+    {
+      "q": "Venn relation for: Mother, Woman, Doctor",
+      "a": "Mother is nested inside Woman; Doctor overlaps both. Answer: Mother nested inside Woman, Doctor overlapping both."
     }
   ],
   "calendar": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Calendars calculate weekdays using modular division of odd days.\n\u26a1 **Formula/Shortcut**: Number of odd days = Total days % 7.\n\n**Question**: Archaeologist Dr. Sen at the Heritage India Museum calculates historical dates. If a stone inscription states that a solar milestone fell exactly 14 days after a Tuesday, what day of the week was that milestone?",
-      "a": "\ud83d\udccb **Given**: Base day = Tuesday. Interval = 14 days.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Divide the interval by 7 to find the number of odd days, then add to the base day.\n\n**Step-by-step Solution**:\n1) 14 % 7 = 0 odd days.\n2) Tuesday + 0 days = Tuesday.\n\n\u2728 **Final Answer**: Tuesday"
+      "q": "Jan 1, 2023 is a Sunday. Find Jan 1, 2024.",
+      "a": "2023 is non-leap, so +1 odd day. Jan 1, 2024 is Monday. Answer: Monday."
+    },
+    {
+      "q": "Today is Wednesday. Find the day after 15 days.",
+      "a": "15 mod 7 = 1 odd day. Wednesday + 1 day = Thursday. Answer: Thursday."
+    },
+    {
+      "q": "March 15, 2024 is a Friday. Find March 22, 2024.",
+      "a": "Exactly 7 days later, so same weekday, Friday. Answer: Friday."
+    },
+    {
+      "q": "Find the number of odd days in 100 years.",
+      "a": "Standard calculation gives 5 odd days. Answer: 5 odd days."
+    },
+    {
+      "q": "A leap year's Jan 1 is a Monday. Find Dec 31 of the same year.",
+      "a": "Dec 31 of a leap year is 1 day after the weekday of Jan 1 -> Tuesday. Answer: Tuesday."
+    },
+    {
+      "q": "Today is Tuesday. Find the day 30 days ago.",
+      "a": "30 mod 7 = 2. Tuesday - 2 days = Sunday. Answer: Sunday."
+    },
+    {
+      "q": "Find the day of the week on 15th August 1947.",
+      "a": "Historical calendar calculation gives Friday. Answer: Friday."
+    },
+    {
+      "q": "A leap year's February has 5 Sundays. On which day does Feb 1 fall?",
+      "a": "A 29-day February has 5 of the weekday that Feb 1 falls on. Thus, Sunday. Answer: Sunday."
+    },
+    {
+      "q": "Find the day of the week on 26th January 1950.",
+      "a": "Historical calendar calculation gives Thursday. Answer: Thursday."
+    },
+    {
+      "q": "Today is Monday. Find the day after 100 days.",
+      "a": "100 mod 7 = 2 odd days. Monday + 2 days = Wednesday. Answer: Wednesday."
+    },
+    {
+      "q": "A person is born on 29th February. How many years to celebrate his 5th actual birthday?",
+      "a": "Feb 29 birthdays occur every 4 years. 5 * 4 = 20 years. Answer: 20 years."
+    },
+    {
+      "q": "Jan 1, 2000 is a Saturday. Find Jan 1, 2001.",
+      "a": "2000 is a leap year, so +2 odd days. Jan 1, 2001 is Monday. Answer: Monday."
     }
   ],
   "age": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Ages problems set up linear systems representing changing age ratios.\n\u26a1 **Formula/Shortcut**: Formulate linear equation: (Age1 + years) = k * (Age2 + years).\n\n**Question**: Actuary Mr. Sato at Nippon Pension Fund analyzes retiree data. A retiree is twice as old as their spouse. If the difference in their ages is 30 years, find the age of the spouse.",
-      "a": "\ud83d\udccb **Given**: Retiree age (R) = 2 * Spouse age (S). Age difference R - S = 30.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Substitute R into the difference equation and solve for S.\n\n**Step-by-step Solution**:\n1) Substitute: 2S - S = 30.\n2) Solve: S = 30.\n3) The spouse is 30 years old, and the retiree is 60 years old.\n\n\u2728 **Final Answer**: 30 years"
+      "q": "A is 5 years older than B; their ages sum to 25. Find both.",
+      "a": "B + 5 + B = 25 -> 2B = 20 -> B = 10, A = 15. Answer: B=10, A=15."
+    },
+    {
+      "q": "A father's age is 3\u00d7 his son's; after 10 years, he'll be 2\u00d7 his son's. Find present ages.",
+      "a": "F = 3S. 3S + 10 = 2(S + 10) -> S = 10, F = 30. Answer: Son=10, Father=30."
+    },
+    {
+      "q": "Five years ago, A was twice as old as B; A is now 35. Find B's age.",
+      "a": "A - 5 = 30. 30 = 2(B - 5) -> B - 5 = 15 -> B = 20. Answer: B=20."
+    },
+    {
+      "q": "Ages of A,B are in ratio 3:4; after 5 years, ratio becomes 4:5. Find present ages.",
+      "a": "Let ages be 3x and 4x. (3x + 5)/(4x + 5) = 4/5 -> x = 5. Ages are 15 and 20. Answer: A=15, B=20."
+    },
+    {
+      "q": "A father's age is 4\u00d7 his son's; 5 years ago he was 7\u00d7 his son's. Find present ages.",
+      "a": "F = 4S. 4S - 5 = 7(S - 5) -> 3S = 30 -> S = 10, F = 40. Answer: Son=10, Father=40."
+    },
+    {
+      "q": "A mother and daughter's ages sum to 50; 5 years ago, mother was 4\u00d7 daughter's age. Find present ages.",
+      "a": "M + D = 50. (50 - D) - 5 = 4(D - 5) -> D = 13, M = 37. Answer: Daughter=13, Mother=37."
+    },
+    {
+      "q": "A is twice as old as B was 5 years ago; B is now 20. Find A's age.",
+      "a": "B - 5 = 15. A = 2 * 15 = 30. Answer: A=30."
+    },
+    {
+      "q": "Two brothers' ages are in ratio 5:7; in 8 years, ratio becomes 7:9. Find present ages.",
+      "a": "(5x + 8)/(7x + 8) = 7/9 -> 45x + 72 = 49x + 56 -> 4x = 16 -> x = 4. Ages are 20 and 28. Answer: 20 and 28."
+    },
+    {
+      "q": "A man's age is 3\u00d7 his son's; after 15 years he'll be 2\u00d7 his son's. Find present ages.",
+      "a": "M = 3S. 3S + 15 = 2(S + 15) -> S = 15, M = 45. Answer: Son=15, Man=45."
+    },
+    {
+      "q": "Ten years ago, a father's age was 5\u00d7 his son's; ten years hence, it'll be 2.5\u00d7 his son's. Find present ages.",
+      "a": "F - 10 = 5(S - 10), F + 10 = 2.5(S + 10). Solving gives S = 22, F = 70. Answer: Son=22, Father=70."
+    },
+    {
+      "q": "A,B's present ages are in ratio 2:3; 6 years ago, ratio was 1:2. Find present ages.",
+      "a": "(2x - 6)/(3x - 6) = 1/2 -> 4x - 12 = 3x - 6 -> x = 6. Ages are 12 and 18. Answer: A=12, B=18."
+    },
+    {
+      "q": "A's age after 10 years will be thrice his age 5 years ago. Find A's present age.",
+      "a": "A + 10 = 3(A - 5) -> A + 10 = 3A - 15 -> 2A = 25 -> A = 12.5 years. Answer: A=12.5 years."
     }
   ],
   "eng-roadmap": [

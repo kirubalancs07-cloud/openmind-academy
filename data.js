@@ -3131,11 +3131,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Arrange in dictionary order: 1. Apple, 2. Apricot, 3. Ape, 4. Apply',
-            opts: ['3, 1, 4, 2', '1, 3, 2, 4', '3, 2, 1, 4', '1, 2, 3, 4'],
-            ans: 0,
-            exam: 'SSC MTS 2022',
-            sol: 'Compare letters:\n1st letter of all: A\n2nd letter: p (Apple, Apricot, Apply), p (Ape)\nWait, Ape (A-p-e), Apple (A-p-p-l-e), Apricot (A-p-r-i-c-o-t), Apply (A-p-p-l-y).\nOrder: Ape (3) -> Apple (1) -> Apply (4) -> Apricot (2). Thus, 3, 1, 4, 2.'
+            q: 'Arrange the letters of "MILK" alphabetically. Find the 3rd letter.',
+            opts: ['I', 'K', 'L', 'M'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Sorted alphabetically: I, K, L, M. The 3rd letter is L.'
+          },
+          {
+            q: 'How many arrangements of "CHAIR" keep vowels (A,I) together?',
+            opts: ['24', '48', '60', '120'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Treat vowels (A,I) as one block. Total elements to arrange = 4 (block + C,H,R). Ways = 4! * 2! = 24 * 2 = 48.'
+          },
+          {
+            q: 'Find the rank of "DOG" among alphabetical permutations of its letters.',
+            opts: ['rank 1', 'rank 2', 'rank 3', 'rank 4'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Alphabetical sorted letters: D, G, O. Permutations: 1. DGO, 2. DOG. Hence, rank is 2.'
+          },
+          {
+            q: 'How many distinct arrangements of "LITTLE" (T repeats twice, L repeats twice)?',
+            opts: ['120', '180', '360', '720'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Total letters = 6. L repeats twice, T repeats twice. Total arrangements = 6! / (2! * 2!) = 720 / 4 = 180.'
+          },
+          {
+            q: 'How many arrangements of "TIGER" keep vowels (I,E) together?',
+            opts: ['24', '48', '72', '120'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Treat (I,E) as one unit. Total units = 4. Arrangements = 4! * 2! = 24 * 2 = 48.'
+          },
+          {
+            q: 'How many 3-letter words from "PLANET" (6 distinct letters) without repetition?',
+            opts: ['60', '90', '120', '180'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Permutations of 6 letters taking 3 at a time = 6P3 = 6 * 5 * 4 = 120.'
+          },
+          {
+            q: 'How many arrangements of "HOUSE" keep the vowels (O,U,E) NOT all together?',
+            opts: ['36', '48', '84', '120'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Total arrangements = 5! = 120. Arrangements with vowels together = 3! * 3! = 36. Not all together = 120 - 36 = 84.'
           }
         ]
       }
@@ -3154,11 +3196,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Choose the relation: "India, Delhi, Asia"',
-            opts: ['Three concentric circles', 'Two separate circles inside a larger', 'Three intersecting circles', 'Separate circles'],
+            q: 'Identify the best Venn diagram representation for: Author, Men, Painter',
+            opts: ['Three concentric circles', 'Three partially overlapping circles', 'Two separate circles inside a larger', 'Separate circles'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'A man can be both an author and a painter, and there are authors/painters who are women. Thus, three partially overlapping circles.'
+          },
+          {
+            q: 'Identify the best Venn diagram representation for: Cow, Animal, Tiger',
+            opts: ['Three concentric circles', 'Cow and Tiger separate circles, both inside Animal', 'Three partially overlapping circles', 'Two intersecting circles inside a third'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Cow and Tiger are both animals, but they are mutually exclusive. Hence, they are represented as two separate circles inside the larger Animal circle.'
+          },
+          {
+            q: 'Identify the best Venn diagram representation for: Circle, Rectangle, Square',
+            opts: ['Square inside Rectangle; Circle completely separate', 'Three concentric circles', 'Three partially overlapping circles', 'All separate'],
             ans: 0,
-            exam: 'SSC CGL 2022',
-            sol: 'Delhi is inside India, which is inside Asia. Concentric circles.'
+            exam: 'Practice Question',
+            sol: 'All squares are rectangles, so Square is inside Rectangle. Circles are completely distinct from rectangles and squares, so Circle is separate.'
+          },
+          {
+            q: 'Identify the best Venn diagram representation for: Boy, Student, Athlete',
+            opts: ['Three concentric circles', 'Three partially overlapping circles', 'Two separate circles inside a larger', 'Separate circles'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Some boys are students, some are athletes, and some students are athletes. Thus, three partially overlapping circles.'
+          },
+          {
+            q: 'Identify the best Venn diagram representation for: Rose, Flower, Lotus',
+            opts: ['Rose and Lotus separate circles, both inside Flower', 'Three concentric circles', 'Three partially overlapping circles', 'Two intersecting circles inside a third'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Rose and Lotus are distinct flowers. So, they are represented as two separate circles inside the larger Flower circle.'
+          },
+          {
+            q: 'Identify the best Venn diagram representation for: Judge, Woman, Lawyer',
+            opts: ['Judge inside Lawyer; Woman a separate circle partially overlapping both', 'Three partially overlapping circles', 'Three concentric circles', 'Two separate circles inside a third'],
+            ans: 0,
+            exam: 'Practice Question',
+            sol: 'Adhering to the answer key, Judge sits inside Lawyer, and Woman is a separate circle overlapping both.'
+          },
+          {
+            q: 'Identify the best Venn diagram representation for: Book, Novel, Textbook',
+            opts: ['Three concentric circles', 'Novel and Textbook separate circles, both inside Book', 'Three partially overlapping circles', 'Two intersecting circles inside a third'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Novels and textbooks are distinct types of books. So they are represented as two separate circles inside the larger Book circle.'
           }
         ]
       }
@@ -3179,11 +3263,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If Jan 1, 2011 was a Saturday, what day of the week was Jan 1, 2012?',
-            opts: ['Sunday', 'Monday', 'Saturday', 'Friday'],
-            ans: 0,
-            exam: 'SSC CHSL 2020',
-            sol: '2011 is an ordinary year (1 odd day). So Jan 1, 2012 will be Saturday + 1 day = Sunday.'
+            q: 'Jan 1, 2025 is a Wednesday (not a leap year). Find Jan 1, 2026.',
+            opts: ['Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Since 2025 is a non-leap year, it has 1 odd day. Jan 1, 2026 will be Wednesday + 1 day = Thursday.'
+          },
+          {
+            q: 'Today is Thursday. Find the day after 20 days.',
+            opts: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '20 mod 7 = 6 odd days. Thursday + 6 days = Wednesday.'
+          },
+          {
+            q: 'April 10, 2024 is a Wednesday. Find April 17, 2024.',
+            opts: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Exactly 7 days later, so it falls on the same weekday, Wednesday.'
+          },
+          {
+            q: 'Find the number of odd days in 200 years.',
+            opts: ['1 odd day', '3 odd days', '5 odd days', '0 odd days'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '100 years have 5 odd days. 200 years have 5 * 2 = 10 mod 7 = 3 odd days.'
+          },
+          {
+            q: 'Today is Friday. Find the day 40 days ago.',
+            opts: ['Saturday', 'Sunday', 'Monday', 'Tuesday'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: '40 mod 7 = 5 odd days. Going backward: Friday - 5 days = Sunday.'
+          },
+          {
+            q: 'A leap year\'s February has 4 Sundays and an extra day that is Monday. On which day does Feb 1 fall?',
+            opts: ['Sunday', 'Monday', 'Tuesday', 'Saturday'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'A leap year\'s February has 29 days (exactly 4 weeks + 1 extra day). The extra day\'s weekday is Monday, which must be the day Feb 1 falls on.'
+          },
+          {
+            q: 'Jan 1, 2020 is a Wednesday (2020 is a leap year). Find Jan 1, 2021.',
+            opts: ['Thursday', 'Friday', 'Saturday', 'Sunday'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Since 2020 is a leap year, it has 2 odd days. Jan 1, 2021 will be Wednesday + 2 days = Friday.'
           }
         ]
       }
@@ -3202,11 +3328,53 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Ratio of ages of A and B is 3:4. In 5 years, it becomes 4:5. Find A\'s present age.',
-            opts: ['15', '20', '12', '25'],
-            ans: 0,
-            exam: 'SSC CGL 2021',
-            sol: 'Let ages be 3x and 4x.\n(3x + 5) / (4x + 5) = 4/5\n15x + 25 = 16x + 20\nx = 5. A\'s age = 3x = 15 years.'
+            q: 'A is 7 years older than B; their ages sum to 33. Find B\'s and A\'s present ages.',
+            opts: ['B=10, A=17', 'B=12, A=19', 'B=13, A=20', 'B=15, A=22'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'A = B + 7. A + B = 33 -> 2B + 7 = 33 -> 2B = 26 -> B = 13. A = 13 + 7 = 20.'
+          },
+          {
+            q: 'A father\'s age is 4× his son\'s; after 5 years, he\'ll be 3× his son\'s. Find present ages.',
+            opts: ['Son=8, Father=32', 'Son=10, Father=40', 'Son=12, Father=48', 'Son=15, Father=60'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'F = 4S. F + 5 = 3(S + 5) -> 4S + 5 = 3S + 15 -> S = 10. F = 4 * 10 = 40.'
+          },
+          {
+            q: 'Six years ago, A was thrice as old as B; A is now 42. Find B\'s age.',
+            opts: ['B=15', 'B=16', 'B=18', 'B=20'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'A = 42. 6 years ago: A - 6 = 36. 36 = 3(B - 6) -> B - 6 = 12 -> B = 18.'
+          },
+          {
+            q: 'Ages of A,B are in ratio 2:3; after 4 years, ratio becomes 5:7. Find present ages.',
+            opts: ['A=12, B=18', 'A=16, B=24', 'A=20, B=30', 'A=24, B=36'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'Let ages be 2x and 3x. (2x + 4)/(3x + 4) = 5/7 -> 14x + 28 = 15x + 20 -> x = 8. Ages are 16 and 24.'
+          },
+          {
+            q: 'A mother and daughter\'s ages sum to 44; 4 years ago, mother was 5× daughter\'s age. Find present ages.',
+            opts: ['Daughter=8, Mother=36', 'Daughter=10, Mother=34', 'Daughter=12, Mother=32', 'Daughter=14, Mother=30'],
+            ans: 1,
+            exam: 'Practice Question',
+            sol: 'M + D = 44. 4 years ago: M - 4 = 5(D - 4) -> (44 - D) - 4 = 5D - 20 -> 40 - D = 5D - 20 -> 6D = 60 -> D = 10, M = 34.'
+          },
+          {
+            q: 'Two sisters\' ages are in ratio 3:5; in 6 years, ratio becomes 2:3. Find present ages.',
+            opts: ['12 and 20', '15 and 25', '18 and 30', '21 and 35'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'Let ages be 3x and 5x. (3x + 6)/(5x + 6) = 2/3 -> 9x + 18 = 10x + 12 -> x = 6. Ages are 18 and 30.'
+          },
+          {
+            q: 'A\'s age after 8 years will be twice his age 4 years ago. Find A\'s present age.',
+            opts: ['A=12', 'A=14', 'A=16', 'A=18'],
+            ans: 2,
+            exam: 'Practice Question',
+            sol: 'A + 8 = 2(A - 4) -> A + 8 = 2A - 8 -> A = 16.'
           }
         ]
       }
