@@ -2187,44 +2187,352 @@ var EXAMPLES = {
   ],
   "eng-roadmap": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: The English track structures sentence construction sequentially from words to paragraphs.\n\u26a1 **Formula/Shortcut**: Flow sequence: Grammatical classes -> Tenses -> Syntactic structure.\n\n**Question**: Dean Ms. Watson at Oxford Prep School designs the syllabus roadmap. What is the correct sequence of topics to build sentence fluency?",
-      "a": "\ud83d\udccb **Given**: Grammar modules in English curriculum.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Sort the steps by logical order of linguistic acquisition.\n\n**Step-by-step Solution**:\n1) Step 1: Learn parts of speech (nouns, verbs) to identify word classes.\n2) Step 2: Learn tenses to conjugate verbs correctly in timelines.\n3) Step 3: Learn sentence syntax to write coherent paragraphs.\n\n\u2728 **Final Answer**: Parts of Speech -> Tenses -> Syntactic structure"
+      "q": "\"She sings beautifully every morning.\" \u2014 What part of speech is \"beautifully\"?",
+      "a": "\"beautifully\" modifies the verb \"sings\", so it is an Adverb. Answer: Adverb."
+    },
+    {
+      "q": "\"The engineer fixed the broken machine quickly.\" \u2014 What part of speech is \"broken\"?",
+      "a": "\"broken\" describes the noun \"machine\", so it is an Adjective. Answer: Adjective."
+    },
+    {
+      "q": "\"Honesty is the best policy.\" \u2014 What part of speech is \"Honesty\"?",
+      "a": "\"Honesty\" is the name of an abstract quality, so it is a Noun. Answer: Noun."
+    },
+    {
+      "q": "\"He ran across the busy street.\" \u2014 What part of speech is \"across\"?",
+      "a": "\"across\" shows the relationship of direction/place, so it is a Preposition. Answer: Preposition."
+    },
+    {
+      "q": "\"They will travel to Paris next summer.\" \u2014 What part of speech is \"will travel\"?",
+      "a": "\"will travel\" expresses an action in the future tense, so it is a Verb. Answer: Verb."
+    },
+    {
+      "q": "\"Wow, that was an amazing goal!\" \u2014 What part of speech is \"Wow\"?",
+      "a": "\"Wow\" expresses sudden excitement, so it is an Interjection. Answer: Interjection."
+    },
+    {
+      "q": "\"The cat sat quietly, and it watched the birds.\" \u2014 What part of speech is \"and\"?",
+      "a": "\"and\" connects two independent clauses, so it is a Conjunction. Answer: Conjunction."
+    },
+    {
+      "q": "\"This is my favorite book.\" \u2014 What part of speech is \"This\"?",
+      "a": "\"This\" stands in place of a noun phrase as a demonstrative, so it is a Pronoun. Answer: Pronoun."
+    },
+    {
+      "q": "\"The team worked hard, yet they lost the match.\" \u2014 What part of speech is \"yet\"?",
+      "a": "\"yet\" connects contrasting clauses, so it is a Conjunction. Answer: Conjunction."
+    },
+    {
+      "q": "\"She is an extremely talented singer.\" \u2014 What part of speech is \"extremely\"?",
+      "a": "\"extremely\" modifies the adjective \"talented\", so it is an Adverb. Answer: Adverb."
+    },
+    {
+      "q": "\"Please close the door behind you.\" \u2014 What part of speech is \"behind\"?",
+      "a": "\"behind\" shows location relative to you, so it is a Preposition. Answer: Preposition."
+    },
+    {
+      "q": "\"The children played happily in the park.\" \u2014 What part of speech is \"happily\"?",
+      "a": "\"happily\" describes the action \"played\", so it is an Adverb. Answer: Adverb."
     }
   ],
   "eng-basics": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Grammar basics classify words into parts of speech based on syntactic function.\n\u26a1 **Formula/Shortcut**: Verbs denote actions/states; adverbs modify verbs, adjectives, or other adverbs.\n\n**Question**: Editor Ms. Kelly at GlobalCorp Communications drafts an announcement. Identify the part of speech of the underlined word in: 'The board approved the plan *swiftly*.'",
-      "a": "\ud83d\udccb **Given**: Target word: 'swiftly' modifying the verb 'approved'.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Determine what word class 'swiftly' modifies. Since it describes the manner of the action 'approved' (verb), it is an adverb.\n\n**Step-by-step Solution**:\n1) 'Approved' is a verb.\n2) Words describing verbs are adverbs.\n\n\u2728 **Final Answer**: Adverb"
+      "q": "Fill in the blank: \"She bought ___ umbrella because it was raining.\"",
+      "a": "Umbrella starts with a vowel sound /\u028c/, so use \"an\". Answer: an."
+    },
+    {
+      "q": "Fill in the blank: \"He is ___ honest man.\"",
+      "a": "Honest has a silent 'h' and begins with vowel sound /\u0252/, so use \"an\". Answer: an."
+    },
+    {
+      "q": "Fill in the blank: \"The sun rises ___ the east.\"",
+      "a": "Directions take the preposition \"in\". Answer: in."
+    },
+    {
+      "q": "Fill in the blank: \"She is good ___ mathematics.\"",
+      "a": "Proficiency in a subject takes the preposition \"at\". Answer: at."
+    },
+    {
+      "q": "Fill in the blank: \"I have been waiting ___ 3 o'clock.\"",
+      "a": "A specific point in time takes \"since\". Answer: since."
+    },
+    {
+      "q": "Fill in the blank: \"He has been working here ___ five years.\"",
+      "a": "A period or duration of time takes \"for\". Answer: for."
+    },
+    {
+      "q": "Fill in the blank: \"She was absent ___ school yesterday.\"",
+      "a": "Absence from a place takes the preposition \"from\". Answer: from."
+    },
+    {
+      "q": "Fill in the blank: \"Neither the manager ___ the staff were informed.\"",
+      "a": "Correlative conjunction \"neither\" pairs with \"nor\". Answer: nor."
+    },
+    {
+      "q": "Fill in the blank: \"He is not only intelligent ___ also hardworking.\"",
+      "a": "Correlative conjunction \"not only\" pairs with \"but\". Answer: but."
+    },
+    {
+      "q": "Fill in the blank: \"___ university offers many courses.\"",
+      "a": "University begins with consonant sound /j/ (\"yoo\"), so use \"A\". Answer: A."
+    },
+    {
+      "q": "Fill in the blank: \"The train arrived ___ time.\"",
+      "a": "Arriving punctually uses the idiom \"on time\". Answer: on."
+    },
+    {
+      "q": "Fill in the blank: \"She will succeed ___ she works hard.\"",
+      "a": "Conditional clause uses the conjunction \"if\". Answer: if."
     }
   ],
   "eng-tenses": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Tenses align actions with timelines (past, present, future).\n\u26a1 **Formula/Shortcut**: Present perfect construction: Subject + has/have + past participle (verb-3).\n\n**Question**: Traveler Elena writes in her Wanderlust Chronicles diary. Convert this sentence to present perfect tense: 'I visited the ruins in Rome.'",
-      "a": "\ud83d\udccb **Given**: Sentence: 'I visited the ruins in Rome.'\n\ud83d\udee0\ufe0f **Method/Shortcut**: Change the past simple verb 'visited' to present perfect format using the auxiliary verb 'have' and the past participle.\n\n**Step-by-step Solution**:\n1) Subject 'I' takes auxiliary 'have'.\n2) Past participle of 'visit' is 'visited'.\n3) Sentence becomes: 'I have visited the ruins in Rome.'\n\n\u2728 **Final Answer**: I have visited the ruins in Rome."
+      "q": "Convert to Passive: \"The chef cooks the meal.\"",
+      "a": "Present simple active -> Present simple passive: \"The meal is cooked by the chef.\" Answer: The meal is cooked by the chef."
+    },
+    {
+      "q": "Convert to Passive: \"She wrote a letter.\"",
+      "a": "Past simple active -> Past simple passive: \"A letter was written by her.\" Answer: A letter was written by her."
+    },
+    {
+      "q": "Convert to Passive: \"They will complete the project by Friday.\"",
+      "a": "Future simple active -> Future simple passive: \"The project will be completed by them by Friday.\" Answer: The project will be completed by them by Friday."
+    },
+    {
+      "q": "Convert to Active: \"The window was broken by the children.\"",
+      "a": "Past simple passive -> Past simple active: \"The children broke the window.\" Answer: The children broke the window."
+    },
+    {
+      "q": "Convert to Passive: \"The manager is reviewing the report.\"",
+      "a": "Present continuous active -> Present continuous passive: \"The report is being reviewed by the manager.\" Answer: The report is being reviewed by the manager."
+    },
+    {
+      "q": "Convert to Active: \"The cake was baked by my mother.\"",
+      "a": "Past simple passive -> Past simple active: \"My mother baked the cake.\" Answer: My mother baked the cake."
+    },
+    {
+      "q": "Convert to Passive: \"He has finished the assignment.\"",
+      "a": "Present perfect active -> Present perfect passive: \"The assignment has been finished by him.\" Answer: The assignment has been finished by him."
+    },
+    {
+      "q": "Convert to Active: \"The song was sung beautifully by her.\"",
+      "a": "Past simple passive -> Past simple active: \"She sang the song beautifully.\" Answer: She sang the song beautifully."
+    },
+    {
+      "q": "Convert to Passive: \"The company launched a new product.\"",
+      "a": "Past simple active -> Past simple passive: \"A new product was launched by the company.\" Answer: A new product was launched by the company."
+    },
+    {
+      "q": "Convert to Active: \"The rules must be followed by everyone.\"",
+      "a": "Modal passive -> Modal active: \"Everyone must follow the rules.\" Answer: Everyone must follow the rules."
+    },
+    {
+      "q": "Convert to Passive: \"The teacher is explaining the lesson.\"",
+      "a": "Present continuous active -> Present continuous passive: \"The lesson is being explained by the teacher.\" Answer: The lesson is being explained by the teacher."
+    },
+    {
+      "q": "Convert to Active: \"The match was won by our team.\"",
+      "a": "Past simple passive -> Past simple active: \"Our team won the match.\" Answer: Our team won the match."
     }
   ],
   "eng-questions": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Question tags turn statements into yes/no questions for validation.\n\u26a1 **Formula/Shortcut**: Positive statement takes a negative tag; negative statement takes a positive tag.\n\n**Question**: Agent Chris at SupportFlow Inc live chat replies to a customer query. Complete the tag question: 'You received the confirmation email, ________?'",
-      "a": "\ud83d\udccb **Given**: Positive statement in past simple: 'You received...'\n\ud83d\udee0\ufe0f **Method/Shortcut**: Since the statement is positive, use a negative tag with the auxiliary verb of the past simple tense ('did').\n\n**Step-by-step Solution**:\n1) Auxiliary for past simple = 'did'.\n2) Negative tag = 'didn't'.\n3) Combine with subject pronoun: 'didn't you?'.\n\n\u2728 **Final Answer**: didn't you?"
+      "q": "Statement: \"She is going to the market.\" -> Form a Yes/No question.",
+      "a": "Invert auxiliary verb \"is\" and subject: \"Is she going to the market?\" Answer: Is she going to the market?"
+    },
+    {
+      "q": "Statement: \"He plays cricket every Sunday.\" -> Form a frequency question.",
+      "a": "Use \"How often\": \"How often does he play cricket?\" Answer: How often does he play cricket?"
+    },
+    {
+      "q": "Answer: \"Ram went to Delhi.\" -> Frame the question.",
+      "a": "Delhi is a place, so use \"Where\": \"Where did Ram go?\" Answer: Where did Ram go?"
+    },
+    {
+      "q": "Statement: \"They have finished the project.\" -> Form a Yes/No question.",
+      "a": "Invert auxiliary \"have\": \"Have they finished the project?\" Answer: Have they finished the project?"
+    },
+    {
+      "q": "Answer: \"She is 25 years old.\" -> Frame the question.",
+      "a": "To ask about age, use \"How old\": \"How old is she?\" Answer: How old is she?"
+    },
+    {
+      "q": "Statement: \"The train arrives at 6 PM.\" -> Frame the time question.",
+      "a": "Use \"What time\": \"What time does the train arrive?\" Answer: What time does the train arrive?"
+    },
+    {
+      "q": "Answer: \"He is a doctor.\" -> Frame the question.",
+      "a": "To ask about a career, use \"What\": \"What is his profession?\" Answer: What is his profession?"
+    },
+    {
+      "q": "Statement: \"She can speak French.\" -> Form a Yes/No question.",
+      "a": "Move modal \"can\" to front: \"Can she speak French?\" Answer: Can she speak French?"
+    },
+    {
+      "q": "Answer: \"They live in Chennai.\" -> Frame the question.",
+      "a": "Chennai is a city, so use \"Where\": \"Where do they live?\" Answer: Where do they live?"
+    },
+    {
+      "q": "Statement: \"The meeting was cancelled because of rain.\" -> Frame the reason question.",
+      "a": "To ask for reason, use \"Why\": \"Why was the meeting cancelled?\" Answer: Why was the meeting cancelled?"
+    },
+    {
+      "q": "Answer: \"This book belongs to Rahul.\" -> Frame the question.",
+      "a": "To ask about ownership, use \"Whose\": \"Whose book is this?\" Answer: Whose book is this?"
+    },
+    {
+      "q": "Statement: \"You should submit the report by tomorrow.\" -> Form a Yes/No question.",
+      "a": "Invert modal \"should\": \"Should you submit the report by tomorrow?\" Answer: Should you submit the report by tomorrow?"
     }
   ],
   "eng-common-errors": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Subject-verb agreement requires singular subjects to take singular verbs.\n\u26a1 **Formula/Shortcut**: Singular indefinite pronouns (e.g. 'each') take singular verbs.\n\n**Question**: Proofreader Mr. Sharma at NewsWire Agency corrects a draft. Fix the grammatical error in: 'Each of the journalists are attending the summit.'",
-      "a": "\ud83d\udccb **Given**: Sentence: 'Each of the journalists are attending...'\n\ud83d\udee0\ufe0f **Method/Shortcut**: Identify the true grammatical subject. The subject is the singular pronoun 'Each', not the plural noun 'journalists'. Replace the plural verb 'are' with singular 'is'.\n\n**Step-by-step Solution**:\n1) Subject is 'Each' (singular).\n2) Plural verb 'are' must be changed to singular 'is'.\n3) Corrected sentence: 'Each of the journalists is attending the summit.'\n\n\u2728 **Final Answer**: Each of the journalists is attending the summit."
+      "q": "Correct the error: \"He don't know the answer.\"",
+      "a": "Third person singular \"He\" takes \"doesn't\": \"He doesn't know the answer.\" Answer: He doesn't know the answer."
+    },
+    {
+      "q": "Correct the error: \"She has went to the office.\"",
+      "a": "Use 3rd form verb \"gone\" after \"has\": \"She has gone to the office.\" Answer: She has gone to the office."
+    },
+    {
+      "q": "Correct the error: \"There is many reasons for this.\"",
+      "a": "Plural subject \"many reasons\" requires plural verb \"are\": \"There are many reasons for this.\" Answer: There are many reasons for this."
+    },
+    {
+      "q": "Correct the error: \"Each of the boys have a bicycle.\"",
+      "a": "Singular pronoun \"Each\" requires singular verb \"has\": \"Each of the boys has a bicycle.\" Answer: Each of the boys has a bicycle."
+    },
+    {
+      "q": "Correct the error: \"I am living here since 2010.\"",
+      "a": "An action continuing from past to present uses present perfect continuous: \"I have been living here since 2010.\" Answer: I have been living here since 2010."
+    },
+    {
+      "q": "Correct the error: \"He is taller than me.\" (formal)",
+      "a": "In formal comparison, use subject pronoun: \"He is taller than I am.\" Answer: He is taller than I am."
+    },
+    {
+      "q": "Correct the error: \"The news are shocking.\"",
+      "a": "\"News\" is an uncountable singular noun, so use \"is\": \"The news is shocking.\" Answer: The news is shocking."
+    },
+    {
+      "q": "Correct the error: \"She explained me the process.\"",
+      "a": "\"explain\" requires \"explain something to someone\": \"She explained the process to me.\" Answer: She explained the process to me."
+    },
+    {
+      "q": "Correct the error: \"Neither of the answers are correct.\"",
+      "a": "\"Neither\" is singular, requiring singular verb \"is\": \"Neither of the answers is correct.\" Answer: Neither of the answers is correct."
+    },
+    {
+      "q": "Correct the error: \"He is married with a doctor.\"",
+      "a": "\"married\" takes the preposition \"to\": \"He is married to a doctor.\" Answer: He is married to a doctor."
+    },
+    {
+      "q": "Correct the error: \"I am agree with your opinion.\"",
+      "a": "\"agree\" is a verb; do not use \"am\": \"I agree with your opinion.\" Answer: I agree with your opinion."
+    },
+    {
+      "q": "Correct the error: \"She is senior than me in the company.\"",
+      "a": "Latin adjectives ending in -ior take \"to\": \"She is senior to me in the company.\" Answer: She is senior to me in the company."
     }
   ],
   "eng-vocab-daily": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Advanced vocabulary enhances the precision of professional writing.\n\u26a1 **Formula/Shortcut**: Define terms in context to establish their exact semantic meaning.\n\n**Question**: Reporter Sam at TechPulse Media drafts a headline. Define the word 'obsolete' in the context: 'The old server hardware became obsolete after the upgrade.'",
-      "a": "\ud83d\udccb **Given**: Target word: 'obsolete'. Context: 'server hardware became obsolete...'\n\ud83d\udee0\ufe0f **Method/Shortcut**: Analyze context clues: 'became ... after the upgrade'. This indicates that the hardware is no longer useful or in use because it has been replaced.\n\n**Step-by-step Solution**:\n1) 'Obsolete' means no longer produced or used; out of date.\n\n\u2728 **Final Answer**: Out of date / No longer in use"
+      "q": "Define and use \"Punctual\" in a sentence.",
+      "a": "Punctual means on-time: \"He is always punctual for his morning meetings.\" Answer: Punctual = on-time."
+    },
+    {
+      "q": "Define and use \"Generous\" in a sentence.",
+      "a": "Generous means kind-hearted and giving: \"The donor was generous enough to fund the entire scholarship.\" Answer: Generous = kind-hearted."
+    },
+    {
+      "q": "Define and use \"Reluctant\" in a sentence.",
+      "a": "Reluctant means unwilling: \"She was reluctant to share her opinion in the meeting.\" Answer: Reluctant = unwilling."
+    },
+    {
+      "q": "Define and use \"Efficient\" in a sentence.",
+      "a": "Efficient means productive: \"The new software made the billing process more efficient.\" Answer: Efficient = productive."
+    },
+    {
+      "q": "Define and use \"Genuine\" in a sentence.",
+      "a": "Genuine means authentic: \"His apology sounded genuine and heartfelt.\" Answer: Genuine = authentic."
+    },
+    {
+      "q": "Define and use \"Cautious\" in a sentence.",
+      "a": "Cautious means careful: \"Drivers should be cautious on the wet roads.\" Answer: Cautious = careful."
+    },
+    {
+      "q": "Define and use \"Optimistic\" in a sentence.",
+      "a": "Optimistic means hopeful: \"Despite the setback, the team remained optimistic about the project.\" Answer: Optimistic = hopeful."
+    },
+    {
+      "q": "Define and use \"Reliable\" in a sentence.",
+      "a": "Reliable means dependable: \"She is a reliable colleague who always meets deadlines.\" Answer: Reliable = dependable."
+    },
+    {
+      "q": "Define and use \"Frequent\" in a sentence.",
+      "a": "Frequent means recurring: \"Power cuts are frequent during the monsoon season.\" Answer: Frequent = recurring."
+    },
+    {
+      "q": "Define and use \"Humble\" in a sentence.",
+      "a": "Humble means modest: \"Despite his success, he remained humble and grounded.\" Answer: Humble = modest."
+    },
+    {
+      "q": "Define and use \"Curious\" in a sentence.",
+      "a": "Curious means inquisitive: \"The curious child kept asking questions about space.\" Answer: Curious = inquisitive."
+    },
+    {
+      "q": "Define and use \"Persistent\" in a sentence.",
+      "a": "Persistent means determined: \"Her persistent effort finally paid off with a job offer.\" Answer: Persistent = determined."
     }
   ],
   "eng-phrases": [
     {
-      "q": "\ud83d\udca1 **Concept Recap**: Idiomatic phrases express complex ideas concisely through common metaphors.\n\u26a1 **Formula/Shortcut**: Idiom interpretations derive from cultural usage rather than literal meanings.\n\n**Question**: Coach Mr. David at CareerClimb Academy writes an advice article. Explain the meaning of the idiom: 'burn the midnight oil'.",
-      "a": "\ud83d\udccb **Given**: Idiom: 'burn the midnight oil'.\n\ud83d\udee0\ufe0f **Method/Shortcut**: Identify the figurative meaning of burning oil lamps late into the night.\n\n**Step-by-step Solution**:\n1) Historically, oil lamps were burned to work late.\n2) Therefore, the idiom means to work or study late into the night.\n\n\u2728 **Final Answer**: To work or study late into the night"
+      "q": "Explain the phrase \"In the long run\" and provide an example.",
+      "a": "Meaning: over an extended period. Example: \"Investing in employee training pays off in the long run.\" Answer: In the long run = over an extended time."
+    },
+    {
+      "q": "Explain the phrase \"Get the ball rolling\" and provide an example.",
+      "a": "Meaning: to start an activity. Example: \"Let's get the ball rolling on the new marketing campaign.\" Answer: Get the ball rolling = to start something."
+    },
+    {
+      "q": "Explain the phrase \"Out of the blue\" and provide an example.",
+      "a": "Meaning: unexpectedly. Example: \"He called me out of the blue after years of silence.\" Answer: Out of the blue = unexpectedly."
+    },
+    {
+      "q": "Explain the phrase \"On the same page\" and provide an example.",
+      "a": "Meaning: in agreement. Example: \"Before the launch, make sure the whole team is on the same page.\" Answer: On the same page = in agreement."
+    },
+    {
+      "q": "Explain the phrase \"Under the weather\" and provide an example.",
+      "a": "Meaning: feeling slightly ill. Example: \"She stayed home today because she was feeling under the weather.\" Answer: Under the weather = feeling slightly ill."
+    },
+    {
+      "q": "Explain the phrase \"Hit the nail on the head\" and provide an example.",
+      "a": "Meaning: to be exactly right. Example: \"Your analysis hit the nail on the head regarding the sales drop.\" Answer: Hit the nail on the head = to be exactly right."
+    },
+    {
+      "q": "Explain the phrase \"Piece of cake\" and provide an example.",
+      "a": "Meaning: something very easy. Example: \"The exam was a piece of cake after all that practice.\" Answer: Piece of cake = something very easy."
+    },
+    {
+      "q": "Explain the phrase \"Once in a blue moon\" and provide an example.",
+      "a": "Meaning: rarely. Example: \"He visits his hometown once in a blue moon due to work commitments.\" Answer: Once in a blue moon = rarely."
+    },
+    {
+      "q": "Explain the phrase \"Break the ice\" and provide an example.",
+      "a": "Meaning: ease tension in a new situation. Example: \"The host told a joke to break the ice at the conference.\" Answer: Break the ice = ease social tension."
+    },
+    {
+      "q": "Explain the phrase \"Time flies\" and provide an example.",
+      "a": "Meaning: time passes quickly. Example: \"Time flies when you're working on something you enjoy.\" Answer: Time flies = time passes quickly."
+    },
+    {
+      "q": "Explain the phrase \"Keep in touch\" and provide an example.",
+      "a": "Meaning: stay in contact. Example: \"We promised to keep in touch after graduation.\" Answer: Keep in touch = stay in contact."
+    },
+    {
+      "q": "Explain the phrase \"Make ends meet\" and provide an example.",
+      "a": "Meaning: manage financially with limited resources. Example: \"With rising prices, it's getting harder to make ends meet.\" Answer: Make ends meet = manage financially."
     }
   ]
 };

@@ -3407,20 +3407,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'You meet someone for the first time. What is the most appropriate way to greet them in a professional setting?',
-            opts: ['"Hey! What\'s up?"', '"Nice to meet you. How do you do?"', '"Tell me about yourself immediately."', '"Yo! Who are you?"'],
-            ans: 1,
-            exam: 'Daily Conversation',
-            sol: 'In a professional setting, "Nice to meet you. How do you do?" is polite and appropriate. "Hey! What\'s up?" is informal and should only be used with friends.'
+                    "q": "\"The old bridge collapsed during the storm.\" \u2014 What part of speech is \"old\"?",
+                    "opts": [
+                              "Noun",
+                              "Adjective",
+                              "Adverb",
+                              "Verb"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"old\" describes the noun \"bridge\", so it is an Adjective."
           },
           {
-            q: 'Which study habit is best for improving pronunciation and speaking confidence without a partner?',
-            opts: ['Reading grammar rules silently', 'Practicing mirror-talk and recording your voice', 'Writing long essays', 'Translating every word in a dictionary'],
-            ans: 1,
-            exam: 'Speaking Trick',
-            sol: 'Mirror-talk (speaking while looking at yourself) builds confidence, and recording your voice allows you to hear your own pronunciation and correct it.'
+                    "q": "\"He speaks very fluently in English.\" \u2014 What part of speech is \"fluently\"?",
+                    "opts": [
+                              "Verb",
+                              "Adjective",
+                              "Adverb",
+                              "Conjunction"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "\"fluently\" describes how he speaks (modifying the verb \"speaks\"), so it is an Adverb."
+          },
+          {
+                    "q": "\"Ouch, that hurts!\" \u2014 What part of speech is \"Ouch\"?",
+                    "opts": [
+                              "Preposition",
+                              "Interjection",
+                              "Conjunction",
+                              "Pronoun"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Ouch\" expresses sudden pain or emotion, so it is an Interjection."
+          },
+          {
+                    "q": "\"The book is on the table.\" \u2014 What part of speech is \"on\"?",
+                    "opts": [
+                              "Preposition",
+                              "Conjunction",
+                              "Adverb",
+                              "Adjective"
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"on\" shows the relationship of location between the book and table, so it is a Preposition."
+          },
+          {
+                    "q": "\"She and her brother went to the market.\" \u2014 What part of speech is \"and\"?",
+                    "opts": [
+                              "Preposition",
+                              "Pronoun",
+                              "Conjunction",
+                              "Interjection"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "\"and\" connects two subjects, so it is a Conjunction."
+          },
+          {
+                    "q": "\"Courage is needed to face challenges.\" \u2014 What part of speech is \"Courage\"?",
+                    "opts": [
+                              "Noun",
+                              "Verb",
+                              "Adjective",
+                              "Adverb"
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"Courage\" names an abstract quality and functions as the subject, so it is a Noun."
+          },
+          {
+                    "q": "\"They arrived late but stayed calm.\" \u2014 What part of speech is \"but\"?",
+                    "opts": [
+                              "Preposition",
+                              "Conjunction",
+                              "Adverb",
+                              "Pronoun"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"but\" connects two contrasting predicates, so it is a Conjunction."
           }
-        ]
+]
       }
     ]
   },
@@ -3453,20 +3523,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Identify the verb in the sentence: "The smart student speaks English fluently."',
-            opts: ['student', 'smart', 'speaks', 'fluently'],
-            ans: 2,
-            exam: 'Grammar Basics',
-            sol: '"speaks" is the action word (verb). "student" is a noun, "smart" is an adjective, and "fluently" is an adverb describing how the student speaks.'
+                    "q": "\"He bought ___ orange from the market.\"",
+                    "opts": [
+                              "a",
+                              "an",
+                              "the",
+                              "no article"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"orange\" begins with a vowel sound, so \"an\" is used."
           },
           {
-            q: 'Arrange these words in the correct S-V-O order: "likes / Rahul / mangoes"',
-            opts: ['Rahul likes mangoes', 'Mangoes Rahul likes', 'Likes Rahul mangoes', 'Rahul mangoes likes'],
-            ans: 0,
-            exam: 'Sentence Building',
-            sol: 'Subject (Rahul) + Verb (likes) + Object (mangoes) is the correct grammatical structure.'
+                    "q": "\"They live ___ Mumbai.\"",
+                    "opts": [
+                              "at",
+                              "on",
+                              "in",
+                              "into"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "For large cities, states, and countries, use the preposition \"in\"."
+          },
+          {
+                    "q": "\"She is interested ___ painting.\"",
+                    "opts": [
+                              "at",
+                              "with",
+                              "in",
+                              "for"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "The adjective \"interested\" takes the fixed preposition \"in\"."
+          },
+          {
+                    "q": "\"I will call you ___ I reach home.\"",
+                    "opts": [
+                              "while",
+                              "when",
+                              "during",
+                              "since"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"when\" is the appropriate subordinating conjunction of time here."
+          },
+          {
+                    "q": "\"He is ___ one-eyed man.\"",
+                    "opts": [
+                              "a",
+                              "an",
+                              "the",
+                              "no article"
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"one\" begins with the consonant sound /w/ (\"wun\"), so \"a\" is used."
+          },
+          {
+                    "q": "\"She has lived here ___ 2015.\"",
+                    "opts": [
+                              "for",
+                              "since",
+                              "from",
+                              "in"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"2015\" is a specific starting point in time in the past, so we use \"since\"."
+          },
+          {
+                    "q": "\"Either Ram ___ Shyam will attend the meeting.\"",
+                    "opts": [
+                              "and",
+                              "nor",
+                              "or",
+                              "but"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "The correlative conjunction \"either\" always pairs with \"or\"."
           }
-        ]
+]
       }
     ]
   },
@@ -3498,20 +3638,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Choose the correct form of verb: "Every morning, he _______ a newspaper."',
-            opts: ['read', 'reads', 'is reading', 'will read'],
-            ans: 1,
-            exam: 'Verb Tenses',
-            sol: '"Every morning" indicates a daily habit, which requires Present Simple. Since the subject is "he" (singular third person), we add "s/es" to the verb: "reads".'
+                    "q": "Active: \"The workers built the bridge.\" \u2192 What is the passive voice form?",
+                    "opts": [
+                              "The bridge was built by the workers.",
+                              "The bridge is built by the workers.",
+                              "The bridge has been built by the workers.",
+                              "The bridge was being built by the workers."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "Past simple active (\"built\") changes to \"was/were + past participle\" in passive (\"was built\")."
           },
           {
-            q: 'Complete the sentence in the past tense: "Yesterday, I _______ to the new market."',
-            opts: ['go', 'went', 'am going', 'goes'],
-            ans: 1,
-            exam: 'Past Tense Check',
-            sol: '"Yesterday" denotes a finished past action. The 2nd form of the verb "go" is "went".'
+                    "q": "Passive: \"The letter was posted by him.\" \u2192 What is the active voice form?",
+                    "opts": [
+                              "He posts the letter.",
+                              "He has posted the letter.",
+                              "He posted the letter.",
+                              "He was posting the letter."
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "Past simple passive (\"was posted\") converts to past simple active (\"posted\")."
+          },
+          {
+                    "q": "Active: \"She is preparing dinner.\" \u2192 What is the passive voice form?",
+                    "opts": [
+                              "Dinner was prepared by her.",
+                              "Dinner is prepared by her.",
+                              "Dinner is being prepared by her.",
+                              "Dinner has been prepared by her."
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "Present continuous active (\"is preparing\") changes to \"is being prepared\"."
+          },
+          {
+                    "q": "Passive: \"The novel was written by the famous author.\" \u2192 What is the active voice form?",
+                    "opts": [
+                              "The famous author writes the novel.",
+                              "The famous author wrote the novel.",
+                              "The famous author has written the novel.",
+                              "The famous author is writing the novel."
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"was written\" converts to past simple active \"wrote\"."
+          },
+          {
+                    "q": "Active: \"They have completed the survey.\" \u2192 What is the passive voice form?",
+                    "opts": [
+                              "The survey was completed by them.",
+                              "The survey is completed by them.",
+                              "The survey has been completed by them.",
+                              "The survey had been completed by them."
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "Present perfect active (\"have completed\") changes to \"has been completed\"."
+          },
+          {
+                    "q": "Passive: \"The house was painted by the workers.\" \u2192 What is the active voice form?",
+                    "opts": [
+                              "The workers paint the house.",
+                              "The workers painted the house.",
+                              "The workers have painted the house.",
+                              "The workers were painting the house."
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"was painted\" converts to past simple active \"painted\"."
+          },
+          {
+                    "q": "Active: \"The committee will announce the results tomorrow.\" \u2192 What is the passive voice form?",
+                    "opts": [
+                              "The results will announce by the committee tomorrow.",
+                              "The results are announced by the committee tomorrow.",
+                              "The results will be announced by the committee tomorrow.",
+                              "The results would be announced by the committee tomorrow."
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "Future simple active (\"will announce\") changes to \"will be announced\"."
           }
-        ]
+]
       }
     ]
   },
@@ -3542,20 +3752,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Choose the correct question format to ask about someone\'s workplace.',
-            opts: ['"Where do you work?"', '"Where works you?"', '"You work where?"', '"Do you working where?"'],
-            ans: 0,
-            exam: 'Question Framing',
-            sol: 'The standard question order is Wh-word + Helper Verb (do/does) + Subject + main Verb. "Where do you work?" is correct.'
+                    "q": "Statement: \"She is reading a novel.\" \u2192 Convert to a Yes/No question.",
+                    "opts": [
+                              "Does she read a novel?",
+                              "Is she reading a novel?",
+                              "Did she read a novel?",
+                              "Has she read a novel?"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "Move the auxiliary verb \"is\" to the front: \"Is she reading a novel?\""
           },
           {
-            q: 'Choose the correct negative sentence.',
-            opts: ['"He don\'t likes study."', '"He doesn\'t like to study."', '"He not likes to study."', '"He did not liked to study."'],
-            ans: 1,
-            exam: 'Negatives Check',
-            sol: 'For "He" (singular), we use "doesn\'t" followed by the base form of the verb "like" (no "s" is added when "does" is present). "He doesn\'t like to study" is correct.'
+                    "q": "Answer: \"He arrived at 9 AM.\" \u2192 Frame the question.",
+                    "opts": [
+                              "What time does he arrive?",
+                              "What time did he arrive?",
+                              "When he arrived?",
+                              "Where did he arrive?"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "For a specific past clock time, use \"What time did he arrive?\""
+          },
+          {
+                    "q": "Statement: \"They are planning a trip to Goa.\" \u2192 Frame the destination question.",
+                    "opts": [
+                              "Where are they planning a trip?",
+                              "Why are they planning a trip?",
+                              "When are they planning a trip?",
+                              "Who is planning a trip?"
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "Goa is a destination, so use \"Where\": \"Where are they planning a trip?\""
+          },
+          {
+                    "q": "Answer: \"This pen belongs to Meena.\" \u2192 Frame the ownership question.",
+                    "opts": [
+                              "Who pen is this?",
+                              "Whose pen is this?",
+                              "Which pen is this?",
+                              "Where is this pen?"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "To ask about ownership, use \"Whose\": \"Whose pen is this?\""
+          },
+          {
+                    "q": "Statement: \"He can swim very well.\" \u2192 Convert to a Yes/No question.",
+                    "opts": [
+                              "Does he swim very well?",
+                              "Can he swim very well?",
+                              "Could he swim very well?",
+                              "Is he swim very well?"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "Move the modal \"can\" to the front: \"Can he swim very well?\""
+          },
+          {
+                    "q": "Answer: \"The shop closes at 8 PM.\" \u2192 Frame the time question.",
+                    "opts": [
+                              "What time does the shop close?",
+                              "What time did the shop close?",
+                              "When did the shop close?",
+                              "Where does the shop close?"
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "Statement is in present simple (\"closes\"), so use \"What time does the shop close?\""
+          },
+          {
+                    "q": "Statement: \"The flight was delayed due to bad weather.\" \u2192 Frame the reason question.",
+                    "opts": [
+                              "How was the flight delayed?",
+                              "When was the flight delayed?",
+                              "Why was the flight delayed?",
+                              "Where was the flight delayed?"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "\"due to bad weather\" specifies a reason, so use \"Why was the flight delayed?\""
           }
-        ]
+]
       }
     ]
   },
@@ -3588,20 +3868,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'Find the correct sentence.',
-            opts: ['"I didn\'t received the letter."', '"I didn\'t receive the letter."', '"I didn\'t receives the letter."', '"I have not received the letter yesterday."'],
-            ans: 1,
-            exam: 'Common Errors',
-            sol: 'After "didn\'t", we always use the base form (1st form) of the verb. "receive" is correct. "received" is wrong.'
+                    "q": "Incorrect: \"He don't like coffee.\" \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "He doesn't like coffee.",
+                              "He doesn't likes coffee.",
+                              "He not like coffee.",
+                              "He didn't liked coffee."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "Third-person singular \"He\" requires \"doesn't\", followed by the base verb \"like\"."
           },
           {
-            q: 'Correct this response: "I am having two brothers."',
-            opts: ['"I have two brothers."', '"I am having two brother."', '"I have been two brothers."', '"Myself has two brothers."'],
-            ans: 0,
-            exam: 'Possessive Errors',
-            sol: '"Having" is not used for relationships or possessions unless it is about eating/drinking. Use "have": "I have two brothers."'
+                    "q": "Incorrect: \"She has went to the market.\" \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "She has went to the market.",
+                              "She has gone to the market.",
+                              "She is gone to the market.",
+                              "She has go to the market."
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "After \"has\", use the past participle (3rd form) \"gone\": \"She has gone to the market.\""
+          },
+          {
+                    "q": "Incorrect: \"There is many students in the class.\" \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "There are many students in the class.",
+                              "There was many students in the class.",
+                              "There is much students in the class.",
+                              "There has many students in the class."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"students\" is plural, so use the plural verb \"are\"."
+          },
+          {
+                    "q": "Incorrect: \"Each of the players have a jersey.\" \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "Each of the players have a jersey.",
+                              "Each of the players has a jersey.",
+                              "Each of the player has a jersey.",
+                              "Every of the players has a jersey."
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Each\" is a singular indefinite pronoun, requiring the singular verb \"has\"."
+          },
+          {
+                    "q": "Incorrect: \"He explained me the rules.\" \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "He explained to me the rules.",
+                              "He explained the rules to me.",
+                              "He explains me the rules.",
+                              "He explained me with the rules."
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"explain\" requires \"explain something to someone\": \"He explained the rules to me.\""
+          },
+          {
+                    "q": "Incorrect: \"The team are playing well.\" (formal, singular collective usage) \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "The team is playing well.",
+                              "The team were playing well.",
+                              "The teams is playing well.",
+                              "The team be playing well."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "In formal English, collective nouns acting as a single unit take singular verb \"is\"."
+          },
+          {
+                    "q": "Incorrect: \"I am agree with you.\" \u2192 Choose the correct sentence.",
+                    "opts": [
+                              "I agree with you.",
+                              "I am agreeing with you.",
+                              "I am agreed with you.",
+                              "I agreed with you."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"agree\" is a verb, not an adjective. Say \"I agree with you\"."
           }
-        ]
+]
       }
     ]
   },
@@ -3618,20 +3968,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'What is the meaning of the word "Apologize"?',
-            opts: ['To feel proud', 'To express regret / say sorry', 'To ask for money', 'To make a choice'],
-            ans: 1,
-            exam: 'Vocabulary Meanings',
-            sol: '"Apologize" means to say sorry or express regret for a mistake.'
+                    "q": "What is a synonym for \"Punctual\"?",
+                    "opts": [
+                              "Delayed",
+                              "On-time",
+                              "Careless",
+                              "Lazy"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Punctual\" means arriving or doing something at the arranged time (on-time)."
           },
           {
-            q: 'Identify the word which means "Absolutely necessary".',
-            opts: ['Cheap', 'Humble', 'Essential', 'Expensive'],
-            ans: 2,
-            exam: 'Synonyms Check',
-            sol: '"Essential" means absolutely necessary or crucial.'
+                    "q": "Which sentence correctly uses \"Reluctant\" in a business context?",
+                    "opts": [
+                              "The board was reluctant to approve the new budget without further review.",
+                              "The budget was very reluctant.",
+                              "He worked reluctant every day.",
+                              "The company was reluctant of profits."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"Reluctant\" means unwilling and hesitant."
+          },
+          {
+                    "q": "What is a synonym for \"Efficient\"?",
+                    "opts": [
+                              "Lazy",
+                              "Productive",
+                              "Slow",
+                              "Complex"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Efficient\" means achieving maximum productivity with minimum wasted effort."
+          },
+          {
+                    "q": "Which sentence correctly uses \"Genuine\" in the context of friendship?",
+                    "opts": [
+                              "Their friendship was genuine, built on years of trust.",
+                              "They were genuine of the meeting.",
+                              "He acted genuine towards the wall.",
+                              "Friendship is genuinely in Mumbai."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"Genuine\" means authentic, real, and sincere."
+          },
+          {
+                    "q": "What is a synonym for \"Cautious\"?",
+                    "opts": [
+                              "Reckless",
+                              "Careful",
+                              "Bold",
+                              "Hasty"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Cautious\" means taking care to avoid risks or danger (careful)."
+          },
+          {
+                    "q": "Which sentence correctly uses \"Persistent\" in the context of studying?",
+                    "opts": [
+                              "His persistent study habits helped him top the exam.",
+                              "He was persistent to sleep all day.",
+                              "The exam was persistent easy.",
+                              "Books are persistent on the shelf."
+                    ],
+                    "ans": 0,
+                    "exam": "Practice Question",
+                    "sol": "\"Persistent\" means continuing firmly in spite of difficulty."
+          },
+          {
+                    "q": "What is a synonym for \"Humble\"?",
+                    "opts": [
+                              "Arrogant",
+                              "Proud",
+                              "Modest",
+                              "Boastful"
+                    ],
+                    "ans": 2,
+                    "exam": "Practice Question",
+                    "sol": "\"Humble\" means modest and not boastful."
           }
-        ]
+]
       }
     ]
   },
@@ -3668,20 +4088,90 @@ var CONTENT = {
         title: 'Practice Questions',
         questions: [
           {
-            q: 'If you did not hear what someone said, how should you politely ask them to repeat?',
-            opts: ['"Say it again!"', '"Would you mind repeating that, please?"', '"What? Repeat now."', '"I didn\'t hear you, speak louder."'],
-            ans: 1,
-            exam: 'Polite Conversational Speech',
-            sol: '"Would you mind repeating that, please?" is a standard, highly polite way to ask someone to repeat a statement. It is perfect for professional settings.'
+                    "q": "What does the phrase \"get the ball rolling\" mean?",
+                    "opts": [
+                              "To play football",
+                              "To start something",
+                              "To finish a project",
+                              "To stop an activity"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Get the ball rolling\" means to set an activity or process in motion."
           },
           {
-            q: 'How should you respond when someone says "Thank you so much"?',
-            opts: ['"Okay."', '"You are welcome."', '"No problem, whatever."', '"Thank you also."'],
-            ans: 1,
-            exam: 'Standard Greetings',
-            sol: 'The most polite and standard response to "Thank you" is "You are welcome" or "It is my pleasure."'
+                    "q": "What does the phrase \"on the same page\" mean?",
+                    "opts": [
+                              "Reading the same book",
+                              "In agreement",
+                              "Confused about the plan",
+                              "Writing notes together"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"On the same page\" means being in agreement and thinking alike."
+          },
+          {
+                    "q": "What does the phrase \"under the weather\" mean?",
+                    "opts": [
+                              "Caught in the rain",
+                              "Feeling slightly ill",
+                              "Enjoying sunny weather",
+                              "Feeling very energetic"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Under the weather\" is an idiom meaning feeling unwell or slightly sick."
+          },
+          {
+                    "q": "What does the phrase \"piece of cake\" mean?",
+                    "opts": [
+                              "A delicious dessert",
+                              "Something very easy",
+                              "A difficult challenge",
+                              "A birthday celebration"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Piece of cake\" describes a task that is simple and easy to accomplish."
+          },
+          {
+                    "q": "What does the phrase \"break the ice\" mean?",
+                    "opts": [
+                              "To freeze water",
+                              "Ease tension in a new situation",
+                              "To start an argument",
+                              "To leave a party early"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Break the ice\" means to ease social awkwardness or tension in a new group."
+          },
+          {
+                    "q": "What does the phrase \"keep in touch\" mean?",
+                    "opts": [
+                              "Hold hands",
+                              "Stay in contact",
+                              "Meet every single day",
+                              "Work together on a project"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Keep in touch\" means maintaining communication."
+          },
+          {
+                    "q": "What does the phrase \"make ends meet\" mean?",
+                    "opts": [
+                              "Tie two ropes together",
+                              "Manage financially with limited resources",
+                              "Reach the end of a race",
+                              "Succeed without any effort"
+                    ],
+                    "ans": 1,
+                    "exam": "Practice Question",
+                    "sol": "\"Make ends meet\" means managing financially to cover basic expenses."
           }
-        ]
+]
       }
     ]
   }
