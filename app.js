@@ -81,10 +81,51 @@ function showToast(text, isError) {
   }, 3000);
 }
 
-/* ===== NAVIGATION CONTROLLER ===== */
-function navigate(view, param) {
-  if (transitioning) return;
-  transitioning = true;
+/* ===== ROUTER & BROWSER HISTORY CONTROLLER ===== */
+var isInternalNav = false;
+
+function getHashForRoute(view, param) {
+  if (view === 'analytics') return '#analytics';
+  if (view === 'course') return '#course/' + (param || 'aptitude');
+  if (view === 'track') return '#track/' + (param || '');
+  if (view === 'topic') return '#topic/' + (param || '');
+  return '#home';
+}
+
+function parseHashRoute() {
+  var hash = window.location.hash.replace(/^#\/?/, '').trim();
+  if (!hash || hash === 'home') return { view: 'home', param: null };
+  var parts = hash.split('/');
+  var view = parts[0];
+  var param = parts.slice(1).join('/') || null;
+  if (['home', 'course', 'track', 'topic', 'analytics'].indexOf(view) !== -1) {
+    return { view: view, param: param };
+  }
+  return { view: 'home', param: null };
+}
+
+function navigate(view, param, pushHistory) {
+  if (pushHistory === undefined) pushHistory = true;
+
+  // Dismiss search dropdown if open
+  var resultsBox = document.getElementById('searchResults');
+  var searchInput = document.getElementById('searchInput');
+  if (resultsBox && resultsBox.style.display === 'block') {
+    resultsBox.style.display = 'none';
+    if (searchInput) searchInput.value = '';
+  }
+
+  // Synchronize browser history and URL hash
+  var targetHash = getHashForRoute(view, param);
+  if (pushHistory) {
+    if (window.location.hash !== targetHash) {
+      isInternalNav = true;
+      history.pushState({ view: view, param: param }, '', targetHash);
+    }
+  } else {
+    isInternalNav = true;
+    history.replaceState({ view: view, param: param }, '', targetHash);
+  }
 
   // Active state links in navigation bar
   var navHome = document.getElementById('navLinkHome');
@@ -96,51 +137,66 @@ function navigate(view, param) {
     if (view === 'analytics') navAnal.classList.add('active');
   }
 
+  // Switch panels
   var panels = document.querySelectorAll('.view-panel');
   panels.forEach(function(p) { p.classList.remove('is-visible'); });
 
-  setTimeout(function() {
-    // Populate the view contents
-    if (view === 'home') {
-      buildHome();
-    } else if (view === 'course') {
-      buildCourse(param);
-    } else if (view === 'track') {
-      buildTrack(param);
-    } else if (view === 'topic') {
-      buildTopic(param);
-    } else if (view === 'analytics') {
-      buildAnalytics();
-    }
+  // Populate view contents
+  if (view === 'home') {
+    buildHome();
+  } else if (view === 'course') {
+    buildCourse(param);
+  } else if (view === 'track') {
+    buildTrack(param);
+  } else if (view === 'topic') {
+    buildTopic(param);
+  } else if (view === 'analytics') {
+    buildAnalytics();
+  }
 
-    var target = document.getElementById('view' + view.charAt(0).toUpperCase() + view.slice(1));
-    if (target) {
-      target.classList.add('is-visible');
-    }
+  var target = document.getElementById('view' + view.charAt(0).toUpperCase() + view.slice(1));
+  if (target) {
+    target.classList.add('is-visible');
+  }
 
-    if (navStack[navStack.length - 1] !== view) {
-      navStack.push(view);
-    }
-    
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    setTimeout(function() { transitioning = false; }, 300);
-  }, 200);
+  window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
-// Go back one view
-function goBack() {
-  if (transitioning || navStack.length <= 1) return;
-  navStack.pop();
-  var prev = navStack[navStack.length - 1];
-  
-  // Trick stack tracking
-  navStack.pop(); // Pop temporarily so navigate pushes it back
-  navigate(prev, prev === 'course' ? curCourse.id : (prev === 'track' ? curTrack.id : null));
+// In-app back helper
+function goBack(fallbackView, fallbackParam) {
+  if (window.history.state && window.history.state.view && window.history.state.view !== 'home') {
+    window.history.back();
+  } else {
+    navigate(fallbackView || 'home', fallbackParam || null);
+  }
 }
 
-// Initialize navigation anchors
-window.addEventListener('popstate', function() {
-  goBack();
+// Listen to browser / mobile hardware back and forward events
+window.addEventListener('popstate', function(event) {
+  // If search dropdown is open, dismiss it
+  var resultsBox = document.getElementById('searchResults');
+  var searchInput = document.getElementById('searchInput');
+  if (resultsBox && resultsBox.style.display === 'block') {
+    resultsBox.style.display = 'none';
+    if (searchInput) searchInput.blur();
+  }
+
+  if (event.state && event.state.view) {
+    navigate(event.state.view, event.state.param, false);
+  } else {
+    var route = parseHashRoute();
+    navigate(route.view, route.param, false);
+  }
+});
+
+// Also support hashchange in case of direct URL hash changes
+window.addEventListener('hashchange', function() {
+  if (isInternalNav) {
+    isInternalNav = false;
+    return;
+  }
+  var route = parseHashRoute();
+  navigate(route.view, route.param, false);
 });
 
 /* ===== BUILDERS FOR APP VIEWS ===== */
@@ -807,6 +863,7 @@ function initSearchWidget() {
     var query = e.target.value.toLowerCase().trim();
     if (!query) {
       resultsBox.style.display = 'none';
+      resultsBox.innerHTML = '';
       return;
     }
     
@@ -818,28 +875,30 @@ function initSearchWidget() {
     resultsBox.innerHTML = '';
     
     if (matches.length === 0) {
-      resultsBox.innerHTML = '<div class="p-3 text-xs text-gray-500 text-center">No matching topics found</div>';
+      resultsBox.innerHTML = '<div class="p-4 text-xs text-gray-400 text-center" style="background:#131625">No matching topics found</div>';
     } else {
-      matches.slice(0, 5).forEach(function(item) {
+      matches.slice(0, 6).forEach(function(item) {
         var row = document.createElement('div');
         row.className = 'search-result-item';
         
         var courseBadge = item.courseId === 'aptitude'
-          ? '<span class="badge text-amber-500" style="background:var(--accent-dim); font-size:0.6rem">Aptitude</span>'
+          ? '<span class="badge text-amber-400" style="background:rgba(245,158,11,0.15); font-size:0.62rem">Aptitude</span>'
           : (item.courseId === 'reasoning'
-             ? '<span class="badge text-emerald-400" style="background:var(--accent2-dim); font-size:0.6rem">Reasoning</span>'
-             : '<span class="badge text-purple-400" style="background:rgba(168,85,247,0.08); font-size:0.6rem">English</span>');
+             ? '<span class="badge text-emerald-400" style="background:rgba(16,185,129,0.15); font-size:0.62rem">Reasoning</span>'
+             : '<span class="badge text-purple-400" style="background:rgba(168,85,247,0.15); font-size:0.62rem">English</span>');
           
         row.innerHTML = 
           '<div>' +
-            '<div class="text-xs font-semibold text-gray-200">' + item.name + '</div>' +
-            '<div class="text-[10px] text-gray-500 mt-0.5">' + item.sub + '</div>' +
+            '<div class="text-xs font-bold text-gray-100">' + item.name + '</div>' +
+            '<div class="text-[11px] text-gray-400 mt-0.5">' + item.sub + '</div>' +
           '</div>' +
           '<div>' + courseBadge + '</div>';
           
         row.onclick = function() {
           searchInput.value = '';
           resultsBox.style.display = 'none';
+          resultsBox.innerHTML = '';
+          searchInput.blur();
           
           // Setup active details
           curCourse = (item.courseId === 'aptitude') ? APT : (item.courseId === 'reasoning' ? REA : ENG);
@@ -854,9 +913,18 @@ function initSearchWidget() {
     resultsBox.style.display = 'block';
   });
   
+  // Close dropdown on Escape key
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      resultsBox.style.display = 'none';
+      resultsBox.innerHTML = '';
+      searchInput.blur();
+    }
+  });
+
   // Close dropdown on click outside
   document.addEventListener('click', function(e) {
-    if (e.target !== searchInput) {
+    if (!searchInput.contains(e.target) && !resultsBox.contains(e.target)) {
       resultsBox.style.display = 'none';
     }
   });
@@ -992,6 +1060,12 @@ window.addEventListener('DOMContentLoaded', function() {
   loadState();
   initParticles();
   initSearchWidget();
+
+  // Seed base history entry so the first back press lands on Home, not the previous browser page
+  history.replaceState({ view: 'home', param: null }, '', '#home');
+  // Push a second entry so the hardware/browser back always has somewhere to go within the app
+  history.pushState({ view: 'home', param: null }, '', '#home');
+
   buildHome();
 });
 
